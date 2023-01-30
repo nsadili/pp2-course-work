@@ -6,7 +6,7 @@
 
 <ol>
 	<li>Share your GitHub link under the Discussion forum of the course page on Blackboard.</li>
-	<li>Clone this repository.</li>
+	<li>Clone this repository: <pre>git clone https://github.com/nsadili/pp2-course-work.git</pre></li>
 	<li>Change directory to the repository: <pre>cd pp2-course-work</pre></li>
 	<li>Check if the clone was successful.</li>
 	<li>Create a branch in the local repo (firstname_lastname_id): <pre>git checkout -b nuraddin_sadili_12345</pre></li>
