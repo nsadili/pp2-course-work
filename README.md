@@ -11,7 +11,7 @@
 	<li>Check if the clone was successful.</li>
 	<li>Create a branch in the local repo (firstname_lastname_id): <pre>git checkout -b nuraddin_sadili_12345</pre></li>
 	<li>Push the new branch to the remote repository: <pre>git push origin nuraddin_sadili_12345</pre> <strong>Note:</strong> this must be your branch name.</li>
-	<li>You can always check the list of branches and the current branch: <pre>git branch<pre> for local branches or <pre>git branch -a<pre> for local and remote branches.</li>
+	<li>You can always check the list of branches and the current branch: <pre>git branch</pre> for local branches or <pre>git branch -a</pre> for local and remote branches.</li>
 	<li>To switch between branches use: <pre>git checkout branch_name</pre></li>
 	<li>Every week first make sure you are on your own branch or switch to it using the previous commad, then follow the instruction in Exercise and Practical sessions and add changes to your branch in the local repository.</li>
 	<li>Commit your changes: <pre>git add -A</pre> <pre>git commit -m "Add a descriptive message."</pre></li>
