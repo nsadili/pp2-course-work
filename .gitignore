@@ -21,3 +21,6 @@ hs_err_pid*
 
 # Executable
 *.exe
+
+# Directory
+.idea/
