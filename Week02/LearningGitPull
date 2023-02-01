@@ -1,5 +1,0 @@
-public class LearningGitPull{
-publis static void main(String [] args){
-System.out.println("How to use git pull in git?");
-}
-}
