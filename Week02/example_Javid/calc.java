@@ -10,8 +10,17 @@ public class calc {
 
 
         var a = Integer.parseInt(args[0]);
-        var b= Integer.valueOf(args[1]);
+        var b= Integer.parseInt(args[1]);
         System.out.println(args[1]+args[0]);
 
     }
 }
+
+
+
+
+
+
+
+
+                                                                                       
