@@ -1,5 +1,7 @@
 import java.util.Scanner;
-public class Avg {
+public class Average
+
+ {
     public static void main(String[] args) {
         Scanner scan= new Scanner(System.in);
         var count =0;
@@ -13,6 +15,15 @@ public class Avg {
         }
         var avg= (float)sum/count;
         System.out.println(avg);
-    }
+
+
+
+
+
+
+
+
+
+ }
 
 }
