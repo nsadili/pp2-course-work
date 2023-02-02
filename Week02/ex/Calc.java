@@ -1,19 +1,16 @@
 public class Calc {
     public static void main(String[] args) {
-        if(args.length < 2) 
-        {
-            System.out.println("Please, provide some inputs");
-        System.exit(1);
-
+        if(args.length < 2){
+            System.out.println("Please enter numbers");
+            System.exit(1);
         }
-
-        //System.out.println(args[0]);
-        //System.out.println(args[1]);
-
-        var num1 = Integer.valueOf(args[0]);
-        var num2 = Integer.parseInt(args[1]);
-
-        System.out.println(num1 + num2);
         
-    }
+       var x=Integer.parseInt(args[0]);
+       var y=Integer.valueOf(args[1]);
+
+       System.out.println("Sum: "+(x+y));
+       System.out.println("Substraction: "+(x-y));
+       System.out.println("Division: "+(x/y));
+       System.out.println("Remainder: "+(x%y));
+}
 }
