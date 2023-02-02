@@ -7,10 +7,11 @@ public class Seasons {
         Scanner sc = new Scanner(System.in);
         int number = sc.nextInt();
         switch(number){
+            // New Comment
             case 1:
             case 2:
             case 3: System.out.println("Spring");break;
-            case 4:
+            case 4: //
             case 5:
             case 6: System.out.println("Summer");
             case 7:
