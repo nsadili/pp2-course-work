@@ -13,14 +13,6 @@ public class Avg {
         }
         var avg= (float)sum/count;
         System.out.println(avg);
+    }
 
-
-
-
-
-
-
-
-
- }
 }

@@ -2,7 +2,7 @@ public class Calc {
     public static void main(String[] args) {
         if(args.length < 2) 
         {
-        System.out.println("Please, provide some inputs");
+            System.out.println("Please, provide some inputs");
         System.exit(1);
 
         }
