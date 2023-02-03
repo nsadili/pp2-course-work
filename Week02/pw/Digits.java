@@ -6,9 +6,11 @@ public class Digits {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter a number:");
-        int num = sc.nextInt();
+        int num = Math.abs(sc.nextInt());
+
+        //int num = sc.nextInt();
         int sum = 0;
-int count = 0;
+        int count = 0;
         int copy = num;
         int product = 1;
 
@@ -20,8 +22,8 @@ int count = 0;
             count++;
         }
 
-        System.out.println("Sum of the digits of " + copy +" : " + sum);
-        System.out.println("product of the digits " + copy +" : " + product);
-        System.out.println("Average of the digits " + copy +" : " + (double) sum / count);
+        System.out.println("Sum of the digits of " + copy +" equals: " + sum);
+        System.out.println("product of the digits " + copy +" equals: " + product);
+        System.out.println("Average of the digits " + copy +" equals: " + (double) sum / count);
     }
 }

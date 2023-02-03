@@ -16,6 +16,7 @@ public class Harmonic {
     }
 
     System.out.println("The harmonic series upto " + n + " term is: " + sum);
+  
 
     }
 }

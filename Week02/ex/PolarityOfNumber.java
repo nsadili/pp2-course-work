@@ -6,7 +6,18 @@ public class PolarityOfNumber {
 
         Scanner scan = new Scanner(System.in);
 
-        var n = Integer.parseInt(args[0]);
-    }
+        var n = scan.nextDouble();
     
+
+    if (n == 0.0) {
+        System.out.println("Neutral!");
+    }
+    else if (n > 0.0) {
+    System.out.println("Positive!"); 
+    }
+       else {
+            System.out.println("Negative!");
+        }
 }
+}
+

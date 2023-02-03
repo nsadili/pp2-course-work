@@ -7,6 +7,8 @@ public class Time {
         Scanner scan = new Scanner(System.in);
 
         var n = Integer.parseInt(args[0]);
+
+        int sec = 
     }
     
 }
