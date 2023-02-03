@@ -1,0 +1,84 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Calc",
+            "request": "launch",
+            "mainClass": "Easy.Calc",
+            "projectName": "pp2-course-work_930060e8"
+        },
+        {
+            "type": "java",
+            "name": "Launch Fact",
+            "request": "launch",
+            "mainClass": "Easy.Fact",
+            "projectName": "pp2-course-work_930060e8"
+        },
+        {
+            "type": "java",
+            "name": "Launch LeapYear",
+            "request": "launch",
+            "mainClass": "Easy.LeapYear",
+            "projectName": "pp2-course-work_930060e8"
+        },
+        {
+            "type": "java",
+            "name": "Launch MonthInfo",
+            "request": "launch",
+            "mainClass": "Easy.MonthInfo",
+            "projectName": "pp2-course-work_930060e8"
+        },
+        {
+            "type": "java",
+            "name": "Launch PolarityOfNumber",
+            "request": "launch",
+            "mainClass": "Easy.PolarityOfNumber",
+            "projectName": "pp2-course-work_930060e8"
+        },
+        {
+            "type": "java",
+            "name": "Launch Sum",
+            "request": "launch",
+            "mainClass": "Easy.Sum",
+            "projectName": "pp2-course-work_930060e8"
+        },
+        {
+            "type": "java",
+            "name": "Launch SumOfOdd",
+            "request": "launch",
+            "mainClass": "Easy.SumOfOdd",
+            "projectName": "pp2-course-work_930060e8"
+        },
+        {
+            "type": "java",
+            "name": "Launch Time",
+            "request": "launch",
+            "mainClass": "Easy.Time",
+            "projectName": "pp2-course-work_930060e8"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintingPatterns",
+            "request": "launch",
+            "mainClass": "PrintingPatterns",
+            "projectName": "pp2-course-work_930060e8"
+        },
+        {
+            "type": "java",
+            "name": "Launch RollingDie",
+            "request": "launch",
+            "mainClass": "RollingDie",
+            "projectName": "pp2-course-work_930060e8"
+        }
+    ]
+}
