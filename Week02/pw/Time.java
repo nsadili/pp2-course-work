@@ -1,7 +1,5 @@
-import java.util.*;
-
-public class Time
-{ 
+import java.util.Scanner;
+public class Time {
     public static void main(String[] args) {
         Scanner scn=new Scanner(System.in);
         int seconds=scn.nextInt();
@@ -12,5 +10,4 @@ public class Time
         System.out.print(hour + ":" + minutes + ":" + second);
 
     }
-    
 }
