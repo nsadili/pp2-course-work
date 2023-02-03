@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class Time {
-    public static void main(String[] ards) {
+    public static void main(String[] args) {
         System.out.print("Seconds-->");
         Scanner scan = new Scanner(System.in);
         int a = scan.nextInt();
