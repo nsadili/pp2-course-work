@@ -1,7 +1,11 @@
 public class Calc {
     public static void main(String[] args) {
         if(args.length < 2){
-            System.out.println("Please enter numbers");
+
+          
+
+            System.out.println("Please enter 2 numbers");
+
             System.exit(1);
         }
         
