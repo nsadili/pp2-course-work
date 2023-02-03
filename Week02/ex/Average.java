@@ -1,16 +1,19 @@
+import java.util.Scanner;
+
 public class Average {
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
         var sum = 0;
-        var count = 0;
-        var average = 0;
-        var i = 0;
-        while (i < args.length) {
-            sum = sum + Integer.parseInt(args[i]);
-            count++;
-            i++;
+        var cnt = 0;
+
+        while (scan.hasNextInt()) {
+            sum += scan.nextInt();
+            cnt++;
         }
-        average = sum / count;
-        System.out.println("Average of " + args.length + " numbers is " + average);
         
+        var avg = (double) sum / cnt;
+
+        System.out.println(avg);
     }
 }
