@@ -7,5 +7,7 @@ public class Sum {
         int number1 = scn.nextInt();
         int number2 = scn.nextInt();
         System.out.print(number1 + number2);
+        scn.close();
     }
+    
 }

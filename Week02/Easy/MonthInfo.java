@@ -19,6 +19,7 @@ public class MonthInfo {
             case 11: System.out.println("November " + 30); break;
             case 12: System.out.println("December " + 31); break;
         }
+        scn.close();
     }
    
 }

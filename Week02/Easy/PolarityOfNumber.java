@@ -14,7 +14,7 @@ public class PolarityOfNumber {
         else {
             System.out.println("negative");
         }
-    
+        scn.close();
     }
    
 }

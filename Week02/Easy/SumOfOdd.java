@@ -12,8 +12,10 @@ public class SumOfOdd {
             if(i % 2 == 1){
                 sum += i;
             }
+        scn.close();
         }
         System.out.println(sum);
+        
     }
    
 }

@@ -12,6 +12,7 @@ public class PrintingPatterns {
             else System.out.print("#");
         }
         System.out.println();
+        scn.close();
     }
 }
 

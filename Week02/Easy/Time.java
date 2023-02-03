@@ -10,7 +10,7 @@ public class Time {
         int second = seconds - (hour * 3600 + minutes * 60);
         
         System.out.println(hour + " : " + minutes + " : " + second);
-    
+        scn.close();
     }
    
 }
