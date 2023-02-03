@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class Time {
     public static void main(String[] args) {
         Scanner scn=new Scanner(System.in);
@@ -11,6 +10,4 @@ public class Time {
         System.out.print(hour + ":" + minutes + ":" + second);
 
     }
-
-    
 }
