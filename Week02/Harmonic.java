@@ -1,0 +1,26 @@
+public class Harmonic
+{
+    public static void main (String[] args)
+    {
+        if (args.length < 1)
+        {
+            System.out.println("Please enter a  number");
+            System.exit(1);
+        }
+
+        var n = Integer.parseInt(args[0]);
+
+        var sum = 0.0;
+        for(int count = 1; count <= n ; count++ )
+        {
+            sum += 1.0 / count ;
+        }
+
+        System.out.printf("%.3f\n", sum);
+        
+     
+
+
+    }
+
+}
