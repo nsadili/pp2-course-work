@@ -1,0 +1,21 @@
+package Java_1;
+
+/**
+ *
+ * @author user
+ */
+public class FirstApp {
+
+    public static void main(String[] args) {
+     
+        int a=10;
+        int b=99;
+        int c=77;
+        
+        int sum=a+b+c;
+        
+        System.out.println(sum); 
+        System.out.println(sum+15);
+        
+    }
+}

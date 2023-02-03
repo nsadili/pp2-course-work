@@ -1,0 +1,12 @@
+package com.mycompany.firstapp;
+
+/**
+ *
+ * @author user
+ */
+public class FirstApp {
+
+    public static void main(String[] args) {
+      System.out.println("Hello, I am Nijat Huseynzada.");
+    }
+}

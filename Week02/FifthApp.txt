@@ -1,0 +1,29 @@
+package Java_1;
+
+/**
+ *
+ * @author user
+ */
+public class FirstApp {
+
+    public static void main(String[] args) {
+
+        int a = 15;
+
+        System.out.println(a); //Integer
+        System.out.println(Integer.toHexString(a)); //Hex
+        System.out.println(Integer.toOctalString(a)); //Octal
+        
+        float b=5.6F;
+        
+        System.out.printf("%.2f", b);//decimal floating-point
+        System.out.println(String.format("%2.3f",b)); //scientific notation
+        
+        
+        
+        
+        
+        
+        
+    }
+}

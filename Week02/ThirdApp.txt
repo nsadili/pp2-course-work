@@ -1,0 +1,20 @@
+package Java_1;
+
+/**
+ *
+ * @author user
+ */
+public class FirstApp {
+
+    public static void main(String[] args) {
+
+        long a=1000000;
+        int b= (int)a; //casting
+        float c = (float) 99.5; //Casting should be done
+
+        double sum=a+b+c;
+        
+        System.out.println(sum);
+
+    }
+}
