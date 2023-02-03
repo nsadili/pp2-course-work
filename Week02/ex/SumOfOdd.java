@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import javax.lang.model.util.ElementScanner14;
+
 public class SumOfOdd {
 
     public static void main(String[] args) {
@@ -11,12 +13,13 @@ public class SumOfOdd {
 
         var sum = 0;
 
+             a++;
         while(a < b) {
 
             if(a % 2 != 0)
             sum += a;
             a++;
-        
+                     
         }
 
         System.out.println(sum);

@@ -5,7 +5,7 @@ public class Harmonic {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-    System.out.println("Enter the number of terms");
+    System.out.println("Enter the number of terms:");
 
     int n = scan.nextInt();
     scan.close();
