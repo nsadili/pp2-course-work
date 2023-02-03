@@ -1,4 +1,4 @@
-//package Week02.pw;
+// package Week02.pw;
 
 public class LeapYear {
     public static void main(String args[]){
