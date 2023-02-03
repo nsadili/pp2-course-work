@@ -1,20 +1,22 @@
 import java.util.Scanner;
 
-public class Calc {
+public class class {
     public static void main(String args[]) {
         Scanner scn = new Scanner (System.in);
-        int a = scn.nextInt();
-        int b = scn.nextInt();
-        int sum=a+b;
-        int sub=a-b;
-        int mul=a*b;
-        int div=a/b;
-        int rem=a%b;
+        int n = scn.nextInt();
 
-        System.out.println(sum);
-        System.out.println(sub);
-        System.out.println(mul);
-        System.out.println(div);
-        System.out.println(rem);
+        if (n==1) {
+            System.out.println("Not prime");
+        }
+        for (int i=2; i<math.sqrt(n); i++)
+        {
+            if (n%i==0) {
+                System.out.println("Not prime");
+                return 0;
+            }
+        }
+
     }
+    
+    System.out.println("Prime");
 }
