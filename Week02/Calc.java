@@ -6,7 +6,7 @@ public class Calc
         {
             System.out.println("Please, enter two variables");
             System.exit(1);
-        }
+        } //command line arguments
         
                
         System.out.println(args[0]);
