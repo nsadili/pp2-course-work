@@ -18,9 +18,6 @@ public class Harmonic
 
         System.out.printf("%.3f\n", sum);
         
-     
-
-
     }
 
 }
