@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Digits",
+            "request": "launch",
+            "mainClass": "Moderate.Digits",
+            "projectName": "pp2-course-work_930060e8"
+        },
+        {
+            "type": "java",
+            "name": "Launch Harmonic",
+            "request": "launch",
+            "mainClass": "Moderate.Harmonic",
+            "projectName": "pp2-course-work_930060e8"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
