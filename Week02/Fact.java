@@ -2,12 +2,19 @@ public class Fact
 {
     public static void main(String[] args)
     {
-        if(n < 0)
+        if(args.length < 1)
         {
             System.out.println("Please, enter a variable");
             System.exit(1);
         }
+        
+        var n = Integer.parseInt(args[0]);
 
+        if(n < 0)
+        {
+            System.out.println("Please, enter a non-negative variable");
+            System.exit(1);
+        }
 
         var f = 1;
         var c = 1;
