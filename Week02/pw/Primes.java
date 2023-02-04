@@ -9,7 +9,7 @@ public class Primes {
 
     if (number <= 1){ 
     System.out.println(number + " is not a prime number.");
-    return;
+    return; // stop executing if it is not already a prime number; otherwise, countinue
     }
 
     for (int i = 2; i <= Math.sqrt(number); i++){

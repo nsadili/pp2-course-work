@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner; // works
 
 public class PrintingPatterns {
     public static void main(String[] args) {
@@ -9,13 +9,13 @@ public class PrintingPatterns {
 
         for(int i = 0; i < size; i++){
             for(int j = 0; j < size; j++){
-                if((j + i) % 2 == 0){ // if the sum is even, print #; otherwise, *
+                if((j + i) % 2 == 0){ // if the sum is even, print *; otherwise, #
                     System.out.print("*");
             } else {
               System.out.print("#");
                    }
             } 
-            System.out.println();
+            System.out.println(); // necessary
 
         }
     }
