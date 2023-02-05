@@ -18,6 +18,3 @@ public class Average {
     scn.close();
   }
 }
-
-// we haven't covered this topic yet
-// i didn't cheated, i just search for eof in java and found this

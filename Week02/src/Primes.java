@@ -16,7 +16,7 @@ public class Primes {
         if(isPrime){
             System.out.println("Prime");
         } else if (!isPrime) {
-            if(n==1 || n==2){
+            if(n==2){
                 System.out.println("Prime");
             }
             else{
