@@ -6,10 +6,11 @@ public class CoinTossing {
         int n = scn.nextInt();
         int tails = 0;
         int heads = 0;
-        for(int i=0; i<n; i++) {
+        for (int i = 0; i < n; i++) {
             double randomDouble = 1 + 2 * Math.random();
-            int randomInt = (int) randomDouble;    
-            if(randomInt == 1) {
+
+            int randomInt = (int) randomDouble;
+            if (randomInt == 1) {
                 heads++;
                 // System.out.println("Heads");
             } else {
@@ -17,8 +18,8 @@ public class CoinTossing {
                 // System.out.println("Tails");
             }
         }
-        float headsPercentage = (float) heads/n * 100;
-        float tailsPercentage = (float) tails/n * 100;
+        float headsPercentage = (float) heads / n * 100;
+        float tailsPercentage = (float) tails / n * 100;
         System.out.println("Heads: " + headsPercentage + "%");
         System.out.println("Tails: " + tailsPercentage + "%");
     }
