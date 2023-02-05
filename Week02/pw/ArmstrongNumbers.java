@@ -1,13 +1,33 @@
 import java.util.Scanner;
 
 public class ArmstrongNumbers {
+    public static int  cnt2=0;
     public static void main(String[] args) {
 
-        int x;
-        Scanner sc = new Scanner(System.in);
+        int x,y;
 
-        System.out.print("Please enter the number -> ");
-        x = sc.nextInt();
+        Scanner sc=new Scanner(System.in);
+
+        System.out.print("Plese enter  1.st number-> ");
+        x=sc.nextInt();
+
+        System.out.print("Plese enter  2.nd number-> ");
+        y=sc.nextInt();
+
+        for(var i=x;i<=y;i++){
+            check(i);
+        }
+        System.out.println(cnt2+ " numbers are Armstrong");
+
+
+    
+
+    
+    }
+
+    public static void check(int x){
+        
+        
 
         var copy=x;
 
@@ -27,11 +47,8 @@ public class ArmstrongNumbers {
 
         }
         if(res==copy2){
-            System.out.printf("%d is Armstrong Number",copy2);
-        }else{
-            System.out.printf("%d is not Armstrong Number",copy2);
+            System.out.printf("%d is Armstrong Number\n",copy2);
+            cnt2++;
         }
-
-    
     }
 }
