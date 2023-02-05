@@ -17,7 +17,7 @@ public class MinMax
           min = Math.min(min,number);
         }   
 
-        System.out.println("Maximim is " +max);
+        System.out.println("Maximum is " +max);
         System.out.println("Minimum is " +min);
 
         //It did not give output with printf
