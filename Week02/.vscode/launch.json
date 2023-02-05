@@ -1,0 +1,140 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Average",
+            "request": "launch",
+            "mainClass": "Average",
+            "projectName": "Week02_2527045f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Calc",
+            "request": "launch",
+            "mainClass": "Calc",
+            "projectName": "Week02_2527045f"
+        },
+        {
+            "type": "java",
+            "name": "Launch CoinTossing",
+            "request": "launch",
+            "mainClass": "CoinTossing",
+            "projectName": "Week02_2527045f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Digits",
+            "request": "launch",
+            "mainClass": "Digits",
+            "projectName": "Week02_2527045f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Fact",
+            "request": "launch",
+            "mainClass": "Fact",
+            "projectName": "Week02_2527045f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Harmonic",
+            "request": "launch",
+            "mainClass": "Harmonic",
+            "projectName": "Week02_2527045f"
+        },
+        {
+            "type": "java",
+            "name": "Launch LeapYear",
+            "request": "launch",
+            "mainClass": "LeapYear",
+            "projectName": "Week02_2527045f"
+        },
+        {
+            "type": "java",
+            "name": "Launch MinMax",
+            "request": "launch",
+            "mainClass": "MinMax",
+            "projectName": "Week02_2527045f"
+        },
+        {
+            "type": "java",
+            "name": "Launch MonthInfo",
+            "request": "launch",
+            "mainClass": "MonthInfo",
+            "projectName": "Week02_2527045f"
+        },
+        {
+            "type": "java",
+            "name": "Launch PolarityOfNumber",
+            "request": "launch",
+            "mainClass": "PolarityOfNumber",
+            "projectName": "Week02_2527045f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Primes",
+            "request": "launch",
+            "mainClass": "Primes",
+            "projectName": "Week02_2527045f"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintingPatterns",
+            "request": "launch",
+            "mainClass": "PrintingPatterns",
+            "projectName": "Week02_2527045f"
+        },
+        {
+            "type": "java",
+            "name": "Launch RandomPointsInCircle",
+            "request": "launch",
+            "mainClass": "RandomPointsInCircle",
+            "projectName": "Week02_2527045f"
+        },
+        {
+            "type": "java",
+            "name": "Launch RollingDie",
+            "request": "launch",
+            "mainClass": "RollingDie",
+            "projectName": "Week02_2527045f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Sum",
+            "request": "launch",
+            "mainClass": "Sum",
+            "projectName": "Week02_2527045f"
+        },
+        {
+            "type": "java",
+            "name": "Launch SumOfOdd",
+            "request": "launch",
+            "mainClass": "SumOfOdd",
+            "projectName": "Week02_2527045f"
+        },
+        {
+            "type": "java",
+            "name": "Launch TaylorSin",
+            "request": "launch",
+            "mainClass": "TaylorSin",
+            "projectName": "Week02_2527045f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Time",
+            "request": "launch",
+            "mainClass": "Time",
+            "projectName": "Week02_2527045f"
+        }
+    ]
+}

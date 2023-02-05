@@ -1,5 +1,3 @@
-package week2_assignments;
-
 public class Average {
     public static void main(String[] args){
         int c, sum, n;

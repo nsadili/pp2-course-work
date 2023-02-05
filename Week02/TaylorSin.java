@@ -1,11 +1,14 @@
 import java.util.Scanner;
+import java.lang.Math;
 
-public class Sum {
+
+public class TaylorSin {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
-        int m = input.nextInt();
+        double x = input.nextDouble();
         input.close();
-        System.out.println(m + n);
+        System.out.println("calculated using Math.sin(x)" + Math.sin(x));
+        //not solved
     }
 }

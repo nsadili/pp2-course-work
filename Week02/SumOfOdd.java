@@ -1,4 +1,3 @@
-package week2_assignments;
 import java.util.Scanner;
 
 
