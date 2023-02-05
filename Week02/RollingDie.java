@@ -34,5 +34,8 @@ public class RollingDie
       res = 6;
     }
     System.out.println(res);
+   
+   //Not sure about the code. it was confusing
+   
   }
 }
