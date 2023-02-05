@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class DiceMan {
+public class DiceMan {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
@@ -17,7 +17,6 @@ class DiceMan {
       int dice1 = (int) (Math.random() * 6 + 1);
       int dice2 = (int) (Math.random() * 6 + 1);
       int total = dice1 + dice2;
-
       System.out.println("First dice: " + dice1 + ", Second dice: " + dice2 + ", Total: " + total);
       if (total == userNumber) {
         System.out.println("User wins!");

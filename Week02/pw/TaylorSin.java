@@ -1,4 +1,4 @@
-class TaylorSin {
+public class TaylorSin {
     public static void main(String[] args) {
         int n = 35;
         double sin = 0.0;
@@ -11,6 +11,6 @@ class TaylorSin {
             sin += (Math.pow(-1, i) * Math.pow(x, (2 * i + 1))) / fact;
         }
         System.out.println(sin);
-       
+
     }
 }
