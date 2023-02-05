@@ -1,9 +1,12 @@
-public class MonthInfo {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+import java.util.Scanner;
 
-        var monthNo = scan.nextInt();
-        switch (monthNo) {
+public class MonthInfo {
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        var monthNo = input.nextInt();
+
+        switch(monthNo)
+        {
             case 1:
             System.out.println("Jan - 31");
             break;
@@ -15,10 +18,42 @@ public class MonthInfo {
             break;
             case 4:
             System.out.println("Apr - 30");
-            break; 
-            default:
-            System.out.println("Please, enter a month no [1 - 12");
             break;
+            case 5:
+            System.out.println("May - 31");
+            break;
+            case 6:
+            System.out.println("Jun - 30");
+            break;
+            case 7:
+            System.out.println("Jul - 31");
+            break;
+            case 8:
+            System.out.println("Aug - 31");
+            break;
+            case 9:
+            System.out.println("Sep - 30");
+            break;
+            case 10:
+            System.out.println("Oct - 31");
+            break;
+            case 11:
+            System.out.println("Nov - 30");
+            break;
+            case 12:
+            System.out.println("Dec - 31");
+            break;
+
+            default:
+            System.out.println("Please, enter a month no[1-12]");
+            break;
+
+
+
         }
+
+
+
     }
+
 }
