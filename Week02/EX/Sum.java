@@ -4,8 +4,8 @@ public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
          System.out.print("Input numbers: ");
- 	    	double number = sc.nextInt();
- 	    	double number1 = sc.nextInt();
+ 	    	double number = sc.nextDouble();
+ 	    	double number1 = sc.nextDouble();
          System.out.println(number+number1);
     }
  }
