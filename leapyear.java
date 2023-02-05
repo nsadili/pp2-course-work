@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class pw2 {
+class leapyear {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
