@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Sum {
+
     public statis void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
