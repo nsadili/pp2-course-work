@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Average {
     public static void main(String [] args){
-        Scanner scan = new Scanner(System.in);
+        Scanner scan= new Scanner(System.in);
         var count=0;
         var sum =0;
         while(scan.hasNextInt()){
