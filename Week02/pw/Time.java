@@ -6,8 +6,8 @@ public class Time{
         Scanner sc = new Scanner(System.in);
         int sec = sc.nextInt();
         int clockHour = sec/3600;
-        int clockSec = sec%60;
         int clockMin = (sec%3600)/60;
+        int clockSec = sec%60;
         System.out.printf("%02d:%02d:%02d", clockHour, clockMin, clockSec);
     }
 }
