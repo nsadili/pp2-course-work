@@ -10,7 +10,6 @@ public static void main(String[] args){
     var a = input.nextInt();
     System.out.print("please, enter num 2:");
     var b = input.nextInt();
-
     var sum = a + b;
     System.out.println(sum);
 
