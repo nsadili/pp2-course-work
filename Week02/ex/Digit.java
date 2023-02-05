@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Digits {
+public class Digit {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         var number = scan.nextInt();
