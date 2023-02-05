@@ -1,8 +1,9 @@
 public class PolarityOfNumber {
-    public class main {
+    public static void main (String [] args)
         double x = 2.5;
         if (x > 0) {
             System.out.println("positive");
+
         }
         else if (x < 0) {
             System.out.println("negative");
