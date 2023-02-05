@@ -21,6 +21,7 @@ public class MinMax
         System.out.println("Minimum is " +min);
 
         //It did not give output with printf
+        //Do not forget to use ^Z EOF
         
 
     }
