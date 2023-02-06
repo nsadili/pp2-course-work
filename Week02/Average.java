@@ -8,7 +8,7 @@ public class Average {
             System.out.print("Input number(s): ");
               int n = in.nextInt();
 
-              if ( n < 1){
+              if (n < 1){
                 System.out.println("error");
                 System.exit(1);
             }
