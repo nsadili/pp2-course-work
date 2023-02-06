@@ -2,10 +2,16 @@ package taghi_mammadov.week_02;
 import java.util.*;
 public class Average {
     public static void main(String[] args){
+        
         try (Scanner in = new Scanner(System.in)) {
         
             System.out.print("Input number(s): ");
               int n = in.nextInt();
+
+              if ( n < 1){
+                System.out.println("error");
+                System.exit(1);
+            }
 
         int[] nums = {n};
          
