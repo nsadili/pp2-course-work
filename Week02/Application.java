@@ -1,4 +1,3 @@
-// write a program that takes an integer using comman-line arguments and find the factorial of that number.
 
 import java.util.Scanner;
 
