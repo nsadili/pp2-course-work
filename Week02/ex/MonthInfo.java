@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-import javax.swing.DefaultBoundedRangeModel;
 
 public class MonthInfo {
   public static void main(String[] args) {

@@ -12,6 +12,10 @@ public class Calc {
     var b = Integer.valueOf(args[1]);
 
     System.out.println(a+ b);
+    System.out.println(a-b);
+    System.out.println(a*b);
+    System.out.println(a/b);
+    System.out.println(a%b);
 
     }
 }
