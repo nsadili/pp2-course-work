@@ -6,26 +6,27 @@ public class MinMax {
         
         Scanner scan = new Scanner(System.in);
 
-        String num = scan.nextLine();
+        float num = scan.nextFloat();
 
-        
+        int min = 1000;
+        int max = 0;
 
-        float min = 10000;
-        float max = 0;
+        int m = (int)num;
 
-        while(scan.nextFloat() != ' ') {
+        while(scan.hasNextInt()) {
+          
+              if (m < min) 
+                min = m;
+        }
 
-            if (num < min) {
-                min = num;
-            }
+        while(scan.hasNextInt()) {
 
-            if (num > max) {
-                max = num;
-            }
-
+              if (m > max) 
+                max = m;
+        }
+            
             System.out.println(min);
             System.out.println(max);
 
         }
     }
-}
