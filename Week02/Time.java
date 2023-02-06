@@ -1,7 +1,3 @@
-//Write a program that given a number that represents seconds, converts it to hours, minutes, and seconds. (Use Scanner or command-line arguments)
-
-// Path: Time.java
-
 import java.util.Scanner;
 
 public class Time {
