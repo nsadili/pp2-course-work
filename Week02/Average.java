@@ -8,16 +8,14 @@ public class Average {
         double num[] = new double[999];
         int i = 0;
         double avg = 0;
-        System.out.println("Add the number: ");
-        while(sc.hasNextDouble()) {
-            System.out.println("Add the number: ");
+        System.out.println("Add the numbers: ");
+        do {
             num[i++] = sc.nextDouble();
-        }
+        } while(sc.hasNextDouble());
         if (num[0] == 0)
             System.out.println("No input has been inserted!");
         else {
             for (int j = 0; j < i; j++) {
-                System.out.println((num[j] / i));
                 avg += (num[j] / i);
             }
             System.out.println("The average is: " + avg);
