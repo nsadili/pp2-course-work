@@ -1,11 +1,20 @@
+import java.util.Scanner;
+
 public class fact {
-    public static void main (String[] aStrings) {
+    public static void main (String[] args) {
+             int fac=1;
         
-        if (args.length <1){
-            System.out.println("Please enter a number");
-        System.exit(1);
+Scanner scan=new Scanner(System.in);
+
+            int a=scan.nextInt();
+
+            for(int i=1;i<=a;i++){
+
+                fac=fac*i;
+
             }
-            
+
+            System.out.print(fac);
         }
     
 }
