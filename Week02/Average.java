@@ -12,13 +12,10 @@ public class Average {
         do {
             num[i++] = sc.nextDouble();
         } while(sc.hasNextDouble());
-        if (num[0] == 0)
-            System.out.println("No input has been inserted!");
-        else {
             for (int j = 0; j < i; j++) {
                 avg += (num[j] / i);
             }
             System.out.println("The average is: " + avg);
-        }
+
     }
 }
