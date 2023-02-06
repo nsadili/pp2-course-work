@@ -11,7 +11,8 @@ public class ArmstrongNumbers {
         int cnt = 0;
         int sum = 0;
         int cpy1 = n;
-       
+        int digit2 = 1;
+
         while(n != 0) {
             int digit = n % 10;
             cnt++;
@@ -19,9 +20,18 @@ public class ArmstrongNumbers {
         }
 
         while(cpy != 0) {
-           int digit1 = cpy % 10;
-            sum += digit1^cnt;
+          
+           for (int i = 0; i < cnt; i++) { 
+            int digit1 = cpy % 10;
+
+            for (int j = 0; j < cnt; j++) { 
+            digit2 *= digit1; 
+            }
+
+            sum += digit2;
+            digit2 = 1;
             cpy /= 10;
+           }
 
         }
 
