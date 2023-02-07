@@ -1,3 +1,4 @@
+import java.lang.Math;
 import java.util.Scanner;
 
 public class HwQuestion3 {
@@ -13,13 +14,14 @@ public class HwQuestion3 {
         int i;
         for (i = 0; i < n; i++) {
 
-            System.out.print(a++);
+            System.out.println(a++);
 
             if (a == 8) {
                  a = 1;
             }
         }
 
+         //System.out.print(java.lang.Math.sqrt(1024)); 
 
     }
 }
