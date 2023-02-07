@@ -11,19 +11,21 @@ public class ArmstrongNumbersB
 
         // if lower and upper bounds are not specified , we can use "int lower = sc.nextInt();" or "int upper = sc.nextInt();" methods
 
-        var count = 0;
+        int count = 0;
 
         for(int i = a; i <= b; i++)
         {
 
             int original = i;
+            int i2 = i;  
             int sum = 0;
+            
 
-            while(i != 0)
+            while(i2 != 0)
             {
-                 int digit = i % 10;
-            sum = sum + digit*digit*digit;
-            i = i / 10;
+                 int digit = i2 % 10;
+                 sum = sum + digit*digit*digit;
+                 i2 = i2 / 10;
 
             }
 
