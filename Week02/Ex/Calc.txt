@@ -1,0 +1,29 @@
+package Java_p;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author user
+ */
+public class Calc {
+
+    public static void main(String[] args) {
+
+        if (args.length < 2) {
+            System.out.println("Please, Enter numbers");
+            System.exit(1);
+        }
+
+        int a = Integer.parseInt(args[0]);
+        int b = Integer.valueOf(args[1]);
+
+        System.out.println(a + b);
+        System.out.println(a - b);
+        System.out.println(a * b);
+        System.out.println(a / b);
+        System.out.println(a % b);
+
+    }
+
+}

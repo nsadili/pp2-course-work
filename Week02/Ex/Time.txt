@@ -1,0 +1,28 @@
+package Java_p1;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author user
+ */
+public class Time {
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        
+        int a=sc.nextInt();
+        
+        int h= a/3600;
+        int m= a/60;
+        
+        System.out.println("Hours="+h);
+        System.out.println("Minutes="+m);
+        System.out.println("Seconds="+a);
+        
+        
+        
+        
+        
+    }
+}

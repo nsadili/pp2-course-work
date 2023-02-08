@@ -1,0 +1,32 @@
+package Java_p1;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author user
+ */
+public class PolarityOfNumber {
+    public static void main(String[] args) {
+        
+        Scanner sc= new Scanner(System.in);
+        
+        double givenNumber=sc.nextDouble();
+        
+        if(givenNumber>0){
+            System.out.println("Positive");
+        }else if(givenNumber<0){
+            System.out.println("Negative");
+        }else{
+            System.out.println("Zero");
+        }
+        
+        
+        
+        
+        
+        
+    }
+            
+            
+}

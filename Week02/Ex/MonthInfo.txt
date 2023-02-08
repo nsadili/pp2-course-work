@@ -1,0 +1,36 @@
+package Java_p;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author user
+ */
+public class MonthInfo {
+
+    public static void main(String args[]) {
+
+        if(args.length<1){
+            System.out.println("Please, enter numbers");
+            System.exit(0);
+        }
+        
+        int a= Integer.parseInt(args[0]);
+        
+        switch (a) {
+            case 1:
+                System.out.println(a + "=January");
+                break;
+            case 2:
+                System.out.println(a + "=February");
+                break;
+            case 3:
+                System.out.println(a + "=March");
+                break;
+            default:
+                System.out.println("Be exact, please");
+        }
+
+    }
+
+}

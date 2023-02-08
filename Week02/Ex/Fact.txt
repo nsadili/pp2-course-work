@@ -1,0 +1,47 @@
+package Java_p;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author user
+ */
+public class Fact {
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        
+        int a=sc.nextInt();
+        
+        if(a<0){
+            System.out.println("Enter positive number!");
+            System.exit(0);
+        }
+        
+        int f=1;
+        int c=1;
+       
+        
+        while(c<=a){
+            
+            f *=c;
+            c++;
+        }
+        
+        System.out.println(f);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+    
+    
+    
+    
+}

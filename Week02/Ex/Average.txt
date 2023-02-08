@@ -1,0 +1,39 @@
+package Java_p;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author user
+ */
+public class Average {
+    public static void main(String[] args) {
+      
+        Scanner sc= new Scanner(System.in);
+     
+     int num;
+     int sum=0;
+     int count=0;
+        while(sc.hasNextInt()){
+            
+            num= sc.nextInt();
+            sum +=num;
+            count++;
+            
+        }
+        double avg= sum/count;
+        System.out.println(avg);
+        
+        
+   
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+}
