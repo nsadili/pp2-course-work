@@ -13,10 +13,11 @@ public class CoinTossing {
         try(Scanner in = new Scanner(System.in)){
             System.out.print("Input first number: ");
             double res;
-            int CntHead = 0;
-            int CntTail = 0;
+            double CntHead = 0.0;
+            double CntTail = 0.0;
+            double k;
        
-            for(int k = 0; k < n; k++) {
+            for(k = 0.0; k < n; k++) {
                 res = Math.random();
        
            if (res < 0.5) {
