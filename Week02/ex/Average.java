@@ -5,17 +5,17 @@ public class Average {
         try (Scanner in = new Scanner(System.in)) {
         
             System.out.print("Input number(s): ");
-              int n = in.nextInt();
+            int n = in.nextInt();
 
-              if (n < 1){
+            if (n < 1){
                 System.out.println("error");
                 System.exit(1);
             }
 
         int[] nums = {n};
-         
+        
         float sum = 0;
-         
+        
         int i=0;
         while(i < nums.length) {
             sum += nums[i];
