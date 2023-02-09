@@ -1,3 +1,5 @@
+package Week02.ex;
+
 public class Calc {
     public static void main(String[] args) {
         

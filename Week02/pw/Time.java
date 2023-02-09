@@ -1,3 +1,5 @@
+package Week02.pw;
+
 public class Time {
     public static void main(String[] args) {
         int givenSeconds = Integer.parseInt(args[0]);

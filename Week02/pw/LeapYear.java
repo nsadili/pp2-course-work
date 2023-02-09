@@ -1,3 +1,5 @@
+package Week02.pw;
+
 import java.util.Scanner;
 
 public class LeapYear {
