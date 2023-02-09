@@ -22,7 +22,7 @@ public class GuessGame {
                 System.out.println("Higher");
             } else if (guess < num) {
                 System.out.println("Lower");
-            } else {
+            } else {            
                 System.out.printf("Game Over!\nNumber is %d\n", num);
                 System.out.println("Your Score: " + score);
                 break;
