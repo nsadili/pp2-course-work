@@ -1,4 +1,4 @@
-package taghi_mammadov.week_02;
+//package taghi_mammadov.week_02;
 import java.util.*;
 public class MonthInfo {
     public static void main(String[] args)

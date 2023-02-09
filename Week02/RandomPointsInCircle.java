@@ -1,4 +1,4 @@
-package taghi_mammadov.week_02;
+//package taghi_mammadov.week_02;
 
 public class RandomPointsInCircle {
     public static void main(String[] args){

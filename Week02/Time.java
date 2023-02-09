@@ -1,4 +1,4 @@
-package taghi_mammadov.week_02;
+//package taghi_mammadov.week_02;
 import java.util.*;
 public class Time {
     public static void main(String[] args)
