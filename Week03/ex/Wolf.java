@@ -15,8 +15,6 @@ public class Wolf {
 
    /*/ void eat (Meat someMeat) {
     } */
-
-   
     
     Wolf Alex = new Wolf();
     Wolf Fred = Alex;

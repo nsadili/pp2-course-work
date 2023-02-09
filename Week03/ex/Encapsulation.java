@@ -1,13 +1,13 @@
 class ClassName {
-        private type1 property1;
-        private type2 property2;
-        private typeN propertyN;
+         int property1;
+         int property2;
+         int propertyN;
 
-        type1 getProperty1() {
+        int getProperty1() {
         return this.property1;
         }
 
-        void setProperty1(type1 property1) {
+        void setProperty1(int property1) {
         this.property1 = property1;
         }
     
