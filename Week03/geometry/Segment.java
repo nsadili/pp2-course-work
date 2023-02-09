@@ -43,7 +43,7 @@ public class Segment {
     }
 
     public float getSlope() {
-        return (this.p2.getY() - this.p1.getY()) / (this.p2.getX() - this.p2.getX());
+        return (this.p2.getY() - this.p1.getY()) / (this.p2.getX() - this.p1.getX());
     }
 
     public float getIntercept() {
