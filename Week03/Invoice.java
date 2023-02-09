@@ -7,24 +7,24 @@ public class Invoice {
     private String description;
     private Double price;
 
-    public Invoice(int quan, String number , String desciption , Double price){
+    public Invoice(int quan, String number , String description , Double price){
         this.quan = quan;
         this.number = number;
         this.description = description;
         this.price = price;
 
-        if( quan <= 0){
-        quan = 0;
+        if( this.quan < 0){
+        this.quan = 0;
        } 
 
-       if( price <= 0){
-        price = 0.0;
+       if( this.price < 0){
+        this.price = 0.0;
        }
     }
        
     public double getInvoiceAmount(){
-        return (quan * price);
+        return quan * price;
     }
     
-
+     
 }
