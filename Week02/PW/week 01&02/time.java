@@ -1,4 +1,3 @@
-import java.text.Format;
 import java.util.Scanner;
 
 public class time {
