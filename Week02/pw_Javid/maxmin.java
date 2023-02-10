@@ -7,7 +7,7 @@ public class maxmin {
 Scanner scan=new Scanner(System.in);
 int max=-999999999;
 int min=999999999;
-scan.hasNextInt();
+scan.hasNextInt();  
 
 while (scan.hasNextInt()) {
 
