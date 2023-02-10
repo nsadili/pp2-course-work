@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch GuessGame",
+            "request": "launch",
+            "mainClass": "GuessGame",
+            "projectName": "Week02_2527045f"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArmstrongNumbers",
+            "request": "launch",
+            "mainClass": "ArmstrongNumbers",
+            "projectName": "Week02_2527045f"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
