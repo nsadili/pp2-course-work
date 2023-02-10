@@ -1,6 +1,4 @@
-package Week03;
-
-import Week03.geometry.*;
+package Week03.geometry;
 
 public class Main {
     public static void main(String[] args) {
