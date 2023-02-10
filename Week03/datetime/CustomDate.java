@@ -6,7 +6,7 @@ public class CustomDate {
     public CustomDate(int month, int day, int year) {
         this.month = month > 0 && month < 13 ? month : 1;
         this.year = year > 0 ? year : 1;
-        this.day = day <= getMonthDays(this.month, this.year) && day > 0 ? day : 1;
+        this.day = day <= getMonthDays(month, isLeapYear(year)) && day > 0 ? day : 1;
     }
 
     public int getDay() {
@@ -33,10 +33,10 @@ public class CustomDate {
         this.year = year;
     }
 
-    public static int getMonthDays(int month, int year) {
+    public static int getMonthDays(int month, boolean isLeapYear) {
         switch (month) {
             case 1: return 31;
-            case 2: return isLeapYear(year) ? 29 : 28;
+            case 2: return isLeapYear ? 29 : 28;
             case 3: return 31;
             case 4: return 30;
             case 5: return 31;
@@ -72,7 +72,7 @@ public class CustomDate {
     }
 
     public static int toDays(CustomDate date) {
-        return date.getDay() + getMonthDays(date.getMonth(), date.getYear()) * date.getMonth() + (date.getYear() * 365) + date.getYear() / 4;
+        return date.getDay() + getMonthDays(date.getMonth(), isLeapYear(date.getYear())) * date.getMonth() + (date.getYear() * 365) + date.getYear() / 4;
     }
 
     public static int compare(CustomDate date1, CustomDate date2) {
