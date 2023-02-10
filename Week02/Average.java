@@ -20,6 +20,8 @@ public class Average
         System.out.println(
             (count ==0)? "Please, enter at least a number" :(double) sum / count
         );
+        
+        // after giving inputs we should use EOF( Enf Of File) command --> ^Z 
 
         // after giving inputs we should use EOF( Enf Of File) command --> ^Z 
 

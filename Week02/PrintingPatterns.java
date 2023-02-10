@@ -1,3 +1,4 @@
+
 public class PrintingPatterns
 {
     public static void main(String[] args)
@@ -26,4 +27,4 @@ public class PrintingPatterns
         System.out.println();
      }
     }
-}
+}    

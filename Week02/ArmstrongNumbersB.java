@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class ArmstrongNumbersB
@@ -42,3 +43,4 @@ public class ArmstrongNumbersB
 
     }
 }
+
