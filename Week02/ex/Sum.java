@@ -12,8 +12,7 @@ public static void main(String[] args){
     var b = input.nextInt();
     var sum = a + b;
     System.out.println(sum);
-
-
+    input.close();
 
 }
 }
