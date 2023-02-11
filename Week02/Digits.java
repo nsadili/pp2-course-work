@@ -28,7 +28,6 @@ public class Digits {
         product = a != 0
         ? product
         : 0;
-        
         System.out.printf("Number = %d, Sum = %d, Product = %d Avg=%.3f", a, sum, product, avg );
     }
 }
