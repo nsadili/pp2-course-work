@@ -1,4 +1,4 @@
-package Week03.geometry;
+package Week03.tasks;
 public abstract class Point {
     private float x;
     private float y;
