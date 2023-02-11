@@ -73,7 +73,7 @@ public class CustomDate {
 
     public static int toDays(CustomDate date) {
         int monthDays = 0;
-        for (int i = 1; i <= date.getMonth(); i++) monthDays += getMonthDays(i, false);
+        for (int i = 1; i < date.getMonth(); i++) monthDays += getMonthDays(i, false);
         return date.getDay() + monthDays + (date.getYear() * 365) + date.getYear() / 4 - date.getYear() / 100 + date.getYear() / 400;
     }
 
