@@ -25,15 +25,15 @@ public class CustomDate {
         this.year = year;
     }
 
-    public int difference(CustomDate date) {
-        if (this.year == date.year && this.month == date.month) {
-            return Math.abs(this.day - date.day);
-        }
-        if (this.year == date.year) {
+    // public int difference(CustomDate date) {
+    //     if (this.year == date.year && this.month == date.month) {
+    //         return Math.abs(this.day - date.day);
+    //     }
+    //     if (this.year == date.year) {
             
 
-        }
-    }
+    //     }
+    // }
 
     public static int compare(CustomDate date1, CustomDate date2) {
         if (date1.year == date2.year && date1.month == date2.month) {
