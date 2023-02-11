@@ -1,10 +1,6 @@
 package pp2.week03.geometry;
-
-//import java.util.Set;
-
 public class Point {
     
-    public static final boolean SetX = false;
     private float x;
     private float y;
 
@@ -20,21 +16,26 @@ public class Point {
         this.y = y;
     }
 
+    public Point(Point p) {
+        this.x = p.x;
+        this.y = p.y;
+    }
+
     public float getX() {
         return this.x;
+    }
+
+    public void setX(float x) {
+        this.x = x;
     }
 
     public float getY() {
         return this.y;
     }
 
-  /*  public void SetX(float x) {
-       this.x = x;
-    }
-
     public void setY(float y) {
         this.y = y;
-    }  */
+    }  
 
     public void translate(float dX, float dY) {
 
