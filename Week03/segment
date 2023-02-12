@@ -1,0 +1,23 @@
+public void translate(float dX, float dY){
+    this
+}
+
+public float length() {
+    return p1.distance(p2);
+}
+
+public boolean equals(Segment s){
+    p1.equals(s.p2) && p2.equals(s.p2); 
+}
+
+public float getSlope() {
+    return( (p2.getY()-p1.get())/(p2.getX()-p1.getX()));
+}
+
+public flout getIntercept(){
+    return p1.getY()-getSlope()*p1.getX();
+}
+public boolean isOnLine(Point p){
+    return p.getY()==(getSlope()*p.getX()+getIntercept());
+}
+

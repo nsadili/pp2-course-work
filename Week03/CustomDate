@@ -1,0 +1,47 @@
+
+
+public class CustomDate {
+   
+    private int month;
+    
+    private int day;
+    
+    private int year;
+
+}
+private String[] month ={"January",, }
+
+
+
+public CustomDate(int month, int day, int year) {
+    
+    this.month=month;
+}
+//public void 
+
+public void displayDate() {
+    system.out.println(getDay() + "/" + getMonth() + "/" +getYear());
+
+}
+public int difference(CustomDate date) {
+    return 0;
+}
+
+public int compare(CustomDate date1, CustomDate date2) {
+    if( date1.getYear() < date2.getYear() ) return 1;
+    if( date2.getYear() < date1.getYear() ) return -1;
+
+    if( date1.getMonth() < date2.getMonth() ) return 1;
+    if( date2.getMonth() < date1.getMonth() ) return -1;
+
+    if( date1.getDay() < date2.getDay() ) return 1;
+    if( date2.getDay() < date1.getDay() ) return -1;
+    
+    else return 0;
+}
+
+
+class CustomDateTest {
+CustomDate date1
+CustomDate date2
+}
