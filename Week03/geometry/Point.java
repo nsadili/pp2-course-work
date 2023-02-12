@@ -17,7 +17,7 @@ public class Point {
     }
 
     public float getX() {
-        return x;
+        return this.x;
     }
 
     public void setX(float x) {
@@ -35,6 +35,10 @@ public class Point {
     public void translate(float dX, float dY) {
         this.x += dX;
         this.y += dY;
+    }
+
+    public float distance(Point p) { // sqrt(x^2 + y^2)
+        return (float)Math.hypot(p.getX() - this.x, p.getY() - this.y);
     }
 
     public boolean equals(Point p) {
