@@ -1,3 +1,10 @@
+package pp2.week3.ex02;
+
+public class Bill {
+private String itemCode;
+private String itemDescription;
+private int itemCount;
+private double itemPrice;
 public Bill() {}
 
 public Bill(String itemCode, String itemDescription, int itemCount, double itemPrice) {
