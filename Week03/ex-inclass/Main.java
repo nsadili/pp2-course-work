@@ -57,6 +57,7 @@ public class Main {
     System.out.println(p2.equals(p1));
     
     
+    
     System.out.printf("p1: (%2f, %2f) and p2: (%2f %2f)\n",
         s.getP1().getX(), s.getP1().getY(), 
         s.getP2().getX(), s.getP2().getY());

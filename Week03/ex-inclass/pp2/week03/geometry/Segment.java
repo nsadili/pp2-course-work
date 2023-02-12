@@ -29,6 +29,7 @@ public class Segment {
     public Point getP2() {
         return p2;
     }
+    
  
     public void setP2(Point p2) {
 

@@ -3,6 +3,7 @@ public class Point {
     
     private float x;
     private float y;
+    
 
     public Point() {
         // default constructor
