@@ -1,0 +1,11 @@
+package pp2.week03.ex02;
+
+public class InvoiceTest {
+    public static void main(String[] args) {
+        Invoice i1 = new Invoice("Number", "Description", 2, 3.3);
+        System.out.println(i1.getInvoiceAmount());
+        System.out.println(i1.getPricePerItem());
+        i1.setQuantity(2);
+        System.out.println(i1.getQuantity());
+    }
+}
