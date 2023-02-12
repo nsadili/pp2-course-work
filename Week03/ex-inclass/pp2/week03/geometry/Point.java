@@ -8,7 +8,9 @@ public class Point {
         // default constructor
         //this.x = 3;
         //this.y = 3;
-       this(3, 3);
+        //this.x = 0;
+        //this.y = 0;
+        this(0, 0);
     }
 
     public Point(float x, float y) {
@@ -61,7 +63,7 @@ public class Point {
     public boolean equals(Point p) {
         if (p.getX() == this.getX() && p.getY() == this.getY()) 
             return true;
-            else
+        else
             return false;
         
         
