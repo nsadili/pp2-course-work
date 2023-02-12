@@ -1,6 +1,5 @@
-import java.util.*;
 
-public class Invoice {
+class Invoice {
 
     private int partNumber;
     private String partDescription;
@@ -51,7 +50,7 @@ public class Invoice {
     }
 }
 
-class InvoiceTest {
+public class InvoiceTest{
     public static void main(String[] args) {
 
         Invoice n = new Invoice(1234, "Book", 5, 40.0);
