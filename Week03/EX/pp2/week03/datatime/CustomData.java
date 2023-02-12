@@ -44,7 +44,7 @@ public class CustomData {
     }
 
     public void displayDate() {
-        System.out.printf("Date: %d/%d/%d", month, day, year);
+        System.out.printf("Date: %d/%d/%d\n", month, day, year);
     }
 
     public long difference(int day, int month, int year) {
@@ -86,7 +86,7 @@ public class CustomData {
     
         return thisSum - sum;
     }
-public static int compare(CustomData date1, CustomData date2) {
+public int compare(CustomData date1, CustomData date2) {
     if(date1.year>date2.year || date1.year==date2.year && date1.month> date2.month ||(date1.year==date2.year && date1.month==date2.month && date1.day>date2.day ))
 return -1; else
 

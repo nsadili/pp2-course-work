@@ -7,8 +7,9 @@ public class CustomDataTest{
 
         CustomData copy=new CustomData(22, 2, 1991);
         CustomData copy1=new CustomData(12,1,1992);
-        System.out.println(copy.difference(12, 1, 1991));
-        System.out.println(copy.compare(copy, copy1));
+        System.out.println("Difference: " + copy.difference(12, 1, 1991));
+        System.out.println("Compare: " + copy.compare(copy, copy1));
+        copy.displayDate();
         copy.displayFormatted();
       
 
