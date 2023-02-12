@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class PolarityOfNumber {
     public static void main(String[] args){
          try (Scanner sc = new Scanner(System.in)) {
-            //System.out.println("Input the first integer: ");
+            System.out.println("Input the integer: ");
             double number = sc.nextDouble();
     
        if ( number == 0 ){
