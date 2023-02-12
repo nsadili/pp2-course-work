@@ -7,20 +7,24 @@ public class CustomDateTest {
         CustomDate c = new CustomDate(19, 2, 2005);
         CustomDate c2 = new CustomDate(22, 2, 2005);
 
-        System.out.println(c.compare(c, c2));
+
+        System.out.println(c.getDay()+", "+ c.getMonth()+", "+c.getYear());
+
+
+        c.displayDate();
+        c2.displayDate();
 
         c.displayFormatted();
         c2.displayFormatted();
 
-        c.displayDate();
-
-        c2.displayDate();
+        
+        System.out.println(c.compare(c, c2));
+    
 
         c.setDay(3);
-
         System.out.println(c.getDay());
 
-        c.displayDate();
+      
 
       // c.difference(c2);
 

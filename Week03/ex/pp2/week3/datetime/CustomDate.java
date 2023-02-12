@@ -25,69 +25,37 @@ public class CustomDate {
         this.year = year;
     }
 
-    // public int difference(CustomDate date) {
-    //    var cnt=0;
-    //     int i=this.compare(this, date);
 
-    //     if(i>0){
+    public int getDay() {
+        return day;
+    }
 
-    //         while(!(this.year==date.year && this.month==date.month && day==date.day)){
+    public void setDay(int day) {
+        this.day = day;
+    }
 
-    //             if(month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12){
-    //                 cnt=cnt+31-day;
-    //             } else if ((month == 4 || month == 6 || month == 9 || month == 11) && (day > 0 && day <= 30)){
-    //                 cnt=cnt+30-day;
-    //             } else {
-    //                 if ((year % 4 == 0) && (day > 0 && day <= 29)) {
-    //                     cnt=cnt+29-day;
-        
-    //                 } else  {
-    //                    cnt=cnt+28-day;
-    //                 }
-    //             } 
+    public int getMonth() {
+        return month;
+    }
 
-    //             month++;
-    //             if(month>12){
-    //                 month=1;
-    //                 year++;
+    public void setMonth(int month) {
+        this.month = month;
+    }
 
-    //             }
+    public int getYear() {
+        return year;
+    }
 
-    //             if(month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12){
-    //                 cnt+=31;
-    //             }else if ((month == 4 || month == 6 || month == 9 || month == 11) && (day > 0 && day <= 30)){
-    //                 cnt+=30;
-    //             } else {
-    //                 if ((year % 4 == 0) && (day > 0 && day <= 29)) {
-    //                     cnt=cnt+29;
-        
-    //                 } else  {
-    //                    cnt=cnt+28;
-    //                 }
-    //             } 
+    public void setYear(int year) {
+        this.year = year;
+    }
 
 
+    public void displayDate() {
+        System.out.printf("%02d/%02d/%04d\n", month, day, year);
+    }
 
-
-
-
-    //         }
-
-    //         return cnt;
-
-
-
-
-    //     }
-    //     return cnt;
-
-
-
-    // }
-
-
-
-
+  
     public static int compare(CustomDate date1, CustomDate date2) {
         if (date1.year == date2.year && date1.month == date2.month) {
             if (date1.day > date2.day)
@@ -162,32 +130,72 @@ public class CustomDate {
 
     }
 
-    public void displayDate() {
-        System.out.printf("%02d/%02d/%04d\n", month, day, year);
-    }
+ 
 
-    public int getDay() {
-        return day;
-    }
 
-    public void setDay(int day) {
-        this.day = day;
-    }
+    // I try to write difference code, but can not finish it and can not write it in a simple way
+     // public int difference(CustomDate date) {
+    //    var cnt=0;
+    //     int i=this.compare(this, date);
 
-    public int getMonth() {
-        return month;
-    }
+    //     if(i>0){
 
-    public void setMonth(int month) {
-        this.month = month;
-    }
+    //         while(!(this.year==date.year && this.month==date.month && day==date.day)){
 
-    public int getYear() {
-        return year;
-    }
+    //             if(month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12){
+    //                 cnt=cnt+31-day;
+    //             } else if ((month == 4 || month == 6 || month == 9 || month == 11) && (day > 0 && day <= 30)){
+    //                 cnt=cnt+30-day;
+    //             } else {
+    //                 if ((year % 4 == 0) && (day > 0 && day <= 29)) {
+    //                     cnt=cnt+29-day;
+        
+    //                 } else  {
+    //                    cnt=cnt+28-day;
+    //                 }
+    //             } 
 
-    public void setYear(int year) {
-        this.year = year;
-    }
+    //             month++;
+    //             if(month>12){
+    //                 month=1;
+    //                 year++;
+
+    //             }
+
+    //             if(month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12){
+    //                 cnt+=31;
+    //             }else if ((month == 4 || month == 6 || month == 9 || month == 11) && (day > 0 && day <= 30)){
+    //                 cnt+=30;
+    //             } else {
+    //                 if ((year % 4 == 0) && (day > 0 && day <= 29)) {
+    //                     cnt=cnt+29;
+        
+    //                 } else  {
+    //                    cnt=cnt+28;
+    //                 }
+    //             } 
+
+
+
+
+
+
+    //         }
+
+    //         return cnt;
+
+
+
+
+    //     }
+    //     return cnt;
+
+
+
+    // }
+
+
+
+  
 
 }

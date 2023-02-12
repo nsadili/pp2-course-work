@@ -30,6 +30,8 @@ public class Main {
 
            System.out.println(s2.isOnLine(new Point(1f, 3f)));
 
+           System.out.println(s.isOnSegment(p2));
+
       
           
 

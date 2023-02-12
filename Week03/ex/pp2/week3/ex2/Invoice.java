@@ -31,10 +31,6 @@ public class Invoice {
 
     }
 
-    public double getInvoiceAmount(){
-        return quantity*price;
-    }
-
     public void setPartNumber(String partNumber) {
         this.partNumber = partNumber;
     }
@@ -46,13 +42,13 @@ public class Invoice {
     public void setQuantity(int quantity) {
         if(quantity>0){
         this.quantity = quantity;
-        }
+        }else this.quantity=0;
     }
 
     public void setPrice(double  price) {
         if(price>0){
           this.price = price;
-    }
+    }else this.price=0;
     }
 
     public String getPartNumber() {
@@ -70,6 +66,12 @@ public class Invoice {
     public double getPrice() {
         return price;
     }
+
+    public double getInvoiceAmount(){
+        return quantity*price;
+    }
+
+   
     
 
     
