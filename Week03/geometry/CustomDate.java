@@ -1,4 +1,4 @@
-package Week03.tasks;
+package Week03.geometry;
 
 public class CustomDate {
     private int day;
@@ -116,4 +116,4 @@ public class CustomDate {
         }
     }
 }
-}
+

@@ -1,5 +1,5 @@
-package Week03.tasks;
-public abstract class Point {
+package Week03.geometry;
+public class Point {
     private float x;
     private float y;
     public Point () {}
@@ -9,6 +9,7 @@ public abstract class Point {
         this.y = y;
     }
     public Point (Point p ) {
+
         this(p.x, p.y);
     }
     public float getX() {
@@ -32,11 +33,9 @@ public abstract class Point {
         this.x += dX;
         this.y += dY;
     }
-    float floatValue;
-    double doubleValue = (double) floatValue;
-    public double distance (Point p) {
-        double dist = Math.sqrt(Math.pow(p.x - this.x, 2) + Math.pow(p.y - this.y, 2));
-        return dist;
+
+    public float distance (Point p) {
+        return (float) Math.sqrt(Math.pow(p.getX() - this.x, 2) + Math.pow(p.getY() - this.y, 2));
     }
     public boolean equals( Point p) {
         return this.x == p.getX() && this.y == p.getY();
