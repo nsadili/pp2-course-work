@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 // package Week03.geometry;
 
 public class Main {
