@@ -7,6 +7,8 @@ public class InvoiceTest {
             Invoice i=new Invoice("ALfa","Beta",10,5);
 
         System.out.println(i.getInvoiceAmount());
+
+        
         
 
     
