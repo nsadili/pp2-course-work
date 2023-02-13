@@ -1,7 +1,6 @@
 package pp2.week03.datetime;
 
 import java.util.Scanner;
-
 public class CustomDate {
     private int month;
     private int day;
