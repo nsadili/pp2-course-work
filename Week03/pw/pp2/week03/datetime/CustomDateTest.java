@@ -1,25 +1,23 @@
-package Week03.datetime;
+package pp2.week03.datetime;
 
 public class CustomDateTest {
     public static void main(String[] args) {
-        CustomDate date1 = new CustomDate(1, 1, 2000);
-        CustomDate date2 = new CustomDate(2, 29, 2000);
-        
-        System.out.println("Dateone: ");
+        CustomDate dateone = new CustomDate(1, 1, 2023);
+        CustomDate datetwo = new CustomDate(2, 29, 2012);
+        System.out.println("Displaying detaone : ");
         dateone.displayDate();
         dateone.displayFormatted();
         System.out.println();
         
-        System.out.println("Datetwo: ");
+        System.out.println("Displaying datetwo : ");
         datetwo.displayDate();
         datetwo.displayFormatted();
         System.out.println();
         
-        System.out.println("Difference between dateone and datetwo: " + date1.difference(date2) + " days");
-        System.out.println("Difference between datetwo and dateone: " + date2.difference(date1) + " days");
+        System.out.println("Difference between dateone and datetwo: " + dateone.difference(datetwo) + " days");
+        System.out.println("Difference between datetwo and dateone: " + datetwo.difference(dateone) + " days");
         System.out.println();
-        
-        System.out.println("Comparison between dateone and datetwo: " + CustomDate.compare(date1, date2));
-        System.out.println("Comparison between datetwo and dateone: " + CustomDate.compare(date2, date1));
+        System.out.println("Comparison of dateone and datetwo: " + CustomDate.compare(dateone, datetwo));
+        System.out.println("Comparison of datetwo and dateone: " + CustomDate.compare(datetwo, dateone));
     }
 }
