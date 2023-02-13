@@ -1,93 +1,88 @@
 package pp2.week03.datetime;
 
-public class CustomDate {
-    private int month;
-    private int day;
-    private int year;
+public class CustomTime {
+    private int hour;
+    private int minute;
+    private int second;
 
-    public CustomDate(int month, int day, int year) {
-        if (month < 1 || month > 12) {
-            throw new IllegalArgumentException("Invalid");
-        }
-        if (day < 1 || day > 31) {
-            throw new IllegalArgumentException("Invalid");
-        }
-        if (year < 0) {
-            throw new IllegalArgumentException("Invalid");
-        }
-        this.month = month;
-        this.day = day;
-        this.year = year;
+    public CustomTime(int hour, int minute, int second) {
+        setTime(hour, minute, second);
     }
 
-    public int getMonth() {
-        return month;
+    public CustomTime() {
+        this(0, 0, 0);
     }
 
-    public void setMonth(int month) {
-        if (month < 1 || month > 12) {
-            throw new IllegalArgumentException("Invalid");
-        }
-        this.month = month;
+    public CustomTime(int hour) {
+        this(hour, 0, 0);
     }
 
-    public int getDay() {
-        return day;
+    public CustomTime(int hour, int minute) {
+        this(hour, minute, 0);
     }
 
-    public void setDay(int day) {
-        if (day < 1 || day > 31) {
-            throw new IllegalArgumentException("Invalid");
-        }
-        this.day = day;
+    public CustomTime(CustomTime time) {
+        this(time.getHour(), time.getMinute(), time.getSecond());
     }
 
-    public int getYear() {
-        return year;
+    public void setTime(int hour, int minute, int second) {
+        setHour(hour);
+        setMinute(minute);
+        setSecond(second);
     }
 
-    public void setYear(int year) {
-        if (year < 0) {
-            throw new IllegalArgumentException("Invalid");
-        }
-        this.year = year;
+    public void setHour(int hour) {
+        this.hour = ((hour >= 0 && hour < 24) ? hour : 0);
     }
 
-    public void displayDate() {
-        System.out.println(month + "/" + day + "/" + year);
+    public void setMinute(int minute) {
+        this.minute = ((minute >= 0 && minute < 60) ? minute : 0);
     }
 
-    public int difference(CustomDate date) {
-        // Code to calculate the difference between two dates in terms of days
-        // ...
-        return 0;
+    public void setSecond(int second) {
+        this.second = ((second >= 0 && second < 60) ? second : 0);
     }
 
-    public static int compare(CustomDate date1, CustomDate date2) {
-        // Code to compare two dates and return 1, -1, or 0
-        // ...
-        return 0;
+    public int getHour() {
+        return hour;
     }
 
-    public void displayFormatted() {
-        String[] months = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
-        System.out.println(day + " " + months[month - 1] + " " + year);
+    public int getMinute() {
+        return minute;
+    }
+
+    public int getSecond() {
+        return second;
+    }
+
+    public String toUniversalString() {
+        return String.format("%02d:%02d:%02d", getHour(), getMinute(), getSecond());
+    }
+
+    public String toStandardString() {
+        return String.format("%d:%02d:%02d %s",
+                ((getHour() == 0 || getHour() == 12) ? 12 : getHour() % 12),
+                getMinute(),
+                getSecond(),
+                (getHour() < 12 ? "AM" : "PM"));
     }
 }
+// the rest part of the code
 
-public class CustomDateTest {
+package pp2.week03.datetime;
+
+public class CustomTimeTest {
     public static void main(String[] args) {
-        CustomDate date1 = new CustomDate(1, 12, 2020);
-        CustomDate date2 = new CustomDate(2, 13, 2021);
+        CustomTime time1 = new CustomTime(15, 30, 45);
+        CustomTime time2 = new CustomTime(15);
+        CustomTime time3 = new CustomTime(15, 30);
+        CustomTime time4 = new CustomTime();
+        CustomTime time5 = new CustomTime(time1);
 
-        System.out.println("Date 1: ");
-        date1.displayDate();
-        date1.displayFormatted();
-
-        System.out.println("\nDate 2: ");
-        date2.displayDate();
-        date2.display();
-        System.out.println(date1.difference(date2));
-        System.out.println(CustomDate.compare(date1, date2));
+        System.out.println(time1.toUniversalString());
+        System.out.println(time1.toStandardString());
+        System.out.println(time2.toUniversalString());
+        System.out.println(time2.toStandardString());
+        System.out.println(time3.toUniversalString());
     }
 }
