@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch CustomDateTest",
+            "request": "launch",
+            "mainClass": "Week03.CustomDateTest",
+            "projectName": "pp2-course-work_930060e8"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Week03.Main",
+            "projectName": "pp2-course-work_930060e8"
+        },
+        {
+            "type": "java",
+            "name": "Launch practice",
+            "request": "launch",
+            "mainClass": "Week03.practice",
+            "projectName": "pp2-course-work_930060e8"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "examples.Main",
+            "projectName": "pp2-course-work_930060e8"
+        },
+        {
+            "type": "java",
             "name": "Launch Digits",
             "request": "launch",
             "mainClass": "Moderate.Digits",
