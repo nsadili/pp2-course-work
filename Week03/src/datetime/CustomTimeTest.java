@@ -13,8 +13,8 @@ public class CustomTimeTest {
 
         CustomTime time2 = new CustomTime();
         System.out.println("\nTime 2 ");
-        System.out.println("Hour: " + time2.getHour());
-        System.out.println("Minute: " + time2.getMinute());
+        System.out.println("Hours: " + time2.getHour());
+        System.out.println("Minutes: " + time2.getMinute());
         System.out.println("Second: " + time2.getSecond());
         System.out.println("Universal time: " + time2.toUniversalString());
         System.out.println("Standard time: " + time2.toStandardString());
