@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class RandomPointInCircle {
+
+public static void main(String[] args) {
+
+Scanner scan  = new Scanner(System.in) {
+
+    System.out.println("Enter the number of points to generate: ");
+
+    int n = sc.nextInt();
+
+    double x, y; {
+        x = 2.0 * Math.random() - 1.0;
+        y = 2.0 * Math.random() - 1.0;
+    }
+     while (x*x + y*y > 1.0);
+
+   
+    System.out.println("(" + x + "," + y + ")");
+
+}
+}
+}
