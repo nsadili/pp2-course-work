@@ -3,7 +3,7 @@
 import pp2.week03.geometry.Point;
 import pp2.week03.geometry.Segment;
 
-public class Main {
+public class PointTest {
     
     public static void main(String[] args) {
         
