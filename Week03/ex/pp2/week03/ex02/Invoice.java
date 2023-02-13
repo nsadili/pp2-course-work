@@ -1,10 +1,10 @@
 package pp2.week03.ex02;
 
 public class Invoice {
-    String partNum;
-    String partDesc;
-    int n;
-    double prc;
+    private String partNum;
+    private String partDesc;
+    private int n;
+    private double prc;
 
     public Invoice(){
         n=0;
@@ -57,10 +57,6 @@ public class Invoice {
     public double getInvoiceAmount(){
         return this.n*this.prc;
     }
-
-
-
-
 }
 
 
