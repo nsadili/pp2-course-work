@@ -50,6 +50,22 @@ public class ComplexNumber {
   
 }
 
-
-
 //TEST OF COMPLEX NUMBERS
+
+package pp2.week03.math;
+
+public class Main {
+    public static void main(String[] args) {
+        ComplexNumber first = new ComplexNumber(3, 5);
+        ComplexNumber second = new ComplexNumber(4, 6);
+        System.out.println("The first one : " + first);
+        System.out.println(first.add(second));
+        System.out.println(first.sub(second));
+        System.out.println(first.multiply(second));
+        System.out.println(second.conjug());
+        System.out.println(first.equals(second));
+
+
+    }
+}
+
