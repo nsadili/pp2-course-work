@@ -1,41 +1,66 @@
-
+package pp2.week03.datetime; 
 
 public class CustomDate {
-   
-    private int month;
-    
     private int day;
+
+    private int month;
     
     private int year;
 
 }
-private String[] month ={"January",, }
+private String[] month =
+{"January", "February", "March", 
+
+"April", "May", "June", 
+
+"July", "August","September", 
+
+"October", "November", "December"};
 
 
 
-public CustomDate(int month, int day, int year) {
+public CustomDate(int day, int month , int year) {
     
+    this.day=day;
     this.month=month;
+this.year=year;
 }
 //public void 
-
+public void setDay (int day) {
+    this.day = day;
+}
+    public int getDay() {
+    return this.day;
+    }
+    public void setMonth(int month) {
+    this.month = month;
+    }
+    public int getMonth() {
+    return this.month;
+    }
+    public void setYear(int year) {
+    this.year = year;
+    }
+    public int getYear () {
+    return this.year;
+    }
 public void displayDate() {
     system.out.println(getDay() + "/" + getMonth() + "/" +getYear());
 
 }
-public int difference(CustomDate date) {
+/*public int difference(CustomDate date) {
     return 0;
 }
-
+*/
 public int compare(CustomDate date1, CustomDate date2) {
     if( date1.getYear() < date2.getYear() ) return 1;
-    if( date2.getYear() < date1.getYear() ) return -1;
+    else if( date2.getYear() < date1.getYear() ) return -1;
 
     if( date1.getMonth() < date2.getMonth() ) return 1;
-    if( date2.getMonth() < date1.getMonth() ) return -1;
+    else if( date2.getMonth() < date1.getMonth() ) return -1;
 
     if( date1.getDay() < date2.getDay() ) return 1;
-    if( date2.getDay() < date1.getDay() ) return -1;
+    else if( date2.getDay() < date1.getDay() ) return -1;
     
     else return 0;
 }
