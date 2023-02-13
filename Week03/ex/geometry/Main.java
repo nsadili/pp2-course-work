@@ -9,9 +9,8 @@ public class Main {
         System.out.println(p2.getY());
         System.out.println(p1.equals(p2));
 
-        Segment s1 = new Segment(6, 9);
+        Segment s1 = new Segment(6,9);
         System.out.println(s1.getIntercept()); 
         System.out.println(s1.getSlope());
-
     }
 }

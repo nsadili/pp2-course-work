@@ -47,15 +47,14 @@ public class Segment {
     }
 
     public float getIntercept() {
-        return p1.getY() - getSlope() * p1.getX();
+        float slope = getSlope();
+
+        return p1.getY() - slope * p1.getX();
     }
+
 
     public boolean isOnLine(Point p) {
         return p.getY() == (getSlope() * p.getX() + getIntercept());
     }
-
-    public boolean isOnSegment(Point p) {
-        
-    }
-    
 }
+

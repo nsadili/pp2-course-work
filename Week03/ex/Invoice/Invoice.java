@@ -54,11 +54,11 @@ public class Invoice{
 
 class InvoiceTest {
     public static void main(String[] args) {
-        Invoice cpu = new Invoice("Intel Core i9-9900k", "8 Cores / 16 Threads, 3.60 GHz up to 5.00 GHz / 16 MB Cache, Compatible only with Motherboards based on Intel 300 Series Chipsets, Intel Optane Memory Supported, Intel UHD Graphics 630", 1, 582.87);
+        Invoice cpu = new Invoice("Intel Core i9-9900k", "8 Cores / 16 Threads, 3.60 GHz up to 5.00 GHz / 16 MB Cache, Compatible only with Motherboards based on Intel 300 Series Chipsets, Intel Optane Memory Supported, Intel UHD Graphics 630", 3, 582.87);
 
         System.out.println("Part model: "+cpu.getPartNumber());
         System.out.println("Part description: "+cpu.getPartDescription());
-        System.out.println("Part price: "+cpu.getPricePerItem());
-        System.out.println("How much you need to pay: "+cpu.getInvoiceAmount());
+        System.out.println("Part price: "+cpu.getPricePerItem()+"$");
+        System.out.println("How much you need to pay for "+cpu.getQuantity()+": "+cpu.getInvoiceAmount()+"$");
     }
 }
