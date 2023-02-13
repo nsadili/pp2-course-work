@@ -11,6 +11,16 @@ public class Main {
 
         test.conjugate();
 
+        img.abs();
+
+        img.add(test);
+
+        test.sub(img);
+
+        img.mult(test);
+
+
+
     }
     
 }

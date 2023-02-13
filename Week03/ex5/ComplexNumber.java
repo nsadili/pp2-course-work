@@ -53,12 +53,28 @@ public class ComplexNumber {
         else {
             //System.out.printf("%f + %fi\n",this.real,this.imag*(-1));
             ComplexNumber conj=new ComplexNumber(this.real, this.imag*(-1));
+            return conj;
         }
     }
 
     public ComplexNumber abs() {
         ComplexNumber absolute=new ComplexNumber(Math.sqrt(Math.pow(this.real, 2)+ Math.pow(this.imag, 2)));
         return absolute;
+    }
+
+    public ComplexNumber add(ComplexNumber number) {
+        ComplexNumber sum= new ComplexNumber(this.real+number.re(), this.imag+number.imag());
+        return sum;
+    }
+
+    public ComplexNumber sub(ComplexNumber number) {
+        ComplexNumber dif=new ComplexNumber(this.real-number.real, this.imag-number.imag);
+        return dif;
+    }
+
+    public ComplexNumber mult(ComplexNumber number) {
+        ComplexNumber multiplication=new ComplexNumber((this.real*number.imag)+(this.imag*number.re()),(this.real*number.re())-(this.imag*number.imag()));
+        return multiplication;
     }
 
 }
