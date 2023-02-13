@@ -15,6 +15,10 @@ public class CustomDate {
         this.year = year;
     }
     
+    private boolean isValidDate(int month2, int day2, int year2) {
+        return false;
+    }
+
     // Set methods for instance variables
     public void setMonth(int month) {
         if (!isValidDate(month, this.day, this.year)) {
@@ -84,5 +88,9 @@ public class CustomDate {
         }
         return difference;
     }
-    
+
+	private boolean isLeapYear(int year2) {
+		return false;
+	}
+}
     // Method to compare two dates and return 1 if date1 is earlier, -1 if date2 is earlier, or 0 if they are the same
