@@ -59,6 +59,6 @@ class InvoiceTest {
         System.out.println("Part model: "+cpu.getPartNumber());
         System.out.println("Part description: "+cpu.getPartDescription());
         System.out.println("Part price: "+cpu.getPricePerItem()+"$");
-        System.out.println("How much you need to pay for "+cpu.getQuantity()+": "+cpu.getInvoiceAmount()+"$");
+        System.out.printf("How much you need to pay for %d part(s): %.2f$", cpu.getQuantity(), cpu.getInvoiceAmount());
     }
 }
