@@ -1,4 +1,4 @@
-package Week03.geometry;
+package geometry;
 
 public class Point{
 
