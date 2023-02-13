@@ -1,12 +1,12 @@
-package pp2.week03.ex02;
+package Week03.ex02;
 
-public class geometry {
+public class Invoice {
     private String partNumber;
     private String partDescription;
     private int quantityOfTheItemBeingPurchased;
     private double pricePerItem;
 
-    geometry(String partNumber, String partDescription, int quantityOfTheItemBeingPurchased, double pricePerItem) {
+  Invoice(String partNumber, String partDescription, int quantityOfTheItemBeingPurchased, double pricePerItem) {
         this.partNumber = partNumber;
         this.partDescription = partDescription;
         if (quantityOfTheItemBeingPurchased < 0) {
@@ -67,8 +67,7 @@ public class geometry {
     }
 
     public static void main(String[] args) {
-        geometry geo = new geometry("Rus", "Model", -1, 2);
-        System.out.println(geo.getInvoiceAmount());
+
 
     }
 }
