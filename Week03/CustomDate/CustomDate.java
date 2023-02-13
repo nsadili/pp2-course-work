@@ -5,6 +5,27 @@ public class CustomDate {
     private int month;
     private int day;
     private int year;
+    private static final int[] DAYS_IN_MONTH = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+    
+    private int toDays() {
+        int totalDays = 0;
+        for (int i = 1970; i < year; i++) {
+          totalDays += isLeapYear(i) ? 366 : 365;
+        }
+        for (int i = 0; i < month - 1; i++) {
+          totalDays += DAYS_IN_MONTH[i];
+        }
+        totalDays += day - 1;
+        if (month > 2 && isLeapYear(year)) {
+          totalDays++;
+        }
+        return totalDays;
+      }
+      
+      public int difference(CustomDate date) {
+        return this.toDays() - date.toDays();
+      }
+      
 
     public CustomDate(int month, int day, int year) {
         if (!isValidDate(month, day, year)) {
@@ -72,6 +93,10 @@ public class CustomDate {
         return true;
     }
 
+    public void displayDate() {
+        System.out.println(month + "/" + day + "/" + year);
+    }
+
     // To display date in a proper way.
 
     public void displayFormatted() {
@@ -121,16 +146,27 @@ public class CustomDate {
         System.out.println(day + "/" + monthStr + "/" + year);
     }
 
-    // Code to calculate the difference between two dates
-
-    public int difference(CustomDate date) {
-
-        return 0;
-    }
-
     // Code to compare two dates
+    
     public static int compare(CustomDate date1, CustomDate date2) {
-
-        return 0;
+        if (date1.getYear() < date2.getYear()) {
+            return -1;
+        } else if (date1.getYear() > date2.getYear()) {
+            return 1;
+        } else {
+            if (date1.getMonth() < date2.getMonth()) {
+                return -1;
+            } else if (date1.getMonth() > date2.getMonth()) {
+                return 1;
+            } else {
+                if (date1.getDay() < date2.getDay()) {
+                    return -1;
+                } else if (date1.getDay() > date2.getDay()) {
+                    return 1;
+                } else {
+                    return 0;
+                }
+            }
+        }
     }
 }

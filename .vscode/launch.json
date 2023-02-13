@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch CustomDateTest",
+            "request": "launch",
+            "mainClass": "Week03.CustomDate.CustomDateTest",
+            "projectName": "pp2-course-work_930060e8"
+        },
+        {
+            "type": "java",
             "name": "Launch Main",
             "request": "launch",
             "mainClass": "Week03.Invoice.Main",
