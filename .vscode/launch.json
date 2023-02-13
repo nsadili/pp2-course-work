@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch PolarityOfNumber",
+            "request": "launch",
+            "mainClass": "PolarityOfNumber",
+            "projectName": "pp2-course-work_b532ca5c"
+        },
+        {
+            "type": "java",
+            "name": "Launch SumOfOdd",
+            "request": "launch",
+            "mainClass": "SumOfOdd",
+            "projectName": "pp2-course-work_b532ca5c"
+        },
+        {
+            "type": "java",
+            "name": "Launch LeapYear",
+            "request": "launch",
+            "mainClass": "LeapYear",
+            "projectName": "pp2-course-work_b532ca5c"
+        },
+        {
+            "type": "java",
+            "name": "Launch PW2",
+            "request": "launch",
+            "mainClass": "PW2",
+            "projectName": "pp2-course-work_b532ca5c"
+        },
+        {
+            "type": "java",
+            "name": "Launch PW1",
+            "request": "launch",
+            "mainClass": "PW1",
+            "projectName": "pp2-course-work_b532ca5c"
+        },
+        {
+            "type": "java",
+            "name": "Launch example",
+            "request": "launch",
+            "mainClass": "example",
+            "projectName": "pp2-course-work_b532ca5c"
+        },
+        {
+            "type": "java",
             "name": "Launch example",
             "request": "launch",
             "mainClass": "examples.example",
