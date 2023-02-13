@@ -1,30 +1,29 @@
 import java.util.Scanner;
 
-public class LeapYear {
+public class SumOfOdd {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter a year: ");
-        int year = sc.nextInt();
+        System.out.print("Please give me two integers: ");
+        int n1 = sc.nextInt();
+        int n2 = sc.nextInt();
+        int s = 0;
+        int a, b;
+        if (n1 < n2) {
+            a = n1;
+            b = n2;
+        } else {
+            a = n2;
+            b = n1;
+        }
 
-        boolean leap_year = false;
 
-        if (year % 4 == 0) {
-            if (year % 100 == 0) {
-                if (year % 400 == 0) {
-                    leap_year = true;
-                }
-            } else
-            {
-                leap_year = true;
+        for (int i = a; i <= b; i++) {
+            if (i % 2 != 0) {
+                s += i;
             }
         }
 
-        if (leap_year) {
-            System.out.println("it is");
-        } else
-        {
-            System.out.println("it is not");
-        }
+        System.out.println(s);
     }
 }
