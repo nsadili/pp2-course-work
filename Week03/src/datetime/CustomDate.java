@@ -1,4 +1,4 @@
-package week03.src.datetime;
+package datetime;
 
 public class CustomDate {
     private int month;

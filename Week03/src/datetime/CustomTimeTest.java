@@ -1,4 +1,4 @@
-package week03.src.datetime;
+package  datetime;
 
 public class CustomTimeTest {
     public static void main(String[] args) {

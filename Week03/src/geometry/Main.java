@@ -1,4 +1,4 @@
-package week03.src.geometry;
+package  geometry;
 
 import java.util.Scanner;
 

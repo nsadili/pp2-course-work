@@ -1,4 +1,4 @@
-package week03.src.math;
+package  math;
 public class ComplexNumberTest {
     public static void main(String[] args) {
         ComplexNumber c1 = new ComplexNumber(1, 2);

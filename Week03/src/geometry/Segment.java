@@ -1,4 +1,4 @@
-package week03.src.geometry;
+package  geometry;
 
 public class Segment {
     Point p1;

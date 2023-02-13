@@ -1,4 +1,4 @@
-package week03.src.ex02;
+package  ex02;
 
 public class Invoice {
     private String partNumber;

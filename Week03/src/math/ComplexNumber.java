@@ -1,4 +1,4 @@
-package week03.src.math;
+package  math;
 
 public class ComplexNumber {
     private double real;
