@@ -1,3 +1,4 @@
+import java.lang.String;
 class CustomDate {
     private int day;
     private int month;
@@ -63,11 +64,17 @@ class CustomDate {
         }
     }
 
-    public int difference(CustomDate date) {
-        int dif = date.getDay() - this.getDay();
+    public String difference(CustomDate date) {
+        if(flag){
+            int dif = date.getDay() - this.getDay();
         if (dif < 0)
             dif = -dif;
-        return dif;
+            String d = String.valueOf(dif);
+            return d;
+        }
+        else{
+            return "Follow instructions";
+        }
     }
 
     public static String compare(CustomDate date1, CustomDate date2) {
