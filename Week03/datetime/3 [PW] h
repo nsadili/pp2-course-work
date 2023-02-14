@@ -1,0 +1,19 @@
+   CustomTime     
+
+- hour: int       
+- minute: int     
+- second: int     
+
++ CustomTime(int, int, int) 
++ CustomTime()   
++ CustomTime(int)
++ CustomTime(int, int) 
++ CustomTime(CustomTime)
++ getHour(): int 
++ setHour(int): void
++ getMinute(): int 
++ setMinute(int): void 
++ getSecond(): int 
++ setSecond(int): void 
++ toUniversalString(): String
++ toStandardString(): String 
