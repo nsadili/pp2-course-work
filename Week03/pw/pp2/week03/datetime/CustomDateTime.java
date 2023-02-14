@@ -11,6 +11,9 @@ public class CustomDateTime {
         CustomTime time = new CustomTime(hour, minute, second);
 
 
+        System.out.println("The universal style: " /*..... */);
+
+        System.out.println("The standart style: " /*.... */);
         
     }
 

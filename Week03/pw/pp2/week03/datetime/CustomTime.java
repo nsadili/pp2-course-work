@@ -74,10 +74,11 @@ public CustomTime() {
        // for (int h = 0; h < 25; h++) {
 
 
+        String str = "getHour() + ";
             System.out.print("The time: " + getHour() + ":" + getMinute() + ":" + getSecond());
 
        // }
-       return null;
+       return str;
 
        // return CustomTime.hour ":" CustomTime.minute ":" CustomTime.second;
 
