@@ -33,9 +33,12 @@ public class Invoice {
     //}
   
     public double getInvoiceAmount(){
-        return (double) quantity * price;
+        return quantity * price;
     }
+    
+    public void setNumber(){
 
+    }
 
 }
   
