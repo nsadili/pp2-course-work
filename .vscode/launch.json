@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch CustomTimeTest",
+            "request": "launch",
+            "mainClass": "Week03.CustomTimeTest",
+            "projectName": "pp2-course-work_b532ca5c"
+        },
+        {
+            "type": "java",
             "name": "Launch PolarityOfNumber",
             "request": "launch",
             "mainClass": "PolarityOfNumber",
