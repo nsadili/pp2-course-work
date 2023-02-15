@@ -10,6 +10,7 @@ public class Task {
 
         System.out.println(arr[x]);
         }
+        
         }
     }
 }
