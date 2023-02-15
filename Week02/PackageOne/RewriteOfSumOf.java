@@ -1,5 +1,5 @@
 package PackageOne;
-
+// 3. Re-write the previous program.
 public class RewriteOfSumOf {
     public static void main(String[] args){
         long a = 1;
