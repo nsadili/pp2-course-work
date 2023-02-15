@@ -3,7 +3,6 @@ package Week03.geometry;
 public class Point {
     private float x;
     private float y;
-
     public Point() {
     }
 
