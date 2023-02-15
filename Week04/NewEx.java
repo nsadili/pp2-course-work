@@ -3,12 +3,12 @@ import java.util.Scanner;
 public class NewEx {
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
-            System.out.print("write the size of the arr:? ");
+            System.out.print("write the size :? ");
             int size = scanner.nextInt();
             int[] arr = new int[size];
             int sum = 0;
             double average;
-            System.out.print("write the elements of the arr:| ");
+            System.out.print("write the elements:| ");
             for (int i = 0; i < size; i++) {
                 arr[i] = scanner.nextInt();
                 sum += arr[i];
@@ -18,4 +18,4 @@ public class NewEx {
 
         }
     }
-    
+
