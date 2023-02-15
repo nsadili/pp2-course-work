@@ -6,6 +6,12 @@ import java.util.Scanner;
 public class Sort {
     public static void main(String[] args) {
         int[] array = new int[]{9, 8, 7, 6, 5, 4, 3, 2, 1, 9, 9, 5, 4, 3, 3, 4, 5, 6, 3, 1, 3, 5, 3};
+        sort(array);
+        System.out.println(Arrays.toString(array));
+        System.out.println("The most frequent element in the array is: " + mostFrequentElement(array));
+    }
+
+    public static void sort(int[] array) {
         for (int i = 0; i < array.length; i++) {
             for (int j = i + 1; j < array.length; j++) {
                 if (array[j] < array[i]) {
@@ -13,8 +19,6 @@ public class Sort {
                 }
             }
         }
-        System.out.println(Arrays.toString(array));
-        System.out.println("The most frequent element in the array is: " + mostFrequentElement(array));
     }
     public static int mostFrequentElement(int[] array) {
         int max = 0;
