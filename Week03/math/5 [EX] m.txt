@@ -1,0 +1,19 @@
++ ComplexNumber
+--------------
+-x: double
+-y: double
+--------------
++getX(): double
++setX(): double
++getY(): double
++setY(): double
++ComplexNumber(double x, double y);
++equals(ComplexNumber number): boolean
++toString(): String
++re(): double
++imag(): double
++conjugate(): ComplexNumber
++abs(ComplexNumber number): double
++add(ComplexNumber number): ComplexNumber
++sub(ComplexNumber number): ComplexNumber
++mult(ComplexNumber number): ComplexNumber
