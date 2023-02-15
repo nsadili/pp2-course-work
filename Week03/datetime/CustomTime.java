@@ -67,7 +67,7 @@ public class CustomTime {
     }
 
     public String toUniversalString() {
-        return String.format("%02d:%02d:%02", getHour(), getMinute(), getSecond());
+        return String.format("%02d:%02d:%02d", getHour(), getMinute(), getSecond());
     } 
 
     public String toStandardString() {
