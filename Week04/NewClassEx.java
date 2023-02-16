@@ -1,6 +1,6 @@
 package Week04;
 import java.util.Scanner;
-public class NewEx {
+public class NewClassEx {
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
             System.out.print("write the size :? ");
