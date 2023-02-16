@@ -1,3 +1,4 @@
+package geometry;
 public class Invoice {
     private String partNumber;
     private String partDescription;
@@ -11,7 +12,7 @@ public class Invoice {
         this.pricePerItem = (pricePerItem > 0) ? pricePerItem : 0.0;
     }
     
-    public String getPartNumber() {
+    public String PartNumber() {
         return partNumber;
     }
     
@@ -19,7 +20,7 @@ public class Invoice {
         this.partNumber = partNumber;
     }
     
-    public String getPartDescription() {
+    public String PartDescription() {
         return partDescription;
     }
     
@@ -27,7 +28,7 @@ public class Invoice {
         this.partDescription = partDescription;
     }
     
-    public int getQuantity() {
+    public int Quantity() {
         return quantity;
     }
     
@@ -35,7 +36,7 @@ public class Invoice {
         this.quantity = (quantity > 0) ? quantity : 0;
     }
     
-    public double getPricePerItem() {
+    public double PricePerItem() {
         return pricePerItem;
     }
     
@@ -43,7 +44,7 @@ public class Invoice {
         this.pricePerItem = (pricePerItem > 0) ? pricePerItem : 0.0;
     }
     
-    public double getInvoiceAmount() {
+    public double InvoiceAmount() {
         return quantity * pricePerItem;
     }
 
