@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ArrayFromCommand {
     public static void main(String[] args) {
 
@@ -10,6 +12,7 @@ public class ArrayFromCommand {
 
         System.out.println("Arguments Passed in:");
         printArr(args);
+       // System.out.println(Arrays.toString(args));
 
         System.out.println("sum is: "+ sum(args)+ " average is: " + ((double) sum(args)/args.length));
 
@@ -29,7 +32,7 @@ public class ArrayFromCommand {
 
     }
 
-    public static int sum(String[] arg){
+    private static int sum(String[] arg){
         var sum=0;
 
         for(String s: arg){

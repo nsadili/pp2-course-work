@@ -8,7 +8,7 @@ public class StringReversed {
 
         String input=sc.nextLine();
 
-        System.out.println(reverse2(input));
+        System.out.println(reverse4(input));
 
     }
 
@@ -44,5 +44,30 @@ public class StringReversed {
 
             return new String(chars);
         }
+
+        private static String reverse3(String s){
+
+            StringBuilder sb=new StringBuilder();
+
+
+            for(int i=s.length()-1;i>=0;i--){
+                sb.append(s.charAt(i));
+            }
+
+            return sb.toString();
+
+        }
+
+
+        private static String reverse4(String s){
+            
+          // System.out.println("Reversed by 4");
+
+            return new StringBuilder(s).reverse().toString();
+
+        }
+
+       
+
 
 }
