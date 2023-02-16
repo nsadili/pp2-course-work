@@ -44,7 +44,7 @@ public class Segment {
     }
 
     public boolean isOnSegment(Point p){
-        return (isOnLine(p) && (p.getX() >= p1.getX() && p.getX()<= p2.getX() && p.getY()>= p1.getY() && p.getY()<=p2.getY()));
+        return (isOnLine(p) && ( p.getX()<= p2.getX()&&  p.getX() >= p1.getX() && p.getY()>= p1.getY() && p.getY()<=p2.getY()));
     }
     
     public Point getP1() {
