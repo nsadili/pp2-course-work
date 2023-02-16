@@ -10,6 +10,8 @@ public class SumOfOdd {
         System.out.print("Enter the second integer: ");
         int b = sc.nextInt();
 
+        sc.close();
+
         if (a > b) {
             int temp = a;
             a = b;
