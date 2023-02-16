@@ -18,6 +18,7 @@ public class Exercise1 {
 
         printArr(numbers);
         System.out.println(sumArr(numbers));
+        System.out.println(averageArr(numbers));
     }
 
 
@@ -35,5 +36,18 @@ public class Exercise1 {
 
     return sum;
 
+    }
+
+    private static double averageArr(int[] arr) {
+
+        var sum = 0;
+        var cnt = 0;
+
+        for (var el : arr) {
+        sum += el;
+        cnt++;
+        }
+
+        return sum / cnt;
     }
 }
