@@ -19,5 +19,7 @@ public class Lenght {
                 }
                 System.out.println("");
             }
+        
+            }
     }
-}
+

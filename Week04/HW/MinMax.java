@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class MinMax{
     public static void main(String args[]){
         int a[] = {-45,3,7,112,4,-5,27,33,9,0,12,0};
@@ -8,5 +10,12 @@ public class MinMax{
             if(a[i]<min) min=a[i];
         }
         System.out.printf("MIN: %d\nMAX: %d",min,max);
+    
+    Arrays.sort(a,2,10);
+    for (int i=0; i<a.length;i++)
+    System.out.println(a[i]);
+
+
     }
+
 }
