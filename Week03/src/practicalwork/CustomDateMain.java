@@ -24,15 +24,15 @@ public class CustomDateMain {
 		int result = CustomDate.compare(date1, date2);
 
 		if (result < 0) {
-			System.out.println("1, date 1 is earlier than date 2");
+			System.out.println(" 1, date 1 is earlier than date 2");
 			
 		} else if (result == 0) {
 			
-			System.out.println("0, date 1 is equal to date 2");
+			System.out.println(" 0, date 1 is equal to date 2");
 			
 		} else {
 			
-			System.out.println("-1, date 2 is earlier than date 1");
+			System.out.println(" -1, date 2 is earlier than date 1");
 			
 		}
 	}
