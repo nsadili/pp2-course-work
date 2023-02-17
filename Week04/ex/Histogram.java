@@ -22,12 +22,42 @@ public class Histogram {
         }
         sc.close();
 
-        System.out.println(Arrays.toString(num));
+        int[] his = new int[10];
+
+        for (int i=0; i<num.length; i++){
+            if(num[i]==1) his[0]++;
+            else if (num[i]==2) his[1]++;
+            else if (num[i]==3) his[2]++;
+            else if (num[i]==4) his[3]++;
+            else if (num[i]==5) his[4]++;
+            else if (num[i]==6) his[5]++;
+            else if (num[i]==7) his[6]++;
+            else if (num[i]==8) his[7]++;
+            else if (num[i]==9) his[8]++;
+            else if (num[i]==10) his[9]++;
+        }
+
+        
+            System.out.println("number of 1: "+ his[0]);
+            System.out.println("number of 2: "+ his[1]);
+            System.out.println("number of 3: "+ his[2]);
+            System.out.println("number of 4: "+ his[3]);
+            System.out.println("number of 5: "+ his[4]);
+            System.out.println("number of 6: "+ his[5]);
+            System.out.println("number of 7: "+ his[6]);
+            System.out.println("number of 8: "+ his[7]);
+            System.out.println("number of 9: "+ his[8]);
+            System.out.println("number of 10: "+ his[9]);
+
+
+        //System.out.println(Arrays.toString(num));
         System.out.println("mean is: " + mean(num));
         median(num);
         System.out.println("median is: " + median(num));
         System.out.println("mode is: "+ mode(num));
     }
+
+
 
     public static double mean(int[] arr){
         int sum=0;
