@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class MixedStrings {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Please give the input: ");
         String sentence = sc.nextLine();
         print(mixedStrings(sentence));
     }
