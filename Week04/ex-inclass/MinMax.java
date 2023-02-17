@@ -1,42 +1,41 @@
-import java.util.Scanner;
-
 public class MinMax {
     
     public static void main(String[] args) {
         
-        int min = 1000;
-        int max = 0;
+       if (args.length == 0) {
+       System.out.println("PLease, provide at least some input.");
+        System.exit(1);
+       }
 
-        Scanner scan = new Scanner(System.in);
-        int var = scan.nextInt();
+       int numbers[] = new int[args.length];
+       for (int i = 0; i < args.length; i++) {
+        numbers[i] = Integer.parseInt(args[i]);
+       }
 
+       System.out.println("The min of numbers is: " + printMinArr(numbers)); 
+       System.out.println("The max of numbers is: " + printMaxArr(numbers)); 
 
-          private static StringMin(String str) {
+      
+    } private static int printMinArr(int[] arr) {
 
-            for (int i = 0; i < str.length - 1; i++) {
-                if(str[i] < min)
-                min = str[i];
-            }
+        var min = 1000;
 
-                return min;
+        for (var el : arr) {
+            if (el < min)
+            min = el;
         }
-          
-          
-        private static StringMax(String str) {
+        return min;
+       }
 
-            for (int i = 0; i < str.length - 1; i++) {
-                if(str[i] > max) 
-                max = str[i];
-            
-            }
-                return max;
+       private static int printMaxArr(int[] arr) {
 
+        var max = 0;
+
+        for (var el : arr) {
+            if (el > max)
+            max = el;
         }
+        return max;
+       }
 
-        System.out.println(min);
-        System.out.println(max);
-
-
-
-    }
 }

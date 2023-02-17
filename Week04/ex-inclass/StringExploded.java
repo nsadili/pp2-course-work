@@ -2,26 +2,20 @@ import java.util.Scanner;
 
 public class StringExploded {
     public static void main(String[] args) {
-        
-        Scanner scan = new Scanner(System.in);
-
-        String word = scan.next();
-
-        System.out.println();
+        System.out.println(explode(args[0]));
     }
 
 
     private static String explode(String str) {
-        String res = "";
+        StringBuilder res = new StringBuilder("");
         int k = 0;
         for(int i = 0; i < str.length(); i++) {
-            for (int j = 0; j < str.length(); j++) {
-                System.out.println(str[i]);
-                if (i == k++) {
-                    i = 0;
-                }
+            for (int j = 0; j <= i; j++) {
+                char nextCharacter = str.charAt(j);
+                res.append(nextCharacter);
             }
         }
+        return res.toString();
     }
 
 }
