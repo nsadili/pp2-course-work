@@ -8,7 +8,6 @@ public class Slices {
         System.out.println("Please give the input: ");
         String word = sc.nextLine();
         slices(word);
-//        System.out.println(word.substring(0, 2));
     }
 
     public static void slices(String word) {
