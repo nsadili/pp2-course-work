@@ -23,6 +23,8 @@ public class Exercise9 {
                }
             }
         }
-        return Arrays.toString(array);
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(array);
+        return stringBuilder.toString();
     }
 }
