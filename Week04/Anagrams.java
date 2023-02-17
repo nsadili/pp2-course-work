@@ -36,7 +36,7 @@ public class Anagrams {
     }
 
     public static void swap(String[] ch, int i, int a) {
-        String temp = ch[j];
+        String temp = ch[a];
         ch[a] = ch[i];
         ch[i] = temp;
     }
