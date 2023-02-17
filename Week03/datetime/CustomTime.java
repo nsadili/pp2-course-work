@@ -57,4 +57,8 @@ public class CustomTime {
         int hour = this.hour % 12;
         return String.format("%02d:%02d:%02d %s", hour == 0 ? 12 : hour, this.minute, this.second, (this.hour % 24) / 12 == 0 ? "AM" : "PM");
     }
+
+    public String toString() {
+        return this.toUniversalString();
+    }
 }

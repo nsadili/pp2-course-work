@@ -44,4 +44,8 @@ public class Point {
     public boolean equals(Point p) {
         return this.x == p.getX() && this.y == p.getY();
     }
+
+    public String toString() {
+        return String.format("( %f, %f )", x, y);
+    }
 }

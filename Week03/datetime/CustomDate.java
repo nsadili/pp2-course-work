@@ -93,4 +93,8 @@ public class CustomDate {
     public int difference(CustomDate date) {
         return Math.abs(toDays(date) - toDays(this));
     }
+
+    public String toString() {
+        return String.format("%02d/%02d/%d\n", this.month, this.day, this.year);
+    }
 }

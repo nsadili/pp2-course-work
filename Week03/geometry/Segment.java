@@ -60,4 +60,8 @@ public class Segment {
         && p.getY() >= this.p1.getY()
         && p.getY() <= this.p2.getY();
     }
+
+    public String toString() {
+        return String.format("[ %s, %s ]", p1.toString(), p2.toString());
+    }
 }

@@ -47,4 +47,9 @@ public class Invoice {
     public double getInvoiceAmount() {
         return this.itemQuantity * this.itemPrice;
     }
+
+    public String toString() {
+        return String.format("Invoice #%s\nDescription:\n%s\nQuantity: %d\nPrice per item: %f\nInvoice amount: %f\n",
+                            this.partNumber, this.partDescription, this.partDescription, this.itemQuantity, this.itemPrice, this.getInvoiceAmount());
+    }
 }
