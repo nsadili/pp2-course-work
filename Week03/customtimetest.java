@@ -1,4 +1,4 @@
-public class  CustomTimeTest {
+public class  customtimetest {
     public static void main(String[] args) {
       customtime time1 = new customtime();
       System.out.println("Time 1 (default constructor): " + time1.toUniversalString());
