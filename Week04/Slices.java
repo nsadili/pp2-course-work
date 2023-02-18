@@ -1,13 +1,3 @@
-// Slices
-// Given a word. Devide it to two place in every possible version. 
-// Input example: SITE
-// Out example:
-// SITE
-// S ITE
-// SI TE
-// SIT E
-// Hint: you may use the method substring(int begin, int end)
-
 import java.util.Scanner;
 
 public class Slices {
