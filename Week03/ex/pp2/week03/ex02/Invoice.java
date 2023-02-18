@@ -1,5 +1,3 @@
-//  package pp2.week03.ex02;
-
 public class Invoice {
     private String partNumber;
     private String partDescription;
@@ -52,4 +50,5 @@ public double getInvoiceAmount() {
 
     
 }
+
 
