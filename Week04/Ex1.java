@@ -27,10 +27,10 @@ public class Ex1{
     }
     
     private static int sumArr(int[] arr){
-        var sum=0;
+        int sum=0;
         for(var el : arr){
             sum+=el;
-            return sum;
         }
+        return sum;
     }
 }
