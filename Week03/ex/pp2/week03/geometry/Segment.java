@@ -22,7 +22,14 @@ public class Segment {
     public Point getP2() {
         return p2;
     }
-    
+    public float getSlope(){
+        return (this.getP1().getY() - this.getP2().getY()) / (this.getP1().getX() - getP2().getX());
+    }
+
+    public float getIntercpet(){
+        return this.getP1().getY() - this.getP1().getX() * getSlope();
+    }
+
     public void translate(float dX, float dY){
         this.p1.translate(dX, dY);
         this.p2.translate(dX, dY);
@@ -30,5 +37,12 @@ public class Segment {
 
     public float length(){
         return p1.distance(p1);
+    }
+    public boolean isOnLine(Point p){
+        return p.getY() == p.getX() * this.getSlope() + this.getIntercpet();
+    }
+
+    public boolean isOnSegment(Point p){
+        return isOnLine(p) && p.getX() >= this.getP1().getX() && p.getX() <= this.getP2().getX();
     }
 }
