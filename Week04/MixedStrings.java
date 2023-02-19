@@ -21,8 +21,8 @@ public class MixedStrings {
         public static void main(String[] args) {
             String sentence = "this is PP2 Fall 2021 :)";
             String mixed = swapWords(sentence);
-            System.out.println("original sentence:) " + sentence);
-            System.out.println("mixed sentence:) " + mixed);
+            System.out.println("original sentence: " + sentence);
+            System.out.println("mixed sentence : " + mixed);
         }
     }
 
