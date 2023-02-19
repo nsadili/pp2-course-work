@@ -12,7 +12,7 @@ public class StringReversed {
 
     public static StringBuilder reverse(String str) {
         StringBuilder sb = new StringBuilder();
-        String[] split = str.split("");
+        char[] split = str.toCharArray();
         for (int i = split.length - 1; i >= 0; i--) {
             sb.append(split[i]);
         }
