@@ -1,24 +1,25 @@
 package practicalwork;
 
-import java.util.Arrays;
+import java.util.Scanner;
 
 public class Test {
-	public static void main(String[] args) {
-		
-		String input = "Huseyn";
-		
-		String sortedString = sortString(input);
-		
-		System.out.println(sortedString);
-	}
-	
+    public static void main(String[] args) {
+    	
+        Scanner scn = new Scanner(System.in);
+        
+        System.out.println("Enter a string: ");
+        
+        String str = scn.nextLine();
+        
+        String reversedStr = reverseString(str);
+        
+        System.out.println("Reversed string: " + reversedStr);
+    }
 
-	public static String sortString(String input) {
-		
-		char[] chars = input.toCharArray();
-		
-		Arrays.sort(chars);
-		
-		return new String(chars);
-	}
+    public static String reverseString(String str) {
+    	
+        StringBuilder sb = new StringBuilder(str);
+        
+        return sb.reverse().toString();
+    }
 }
