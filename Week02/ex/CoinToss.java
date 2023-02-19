@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CoinTossing {
+public class CoinToss {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt(), heads = 0, tails = 0;
