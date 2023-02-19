@@ -25,7 +25,6 @@ private static void printArray(int[] arr){
 }
 private static int sumArr(int[] arr){
     var sum = 0;
-    var count = 0;
     for (var el : arr)
         sum += el;
     return sum;

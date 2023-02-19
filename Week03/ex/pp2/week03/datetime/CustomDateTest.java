@@ -1,6 +1,4 @@
-package pp2.week03;
-
-import pp2.week03.datetime.CustomDate;
+package pp2.week03.datetime;
 
 public class CustomDateTest {
     public static void main(String[] args){
