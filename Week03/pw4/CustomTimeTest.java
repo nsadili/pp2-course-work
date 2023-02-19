@@ -2,7 +2,7 @@ package pw4;
 
 import pw4.objects.CustomTime;
 
-public class main {
+public class CustomTimeTest {
     public static void main(String[] args) {
         CustomTime time1 = new CustomTime(5, 10, 12);
         CustomTime time2 = new CustomTime(12,4);

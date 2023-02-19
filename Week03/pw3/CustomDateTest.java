@@ -1,7 +1,7 @@
 package pw3;
 import pw3.objects.CustomDate;
 
-public class main {
+public class CustomDateTest {
     public static void main(String[] args) {
         CustomDate date1 = new CustomDate(5, 10, 2005);
         CustomDate date2 = new CustomDate(1, 1, 1990);

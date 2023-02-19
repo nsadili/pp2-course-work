@@ -8,6 +8,9 @@
 # BlueJ files
 *.ctxt
 
+# Launch file for VSCode
+*/launch.json
+
 # Package Files #
 *.jar
 *.war
