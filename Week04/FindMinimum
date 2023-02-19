@@ -10,3 +10,4 @@ public static int findMinimum(int[] arr) {
     }
     return min;
 }
+
