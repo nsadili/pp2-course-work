@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-import invoice.Invoice;
+import pp2.invoice.Invoice;
 public class ArrayOfInvoices {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

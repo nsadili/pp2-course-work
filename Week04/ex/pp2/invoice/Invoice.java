@@ -1,4 +1,4 @@
-package invoice;
+package pp2.invoice;
 public class Invoice {
     private String partNum;
     private String partDesc;
