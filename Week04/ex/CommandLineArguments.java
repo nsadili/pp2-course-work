@@ -1,3 +1,4 @@
+package ex;
 import java.util.Arrays;
 public class CommandLineArguments {
     public static void main(String[] args){

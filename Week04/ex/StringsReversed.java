@@ -1,6 +1,7 @@
+package ex;
 import java.util.Scanner;
 
-public class Strings {
+public class StringsReversed {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         String line = scan.nextLine();
