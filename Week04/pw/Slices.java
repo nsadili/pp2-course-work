@@ -9,7 +9,6 @@ public class Slices {
     }
 
     public static void main(String[] args){
-        Slices slices = new Slices();
         Slices.printSlices("SITE");
     }
 }
