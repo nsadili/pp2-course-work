@@ -6,14 +6,14 @@ public class Pw1 {
     
     public static void main(String[] args) {
         
-        int min = 1000;
+        int min = 0;
         int max = 0;
 
         Scanner scan = new Scanner(System.in);
         int var = scan.nextInt();
 
 
-          private static StringMin(String str) {
+        private static StringMin(String str){
 
             for (int i = 0; i < str.length - 1; i++) {
                 if(str[i] < min)
@@ -37,8 +37,6 @@ public class Pw1 {
 
         System.out.println(min);
         System.out.println(max);
-
-
 
     }
 }
