@@ -7,6 +7,10 @@ public class PW11 {
         System.out.print("Enter a sentence: ");
         String string = scanner.nextLine();
         scanner.close();
+        System.out.println(swap(string));
+    }
+
+    static String swap(String string) {
         String[] strings = string.split(" ");
         System.out.println(Arrays.toString(strings));
         StringBuilder stringBuilder = new StringBuilder();
@@ -21,6 +25,6 @@ public class PW11 {
             stringBuilder.append(" ");
         }
         stringBuilder.deleteCharAt(stringBuilder.length()-1);
-        System.out.println(stringBuilder.toString());
+        return stringBuilder.toString();
     }
 }
