@@ -26,7 +26,7 @@ public class Array {
             }
             System.out.print(arr[i]);
         }
-        
+        System.out.print("\n");
     }
 
     public static int sumArray(int[] arr) {
