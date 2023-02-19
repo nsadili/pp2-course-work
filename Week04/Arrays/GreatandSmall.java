@@ -1,4 +1,5 @@
 package Week04.Arrays;
+
 import java.util.Scanner;
 
 public class GreatandSmall {
@@ -74,29 +75,29 @@ public class GreatandSmall {
         int max = arr[0];
         int min = arr[0];
         for (int i = 0; i < arr.length; i++) {
-            if(min > arr[i]) {
+            if (min > arr[i]) {
                 min = arr[i];
             }
-            if(max < arr[i]) {
+            if (max < arr[i]) {
                 max = arr[i];
             }
         }
-        return "Minimum element "+min+". "+"Maxmimum element "+max+".";
+        return "Minimum element " + min + ". " + "Maxmimum element " + max + ".";
     }
-    private static String argsminandmax(String array[]){
+
+    private static String argsminandmax(String array[]) {
         int min = Integer.parseInt(array[0]);
         int max = Integer.parseInt(array[0]);
         for (int i = 0; i < array.length; i++) {
             if (min > Integer.parseInt(array[i])) {
                 min = Integer.parseInt(array[i]);
             }
-                if (max < Integer.parseInt(array[i])) {
-                    max = Integer.parseInt(array[i]);
-                }
+            if (max < Integer.parseInt(array[i])) {
+                max = Integer.parseInt(array[i]);
+            }
         }
-        return "Minimum element "+min+". "+"Maxmimum element "+max+".";
+        return "Minimum element " + min + ". " + "Maxmimum element " + max + ".";
     }
-
 
 
 }
