@@ -63,5 +63,6 @@ public class HangmanGame {
             System.out.println("\n");
             
         }
+        sc.close();
     }
 }
