@@ -12,11 +12,11 @@ public class Substring {
     }
 
     public static int substring(String string, String sub) {
-        String[] split = string.split("");
-        String[] splitsub = sub.split("");
+        char[] split = string.toCharArray();
+        char[] splitsub = sub.toCharArray();
         int j = 0;
         for (int i = 0; i < split.length; i++) {
-            if (splitsub[j].equals(split[i])){
+            if (splitsub[j] == split[i]){
                 if (j == splitsub.length - 1) return i - j + 1;
                 j++;
             }
