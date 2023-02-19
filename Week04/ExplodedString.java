@@ -1,10 +1,10 @@
 package Week04;
 
 import java.util.Scanner;
-
 public class ExplodedString {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.print("Write the string: ");
         String str = sc.nextLine();
         String[] split = str.split("");
         StringBuilder sb = new StringBuilder();
@@ -13,6 +13,7 @@ public class ExplodedString {
             sb.append(split[i]);
             result.append(sb);
         }
-        System.out.println(result);
+        System.out.println("The result: "+ result);
+        sc.close();
     }
 }
