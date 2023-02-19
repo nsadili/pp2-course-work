@@ -31,8 +31,11 @@ public class Task {
         }
 
         System.out.println("Northernmost point: " + north);
+        
         System.out.println("Southernmost point: " + south);
+        
         System.out.println("Westernmost point: " + west);
+        
         System.out.println("Easternmost point: " + east);
     }
 
