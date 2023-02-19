@@ -14,7 +14,7 @@ public class MixedStrings {
         String[] split = sentence.split(" ");
         String[] newSentence = new String[split.length];
         for (int i = 0; i < split.length; i++) {
-            newSentence[i] = swapFirstAndLast(split[i]);;
+            newSentence[i] = swapFirstAndLast(split[i]);
         }
         return newSentence;
     }
