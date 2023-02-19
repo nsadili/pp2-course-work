@@ -17,14 +17,19 @@ public class SubString {
     }
 
     private static int subString(String s1,String s2){
+        int flag=0;
 
         for(var i=0;i<s1.length();i++){
             if(s1.charAt(i)==s2.charAt(0)){
                 for(var j=1;j<s2.length();j++){
-                    if(s1.charAt(i+j)!=s2.charAt(j)) return -1;
+                    if(s1.charAt(i+j)!=s2.charAt(j)) flag++;;
                 }
 
-                return i;
+                if(flag==0){
+                    return i;
+                }else{
+                    flag=0;
+                }
 
             }
         }
