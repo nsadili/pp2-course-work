@@ -49,7 +49,8 @@ public class Invoice {
             return this.quantity * this.price;
         }
 
-    class InvoiceTest{
+    class InvoiceTest
+    {
 public static void main(String[]args){}
     }
 }
