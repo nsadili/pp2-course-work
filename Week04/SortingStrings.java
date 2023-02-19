@@ -1,6 +1,7 @@
 package Week04;
 
 import java.util.Arrays;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class SortingStrings {
@@ -12,10 +13,10 @@ public class SortingStrings {
     }
 
     public static String sort(String str) {
-        char[] ch = str.toCharArray();
+        String[] ch = str.split("");
         for (int i = 0; i < ch.length; i++) {
             for (int j = i + 1; j < ch.length; j++) {
-                if (ch[j] < ch[i]) {
+                if (ch[j].toLowerCase().compareTo(ch[i].toLowerCase()) < 0) {
                     swap(ch, i, j);
                 }
             }
@@ -23,8 +24,8 @@ public class SortingStrings {
         return Arrays.toString(ch);
     }
 
-    public static void swap(char[] ch, int i, int j) {
-        char temp = ch[j];
+    public static void swap(String[] ch, int i, int j) {
+        String temp = ch[j];
         ch[j] = ch[i];
         ch[i] = temp;
     }
