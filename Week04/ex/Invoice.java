@@ -4,14 +4,13 @@ public class Invoice{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
-        // get the number of invoices from the user
+      
         System.out.print("Enter the number of invoices: ");
         int numInvoices = scanner.nextInt();
-        
-        // create an array to store the invoices
+    
         Invoice[] invoices = new Invoice[numInvoices];
         
-        // get information for each invoice from the user and create an Invoice object
+      
         for (int i = 0; i < numInvoices; i++) {
             System.out.println("Enter information for invoice #" + (i+1) + ":");
             System.out.print("Invoice number: ");
