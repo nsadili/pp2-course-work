@@ -6,9 +6,7 @@ public class Invoice{
     private Object String;
     private Object Integer;
 
-    /**
-     * @param args
-     */
+
     public void main(String[] args) {
         String PartNumber;
         String PartDescript;
@@ -58,6 +56,9 @@ public class Invoice{
             this.Price = Price;
         }
 
+    }
+
+    private void Main() {
     }
 
     private void Invoice(Object string2, Object string3, Object integer2, java.lang.Integer price2) {
