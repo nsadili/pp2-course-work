@@ -1,7 +1,7 @@
 package datetime;
 public class CustomTimeTest {
     public static void main(String[] args) {
-        CustomTime time = new CustomTime(14,54);
+        CustomTime time = new CustomTime(14, 54, 0);
         System.out.println(time.toUniversalString());
         System.out.println(time.toStandardString());
     }
