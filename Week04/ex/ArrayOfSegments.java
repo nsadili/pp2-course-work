@@ -23,7 +23,7 @@ public class ArrayOfSegments {
 
         System.out.println(min);
         for (int i=0; i<n; i++){
-            if (s[i].length()==min) System.out.println("Segment "+i+"\n"+s[i].printSegment());
+            if (s[i].length()==min) System.out.println("Segment "+(i+1)+"\n"+s[i].toString2());
         }
 
         sc.close();        

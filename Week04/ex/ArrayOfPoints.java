@@ -41,11 +41,14 @@ public class ArrayOfPoints {
         Point eastern = new Point(Ex, Ey);
         Point western = new Point(Wx, Wy);
 
+        // System.out.println("northern point is: ("+ northern.getX()+","+northern.getY()+")");
+        // System.out.println("southern point is: ("+ southern.getX()+","+southern.getY()+")");
+        // System.out.println("eastern point is: ("+ eastern.getX()+","+eastern.getY()+")");
+        // System.out.println("western point is: ("+ western.getX()+","+western.getY()+")");
 
-        System.out.println("northern point is: ("+ northern.getX()+","+northern.getY()+")");
-        System.out.println("southern point is: ("+ southern.getX()+","+southern.getY()+")");
-        System.out.println("eastern point is: ("+ eastern.getX()+","+eastern.getY()+")");
-        System.out.println("western point is: ("+ western.getX()+","+western.getY()+")");
-        
+        System.out.println("northern point is: "+ northern.toString2());
+        System.out.println("southern point is: "+ southern.toString2());
+        System.out.println("eastern point is: "+ eastern.toString2());
+        System.out.println("western point is: "+ western.toString2());
     }
 }

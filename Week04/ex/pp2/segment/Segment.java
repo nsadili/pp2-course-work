@@ -66,4 +66,24 @@ public class Segment {
         return "Point 1: (" + p1.getX()+", "+p1.getY()+")\nPoint 2: (" + p2.getX()+", "+p2.getY()+")";
     }
 
+    public String toString(){
+        return "["+p1.toString()+", "+p2.toString()+"]";
+    }
+
+    public String toString2(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        sb.append(p1.toString2());
+        sb.append(",");
+        sb.append(p2.toString2());
+        sb.append("]");
+
+        return sb.toString();
+    } 
+    // The main difference between the two methods is that toString() uses string concatenation to combine
+    // the two Point objects into a String, while toString2() uses a StringBuilder to construct the resulting 
+    // String. Using StringBuilder is typically more efficient because it helps to avoid creating many 
+    // temporary String objects during the concatenation process, which can save memory and improve performance.
+
+
 }

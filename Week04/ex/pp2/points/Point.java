@@ -44,4 +44,24 @@ public class Point {
     public boolean equals(Point p){
         return p.getX()==this.x && p.getY()==this.y;
     }
+
+    public String toString(){
+        return "("+getX()+", "+getY()+")";
+    }
+
+    public String toString2(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("(");
+        sb.append(getX());
+        sb.append(",");
+        sb.append(getY());
+        sb.append(")");
+
+        return sb.toString();
+    }
+
+    // Basically, both toString() and toString2() methods create a string representation of a point object. 
+    // However, toString2() is better at making strings because it uses a StringBuilder instead of string 
+    // concatenation like toString(). This saves memory and makes it faster to create the string.
+
 }
