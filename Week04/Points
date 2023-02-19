@@ -1,0 +1,57 @@
+import java.awt.Point;
+import java.util.Scanner;
+
+public class Points {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of points: ");
+        int n = scanner.nextInt();
+
+        Point[] points = new Point[n];
+        for (int i = 0; i < n; i++) {
+            System.out.print("Enter x and y coordinates of point " + (i + 1) + ": ");
+            int x = scanner.nextInt();
+            int y = scanner.nextInt();
+            points[i] = new Point(x, y);
+        }
+
+        printMostNSWE(points);
+    }
+
+    public static void printMostNSWE(Point[] points) {
+        if (points.length == 0) {
+            return;
+        }
+
+        Point mostNorthern = points[0];
+        Point mostSouthern = points[0];
+        Point mostWestern = points[0];
+        Point mostEastern = points[0];
+
+        for (int i = 1; i < points.length; i++) {
+            Point point = points[i];
+
+            if (point.getY() > mostNorthern.getY()) {
+                mostNorthern = point;
+            }
+
+            if (point.getY() < mostSouthern.getY()) {
+                mostSouthern = point;
+            }
+
+            if (point.getX() < mostWestern.getX()) {
+                mostWestern = point;
+            }
+
+            if (point.getX() > mostEastern.getX()) {
+                mostEastern = point;
+            }
+        }
+
+        System.out.println("Most Northern point is: (" + mostNorthern.getX() + ", " + mostNorthern.getY() + ")");
+        System.out.println("Most Southern point is: (" + mostSouthern.getX() + ", " + mostSouthern.getY() + ")");
+        System.out.println("Most Western point is: (" + mostWestern.getX() + ", " + mostWestern.getY() + ")");
+        System.out.println("Most Eastern point is: (" + mostEastern.getX() + ", " + mostEastern.getY() + ")");
+    }
+}
