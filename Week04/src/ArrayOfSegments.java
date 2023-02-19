@@ -1,5 +1,23 @@
 import java.util.*;
 
+class Segment {
+    private int start;
+    private int end;
+
+    public Segment(int start, int end) {
+        this.start = start;
+        this.end = end;
+    }
+
+    public int getLength() {
+        return end - start;
+    }
+
+    public String toString() {
+        return "[" + start + ", " + end + "]";
+    }
+}
+
 public class ArrayOfSegments {
 
     public static Segment[] getMinLengthSegments(Segment[] segments) {
@@ -46,23 +64,5 @@ public class ArrayOfSegments {
         for (int i = 0; i < minSegments.length; i++) {
             System.out.println(minSegments[i]);
         }
-    }
-}
-
-class Segment {
-    private int start;
-    private int end;
-
-    public Segment(int start, int end) {
-        this.start = start;
-        this.end = end;
-    }
-
-    public int getLength() {
-        return end - start;
-    }
-
-    public String toString() {
-        return "[" + start + ", " + end + "]";
     }
 }
