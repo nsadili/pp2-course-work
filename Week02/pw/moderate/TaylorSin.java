@@ -1,4 +1,4 @@
-import java.util.*;
+
 public class TaylorSin {
     public static double sin(double x, int n) {
         double value = 0;

@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 //package taghi_mammadov.week_02;
