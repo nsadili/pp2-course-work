@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class anagram{
+public class anagrams{
 
     public static boolean areAnagrams(String str1, String str2) {
         // Check if the lengths of the strings are equal
