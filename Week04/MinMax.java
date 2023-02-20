@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Pw1
+public class MinMax
 {   
     
         public static void main(String[] args) 
