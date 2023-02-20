@@ -7,12 +7,17 @@ public class Anagram {
         String str1 = input.nextLine();
         
         String str2 = input.nextLine();
-        
-        if (areAnagrams(str1, str2) == "true") {
+        /* 
+         * if (areAnagrams(str1, str2) == "true") {
             System.out.println("True");
         } else {
             System.out.println("False");
         }
+        */
+        System.out.println((areAnagrams(str1, str2) == "true") ? "True" : "False");
+         
+        
+        
     }
         public static String areAnagrams(String str1, String str2) {
             char[] chars1 = str1.toCharArray();
