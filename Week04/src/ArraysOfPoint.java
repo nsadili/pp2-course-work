@@ -1,13 +1,13 @@
 import java.util.zip.GZIPOutputStream;
 
-public class Point {
+public class ArraysOfPoint {
     private double x;
     private double y;
-    public Point() {
+    public ArraysOfPoint() {
         this.x = 0;
         this.y = 0;
     }
-    public Point(double x, double y) {
+    public ArraysOfPoint(double x, double y) {
         this.x = x;
         this.y = y;
     }
@@ -23,23 +23,23 @@ public class Point {
     public void setY(double y) {
         this.y = y;
     }
-    public Point(Point p) {
+    public ArraysOfPoint(ArraysOfPoint p) {
         this.x = p.x;
         this.y = p.y;
     }
     
-    public double getDistance(Point p) {
+    public double getDistance(ArraysOfPoint p) {
         return Math.sqrt((p.x - this.x)*(p.x - this.x)+(p.y - this.y)*(p.y - this.y)); 
     }
 
     public String getClosestPole()
     {
-        Point north = new Point(0,1);
-        Point south = new Point(0, -1);
-        Point east  = new Point(1,0);
-        Point west  = new Point(-1, 0);
+        ArraysOfPoint north = new ArraysOfPoint(0,1);
+        ArraysOfPoint south = new ArraysOfPoint(0, -1);
+        ArraysOfPoint east  = new ArraysOfPoint(1,0);
+        ArraysOfPoint west  = new ArraysOfPoint(-1, 0);
         
-        Point [] coordinates = {north, south, west, east};
+        ArraysOfPoint [] coordinates = {north, south, west, east};
         double [] distance = new double[4];
 
         for(int i = 0; i < coordinates.length; i++)
