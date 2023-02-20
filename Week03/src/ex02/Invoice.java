@@ -55,7 +55,7 @@ public class Invoice {
 
     @Override
     public String toString() {
-        return "Invoice [partNum=" + partNum + ", partDesc=" + partDesc + ", purchasedAmount=" + purchasedAmount
-                + ", itemPrice=" + itemPrice + "]";
+        return "Invoice [PartNum=" + partNum + ", PartDesc=" + partDesc + ", PurchasedAmount=" + purchasedAmount
+                + ", ItemPrice=" + itemPrice + "]";
     }  
 }
