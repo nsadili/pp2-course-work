@@ -24,6 +24,19 @@ public class CrapsGame {
 		} else {
 			int point = sum;
 			System.out.println("Point established: " + point);
+			while (true) {
+				roll1 = random.nextInt(6) + 1; 
+				roll2 = random.nextInt(6) + 1; 
+				sum = roll1 + roll2;
+				System.out.println("Roll: " + roll1 + " + " + roll2 + " = " + sum);
+				if (sum == point) {
+					System.out.println("You win!");
+					break;
+				} else if (sum == 7) {
+					System.out.println("Seven out, you lose!");
+					break;
+				}
+			}
 		}
 	}
 

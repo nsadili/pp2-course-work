@@ -1,12 +1,9 @@
-// not ready still...
-
-
 package practicalworks;
+
 
 import java.util.Scanner;
 
 public class ExplodedString {
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a string: ");
@@ -32,8 +29,7 @@ public class ExplodedString {
 
         return sb.toString();
     }
-
-
 }
+
 
 
