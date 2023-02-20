@@ -74,4 +74,5 @@ public class MinMaxElements {
 
         System.out.println("Min and max elements of array1: " + minMax[0] + ", " + minMax[1]);
     }
+
 }
