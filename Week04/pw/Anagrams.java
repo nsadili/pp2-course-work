@@ -1,17 +1,15 @@
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Anagrams {
     public static void main(String[] args) {
-         String str1 = "teacher";
-         String str2 = "cheater";
-        
-        
-        if (Anagram(str1, str2)) {
-            System.out.println(str1 + " and " + str2 + " are anagrams.");
-        } else {
-            System.out.println(str1 + " and " + str2 + " are not anagrams.");
-        }
+        Scanner sc = new Scanner(System.in);
+
+        String str1 = sc.nextLine();
+        String str2 = sc.nextLine();
+
+        System.out.println(Anagram(str1, str2));
     }
      
     
