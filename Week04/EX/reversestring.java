@@ -1,4 +1,7 @@
+import java.util.Scanner;
+
 package EX;
+
 
 public class reversestring {
     public static void main(String[] args) {
@@ -20,4 +23,4 @@ public class reversestring {
     }
 
 }
-}
+
