@@ -1,12 +1,13 @@
 import java.util.Scanner;
 
 public class Histogram {
-    public static void main() {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Instert the number of students: ");
+        System.out.println("Insert the number of students: ");
         int length = scan.nextInt();
         int Grades[] = new int[length];
         int cnt = 0;
+        System.out.println("Insert the grades of students: ");
         for (int i : Grades) {
             Grades[cnt++] = scan.nextInt();
         }
@@ -67,6 +68,47 @@ public class Histogram {
         }
         mean/=cnt;
         
+        cnt=0;
+        int Gr[] = new int[length];
+        while(cnt0>0){
+            Gr[cnt++]=0;
+        }
+        while(cnt1>0){
+            Gr[cnt++]=1;
+        }
+        while(cnt2>0){
+            Gr[cnt++]=2;
+        }
+        while(cnt3>0){
+            Gr[cnt++]=3;
+        }
+        while(cnt4>0){
+            Gr[cnt++]=4;
+        }
+        while(cnt5>0){
+            Gr[cnt++]=5;
+        }
+        while(cnt6>0){
+            Gr[cnt++]=6;
+        }
+        while(cnt7>0){
+            Gr[cnt++]=7;
+        }
+        while(cnt8>0){
+            Gr[cnt++]=8;
+        }
+        while(cnt9>0){
+            Gr[cnt++]=9;
+        }
+        while(cnt10>0){
+            Gr[cnt++]=10;
+        }
+        float median;
+        if(length%2==0) median=(float) (Gr[length/2]+Gr[(length/2)+1])/2;
+        else median=Gr[length/2];
+        System.out.printf("Mean: %.2f\nMode: %d\nMedian: %.2f",mean,mode,median);
     }
+
+
 
 }
