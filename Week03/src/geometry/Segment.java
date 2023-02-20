@@ -1,7 +1,7 @@
 package geometry;
 public class Segment {
-    private Point p1;
-    private Point p2;
+    private Point p1 = new Point();
+    private Point p2 = new Point();
 
     public Segment(Point p1, Point p2) {
         this.p1 = p1;
