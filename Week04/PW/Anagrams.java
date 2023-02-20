@@ -13,10 +13,10 @@ public class Anagrams {
 
         char[] str1_Chars = str1.toCharArray();
         char[] str2_Chars = str2.toCharArray();
-        Arrays.sort(str1Chars);
-        Arrays.sort(str2Chars);
+        Arrays.sort(str1_Chars);
+        Arrays.sort(str2_Chars);
 
-        return Arrays.equals(str1_Chars, str2Chars);
+        return Arrays.equals(str1_Chars, str2_Chars);
     }
 
 }
