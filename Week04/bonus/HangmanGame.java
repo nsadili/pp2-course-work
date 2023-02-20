@@ -14,6 +14,11 @@ public class HangmanGame {
 
         char[] charstr = str.toCharArray();
         char[] charsw = secretword.toCharArray();
+        
+        for (int i=0; i<charsw.length; i++){
+            System.out.print(charsw[i]+" ");
+        }   
+        System.out.println("\n");
 
         int cntman=0,cnttrue=0;
         String falseguess = "";
@@ -24,7 +29,7 @@ public class HangmanGame {
             int cnt=0;
             char letter = sc.next().toLowerCase().charAt(0);
             if (guessed.contains(letter)){
-                System.out.println("Guessed letter! Try another letter, please");
+                System.out.println("Guessed letter! Try another letter, please\n");
                 continue;
             }
             guessed.add(letter);
