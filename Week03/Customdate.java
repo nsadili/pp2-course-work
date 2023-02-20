@@ -1,92 +1,149 @@
 package Week03;
 
-import java.util.Scanner;
 public class CustomDate {
     private int month;
     private int day;
     private int year;
-    private int[] daysInMonth = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
-    public CustomDate(int month, int day, int year) {
-        this.month = month;
-        this.day = day;
-        this.year = year;
+    public CustomDate(int month, int day, int year){
+        if(month>=1 && month <=12){
+            this.month=month;
+        }else{
+            System.out.println("Invalid month!");
+        }
+        if(day>=1 && day<=31){
+            this.day= day;
+        } else{
+            System.out.println("Invalid day!");
+        }
+        if(year >=1){
+            this.year= year;
+        } else {
+            System.out.println("Invalid year!");
+        }
+        if ((month == 2 && day > 29) || 
+        (month == 2 && day == 29 && !isLeapYear(year)) || 
+        (month == 4 || month == 6 || month == 9 || month == 11) && day == 31) {
+            System.out.println("Invalid date. We do not have such date in our calendar!");
+        }
     }
 
-    public int getMonth() {
+       public boolean isLeapYear(int year){
+        if (year %400==0 || (year%4==0 && year %100 !=0)){
+            return true;
+
+        }
+       
+          return false;
+    }
+    public int getMonth(){
         return month;
     }
-    
-    public int getDay() {
-        return day;
+    public void setMonth(int month){
+        if(month>=1 && month <=12){
+            this.month= month;
+        }
+         else{
+            System.out.println("Invalid data!");
+         }
     }
-
+    public int getDay(){
+      return day;
+        
+    }
+    public void setDay(int day){
+        if(day>=1 && day<=31){
+            this.day = day;
+        }
+         else{
+            System.out.println("Invalid data!");
+         }
+    }
     public int getYear() {
         return year;
     }
-    
-  
-    public void setMonth(int month) {
-       this.month=month;
-    }
-    public void setDay(int day) {
-       this.day=day;
-    }
-    public void setYear(int year) {
-       this.year=year;
-    }
-
-   
-
-   
-    private boolean isValidDate(int month, int day, int year) {
-        if (month < 1 || month > 12) {
-            return false;
+    public void setYear(int year){
+        if(year >=1) {
+            this.year= year;
+        } else{
+            System.out.println("Invalid data!");
         }
-        if (day < 1 || day > daysInMonth[month]) {
-            if (month == 2 && day == 29 && isLeapYear(year)) {
-                return true;
-            }
-            return false;
-        }
-        return true;
+       
+        
+    }
+    public void displayDate(){
+        System.out.println(month + "/" +day + "/" +year);
     }
 
-    private boolean isLeapYear(int year) {
-        if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
-            return true;
-        }
-        return false;
-    }
-
-    public void displayDate() {
-        System.out.println(month + "/" + day + "/" + year);
-    }
-
-    public int difference(CustomDate date) {
-        int difference = 0;
-        CustomDate earlierDate, laterDate;
-        if (compare(this, date) == -1) {
-            earlierDate = this;
-            laterDate = date;
-        } else {
-            earlierDate = date;
-            laterDate = this;
-        }
-        while (!earlierDate.equals(laterDate)) {
-            difference++;
-            earlierDate.nextDay();
-        }
-        return difference;
-    }
-
-    public static int compare(CustomDate date1, CustomDate date2) {
-        if (date1.year < date2.year) {
-            return -1;
-        } else if (date1.year > date2.year) {
+    public static int compare(CustomDate date1, CustomDate date2){
+        if(date1.year < date2.year){
             return 1;
-        }
-    }
+        } else if (date1.year>date2.year){
+            return -1;
+        } else if(date1.month<date2.month){
+            return 1;
+        } else if(date1.month>date2.month){
+            return -1;
+        } else if(date1.day <date2.day){
+            return 1;
+        }else if(date1.day >date2.day){
+            return -1;
+        }else{
+            return 0;
+       
+            
+      }
+
 }
+public void displayFormatted(){
+    String formattedMonth= "";
+    switch (month){
+        case 1:
+        formattedMonth= "Jan";
+        break;
+        case 2:
+        formattedMonth= "Feb";
+        break;
+        case 3:
+        formattedMonth= "Mar";
+        break;
+        case 4:
+        formattedMonth= "Apr";
+        break;
+        case 5:
+        formattedMonth= "May";
+        break; 
+        case 6:
+        formattedMonth= "Jun";
+        break;
+        case 7:
+        formattedMonth= "Jul";
+        break;
+        case 8:
+        formattedMonth= "Aug";
+        break;
+        case 9:
+        formattedMonth= "Sep";
+        break;
+        case 10:
+        formattedMonth= "Oct";
+        break;
+        case 11:
+        formattedMonth= "Nov";
+        break;
+        case 12:
+        formattedMonth= "Dec";
+        break;
+        default:
+        System.out.println("Invalid data!");
+    }
+System.out.println(day +" "+ formattedMonth + " "+year);
+    }
+    public int difference(CustomDate date){
+        int daysInThisDate= year*365+day;
+        int daysInInputDate = date.year*365 +date.day;
+        return Math.abs(daysInThisDate - daysInInputDate);
 
+    }
 
+}
