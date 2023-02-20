@@ -1,32 +1,27 @@
 package Week04;
 
-public class Substring{
+import java.util.Scanner;
+
+public class Substring {
     public static void main(String[] args) {
-        String string = "This is a test string";
-        String sub = "test";
-        int index = findSubstring(string, sub);
-        if (index == -1) {
-            System.out.println("'" + sub + "' is not a substring of '" + string + "'");
-        } else {
-            System.out.println("'" + sub + "' is a substring of '" + string + "' at index " + index);
-        }
+        Scanner sc = new Scanner(System.in);
+        System.out.println("please give the input:) ");
+        String string = sc.nextLine();
+        String sub = sc.nextLine();
+        System.out.println(substring(string, sub));
     }
 
-    public static int findSubstring(String string, String sub) {
-        int index = -1;
-        for (int i = 0; i < string.length() - sub.length() + 1; i++) {
-            boolean found = true;
-            for (int j = 0; j < sub.length(); j++) {
-                if (string.charAt(i + j) != sub.charAt(j)) {
-                    found = false;
-                    break;
-                }
+    public static int substring(String string, String sub) {
+        char[] split = string.toCharArray();
+        char[] splitsub = sub.toCharArray();
+        int j = 0;
+        for (int i = 0; i < split.length; i++) {
+            if (splitsub[j] == split[i]){
+                if (j == splitsub.length - 1) return i - j + 1;
+                j++;
             }
-            if (found) {
-                index = i;
-                break;
-            }
+            else j = 0;
         }
-        return index;
+        return -1;
     }
 }
