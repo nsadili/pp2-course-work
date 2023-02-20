@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Mixedstrings {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Please give the input: ");
+        System.out.println("Enter  String :");
         String sentence = sc.nextLine();
         System.out.println((mixedStrings(sentence)));
     }
@@ -32,5 +32,5 @@ public class Mixedstrings {
 
 
         }
-    }
-}
+
+
