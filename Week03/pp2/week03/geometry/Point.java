@@ -2,8 +2,8 @@ package pp2.week03.geometry;
 
 public class Point {
 
-    private float x;
-    private float y;
+    public float x;
+    public float y;
 
     public Point() {
         // EMPTY (Default) Constructor
