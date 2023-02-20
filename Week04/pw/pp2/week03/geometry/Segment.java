@@ -59,6 +59,9 @@ public class Segment {
     public void setP2(Point p2){
         this.p2=p2;
     }
+    public String toString(){
+        return "["+p1.toString()+", "+p2.toString()+"]";
+    }
 
     
 }

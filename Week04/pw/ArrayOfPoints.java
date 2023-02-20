@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class ArrayOfPoints {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Please add numbers: ");
+        System.out.print("Please add a number: ");
         int n=sc.nextInt();
 
         Point[] p = new Point[n];
