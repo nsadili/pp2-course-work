@@ -1,10 +1,10 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class TheEratosthenes {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
+        sc.close();
         //System.out.println(findPrime(n));
         int [] res=findPrime(n);
         for (int i=1; i<=n; i++){
