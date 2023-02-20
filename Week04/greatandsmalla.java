@@ -4,7 +4,7 @@ public class greatandsmalla {
 
         int[] elements = { 44, 6, 2, 4, 8, 21 };
         int min = elements[0];
-        for (int i = 1; i < elements.length; i++) {
+        for (int i = 0; i < elements.length; i++) {
             if (elements[i] < min) {
                 min = elements[i];
             }
