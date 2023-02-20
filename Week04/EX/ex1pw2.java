@@ -1,7 +1,7 @@
 package EX;
 import java.util.Arrays;
 
-public class ex1 {
+public class ex1pw2 {
     // main
     public static void main(String[] args){
         if (args.length == 0) {
