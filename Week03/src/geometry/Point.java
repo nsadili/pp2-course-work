@@ -43,7 +43,7 @@ public class Point {
 
     @Override
     public String toString() {
-        return "Point [x=" + x + ", y=" + y + "]";
+        return "(" + this.x + ", " + this.y +")";
     }
 }
 

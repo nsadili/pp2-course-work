@@ -7,7 +7,7 @@ public class GeometryTest {
         Segment s1 = new Segment(p1, p2);
 
 
-        System.out.println(p1.equals(p2));
-        System.out.println(s1.getIntercept());
+        System.out.println(p1);
+        System.out.println(s1);
     }
 }

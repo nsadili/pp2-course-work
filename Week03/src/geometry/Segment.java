@@ -53,7 +53,7 @@ public class Segment {
 
     @Override
     public String toString() {
-        return "Segment [p1= " + p1 + ", p2= " + p2 + "]";
+        return "[" + p1 + "], [" + p2 + "]";
     }
 
 }
