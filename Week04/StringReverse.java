@@ -4,16 +4,26 @@ public class StringReverse
  {
     public static String reverseString(String input) 
     {
-        StringBuilder reversed = new StringBuilder();
+        StringBuilder sb = new StringBuilder();
 
-        for (int i= 0; input.length()- 1; i >= 0 ;  i--)
+        for (int i= input.length()- 1; i >= 0 ;  i--)
         {
-            reversed.append(input.charAt(i));
+            sb.append(input.charAt(i));  //charAt Returns the character at given position
         }
 
-        return reversed.toString();
+        return sb.toString();       
+    }
 
-       
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        String inputString = sc.nextLine();
+        String reversedString = reverseString(inputString);
+
+        System.out.println(reversedString);
     }
 
  }
+
+    
+   
