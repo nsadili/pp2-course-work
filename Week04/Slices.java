@@ -14,6 +14,6 @@ public class Slices {
             System.out.println(part1 + " " + part2);
         }
 
-        System.out.println(word); // original word
+        System.out.println(word);
     }
 }
