@@ -1,4 +1,4 @@
-package ArrayofPoints;
+pa ArrayofPoints.src.;
 
 
 public class Main {

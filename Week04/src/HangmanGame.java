@@ -13,7 +13,6 @@ public class HangmanGame {
         }
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Welcome to Hangman!");
 
         while (numIncorrectGuesses < 10) {
 
