@@ -37,5 +37,6 @@ public class MinMax {
         }
         return max;
        }
+       
 
 }
