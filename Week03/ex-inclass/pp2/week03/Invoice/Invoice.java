@@ -7,11 +7,11 @@ public class Invoice {
     private double price;
 
     public Invoice(String number, String description, int quantity, double price) {
-        if(quantity < 0) {
+        if(quantity <= 0) {
             quantity = 0;
         }
-        if(price < 0) {
-            price = 0;
+        if(price <= 0) {
+            price = 0.0;
         }
 
         this.number = number;
