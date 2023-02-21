@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+import pp2.Point.Point;
+
+
 public class ArraysofPoint {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -11,8 +14,8 @@ public class ArraysofPoint {
 
         for (int i = 0; i < a; i++) {
             p[i] = new Point(); // create a new Point object and assign it to the array
-            p[i].setx(scan.nextInt());
-            p[i].sety(scan.nextInt());
+            p[i].setx(scan.nextFloat());
+            p[i].sety(scan.nextFloat());
         }
 
         for (int i = 0; i < a; i++) {
@@ -25,43 +28,11 @@ public class ArraysofPoint {
             if (p[i].getx() < p[west].getx())
                 west = i;
         }
-        System.out.printf("Northern: (%d,%d)\nSouthern: (%d,%d)\nWestern: (%d,%d)\nEastern: (%d,%d)",
+        System.out.printf("Northern: (%f,%f)\nSouthern: (%f,%f)\nWestern: (%f,%f)\nEastern: (%f,%f)",
                 p[north].getx(), p[north].gety(), p[south].getx(), p[south].gety(), p[west].getx(), p[west].gety(),
                 p[east].getx(), p[east].gety());
     }
 }
 
-class Point {
-    private int x;
-    private int y;
 
-    public Point() {
-        this(1, 1);
-    }
 
-    public Point(int x, int y) {
-        this.x = x;
-        this.y = y;
-    }
-
-    public Point(Point p) {
-        this.x = p.x;
-        this.y = p.y;
-    }
-
-    public int getx() {
-        return x;
-    }
-
-    public void setx(int x) {
-        this.x = x;
-    }
-
-    public int gety() {
-        return y;
-    }
-
-    public void sety(int y) {
-        this.y = y;
-    }
-}
