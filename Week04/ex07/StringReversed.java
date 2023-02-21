@@ -7,13 +7,13 @@ public class StringReversed {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
 
-        //System.out.println(reverse1(s));
-        //System.out.println(reverse2(s));
+        System.out.println(reverse1(s));
+        System.out.println(reverse2(s));
         System.out.println(reverse3(s));
         sc.close();
     }
 
-    static String reverse1 (String s) {
+    private static String reverse1 (String s) {
         String temp = "";
 
        for (int i = s.length() - 1; i >= 0; i-- ) {
@@ -22,7 +22,7 @@ public class StringReversed {
        return temp;
     }
 
-    static String reverse2 (String s) { // memory efficient
+    private static String reverse2 (String s) { // memory efficient
         char[] chars = s.toCharArray();
 
         int l = chars.length;
@@ -36,7 +36,7 @@ public class StringReversed {
         return new String (chars);
     }
 
-    static String reverse3 (String s) {
+    private static String reverse3 (String s) {
         StringBuilder sb = new StringBuilder();
 
         for (int i = s.length() - 1; i >= 0; i-- ) {
