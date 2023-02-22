@@ -1,3 +1,5 @@
+package Week02.ex;
+
 public class Harmonic {
     public static void main(String[] args){
         if (args.length < 1){

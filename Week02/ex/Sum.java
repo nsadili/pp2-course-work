@@ -1,3 +1,5 @@
+package Week02.ex;
+
 import java.util.Scanner;
 
 public class Sum{

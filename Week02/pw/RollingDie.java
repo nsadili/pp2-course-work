@@ -1,3 +1,5 @@
+package Week02.pw;
+
 public class RollingDie {
     public static void main(String[] args) {   
         var roll = Math.random();
