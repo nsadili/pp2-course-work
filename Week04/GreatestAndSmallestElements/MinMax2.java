@@ -1,4 +1,4 @@
-package Week04.pw;
+package Week04.GreatestAndSmallestElements;
 
 public class MinMax2 {
     public static void main(String[] args) {

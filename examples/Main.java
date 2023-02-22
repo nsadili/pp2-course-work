@@ -6,7 +6,6 @@ public class Main
 	public static void main(String[] args) {
 
 	    int n1 = 23232666;
-	    int n2 = 124344; 
 	    
 	    System.out.println(findMostRepeatedDigit(n1));
 	    
@@ -70,5 +69,7 @@ public class Main
 	    }
 	    return  index;
 	}
+
+	
 	
 }
