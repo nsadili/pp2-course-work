@@ -1,5 +1,5 @@
 public class Customer{
-    public int ID(int x);
+    public int ID;
     public String name; 
     public char gender; 
 
