@@ -54,8 +54,28 @@ public class Customer{
         return this.balance;
     }
 
-    public void 
-    r  public void setStudentId(int studentId) {
-        this.studentId = studentId;
+    public void setBalance(int balance) {
+        this.balance = balance;
     }
+
+    public String toString() {
+        return this.name + "(" + this.ID + ")" + "balance = $" + this.balance;
+    }
+
+    public String getCustomerName() {
+        return this.name;
+    }
+  
+    public double deposit(double addition) {
+        double Account = balance + addition;
+        return deposit;
+    }
+
+    public double withdraw(double amount) {
+        if (balance >= amount)
+        int Account = Account - amount;
+        else
+        System.out.println("amount withdrawn exceeds the current balance!");
+    }
+
 }
