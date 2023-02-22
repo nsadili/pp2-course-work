@@ -1,0 +1,4 @@
+In constructor X.
+In constructor Y.
+
+This is because when an object of class Y is created, its constructor is called first, which in turn calls the constructor of its superclass X using the "super()" keyword. The constructor of X is responsible for printing "In constructor X.". Once the constructor of X is executed, the constructor of Y is then executed, printing "In constructor Y." to the console.

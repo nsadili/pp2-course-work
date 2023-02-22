@@ -1,0 +1,15 @@
+In static init block of A
+In static init block of B
+In instance init block of A
+In constructor A.
+In instance init block of B
+In constructor B.
+
+This is because when the program is executed and an object of class B is created, the following events occur in the following order:
+
+1. The static initialization block of class A is executed, which prints "In static init block of A".
+2. The static initialization block of class B is executed, which prints "In static init block of B".
+3. The instance initialization block of class A is executed, which prints "In instance init block of A".
+4. The constructor of class A is executed, which prints "In constructor A.".
+5. The instance initialization block of class B is executed, which prints "In instance init block of B".
+6. The constructor of class B is executed, which prints "In constructor B.".
