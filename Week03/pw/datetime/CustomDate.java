@@ -66,10 +66,15 @@ public class CustomDate {
 
 class CustomDateTest {
     public static void main(String[] args) {
-        CustomDate date1 = new CustomDate(12, 31, 2003);
-        CustomDate date2 = new CustomDate(1, 1, 2004);
+        CustomDate date1 = new CustomDate(12, 31, 2022);
+        CustomDate date2 = new CustomDate(1, 1, 2023);
 
+        System.out.println("Formatted date:");
         date1.displayFormatted();
         date2.displayFormatted();
+        System.out.println("");
+        System.out.println("Date:");
+        date1.displayDate();
+        date2.displayDate();
     }
 }
