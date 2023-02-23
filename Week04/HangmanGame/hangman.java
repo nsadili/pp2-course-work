@@ -9,8 +9,9 @@ public class hangman {
             words.start();
 
             System.out.println("If you want to play again, please, press 1; Otherwise, press 0");
-            Scanner sc = new Scanner(System.in);
-            b = sc.nextInt();
+            try (Scanner sc = new Scanner(System.in)) {
+                b = sc.nextInt();
+            }
 
         }
         

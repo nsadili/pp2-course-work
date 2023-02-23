@@ -34,13 +34,14 @@ public class words {
         toString(hiddenword);
         while (true) {
             endgame = 0;
+            pictures.picture(hearts);
             for (int i = 0; i < hiddenword.length; i++)
                 if (hiddenword[i] == '_')
                     endgame++;
             if (hearts == 0 || endgame == 0)
                 break;
             System.out.println("----------------------------------------------------");
-            System.out.println("You have " + hearts + " hearts");
+            System.out.println("You have " + hearts + " hearts left");
             System.out.print("Please, enter a character: ");
             Scanner sc = new Scanner(System.in);
             char newchar = sc.next().charAt(0);
@@ -54,7 +55,7 @@ public class words {
             }
 
             if (count == 0) {
-                System.out.println("Oh no, dear, You lost your 1 hearts");
+                System.out.println("Oh no, dear, You lost your 1 heart");
                 hearts--;
             }
             toString(hiddenword);
