@@ -4,25 +4,27 @@ public class GreatestAndSmallest {
         if(args.length==0){
             System.out.println("Please, enter an integer");
             System.exit(1);
+        } 
+        int[] a = new int[args.length];
+        for (int i = 0; i < a.length; i++){
+            a[i] = Integer.valueOf(args[i]);
         }
-        System.out.println("The maximum integer is " + Maximum());
-        System.out.println("The minimum integer is " + Minimum());
-        
-    }   
 
-     int num=new int[args];
+        System.out.println("The maximum integer is " + Maximum(a));
+        System.out.println("The minimum integer is " + Minimum(a));
+    }
 
-    private static int Maximum(int[] args){
-        int mx= args[0];
-        for(int i=-1;i>=0;i--){
-            if(args[i]>mx) mx= args[i];     
-     }
+    private static int Maximum(int[] a){
+        int mx= a[0];
+        for(int i=1;i<a.length;i++)
+            if(a[i]>mx) mx= a[i];     
+     
       return mx;
 }
-     private static int Minimum(int[] args){
-        int mn=args[0];
-        for(int i=0; i>=0; i--){
-            if(args[i]<mn) mn=args[i];
+     private static int Minimum(int[] a){
+        int mn=a[0];
+        for(int i=1; i<a.length; i++){
+            if(a[i]<mn) mn=a[i];
         }
         return mn;
      }

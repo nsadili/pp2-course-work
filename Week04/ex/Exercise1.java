@@ -6,26 +6,25 @@ public class Exercise1{
             System.out.println("Please, enter an integer");
             System.exit(1);
         }
-        Scanner scan= new Scanner(System.in);  
-        int numbers[];
-        for(int i=0; i< args.length; i++){
-            numbers[i]=Integer.parseInt(args[i]);
-        }
-        System.out.println(Arrays.toString(args));
-        System.out.println(Arrays.toString(numbers));
+        int cnt=args.length;
+        int a= sumArr(args);
+         System.out.println(Arrays.toString(args));
+        System.out.println("The sum of the numbers is " +sumArr(args));
+        System.out.println("The average of the numbers is " +average(a,cnt));
     }
-    void printArr(int[] arr){
-        for(int el : arr) {
-            System.out.print(el + " "); 
-        }
-
-    System.out.println();
     
-    }
-     private static int sumArr(int [] arr){
+     private static int sumArr(String args[]){
         int sum=0;
-        for(int  el: arr)
-        sum += el;
-        return sum;
+        for (String token : args) 
+          sum += Integer.valueOf(token);
+          
+          return sum;
      }
-}
+
+     private static float average(int a,int cnt){
+      return  (float) a / cnt;
+     
+     }
+    }
+    
+    
