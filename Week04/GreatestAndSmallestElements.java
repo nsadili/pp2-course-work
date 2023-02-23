@@ -54,12 +54,12 @@ public class GreatestAndSmallestElements {
 
     public static String minandmax(int[] array) {
         int[] answer = new int[2];
-        int min = array[0];
-        int max = array[0];
+        int min1 = array[0];
+        int max2 = array[0];
         for (int x : array) {
-            if (x < min) min = x;
-            if (x > max) max = x;
+            if (x < min1) min1 = x;
+            if (x > max2) max2 = x;
         }
-        return "Min: " + min + ". Max: " + max;
+        return "Min: " + min1 + ". Max: " + max2;
     }
 }
