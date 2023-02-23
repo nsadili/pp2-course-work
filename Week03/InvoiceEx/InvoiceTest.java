@@ -1,4 +1,4 @@
-package Week03;
+package Week03.InvoiceEx;
 
 public class  InvoiceTest{
     public static void main(String[] args) {

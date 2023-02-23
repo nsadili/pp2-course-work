@@ -1,16 +1,12 @@
-package Week03;
+package Week03.InvoiceEx;
 
 public class Invoice {
     
     private int quan;
-    private String number;
-    private String description;
     private Double price;
 
     public Invoice(int quan, String number , String description , Double price){
         this.quan = quan;
-        this.number = number;
-        this.description = description;
         this.price = price;
 
         if( this.quan < 0){

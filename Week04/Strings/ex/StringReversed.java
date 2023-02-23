@@ -1,13 +1,13 @@
-package Week04.ex.moderate;
+package Week04.Strings.ex;
 import java.util.Scanner;
-public class StringEx1 {
+public class StringReversed {
     
     public static void main(String[] args){
 
-        Scanner scan = new Scanner(System.in);
-
-        String s = scan.next();
-        System.out.println(reverse2(s));
+        try (Scanner scan = new Scanner(System.in)) {
+            String s = scan.next();
+            System.out.println(reverse2(s));
+        }
 
 
     }
