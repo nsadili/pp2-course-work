@@ -1,3 +1,4 @@
+package pp2.week03;
 public class Invoice {
     private String partNumber;
     private String partDescription;
