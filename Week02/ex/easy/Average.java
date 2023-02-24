@@ -1,33 +1,20 @@
 
 //package taghi_mammadov.week_02;
-import java.util.*;
+import java.util.Scanner;
+
 public class Average {
-    public static void main(String[] args){
-        
-        try (Scanner in = new Scanner(System.in)) {
-        
-            System.out.print("Input number(s): ");
-              int n = in.nextInt();
+    public static void main(String[] args) {
+        try (Scanner sc = new Scanner(System.in)) {
+            double sum = 0;
+            int count = 0;
 
-              if (n < 1){
-                System.out.println("error");
-                System.exit(1);
+            while (sc.hasNextDouble()) {
+                sum += sc.nextDouble();
             }
-
-        int[] nums = {n};
-         
-        float sum = 0;
-         
-        int i=0;
-        while(i < nums.length) {
-            sum += nums[i];
-            i++;
+            System.out.println(
+                    (count == 0)
+                            ? "No value is entered"
+                            : (double) sum / count);
         }
-         
-        float average = (sum / nums.length); 
-         
-        System.out.println("Average : "+average);
-
     }
-}
 }

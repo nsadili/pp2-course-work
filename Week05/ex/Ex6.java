@@ -19,3 +19,13 @@ public class Ex6 {
             
         
     
+/////////////
+/*
+ Description:
+
+ methodTwo and the methodFour were correct because they are the same
+ but methodOne and methodThree are not correct due to the fact that they are not equal
+ mehtodOne of class B only hides
+ methodThree of the class B only overrides 
+ 
+ */
