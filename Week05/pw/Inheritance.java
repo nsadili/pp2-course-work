@@ -1,13 +1,34 @@
 public class Inheritance {
     public static void main(String[] args) {
-        //need to be loaded
+        Person p = new Person("Nariman","Mammadov","Male");
+        Person P = new Person ("Shamil", "Abbasov", "Male");
+
+        Teacher T = new Teacher("Nariman","Mammadov","Male","SITE", "PP2,PP1");
+        Teacher t = new Teacher("Shamil", "Abbasov", "Male", "SITE", "joking, eating");
+
+        Student s = new Student("Nariman", "Mammadov", "Male", 47);
+        Student S = new Student("Shamil", "Abbasov", "Male", 36);
+
+        PhdStudent ps = new PhdStudent("Nariman", "Mammadov", "Male", 47, "SITE","pp2,pp1");
+        PhdStudent PS = new PhdStudent("Shamil", "Abbasov", "Male", 36, "SITE", "pp1,pp2");
+
+        System.out.println(p.toString());
+        System.out.println(t.toString());
+        System.out.println(s.toString());
+        System.out.println(ps.toString());
+
+        System.out.println(P.equals(p));
+        System.out.println(T.equals(t));
+        System.out.println(S.equals(s));
+        System.out.println(PS.equals(ps));
+
     }
 }
 
 class Person{
-    private String firstName = "Nariman";
-    private String lastName = "Mammadov";
-    private String gender = "Male";
+    private String firstName;
+    private String lastName;
+    private String gender;
     public Person(String firstName, String lastName, String gender) {
 
         this.firstName = firstName;
@@ -46,8 +67,8 @@ class Person{
 }
 
 class Teacher extends Person{
-    private String department = "Baku";
-    private String courses = "Programming Principles";
+    private String department;
+    private String courses;
     public Teacher(String firstName, String lastName, String gender, String department, String courses) {
 
         super(firstName, lastName, gender);

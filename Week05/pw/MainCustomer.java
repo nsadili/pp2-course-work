@@ -1,0 +1,17 @@
+public class MainCustomer{
+    public static void main(String[] args) {
+        Customer c = new Customer(47,"Nariman", 10);
+        Account a = new Account(4747,c,6000.0);
+
+        System.out.printf("ID(customer): %d\n", c.getID());
+        System.out.printf("Name: %s\n", c.getName());
+        System.out.println(c.toString());
+        System.out.println();
+        System.out.printf("ID(account): %d\n", a.getID());
+        System.out.printf("Balance: $%.2f\n", a.getBalance());
+        System.out.printf("Customer's Name: %s\n", a.getCustomerName());
+        System.out.println(a.deposit(500.0).withdraw(200).toString());
+        
+
+    }
+}
