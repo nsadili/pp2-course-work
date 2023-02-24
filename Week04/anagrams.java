@@ -7,7 +7,6 @@ public class anagrams {
         String a1 = sc.nextLine();
 
         String a2 = sc.nextLine();
-
     }
 
     private static boolean checkAnagram(String a1, String a2) {
