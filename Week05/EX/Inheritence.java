@@ -2,8 +2,6 @@ package EX;
 
 import java.util.Arrays;
 
-
-
 public class Inheritence {
     public static void main(String[] args) {
         Person person = new Person("Rahima", "Karimova", "Female");
@@ -11,10 +9,9 @@ public class Inheritence {
                 new String[] { "PP2", "Calculus 2" }, "BSIT");
         Teacher teacher1 = new Teacher("Jane", "Smith", "Female", "Computer Science",
                 new String[] { "Java Programming", "Algorithms" });
-       
-        
-                Person studentPerson = new Person(null, null, null);
-        Student studetn1 =new Student("Amina", "Aliyeva", "Female", "12313");
+
+        Person studentPerson = new Person(null, null, null);
+        Student studetn1 = new Student("Amina", "Aliyeva", "Female", "12313");
         System.out.println("Phd Student: \n" + phdStudent.toString());
         System.out.println("Teacher: \n" + teacher1.toString());
         System.out.println("Student \n" + studetn1.toString());
@@ -23,8 +20,6 @@ public class Inheritence {
         System.out.println("Teacher1 equals Teacher1: " + teacher1.equals(teacher1));
 
     }
-
-    
 
 }
 
@@ -71,105 +66,104 @@ class Person {
         return p.firstName.equals(this.firstName) && p.lastName.equals(this.lastName) && p.gender.equals(this.gender);
 
     }
-    }
+}
 
-    class Teacher extends Person {
-        private String department;
-        private String courses[];
+class Teacher extends Person {
+    private String department;
+    private String courses[];
 
-        public Teacher(String firstName, String lastName, String gender, String department, String[] courses) {
-            super(firstName, lastName, gender);
-            this.department = department;
-            this.courses = courses;
-
-        }
-
-        public String getDepartment() {
-            return department;
-        }
-
-        public String[] getCourses() {
-            return courses;
-        }
-
-        public void setDepartment(String department) {
-            this.department = department;
-        }
-
-        public void setCourses(String[] courses) {
-            this.courses = courses;
-        }
-
-        public String toString() {
-            return super.ToString() + "\nDepartment: " + department + "\nCourses:" + Arrays.toString(courses);
-        }
-
-        public boolean Equals(Teacher p) {
-            return super.Equals(p) && this.department.equals(p.department) && Arrays.equals(p.courses, this.courses);
-        }
+    public Teacher(String firstName, String lastName, String gender, String department, String[] courses) {
+        super(firstName, lastName, gender);
+        this.department = department;
+        this.courses = courses;
 
     }
 
-    class Student extends Person {
-        private String studentId;
-
-        public Student(String firstName, String lastName, String gender, String studentId) {
-            super(firstName, lastName, gender);
-            this.studentId = studentId;
-        }
-
-        public String getStudentId() {
-            return studentId;
-        }
-
-        public void setStudentId(String studentId) {
-            this.studentId = studentId;
-        }
-
-        public String toString() {
-            return super.ToString() + "\nStudent Id: " + studentId;
-        }
-
-        public boolean Equals(Student p) {
-            return super.Equals(p) && this.studentId.equals(p.studentId);
-        }
-
+    public String getDepartment() {
+        return department;
     }
 
-    class PhdStudent extends Student {
-        private String department;
-        private String courses[];
-
-        public PhdStudent(String firstName, String lastName, String gender, String studentId, String courses[],
-                String department) {
-            super(firstName, lastName, gender, studentId);
-            this.department = department;
-            this.courses = courses;
-        }
-
-        public void setDepartment(String department) {
-            this.department = department;
-        }
-
-        public void setCourses(String[] courses) {
-            this.courses = courses;
-        }
-
-        public String getDepartment() {
-            return department;
-        }
-
-        public String[] getCourses() {
-            return courses;
-        }
-
-        public String toString() {
-            return super.ToString() + "\nDepartment: " + department + "\nCourses: " + Arrays.toString(courses);
-        }
-
-        public boolean Equals(PhdStudent p) {
-            return super.Equals(p) && p.department.equals(this.department) && Arrays.equals(p.courses, this.courses);
-        }
-
+    public String[] getCourses() {
+        return courses;
     }
 
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
+    public void setCourses(String[] courses) {
+        this.courses = courses;
+    }
+
+    public String toString() {
+        return super.ToString() + "\nDepartment: " + department + "\nCourses:" + Arrays.toString(courses);
+    }
+
+    public boolean Equals(Teacher p) {
+        return super.Equals(p) && this.department.equals(p.department) && Arrays.equals(p.courses, this.courses);
+    }
+
+}
+
+class Student extends Person {
+    private String studentId;
+
+    public Student(String firstName, String lastName, String gender, String studentId) {
+        super(firstName, lastName, gender);
+        this.studentId = studentId;
+    }
+
+    public String getStudentId() {
+        return studentId;
+    }
+
+    public void setStudentId(String studentId) {
+        this.studentId = studentId;
+    }
+
+    public String toString() {
+        return super.ToString() + "\nStudent Id: " + studentId;
+    }
+
+    public boolean Equals(Student p) {
+        return super.Equals(p) && this.studentId.equals(p.studentId);
+    }
+
+}
+
+class PhdStudent extends Student {
+    private String department;
+    private String courses[];
+
+    public PhdStudent(String firstName, String lastName, String gender, String studentId, String courses[],
+            String department) {
+        super(firstName, lastName, gender, studentId);
+        this.department = department;
+        this.courses = courses;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
+    public void setCourses(String[] courses) {
+        this.courses = courses;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public String[] getCourses() {
+        return courses;
+    }
+
+    public String toString() {
+        return super.ToString() + "\nDepartment: " + department + "\nCourses: " + Arrays.toString(courses);
+    }
+
+    public boolean Equals(PhdStudent p) {
+        return super.Equals(p) && p.department.equals(this.department) && Arrays.equals(p.courses, this.courses);
+    }
+
+}
