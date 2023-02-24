@@ -11,7 +11,7 @@ public class MathDemoTest {
             arr[i]= scn.nextInt();
         }
         System.out.println("Sum of array is: " + MathOper.sum(arr));
-        System.out.println("Sum of array is: " + MathOper.mean(arr));
+        System.out.println("The mean of array is: " + MathOper.mean(arr));
         
         int n= scn.nextInt();
         System.out.println("The factorial of n is: "+ MathOper.factorial(n));
@@ -46,6 +46,9 @@ class MathOper{
     public static int factorial(int n){
       
         int result=1;
+        if(n<0){
+            System.out.println("Please provide positive integer ");
+        }
         for(int i=1;i<=n;i++){
             result*=i;
 
