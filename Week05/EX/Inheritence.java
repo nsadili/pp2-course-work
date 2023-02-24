@@ -95,7 +95,7 @@ class Teacher extends Person {
     }
 
 public boolean Equals(Teacher p){
-    return super.Equals(p) && this.department.equals(p.department) && this.courses.equals(p.courses);
+    return super.Equals(p) && this.department.equals(p.department) && Arrays.equals(p.courses,this. courses);
 }
 
     
@@ -147,7 +147,7 @@ private String courses[];
     }
    
     public boolean Equals(PhdStudent p){
-        return super.Equals(p) && p.courses.equals(this.courses) && p.department.equals(this.department);
+        return super.Equals(p) && p.department.equals(this.department) && Arrays.equals(p.courses,this.courses);
     }
 
 
