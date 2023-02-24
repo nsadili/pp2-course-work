@@ -234,7 +234,7 @@ class PhdStudent extends Student{
     }
 
     public boolean equals(PhdStudent pStud){
-
+        
         return super.equals(pStud) && pStud.department.equals(this.department) && pStud.courses.equals(this.courses);
 
     }
