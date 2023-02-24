@@ -17,11 +17,13 @@ public class Arrays {
         // }
         
         int[] num = {5, 3 , 3, 2, 2, 1, 4, 5, 1, 2, 10, 9, 9, 2, 2, 3, 4, 8, 7, 6};
-
+        findMinAndMax num1 = new findMinAndMax(num);
+        num1.findMinAndMax();
+        System.out.println(num1);
         //findHistogram.histogram(num);
-        findMinAndMax.findMinAndMax(num);
-        sumArrays.sumArrays(num);
-        printArrays.printArrays(num);
+        
+        // sumArrays.sumArrays(num);
+        // printArrays.printArrays(num);
     }
 
 }
