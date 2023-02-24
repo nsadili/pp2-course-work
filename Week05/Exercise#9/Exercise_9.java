@@ -32,11 +32,11 @@ public class Customer{
         private double balance;
     }
  
-    public Account(int id, Customer customer, double balance) {
+    public class Account(int id, Customer customer, double balance) {
 
     }
 
-    public Account(int id, Customer customer, double balance) {
+    public class Account(int id, Customer customer, double balance) {
        this.id = id;
        this.customer = customer;
        this.balance = balance;
