@@ -18,3 +18,7 @@ public class Main2 {
         B b =new B();
     }
 }
+ /*
+  * If you make a variable static
+  * it means that it will be the sae for the all objects
+  */
