@@ -1,3 +1,7 @@
+package InheritanceEx8;
+
+import java.util.Objects;
+
 public class Person {
     
     static String firstName;
@@ -34,24 +38,19 @@ public class Person {
             this.gender = gender;
         }
 
-     // to string
-     
+        public String toString() {
+            return "Firstname: " + firstName + ", Lastname: " + lastName + ", Gender: " + gender; 
+        }     
+
      public static boolean equals(Person p) {
 
-        if(p.firstName == firstName && p.lastName == lastName && p.gender == gender)
-
-        return true;
-        else 
+        if(p == null) {
         return false;
-
+        } 
+        return Objects.equals(firstName, p.firstName) && 
+        Objects.equals(lastName, p.lastName) && Objects.equals(gender, p.gender);
      }
 
-     class Teacher extends Person {
-        public int x;
-        public static void main(String[] args) {
-            Teacher test = new Teacher();
-            
-        }
-     }
+     
 
 }
