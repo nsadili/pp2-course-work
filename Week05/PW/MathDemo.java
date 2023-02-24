@@ -1,7 +1,5 @@
 package pp2.week04.pw;
 
-import java.util.Scanner;
-
 public class MathDemo {
     
     //Scanner sc = new Scanner(System.in);
@@ -17,23 +15,13 @@ public class MathDemo {
     }
     public static int sum(int[] args){
         int sum = 0;
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        for(int i = 0; i < n; i++){
+        for(int i = 0; i < args.length; i++){
            sum += args[i];
         }
-        sc.close();
         return sum;
     }
     public static float mean(int[] args){
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        float sum = 0;
-        for(int i = 0; i < n; i++){
-           sum += args[i];
-        }
-        sc.close();
-        return sum / n;
+        return sum(args) / args.length;
     }
     public static int factorial(int n){
         return n * factorial(n-1);
