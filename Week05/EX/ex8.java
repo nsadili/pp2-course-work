@@ -125,7 +125,7 @@ class PhdStudent extends Person {
     }
 }
 
-public class Main {
+public class ex8 {
     public static void main(String[] args) {
         // person
         Person person1 = new Person("Leyla", "Neymat", "Female");
