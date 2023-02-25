@@ -5,7 +5,7 @@ public class Customer {
     private String name;
     private char gender;
 
-    public Customer(int ID, String name, int discount){
+    public Customer(int ID, String name, char gender, int discount){
         this.ID = ID;
         this.name = name;
         this.gender = gender;
