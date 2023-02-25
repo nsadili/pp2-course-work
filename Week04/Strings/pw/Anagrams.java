@@ -1,20 +1,26 @@
 package Week04.Strings.pw;
-
-import Week04.Strings.ex.SortingStrings;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class Anagrams {
-    boolean isAnagram(String s1, String s2) {
-        SortingStrings ss = new SortingStrings();
-
-        return ss.sort(s1).equals(ss.sort(s2));
+    public static boolean f(String a, String b) {
+        char[] x = a.toCharArray();
+        char[] y = b.toCharArray();
+        Arrays.sort(x);
+        Arrays.sort(y);
+        if(Arrays.equals(x,y) == true) {
+            return true;
+        }
+        else {
+            return false;
+        }
+  
     }
-
     public static void main(String[] args) {
-
-        Anagrams an = new Anagrams();
-
-        System.out.println(an.isAnagram("silent", "listen"));
-        System.out.println(an.isAnagram("ata", "ana"));
-
+        Scanner con = new Scanner(System.in);
+        String a = con.next();
+        String b = con.next();
+        System.out.println(f(a,b));
+        con.close();
     }
 }

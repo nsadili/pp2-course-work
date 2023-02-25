@@ -1,4 +1,4 @@
-package Week04.Arrays.ex.pw;
+package Week04.Arrays.pw;
 import java.util.Arrays;
 public class GreatSmall {
     public static void main(String[] args) {

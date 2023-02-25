@@ -5,7 +5,7 @@ public class Invoice {
     private int quan;
     private Double price;
 
-    public Invoice(int quan, String number , String description , Double price){
+    public Invoice(String description, String number , int quan , Double price){
         this.quan = quan;
         this.price = price;
 
@@ -18,6 +18,9 @@ public class Invoice {
        }
     }
        
+    public Invoice(int i, String number, String string, double price2) {
+    }
+
     public double getInvoiceAmount(){
         return quan * price;
     }
