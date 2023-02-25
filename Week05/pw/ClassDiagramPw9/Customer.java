@@ -50,6 +50,6 @@ public class Customer {
 
 
     public String toString() {
-        return null; // ..... continue!
+        return "name(ID): " + name + "(" + ID + ")"; 
     }
 }

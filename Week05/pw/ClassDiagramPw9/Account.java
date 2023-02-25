@@ -50,13 +50,25 @@ public class Account {
     }
 
     public String toString() {
-        return "Student ID is: " + id + ", Customer is: " + customer + ", Balance is: " + balance;
+        return "name(ID) balance: " + this.getCustomerName() + "(" + this.getID() + ") %.2lf balance = $" + balance;
     }
 
     public String getCustomerName() {
-        return null;                       // How to solve that ?????
+        return "Name " + customer;   // How to solve that ?????
+    }
+
+    public Account deposit(double amount) {
+        return "Amount: " + amount.deposit;
+    }
+
+    public String withdraw(double amount) {
+
+        if (balance >= amount) 
+        return (int)balance - amount;
+        else
+        return "amount withdrawn exceeds the current balance! ";
     }
 
 
-    
+
 }
