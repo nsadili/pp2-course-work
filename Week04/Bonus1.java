@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Bonus2 {
+public class Bonus1 {
    public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
     int n =scan.nextInt(); // n = number of nodes
