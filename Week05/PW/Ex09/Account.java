@@ -13,12 +13,12 @@ public class Account
         this.balance = balance;
     }
 
-    public Account(int id2, Customer customer)
+    public Account(int ID, Customer customer)
     {
         // this.id2 = id2;
         // this.customer = customer;   
         // this.balance = 0;     
-        this(id2, customer, 0);
+        this(ID, customer, 0);
     } 
 
     public int getId2()
@@ -26,7 +26,7 @@ public class Account
         return ID;
     }
 
-    public void setId2(int id2)
+    public void setId2(int ID)
     {
         this.ID = ID;
     }
