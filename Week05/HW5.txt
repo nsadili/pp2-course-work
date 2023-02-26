@@ -1,0 +1,16 @@
+Inheritance is a way to create new classes based on existing classes. There are different types of inheritance:
+
+Single inheritance: a subclass inherits from a single superclass.
+Example: class Car extends Vehicle
+
+Multilevel inheritance: a subclass inherits from a superclass, which itself inherits from another superclass.
+Example: class SportsCar extends Car
+
+Hierarchical inheritance: multiple subclasses inherit from a single superclass.
+Example: class SUV extends Vehicle, class Truck extends Vehicle
+
+Multiple inheritance: a subclass inherits from multiple superclasses.
+Example: class HybridCar extends ElectricCar, GasolineCar
+
+Hybrid inheritance: a combination of different types of inheritance.
+Example: class ElectricSUV extends SUV, ElectricCar
