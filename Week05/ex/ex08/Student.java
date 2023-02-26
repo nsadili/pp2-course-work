@@ -1,4 +1,5 @@
 package ex08;
+
 public class Student extends Person {
 
     private String studentId;
@@ -8,14 +9,14 @@ public class Student extends Person {
         this.studentId = studentId;
 
     }
+
     public String getStudentId() {
-       return studentId;
+        return studentId;
     }
 
     public void setStudentId(String studentId) {
         this.studentId = studentId;
     }
-    
 
     public String toString() {
         return super.toString() + ", " + studentId;
@@ -24,7 +25,5 @@ public class Student extends Person {
     public boolean equals(Student s) {
         return super.equals(s) && this.studentId.equals(s.getStudentId());
     }
-
-   
 
 }
