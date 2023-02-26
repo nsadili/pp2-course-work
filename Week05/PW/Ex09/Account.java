@@ -15,7 +15,7 @@ public class Account
 
     public Account(int ID, Customer customer)
     {
-        // this.id2 = id2;
+        // this.ID = ID;
         // this.customer = customer;   
         // this.balance = 0;     
         this(ID, customer, 0);
