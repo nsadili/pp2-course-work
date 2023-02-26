@@ -39,20 +39,18 @@ public class words {
                 "\nI have found, Let's Start");
     }
 
-    public static void start() {
+    public static void default_() {
         hearts = 7;
         count = 0;
         endgame = 0;
         a = w.nextInt(word.length);
         gameword = word[a].toCharArray();
         hiddenword = word[a].toCharArray();
+    }
 
-                
-
-        for (int i = 0; i < hiddenword.length; i++) {
-            hiddenword[i] = '_';
-        }
-        toString(hiddenword);
+    public static void start() {
+        default_();
+        hideWord();
         while (true) {
             endgame = 0;
             for (int i = 0; i < hiddenword.length; i++)
@@ -60,14 +58,27 @@ public class words {
                     endgame++;
             if (hearts == 0 || endgame == 0)
                 break;
-            System.out.println("----------------------------------------------------");
-            System.out.println("You have " + hearts + " hearts left");
-            System.out.print("Please, enter a character: ");
+            printProccess();
             scan();
             check();
-
         }
+        printLastThings();
+    }
 
+    public static void printProccess(){
+        System.out.println("----------------------------------------------------");
+        System.out.println("You have " + hearts + " hearts left");
+        System.out.print("Please, enter a character: ");
+    }
+
+    public static void hideWord(){
+        for (int i = 0; i < hiddenword.length; i++) {
+            hiddenword[i] = '_';
+        }
+        toString(hiddenword);
+    }
+
+    public static void printLastThings() {
         System.err.println("----------------------------------------------------");
 
         if (hearts == 0) {
@@ -131,9 +142,6 @@ public class words {
             }
             toString(hiddenword);
             pictures.picture(hearts);
-
         }
-
     }
-
 }
