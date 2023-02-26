@@ -1,0 +1,11 @@
+The output of the code when run will be:
+
+In static init block of A
+In static init block of B
+In instance init block of A
+In constructor A.
+In instance init block of B
+In constructor B.
+
+
+This is because class A has both a static initialization block and an instance initialization block, which are executed when the class is loaded and each time an instance of the class is created, respectively. Class B extends A, so its constructor will implicitly call the constructor of its superclass (A() method) before executing its own code.
