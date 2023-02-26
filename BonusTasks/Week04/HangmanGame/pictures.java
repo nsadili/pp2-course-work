@@ -1,4 +1,4 @@
-package HangmanGame;
+package BonusTasks.Week04.HangmanGame;
 
 public class pictures {
     public static void picture(int q) {

@@ -1,4 +1,4 @@
-package HangmanGame;
+package BonusTasks.Week04.HangmanGame;
 
 import java.util.Random;
 import java.util.Scanner;
