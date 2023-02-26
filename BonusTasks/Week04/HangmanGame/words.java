@@ -15,26 +15,38 @@ public class words {
     static int count = 0;
     static int endgame = 0;
 
-    public static void start() {
+    static Random w = new Random();
+    static int a = w.nextInt(word.length);
+    static char gameword[] = word[a].toCharArray();
+    static char hiddenword[] = word[a].toCharArray();
 
+    static char[] x;
+
+    static Scanner sc = new Scanner(System.in);
+
+    public static void scan(){
+        String newchar = sc.nextLine();
+        x = newchar.toCharArray();
+    }
+
+    public static void menu(){
         System.out.println("Hello User" +
-                "\nThis is a Hangman Game" +
-                "\nLet's Start with you and see who will win" +
-                "\nYou have " + hearts + " chance (hearts) to give wrong answer" +
-                "\nOtherwise, You die." +
-                "\nI am thinking about new word" +
-                "\nI have found, Let's Start");
-        Random w = new Random();
-        int a = w.nextInt(word.length);
-        char gameword[] = word[a].toCharArray();
-        char hiddenword[] = word[a].toCharArray();
+        "\nThis is a Hangman Game" +
+        "\nLet's Start with you and see who will win" +
+        "\nYou have " + hearts + " chance (hearts) to give wrong answer" +
+        "\nOtherwise, You die." +
+        "\nI am thinking about new word" +
+        "\nI have found, Let's Start");
+    }
+
+    public static void start() {
+        
         for (int i = 0; i < hiddenword.length; i++) {
             hiddenword[i] = '_';
         }
         toString(hiddenword);
         while (true) {
             endgame = 0;
-            pictures.picture(hearts);
             for (int i = 0; i < hiddenword.length; i++)
                 if (hiddenword[i] == '_')
                     endgame++;
@@ -43,25 +55,12 @@ public class words {
             System.out.println("----------------------------------------------------");
             System.out.println("You have " + hearts + " hearts left");
             System.out.print("Please, enter a character: ");
-            Scanner sc = new Scanner(System.in);
-            char newchar = sc.next().charAt(0);
-            count = 0;
-            for (int i = 0; i < hiddenword.length; i++) {
-                if (gameword[i] == newchar) {
-                    System.out.println("Congratulations!, You found correct character!");
-                    hiddenword[i] = newchar;
-                    count++;
-                }
-            }
-
-            if (count == 0) {
-                System.out.println("Oh no, dear, You lost your 1 heart");
-                hearts--;
-            }
-            toString(hiddenword);
+                scan();
+                check();
+            
         }
 
-        System.out.println("----------------------------------------------------");
+        System.err.println("----------------------------------------------------");
 
         if (hearts == 0) {
             System.out.println("Oh no, You can not find correct word" +
@@ -81,6 +80,53 @@ public class words {
             System.out.print(x[i] + " ");
         }
         System.out.println("]");
+    }
+
+    public static void check(){
+        if (x.length>1) {
+            try {
+                throw new MyException();
+            } catch (Exception ex) {
+                System.out.println("Only 1 character requires");
+                toString(hiddenword);
+
+            }
+        } else if (x[0] >= 48 && x[0] <= 57) {
+            try {
+                throw new MyException();
+            } catch (Exception ex) {
+                System.out.println("It must not be a number");
+                toString(hiddenword);
+
+            }
+        } else if(x[0] == ' ') {
+            try {
+                throw new MyException();
+            } catch (Exception ex) {
+                System.out.println("You can not enter space");
+                toString(hiddenword);
+
+            }
+        }
+        else {
+            count = 0;
+            for (int i = 0; i < hiddenword.length; i++) {
+                if (gameword[i] == x[0]) {
+                    System.out.println("Congratulations!, You found correct character!");
+                    hiddenword[i] = x[0];
+                    count++;
+                }
+            }
+
+            if (count == 0) {
+                System.out.println("Oh no, dear, You lost your 1 heart");
+                hearts--;
+            }
+            toString(hiddenword);
+            pictures.picture(hearts);
+
+        }
+
     }
 
 }
