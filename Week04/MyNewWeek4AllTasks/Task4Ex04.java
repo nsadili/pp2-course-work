@@ -1,12 +1,9 @@
 import java.util.Scanner;
-
 // iii. Convert list of edges to adjacency matrix
-
-
 public class Task4Ex04 {
     public static void main(String[] args) { 
         Scanner scan = new Scanner(System.in);
-        int n = scan.nextInt(); // n = number of nodes
+        int n = scan.nextInt(); // n = number of nodes // n * n matrix // n*n nodes at all
         int m = scan.nextInt(); // m = number of edges
         int[][] a = new int[n+1][n+1];
         // accept list of edges

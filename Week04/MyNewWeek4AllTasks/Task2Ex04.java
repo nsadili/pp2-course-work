@@ -1,6 +1,32 @@
 import java.util.Scanner;
 
 public class Task2Ex04 {
+    public static void main(String[] args) {
+        // Take command line arguments and convert into integer array
+       // int n = args.length; You can use n instead of args.length
+        int[] arr = new int[args.length];
+        for(int i = 0; i < args.length; i++) {
+            arr[i] = Integer.valueOf(args[i]);
+        }
+
+        /* Console Input (Scanner): */
+
+//     Scanner scan = new Scanner(System.in);
+//    int n = scan.nextInt(); // size of array
+//       int[] arr = new int[n];
+//        for(int i = 0; i < n; i++) {
+//            arr[i] = scan.nextInt(); // array elements
+//        }
+
+        System.out.println(minimum(arr));
+        System.out.println(maximum(arr));
+        int[] ans1 = minimumAndMaximum(arr);
+        System.out.println(ans1[0]+" "+ans1[1]);
+
+       // System.out.println(minimumAndMaximum(arr)); 
+       //if you do only this then it will give you the referance of the values not the values itself!
+    }
+
     /*
         When you are gonna find minimum / maximum value in an array:
         -> set a variable that will hold minimum / maximum value (in our example, it is ans)
@@ -58,29 +84,8 @@ public class Task2Ex04 {
         int minVal = minimum(arr);
         int maxVal = maximum(arr);
         int[] res = {minVal, maxVal};
+
         return res;
     }
 
-    public static void main(String[] args) {
-        // Take command line arguments and convert into integer array
-        int n = args.length;
-        int[] arr = new int[n];
-        for(int i = 0; i < n; i++) {
-            arr[i] = Integer.valueOf(args[i]);
-        }
-
-        /* Console Input (Scanner): */
-
-//        Scanner scanner = new Scanner(System.in);
-//        int n = scanner.nextInt(); // size of array
-//        int[] arr = new int[n];
-//        for(int i = 0; i < n; i++) {
-//            arr[i] = scanner.nextInt(); // array elements
-//        }
-
-        System.out.println(minimum(arr));
-        System.out.println(maximum(arr));
-        int[] ans1 = minimumAndMaximum(arr);
-        System.out.println(ans1[0]+" "+ans1[1]);
-    }
 }

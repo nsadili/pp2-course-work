@@ -13,16 +13,15 @@ i = 0...n-1 => j = 0...i everytime append j-th character and it will work
  */
 public class Task8Ex04 {
     public static void main(String[] args) {
-        Scanner con = new Scanner(System.in);
-        String a = con.next();
-        int n = a.length();
+        Scanner scan  = new Scanner(System.in);
+        String a = scan.next();
         StringBuilder res = new StringBuilder("");
-        for(int i=0;i<n;i++){
-            for(int j=0;j<=i;j++) {
+        for(int i = 0; i < a.length(); i++){
+            for(int j = 0; j <= i; j++) {
                 res.append(a.charAt(j));
             }
         }
-        System.out.println(res);
-        con.close();
+        System.out.println(res.toString());
+        scan.close();
     }
 }

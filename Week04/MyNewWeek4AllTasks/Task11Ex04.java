@@ -1,10 +1,16 @@
 import java.util.Scanner;
-
 /*
     swapChars(a) does the instruction for 1 word
     solve(a) modifies the whole string
  */
 public class Task11Ex04 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String a = scan.nextLine();
+        System.out.println(solve(a));
+        scan.close();
+    }
+
     public static String swapChars(String a) {
         StringBuilder res = new StringBuilder("");
         res.append(a.charAt(a.length() - 1));
@@ -31,11 +37,5 @@ public class Task11Ex04 {
             result.append(swapChars(builder.toString()) + " ");
         }
         return result.toString();
-    }
-    public static void main(String[] args) {
-        Scanner con = new Scanner(System.in);
-        String a = con.nextLine();
-        System.out.println(solve(a));
-        con.close();
     }
 }

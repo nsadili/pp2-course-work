@@ -12,19 +12,20 @@ char[] m = a.toCharArray();
 Arrays.sort(m);
  */
 public class Task9Ex04 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String a = scan.next();
+        System.out.println(f(a));
+        scan.close();
+    }
+
     public static String f(String a) {
         char[] m = a.toCharArray();
         Arrays.sort(m);
         StringBuilder res = new StringBuilder("");
-        for(int i=0;i<m.length;i++) {
+        for(int i = 0; i < m.length; i++) {
             res.append(m[i]);
         }
         return res.toString();
-    }
-    public static void main(String[] args) {
-        Scanner con = new Scanner(System.in);
-        String a = con.next();
-        System.out.println(f(a));
-        con.close();
     }
 }
