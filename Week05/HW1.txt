@@ -1,0 +1,5 @@
+In constructor X.
+In constructor Y. 
+
+
+The output "In constructor X" and "In constructor Y" is produced because the code creates an instance of class Y, which is a subclass of class X. The main() method in the Main class creates the instance of class Y, which triggers the automatic invocation of the constructor of class X before the constructor of class Y. This is due to the fact that class Y inherits from class X.
