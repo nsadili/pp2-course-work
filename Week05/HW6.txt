@@ -1,0 +1,3 @@
+The code defines two classes, ClassA and ClassB, with ClassB inheriting from ClassA. ClassA has four methods: methodOne, methodTwo, methodThree, and methodFour. ClassB overrides the behavior of methodOne and methodTwo from ClassA, and also defines its own methodThree. ClassB does not override methodFour, but instead "hides" it by defining its own static method with the same name and signature.
+
+Therefore, the methods of ClassB that are overriding superclass ClassA methods are methodOne and methodTwo. The method of ClassB that is hiding a superclass ClassA method is methodFour.
