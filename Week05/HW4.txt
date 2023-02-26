@@ -1,0 +1,13 @@
+The main() method creates an object of GeneralType class using new keyword. Then, some code in class A will run and print "AS" and "A" to the console. Then, the A(int x) constructor is called with 5 as an argument, which will print "5 AC" to the console.
+
+After that, some code in class GeneralType will run and print "GTS" and "GT" to the console. Finally, the GeneralType() constructor is called, which calls the A(int x) constructor with 5 as an argument using super(5). Then, "GTC" is printed to the console.
+
+Therefore, the output will be:
+
+AS
+A
+5 AC
+GTS
+GT
+5 AC
+GTC
