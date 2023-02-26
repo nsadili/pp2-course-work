@@ -3,17 +3,18 @@ package BonusTasks.Week04.HangmanGame;
 import java.util.Scanner;
 
 public class hangman {
+    static Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) {
         words.menu();
-        Scanner sc = new Scanner(System.in);
-        int b = 1;
-        while (b == 1) {
+        while (true) {
             words.start();
-
             System.out.println("If you want to play again, please, press 1; Otherwise, press 0");
-            b = sc.nextInt();
+            int c = sc.nextInt();
+            if (c == 0) {
+                System.out.println("Thank you, for the game.");
+                break;
+            }
         }
-        if (b == 0)
-            System.out.println("Thank you, for the game.");
     }
 }

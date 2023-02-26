@@ -24,23 +24,31 @@ public class words {
 
     static Scanner sc = new Scanner(System.in);
 
-    public static void scan(){
+    public static void scan() {
         String newchar = sc.nextLine();
         x = newchar.toCharArray();
     }
 
-    public static void menu(){
+    public static void menu() {
         System.out.println("Hello User" +
-        "\nThis is a Hangman Game" +
-        "\nLet's Start with you and see who will win" +
-        "\nYou have " + hearts + " chance (hearts) to give wrong answer" +
-        "\nOtherwise, You die." +
-        "\nI am thinking about new word" +
-        "\nI have found, Let's Start");
+                "\nThis is a Hangman Game" +
+                "\nLet's Start with you and see who will win" +
+                "\nYou have " + hearts + " chance (hearts) to give wrong answer" +
+                "\nOtherwise, You die." +
+                "\nI am thinking about new word" +
+                "\nI have found, Let's Start");
     }
 
     public static void start() {
-        
+        hearts = 7;
+        count = 0;
+        endgame = 0;
+        a = w.nextInt(word.length);
+        gameword = word[a].toCharArray();
+        hiddenword = word[a].toCharArray();
+
+                
+
         for (int i = 0; i < hiddenword.length; i++) {
             hiddenword[i] = '_';
         }
@@ -55,9 +63,9 @@ public class words {
             System.out.println("----------------------------------------------------");
             System.out.println("You have " + hearts + " hearts left");
             System.out.print("Please, enter a character: ");
-                scan();
-                check();
-            
+            scan();
+            check();
+
         }
 
         System.err.println("----------------------------------------------------");
@@ -82,8 +90,8 @@ public class words {
         System.out.println("]");
     }
 
-    public static void check(){
-        if (x.length>1) {
+    public static void check() {
+        if (x.length > 1) {
             try {
                 throw new MyException();
             } catch (Exception ex) {
@@ -99,7 +107,7 @@ public class words {
                 toString(hiddenword);
 
             }
-        } else if(x[0] == ' ') {
+        } else if (x[0] == ' ') {
             try {
                 throw new MyException();
             } catch (Exception ex) {
@@ -107,8 +115,7 @@ public class words {
                 toString(hiddenword);
 
             }
-        }
-        else {
+        } else {
             count = 0;
             for (int i = 0; i < hiddenword.length; i++) {
                 if (gameword[i] == x[0]) {
