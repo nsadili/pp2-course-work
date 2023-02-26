@@ -1,4 +1,4 @@
-package  geometry;
+package geometry;
 
 public class Point {
     private float x;

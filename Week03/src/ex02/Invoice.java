@@ -1,4 +1,4 @@
-package  ex02;
+package ex02;
 
 public class Invoice {
     private String partNumber;

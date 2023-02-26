@@ -1,4 +1,4 @@
-package  math;
+package math;
 
 public class ComplexNumber {
     private double real;
@@ -42,6 +42,7 @@ public class ComplexNumber {
     }
 
     public ComplexNumber mult(ComplexNumber number) {
-        return new ComplexNumber(this.real * number.real - this.imag * number.imag, this.real * number.imag + this.imag * number.real);
+        return new ComplexNumber(this.real * number.real - this.imag * number.imag,
+                this.real * number.imag + this.imag * number.real);
     }
 }
