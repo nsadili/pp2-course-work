@@ -1,0 +1,25 @@
+5. [HW] Discuss the types of inheritance. Give examples.
+• Single
+• Multilevel
+• Hierarchical
+• Multiple
+• Hybrid
+
+1)Single 
+Single inheritance is a type of inheritance in which a class inherits properties and behavior from a single parent class. 
+The parent class is known as the superclass or base class, and the child class is known as the subclass.
+
+2)Multilevel
+Multilevel inheritance is a type of inheritance in which a class inherits from a parent class, 
+which is already inherited from another parent class. 
+In a word, a subclass is created from another subclass.
+
+3)Hierarchical
+Hierarchical inheritance is a type of inheritance in which multiple child classes inherit from a single parent class.
+
+4)Multiple
+Multiple inheritance is a type of inheritance in which a class inherits properties and behavior from multiple parent classes.
+
+5)Hybrid
+Hybrid inheritance is a combination of multiple inheritance and single inheritance.
+In other words, it involves inheritance from both classes and interfaces.

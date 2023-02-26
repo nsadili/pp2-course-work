@@ -60,9 +60,22 @@ public class MathDemo
 
     public static void main(String[] args)
     {
-        System
+        int a = 5, b = 10;
+        int[] arr ={1, 2, 3, 4, 5};
+        float[] fArr = {1.0f, 2.0f, 3.0f, 4.0f, 5.0f};
+        int n = 5;
+
+        System.out.println("Min value: " + min(a, b));
+        System.out.println("Max value: " + max(a, b));
+        System.out.println("Sum of array: " + sum(arr));
+        System.out.println("Mean of array: " + mean(fArr));
+        System.out.println("Factorial of " + n + ": " + fact(n));
     }
+
+    
 }
+
+
 
 // Defining these methods as static would allow them to be called without needing to create an instance of the MathDemo class.
 // For example, if the methods were static, you could call MathDemo.min(3, 5)

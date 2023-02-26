@@ -1,0 +1,26 @@
+This is the given code:
+
+________________________________________________________
+class ClassA {
+ public void methodOne(int i) {}
+ public void methodTwo(int i) { }
+ public static void methodThree(int i) {}
+ public static void methodFour(int i) {}
+}
+class ClassB extends ClassA {
+ public static void methodOne(int i) { }
+ public void methodTwo(int i) {}
+ public void methodThree(int i) {}
+ public static void methodFour(int i) {}
+}
+
+________________________________________________________
+
+In ClassB, methodOne() and methodTwo() override the methods of the same name in ClassA.
+They have same method signature.
+
+On the other hand, methodThree() and methodFour() do not override any methods from ClassA.
+This is because they are declared as static methods, and static methods cannot be overridden in Java.
+
+ClassB is also hiding the static methods methodThree() and methodFour() of ClassA.
+This is because ClassB is declaring new static methods with the same name and signature as the corresponding methods in ClassA.

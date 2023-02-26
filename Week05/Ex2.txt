@@ -1,0 +1,45 @@
+This is the given code:
+
+________________________________________________________
+class A {
+ static { System.out.println("In static init block of A"); }
+ public A() { System.out.println("In constructor A."); }
+ { System.out.println("In instance init block of A"); }
+}
+class B extends A {
+ static { System.out.println("In static init block of B"); }
+ public B() { System.out.println("In constructor B."); }
+ { System.out.println("In instance init block of B"); }
+}
+public class Main2 {
+ public static void main(String[] args) {
+ B b = new B();
+ }
+}
+________________________________________________________
+
+This code defines 2 classes A and B, and B is subclass of A.
+Both classes have static and instance initializer blocks and constructors.
+
+In the main method, object of B class is being created with "new". 
+This causes both A and B' s static initializer blocks' execution first.
+Then, the instance initializer blocks of A and B are executed.
+At the end, constructors of A and B are executed.
+
+To sum up, static initializer blocks are executed before instance initializer blocks and constructors.
+and, the initializer blocks and constructors of the superclass A are executed before those of the subclass B.
+
+OUTPUT:
+/
+In static init block of A
+In static init block of B
+In instance init block of A
+In constructor A.
+In instance init block of B
+In constructor B.
+/
+
+*when object is created with "new" keyword, the order of execution :
+- static initializer
+-instance initializer
+-constructor

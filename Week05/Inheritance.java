@@ -91,7 +91,7 @@ public class Teacher extends Inheritance
 
     public String toString() //string represantation
     {
-        return getFirstName() + " " +  getLastName() + "(" + getGender() + ")" + department + Arrays.toString(courses);
+        return getFirstName() + " " +  getLastName() + "(" + getGender() + ")" + department +" " +  Arrays.toString(courses);
     }
 
     // String.format - returns the formatted string  (%s %s\n)
@@ -107,7 +107,7 @@ public class Teacher extends Inheritance
     }
 }
 
-public class Student extends Person
+public class Student extends Inheritance
 {
     private int studentId;
 
@@ -140,6 +140,88 @@ public class Student extends Person
     }
 
 
+
+
+}    
+
+public class PhdStudent extends Student
+{
+    private int studentId;
+
+    public PhdStudent(String firstName, String lastName, String gender, int studentId, String department, String[] courses)
+    {
+        super(firstName, lastName, gender, studentId);
+        this.department = department;
+        this.courses = courses;
+    }
+
+    public String getDepartment()
+    {
+        return department;
+    }
+
+    public void setDepartment(String department)
+    {
+        this.department = department;
+    }
+
+    public String[] getCourses()
+    {
+        return courses;
+    }
+
+    public void setCourses(String[] courses)
+    {
+        this.courses = courses;
+    }
+
+    public String toString()
+    {
+        return getFirstName() + " " +  getLastName() + "(" + getGender() + ")" + getStudentId() + " " + + department + " " + Arrays.toString(courses);
+    }
+
+    public boolean equals(PhdStudent pStud)
+    {
+        if (this == pStud) return true;
+        if (!(pStud instanceof PhdStudent)) return false;
+        if (!super.equals(pStud)) return false;
+
+        PhdStudent phdStudent = (PhdStudent) pStud;
+        return Objects.equals(department, phdStudent.department) && Arrays.equals(courses, phdStudent.courses);
+    }
+
+    public class Main 
+    {
+    public static void main(String[] args) 
+    {
+        
+        Person person = new Person("Kamal", "Ismayilzade", "Male");
+        System.out.println("Person: " + person);
+
+        String[] courses = {"Pp1", "Pp2"};
+        Teacher teacher = new Teacher("Nuraddin", "Sadili", "Male", "Programming", courses);
+        System.out.println("Teacher: " + teacher);
+
+        Student student = new Student("Sara", "Ismayilova", "Female", 16072);
+        System.out.println("Student: " + student);
+
+        String[] phdCourses = {"Biology", "Math"};
+        PhdStudent phdStudent = new PhdStudent("name", "surname", "Male", 12345, "Computer Science", phdCourses);
+        System.out.println("PhdStudent: " + phdStudent);
+
+        System.out.println("person equals person: " + person.equals(person));
+        System.out.println("person equals teacher: " + person.equals(teacher));
+        System.out.println("teacher equals teacher: " + teacher.equals(teacher));
+        System.out.println("teacher equals phdStudent: " + teacher.equals(phdStudent));
+        System.out.println("student equals student: " + student.equals(student));
+        System.out.println("student equals phdStudent: " + student.equals(phdStudent));
+        System.out.println("phdStudent equals phdStudent: " + phdStudent.equals(phdStudent));
+    }
+}
+
+
+
+     
 
 
 }    

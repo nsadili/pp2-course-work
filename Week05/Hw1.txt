@@ -1,0 +1,38 @@
+This the given code :
+
+________________________________________________________
+class X {
+ public X() {
+ System.out.println("In constructor X.");
+ }
+}
+class Y extends X {
+ public Y() {
+ System.out.println("In constructor Y.");
+ }
+}
+public class Main {
+ public static void main(String[] args) {
+ Y y = new Y();
+ }
+}
+________________________________________________________
+
+
+This code defines 2 classes X and Y, where Y is subclass of X.
+X has default constructor that prints the certain string. Same for Y.
+In the main method new object of class Y is created with "new". 
+When we create an object of Y class, its superclass X is being called, because of Y is a subclass of X.
+
+OUTPUT:
+/
+    In constructor X.
+    In constructor Y.
+/
+
+- After execution of X is completed, Y is being called, so both occur output.
+
+
+
+
+
