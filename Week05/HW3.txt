@@ -1,0 +1,11 @@
+The output of the code when run will be:
+
+Super
+10
+Subclass
+30
+
+
+The main() method creates a Child object and calls its calcValue(int a) method with the value 5, which invokes the implementation in the Parent class since it's not overridden in the Child class. The implementation in Parent prints "Super" and returns 10.
+
+Then, the calcValue(int a, int b) method of the Child object is called with the values 5 and 10, which invokes the implementation in the Child class since it's overridden. The implementation in Child prints "Subclass" and returns 30. The output shows that subclass implementation overrides superclass implementation.
