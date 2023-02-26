@@ -1,11 +1,6 @@
-public class findMinAndMax {
-    int[] num;
+public class minmax {
 
-    public findMinAndMax(int[] num) {
-        this.num = num;
-    }
-
-    public void findMinAndMax() {
+    public static void findMinAndMax(int[] num) {
         int min = 1000000, max = -100000;
         for (int x : num) {
             if (min > x)

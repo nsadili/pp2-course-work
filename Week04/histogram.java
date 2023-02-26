@@ -1,6 +1,6 @@
-public class findHistogram {
-
-    public static void histogram(int[] num3) {
+public class histogram {
+    
+    public static void findHistogram(int[] num3) {
 
         int[] grades = new int[num3.length];
         int[] cnt = new int[num3.length];

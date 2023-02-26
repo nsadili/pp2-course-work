@@ -17,53 +17,26 @@ public class Arrays {
         // }
         
         int[] num = {5, 3 , 3, 2, 2, 1, 4, 5, 1, 2, 10, 9, 9, 2, 2, 3, 4, 8, 7, 6};
-        findMinAndMax num1 = new findMinAndMax(num);
-        num1.findMinAndMax();
-        System.out.println(num1);
-        //findHistogram.histogram(num);
-        
-        // sumArrays.sumArrays(num);
-        // printArrays.printArrays(num);
+        String str = "Exercise Test";
+
+        print.printArrays(num);
+        minmax.findMinAndMax(num);
+        histogram.findHistogram(num);
+
+        System.out.println(reverse.reverse1(str));
+        System.out.println(reverse.reverse2(str));
+        System.out.println(reverse.reverse3(str));
+        System.out.println(reverse.reverse4(str));
+
+        explode.findExploded(str);
+
     }
 
 }
     
 
     
-    // //private static String reverse1(String str) {
-    //     String res = "";
-    //     for (int i = str.length() - 1; i >= 0; i--) {
-    //         res += str.charAt(i);
-    //     }
-    //     return res;
-    // }
-
-    // //private static String reverse2(String str) {
-    //     char[] chars = str.toCharArray();
-    //     int l = chars.length;
-    //     for (int i = 0; i < l / 2; i++) {
-    //         char tmp = chars[i];
-    //         chars[i] = chars[l - i - 1];
-    //         chars[l - i - 1] = tmp;
-    //     }
-    //     return new String(chars);
-    // }
-
-    // //private static String reverse3(String str) {
-
-    //     StringBuilder sb = new StringBuilder();
-    //     for (int i = str.length() - 1; i >= 0; i--) {
-    //         sb.append(str.charAt(i));
-    //     }
-    //     return new String(sb); // == return sb.toString();
-    // }
-
-    // //private static String reverse4(String str) {
-
-        // return new StringBuilder(str).reverse().toString();
-        
-    // }
-
+    
     
 
 
