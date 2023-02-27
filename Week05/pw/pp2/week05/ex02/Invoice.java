@@ -1,4 +1,4 @@
-package pp2.week03.ex02;
+package pp2.week05.ex02;
 
 public class Invoice {
     private String number;

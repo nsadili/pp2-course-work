@@ -1,4 +1,4 @@
-package pp2.week03.geometry;
+package pp2.week05.geometry;
 
 public class Segment {
     private Point p1;
@@ -30,6 +30,10 @@ public class Segment {
     public boolean equals(Segment s){
         return p1.equals(s.p1) && p2.equals(s.p2);
     }
+    public boolean equals(Object o){
+        Segment s=(Segment) o;
+        return p1.equals(s.p1) && p2.equals(s.p2);
+    }
 
     public float getSlope(){
             return (p2.getY()-p1.getY()) / (p2.getX()-p1.getX());
@@ -59,6 +63,7 @@ public class Segment {
     public void setP2(Point p2){
         this.p2=p2;
     }
-
-    
+    public String toString(){
+        return "P1 point: " + p1.toString() + " P2 point: " + p2.toString();
+    }
 }

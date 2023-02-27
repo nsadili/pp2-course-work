@@ -1,4 +1,4 @@
-package pp2.week03.math;
+package pp2.week05.math;
 
 public class ComplexNumber {
     private static double ABS;

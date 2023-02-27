@@ -1,4 +1,4 @@
-package pp2.week03.geometry;
+package pw.pp2.week05.geometry;
 
 public class Point {
     private float x;
@@ -39,5 +39,14 @@ public class Point {
 
     public boolean equals(Point p){
         return p.x==this.x && p.y==this.y;
+    }
+
+    public boolean equals(Object o){
+        Point p= (Point) o;
+        return p.x==this.x && p.y==this.y;
+    }
+
+    public String toString(){
+        return String.format("x: %.2f , y: %.2f",this.x,this.y);
     }
 }
