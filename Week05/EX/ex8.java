@@ -35,8 +35,8 @@ class Person {
         return String.format("\nFirst name: %s\nLast name: %s\nGender: %s\n", p.firstName, p.lastName, p.gender);
     }
     public String equals(Person p){
-        if (p.firstName == this.firstName && p.lastName == this.lastName && p.gender == this.gender)
-        return "They are the same people."; else return "They are different people."; 
+        if (p.firstName.equals(this.firstName) && p.lastName.equals(this.lastName) && p.gender.equals(this.gender)) return "They are the same people.";
+        else return "They are different people."; 
     }
 }
 
@@ -66,7 +66,7 @@ class Teacher extends Person {
         return String.format("\nFirst name: %s\nLast name: %s\nGender: %s\nDepartment: %s\nCourses: %s\n", t.getFirstName(), t.getLastName(), t.getGender(), t.department, Arrays.toString(t.courses));
     }
     public String equals(Teacher t){
-        if (t.department == this.department && t.courses == this.courses && t.getFirstName() == this.getFirstName() && t.getLastName() == this.getLastName() && t.getGender() == this.getGender())
+        if (t.department.equals(this.department) && Arrays.equals(t.courses, this.courses) && t.getFirstName() == getFirstName() && t.getLastName() == getLastName() && t.getGender() == getGender())
         return "They are the same people."; else return "They are different people."; 
     }
 }
@@ -89,7 +89,7 @@ class Student extends Person {
         return String.format("\nFirst name: %s\nLast name: %s\nGender: %s\nStudent ID: %s\n", this.getFirstName(), this.getLastName(), this.getGender(), this.studentId);
     }
     public String equals(Student s){
-        if (s.studentId == this.studentId && s.getFirstName() == this.getFirstName() && s.getLastName() == this.getLastName() && s.getGender() == this.getGender())
+        if (s.studentId == this.studentId && s.getFirstName() == getFirstName() && s.getLastName() == getLastName() && s.getGender() == getGender())
         return "They are the same people."; else return "They are different people."; 
     }
 }
@@ -120,7 +120,7 @@ class PhdStudent extends Person {
         return String.format("\nFirst name: %s\nLast name: %s\nGender: %s\nDepartment: %s\nCourses: %s\n", pStud.getFirstName(), pStud.getLastName(), pStud.getGender(), pStud.department, Arrays.toString(pStud.courses));
     }
     public String equals(PhdStudent pStud){
-        if (pStud.department == this.department && pStud.courses == this.courses && pStud.getFirstName() == this.getFirstName() && pStud.getLastName() == this.getLastName() && pStud.getGender() == this.getGender())
+        if (pStud.department.equals(this.department) && Arrays.equals(pStud.courses, this.courses) && pStud.getFirstName() == getFirstName() && pStud.getLastName() == getLastName() && pStud.getGender() == getGender())
         return "They are the same people."; else return "They are different people."; 
     }
 }
