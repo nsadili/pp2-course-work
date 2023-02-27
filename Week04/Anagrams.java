@@ -42,4 +42,5 @@ public class Anagrams {
         anagrams(first, second);
         scanner.close();
     }
+    
 }
