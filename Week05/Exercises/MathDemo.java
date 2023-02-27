@@ -48,7 +48,7 @@ public class MathDemo {
         System.out.println(math.mean(numbers));
         System.out.println(math.factorial(5));
     }
-    //When defining these methods as static, we do need create a object to envoke these methods.
+    //When defining these methods as static, we do not  need create a object to envoke these methods.
 }
 
 
