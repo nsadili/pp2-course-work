@@ -31,5 +31,8 @@ public class Person {
     public String toString(){
         return firstName+" "+lastName+" " +gender;
         }
-   
+    
+    public boolean equals(Person p){
+        return this.firstName.equals(p.getFirstName())&& this.lastName.equals(p.getLastName())&&this.gender.equals(p.getGender());
+    }
 }
