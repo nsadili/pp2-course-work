@@ -1,4 +1,4 @@
-package Week05.Exercises;
+package Week05.PracticalWorks;
 
 public class Customer {
     private int ID;

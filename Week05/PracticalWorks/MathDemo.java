@@ -1,4 +1,4 @@
-package Week05.Exercises;
+package Week05.PracticalWorks;
 
 public class MathDemo {
     public  int min(int a, int b) {
