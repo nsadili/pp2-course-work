@@ -1,3 +1,4 @@
+package customerAccount;
 public class Customer {
 
     private int id;

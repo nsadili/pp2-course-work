@@ -1,3 +1,5 @@
+package customerAccount;
+
 public class MainCustomer {
     public static void main(String[] args) {
         Customer c=new Customer(111,"Shamil", 'm');

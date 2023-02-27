@@ -22,33 +22,27 @@ public class Inheritence {
         courses.add("Geometry");
         Teacher t = new Teacher("John", "Doe", "Male", "Math", courses);
         Teacher teacher2 = new Teacher("John", "Doe", "Male",
-         "Math", Arrays.asList("Algebra", "Geometry"));
-
+                "Math", Arrays.asList("Algebra", "Geometry"));
 
         System.out.println(t.equals(teacher2));
 
         System.out.println(teacher2.toString());
 
-        Student s=new Student("Farhad", "Sayidov" , "Male" , 1234);
+        Student s = new Student("Farhad", "Sayidov", "Male", 1234);
         System.out.println(s.toString());
 
-        Student s2=new Student("Farhad", "Sayidov" , "Male" , 1234);
+        Student s2 = new Student("Farhad", "Sayidov", "Male", 1234);
         System.out.println(s.equals(s2));
 
-        PhdStudent ps=
-        new PhdStudent("Phd", "Student", "Male", 555,
-         "IT", Arrays.asList("It ","PP2"));
+        PhdStudent ps = new PhdStudent("Phd", "Student", "Male", 555,
+                "IT", Arrays.asList("It ", "PP2"));
 
-         System.out.println(ps.toString());
+        System.out.println(ps.toString());
 
-         PhdStudent ps2=
-         new PhdStudent("Phd2", "Student", "Male", 555,
-          "IT", Arrays.asList("It ","PP2"));
+        PhdStudent ps2 = new PhdStudent("Phd2", "Student", "Male", 555,
+                "IT", Arrays.asList("It ", "PP2"));
 
-          System.out.println(ps.equals(ps2));
-
-
-
+        System.out.println(ps.equals(ps2));
 
     }
 }
@@ -130,7 +124,7 @@ class Teacher extends Person {
 
     }
 
-    public boolean equals(Teacher t){
+    public boolean equals(Teacher t) {
 
         return super.equals(t) && t.department.equals(this.department) && t.courses.equals(this.courses);
 
@@ -160,62 +154,62 @@ class Teacher extends Person {
 
 }
 
-class Student extends Person{
+class Student extends Person {
 
     private int studentId;
 
-    public Student(String firstName,String lastName, String gender, int studentId){
-        super(firstName,lastName,gender);
-        this.studentId=studentId;
+    public Student(String firstName, String lastName, String gender, int studentId) {
+        super(firstName, lastName, gender);
+        this.studentId = studentId;
 
     }
 
+    public String toString() {
 
-    public String toString(){
-
-        return String.format("Firstname: %s  Lastname: %s  Gender: %s  StudentId: %d ", this.getFirstNm() , this.getLastNm(), this.getGender(),studentId);
+        return String.format("Firstname: %s  Lastname: %s  Gender: %s  StudentId: %d ", this.getFirstNm(),
+                this.getLastNm(), this.getGender(), studentId);
 
     }
 
-    public boolean equals(Student s){
+    public boolean equals(Student s) {
 
-        return super.equals(s) && s.studentId==this.studentId;
+        return super.equals(s) && s.studentId == this.studentId;
     }
 
-
-    public int getStudentId(){
+    public int getStudentId() {
         return this.studentId;
     }
 
-    public void setStudentId(int studentId){
-        this.studentId=studentId;
+    public void setStudentId(int studentId) {
+        this.studentId = studentId;
     }
 
 }
 
-class PhdStudent extends Student{
+class PhdStudent extends Student {
 
     private String department;
 
     private List<String> courses;
 
-    public PhdStudent(String firstName,String lastName, String gender, int studentId, String department, List<String> courses){
+    public PhdStudent(String firstName, String lastName, String gender, int studentId, String department,
+            List<String> courses) {
 
         super(firstName, lastName, gender, studentId);
 
-        this.department=department;
-        this.courses=courses;
+        this.department = department;
+        this.courses = courses;
 
     }
 
-    public List<String> getCourses(){
+    public List<String> getCourses() {
 
         return this.courses;
 
     }
 
-    public void setCourses(List<String> courses){
-        this.courses=courses;
+    public void setCourses(List<String> courses) {
+        this.courses = courses;
     }
 
     public String getDepartment() {
@@ -224,23 +218,19 @@ class PhdStudent extends Student{
 
     public void setDepartment(String department) {
         this.department = department;
-    }   
+    }
 
-    public String toString(){
+    public String toString() {
 
-        return String.format("Firstname: %s  Lastname: %s  Gender: %s  Department: %s  Courses: %s  StudentId: %d ", 
-        getFirstNm(),getLastNm(),getGender(),this.department,String.join(", ", courses), getStudentId());
+        return String.format("Firstname: %s  Lastname: %s  Gender: %s  Department: %s  Courses: %s  StudentId: %d ",
+                getFirstNm(), getLastNm(), getGender(), this.department, String.join(", ", courses), getStudentId());
 
     }
 
-    public boolean equals(PhdStudent pStud){
-        
+    public boolean equals(PhdStudent pStud) {
+
         return super.equals(pStud) && pStud.department.equals(this.department) && pStud.courses.equals(this.courses);
 
     }
-
-    
-
-
 
 }
