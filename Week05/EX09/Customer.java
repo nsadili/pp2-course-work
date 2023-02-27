@@ -13,7 +13,7 @@ public class Customer {
 
         System.out.println(account1.toString());
 
-        account1.deposit(2500.0);
+        account1.deposit(2000.0);
 
         System.out.println("New balance after deposit: " + account1.getBalance());
 
@@ -21,9 +21,9 @@ public class Customer {
 
         System.out.println("New balance after withdrawal: " + account1.getBalance());
 
-        Customer customer2 = new Customer(2, "Jane Doe", 'F', 5);
+        Customer customer2 = new Customer(2111, "Rashad Ismayilov", 'M', 10);
 
-        Account account2 = new Account(1002, customer2);
+        Account account2 = new Account(1000, customer2);
 
         System.out.println(account2.toString());
 

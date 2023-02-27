@@ -12,9 +12,7 @@ public class Account {
     }
 
     public Account(int ID, Customer customer) {
-        // this.id2 = id2;
-        // this.customer = customer;
-        // this.balance = 0;
+
         this(ID, customer, 0);
     }
 
@@ -58,7 +56,7 @@ public class Account {
         if (balance >= amount) {
             balance -= amount;
         } else {
-            System.out.println("Amount withdrawn exceeds the current balance!");
+            System.out.println("Not enough balance:");
         }
     }
 

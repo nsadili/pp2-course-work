@@ -4,9 +4,9 @@ public class main {
 
     public static void main(String[] args) {
 
-        Customer customer = new Customer(1, "Ilkin Alishov", 'M', 0);
+        Customer customer = new Customer(1, "Efqan Talibov", 'M', 50);
 
-        Account account = new Account(16120, customer, 750);
+        Account account = new Account(160966, customer, 250);
 
         System.out.println(account);
 
@@ -14,7 +14,7 @@ public class main {
 
         System.out.println(account);
 
-        account.withdraw(200);
+        account.withdraw(300);
 
         System.out.println(account);
 
