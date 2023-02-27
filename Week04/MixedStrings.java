@@ -48,6 +48,7 @@ public class MixedStrings {
         String sentence = scanner.nextLine();
 
         print(mixedStrings(sentence));
+        scanner.close();
 
     }
 }

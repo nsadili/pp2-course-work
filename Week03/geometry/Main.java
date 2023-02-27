@@ -1,5 +1,4 @@
 package Week03.geometry;
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -34,6 +33,5 @@ public class Main {
         System.out.println("S1==S2 ? " + s1.equals(s2));
         System.out.println("Slope of segment s1: " + s1.getSlope());
         System.out.println("Intercept of segment s1: " + s1.getIntercept());
-
     }
 }

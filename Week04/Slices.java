@@ -17,5 +17,6 @@ public class Slices {
         System.out.println("Enter a word: ");
         String input = scanner.nextLine();
         slices(input);
+        scanner.close();
     }
 }

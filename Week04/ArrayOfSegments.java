@@ -1,7 +1,4 @@
 package Week04;
-import java.util.Scanner;
-import java.util.Arrays;
-import java.util.Arrays;
 
 public class ArrayOfSegments {
     public static float minLength(Segment[] arr){

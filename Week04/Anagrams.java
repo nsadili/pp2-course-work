@@ -40,5 +40,6 @@ public class Anagrams {
         System.out.println("Enter the second word: ");
         String second = scanner.nextLine();
         anagrams(first, second);
+        scanner.close();
     }
 }

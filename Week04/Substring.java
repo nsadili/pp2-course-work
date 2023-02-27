@@ -28,5 +28,6 @@ public class Substring {
         String sub = scanner.nextLine();
 
         System.out.println(substring(string, sub));
+        scanner.close();
     }
 }

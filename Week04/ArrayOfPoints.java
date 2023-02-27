@@ -44,6 +44,7 @@ public class ArrayOfPoints {
         }
 
         most(point);
+        scanner.close();
     }
 
 }

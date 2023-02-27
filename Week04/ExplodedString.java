@@ -23,6 +23,7 @@ public class ExplodedString {
         System.out.println("Enter string: ");
         String str = scanner.nextLine();
         System.out.println(explodeString(str));
+        scanner.close();
     }
 
 }
