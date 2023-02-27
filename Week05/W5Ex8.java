@@ -117,3 +117,6 @@ public PhdStudent(String firstName, String lastName, String gender, int studentI
 public String getDepartment() {
     return department;
 }
+    
+
+}
