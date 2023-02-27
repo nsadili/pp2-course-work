@@ -1,4 +1,4 @@
-package examples.Hangman;
+package Week04.Hangman;
 
 public class words {
     public static String[] animals = { "cow", "dog", "cat", "horse", "bird", "sheep", "goat", "donkey", "fish",

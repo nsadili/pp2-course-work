@@ -1,4 +1,4 @@
-package examples.Hangman;
+package Week04.Hangman;
 
 public class HangmanImage {
 public static void HangmanImageCnt(int count, String word) {

@@ -1,4 +1,4 @@
-package examples.Hangman;
+package Week04.Hangman;
 
 import java.util.Scanner;
 import java.lang.Math;
@@ -65,6 +65,7 @@ public class Hangman {
             encryptedword[k] = '_';
         }
         int heart = 10;
+        int count = 0;
         while (true) {
             
             System.out.println("Type a letter: ");
@@ -73,12 +74,14 @@ public class Hangman {
             for (int i = 0; i < length1; i++) {
                 if (mainword[i] == letter) {
                     encryptedword[i] = letter;
+                }else{
+                    heart--;
+                    HangmanImage.HangmanImageCnt(++count, randomString);
                 }
             }
             for (int i = 0; i < length1; i++) {
                 if (mainword[i] != letter) {
-                    heart--;
-                    System.out.println("Not found! You have " + heart + " heart.");
+                    
                 }
             }
             System.out.println(encryptedword);
