@@ -1,5 +1,5 @@
 public class EX10 {
-    public class Main {
+ 
     public static void main(String[] args){
         Point p1= new Point();
         Point p2= new Point(3,5);
@@ -40,7 +40,7 @@ public class EX10 {
 }
 
     
-} 
+
 class Point{
     private float x;
     private float y;
