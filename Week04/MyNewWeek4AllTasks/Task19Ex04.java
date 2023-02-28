@@ -1,20 +1,12 @@
 import java.util.Scanner;
-
 /*
 1. set a String object to let player guess ("WORD")
-
 2. set a String to show which characters were found ("____");
-
 3. set some iterations (change = 5)
-
 - input a character
-
 - check if it contains that char or not
-
 - if yes, update current String
-
 - OPTIONAL: otherwise, do nothing or alert player with message "character is not found"
-
 4. after iterations,
 check if current string contains any underscore symbols -> if yes, then GAME OVER.
 Otherwise YOU WIN

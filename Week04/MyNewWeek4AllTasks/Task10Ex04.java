@@ -1,6 +1,5 @@
 import java.util.Arrays;
 import java.util.Scanner;
-
 /*
 Just like in P9, we will use char array versions of strings
 and use another Arrays method called equals(a,b)
