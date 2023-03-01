@@ -29,6 +29,9 @@ public class Arrays {
         System.out.println(reverse.reverse4(str));
 
         explode.findExploded(str);
+        System.out.println();
+
+        System.out.println(SortString.sortString(str));
 
     }
 
