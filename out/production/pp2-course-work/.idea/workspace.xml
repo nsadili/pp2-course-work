@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="956f8147-713a-4720-a37f-f2214e4c6e0b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Week04/ExplodedString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Abc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week05/MathDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Week03/datetime/CustomDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week03/datetime/CustomDate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week03/ex02/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week03/ex02/Invoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pp2-course-work/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pp2-course-work/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,19 +34,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/ASUS/OneDrive/Рабочий стол/pp2 add/pp2-course-work",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ASUS/OneDrive/Рабочий стол/pp2 add/pp2-course-work&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="GreatestandSmallestElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Week04.GreatestandSmallestElements" />
@@ -75,7 +77,10 @@
       <option name="presentableId" value="Default" />
       <updated>1676138519801</updated>
       <workItem from="1676138521007" duration="76000" />
-      <workItem from="1676541514495" duration="734000" />
+      <workItem from="1676541514495" duration="789000" />
+      <workItem from="1677140731936" duration="2085000" />
+      <workItem from="1677173281821" duration="1174000" />
+      <workItem from="1677224005466" duration="1268000" />
     </task>
     <servers />
   </component>

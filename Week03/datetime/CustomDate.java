@@ -27,9 +27,6 @@ public class CustomDate {
     public CustomDate(int i, int j) {
     }
 
-    public CustomDate(CustomDate t2) {
-    }
-
     public int getYear()
      {
         return year;

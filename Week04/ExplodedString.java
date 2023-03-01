@@ -9,8 +9,8 @@ public class ExplodedString {
         String[] split = str.split("");
         StringBuilder sb = new StringBuilder();
         StringBuilder result = new StringBuilder();
-        for (int i = 0; i < split.length; i++) {
-            sb.append(split[i]);
+        for (String s : split) {
+            sb.append(s);
             result.append(sb);
         }
         System.out.println("The result: "+ result);
