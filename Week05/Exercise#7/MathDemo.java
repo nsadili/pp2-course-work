@@ -1,5 +1,5 @@
-public class Exercise_7 {
-    
+public class MathDemo {
+
     public int min(int a, int b) {
         return Math.min(a, b);
     }
@@ -29,6 +29,9 @@ public class Exercise_7 {
         }
     }
 }
+    
+    
+
 
 //the advantage of calling all of them as "static" is that whenever you will need one of values, it will be easy to call or use them
 //without creation of any unnecessary objects
