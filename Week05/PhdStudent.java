@@ -1,4 +1,5 @@
-package Week05.inheritance;
+package Week05;
+
 import java.util.Arrays;
 
 public class PhdStudent extends Student {
@@ -31,9 +32,4 @@ public class PhdStudent extends Student {
         return "PhdStudent [department=" + department + ", courses=" + Arrays.toString(courses) + ", studentId=" + getStudentId() + ", firstName=" + getFirstName() + ", lastName=" + getLastName() + ", gender=" + getGender() + "]";
     }
 
-    public boolean equals(PhdStudent pStud) {
-        return super.equals(pStud) &&
-                this.department.equals(pStud.getDepartment()) &&
-                Arrays.equals(this.courses, pStud.getCourses());
-    }
 }

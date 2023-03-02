@@ -1,4 +1,4 @@
-package Week05.inheritance;
+package Week05;
 
 public class Person {
     private String firstName;
@@ -38,11 +38,5 @@ public class Person {
     public String toString() {
         return "Person [firstName=" + firstName + ", lastName=" + lastName + ", gender=" + gender + "]";
     }
-
-
-    public boolean equals(Person p) {
-        return this.firstName.equals(p.getFirstName()) &&
-                this.lastName.equals(p.getLastName()) &&
-                this.gender.equals(p.getGender());
-    }
 }
+

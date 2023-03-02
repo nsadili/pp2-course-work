@@ -1,4 +1,4 @@
-package Week05.inheritance;
+package Week05;
 import java.util.Arrays;
 
 public class Teacher extends Person {
@@ -27,8 +27,12 @@ public class Teacher extends Person {
         this.courses = courses;
     }
 
+    @Override
     public String toString() {
-        return "Teacher [department=" + department + ", courses=" + Arrays.toString(courses) + ", firstName=" + getFirstName() + ", lastName=" + getLastName() + ", gender=" + getGender() + "]";
+        return "Teacher{" +
+                "department='" + department + '\'' +
+                ", courses=" + Arrays.toString(courses) +
+                "} " + super.toString();
     }
 
     public boolean equals(Teacher t) {
@@ -37,4 +41,3 @@ public class Teacher extends Person {
                 Arrays.equals(this.courses, t.getCourses());
     }
 }
-
