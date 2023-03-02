@@ -1,0 +1,6 @@
+In constructor X.
+In constructor Y.
+
+This is because the code defines two classes, X and Y, 
+where Y extends X. Both classes have a constructor method, 
+which is called when an object of the class is created using the new keyword.
