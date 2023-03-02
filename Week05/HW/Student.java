@@ -3,7 +3,7 @@ package Week05.HW;
 public class Student extends Person {
     private String studentId;
 
-    public Student(String firstName, String lastName, String gender, String string) {
+    public Student(String firstName, String lastName, String gender, String studentId) {
         super(firstName, lastName, gender);
         this.studentId = studentId;
     }
@@ -16,7 +16,7 @@ public class Student extends Person {
         this.studentId = studentId;
     }
 
-    @Override
+    //@Override
     public String toString() {
         return "Student{" +
                 "firstName='" + getFirstName() + '\'' +

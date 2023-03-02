@@ -1,15 +1,15 @@
 package Week05.HW;
 
-import java.util.Arrays;
+//import java.util.Arrays;
 
 public class PhdStudent extends Student {
     private String department;
-    private String courses;
+    private String[] courses;
 
-    public PhdStudent(String firstName, String lastName, String gender, String department, String string, String strings) {
-        super(firstName, lastName, gender, strings);
+    public PhdStudent(String firstName, String lastName, String gender, String department, String studentId, String[] courses) {
+        super(firstName, lastName, gender, studentId);
         this.department = department;
-        this.courses = string;
+        this.courses = courses;
     }
 
     public String getDepartment() {
@@ -20,11 +20,11 @@ public class PhdStudent extends Student {
         this.department = department;
     }
 
-    public String getCourses() {
+    public String[] getCourses() {
         return courses;
     }
 
-    public void setCourses(String courses) {
+    public void setCourses(String[] courses) {
         this.courses = courses;
     }
 
