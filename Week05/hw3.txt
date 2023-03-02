@@ -1,0 +1,10 @@
+The output of the given code is:
+
+Super
+10
+Subclass
+30
+
+This is because the code defines two classes, Parent and Child, where Child extends Parent. 
+The Parent class has a method called calcValue which takes an integer parameter,
+and the Child class overrides this method with a different implementation that takes two integer parameters.
