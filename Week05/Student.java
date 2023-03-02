@@ -1,7 +1,5 @@
 package Week05;
 
-import java.util.Arrays;
-
 public class Student extends Person {
     private int studentId;
 
