@@ -1,0 +1,11 @@
+In static init block of A
+In static init block of B
+In instance init block of A
+In constructor A.
+In instance init block of B
+In constructor B.
+
+This is because the code defines two classes, A and B, where B extends A.
+Both classes have instance and static initializer blocks, 
+which are executed during object creation and class initialization respectively.
+
