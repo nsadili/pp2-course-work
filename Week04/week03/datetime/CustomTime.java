@@ -1,4 +1,4 @@
-package pp2.week03.datetime;
+package week03.datetime;
 
 public class CustomTime {
     private int second;
