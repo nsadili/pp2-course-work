@@ -1,0 +1,11 @@
+In the code, ClassB extends ClassA, which means ClassB inherits all the non-private methods of ClassA. 
+ClassB then provides its own implementation for some of these methods, which can result in overriding or hiding.
+
+Overriding: When a subclass provides a method with the same name and signature as the method in its superclass,
+it is said to be overriding the superclass method. This is the case with methodTwo in ClassB, which overrides the method of the same name in ClassA.
+
+Hiding: When a subclass provides a method with the same name as a method in its superclass, 
+but with a different signature (i.e., different parameters or return type), it is said to be hiding the superclass method. 
+This is the case with methodOne and methodThree in ClassB, which hide the static method methodOne and the static method methodThree in ClassA.
+
+Not overriding or hiding: Finally, methodFour is defined in both ClassA and ClassB with the same signature, so it neither overrides nor hides the superclass method.
