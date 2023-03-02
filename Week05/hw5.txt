@@ -1,0 +1,87 @@
+1) Single Inheritance: 
+In this type of inheritance, a derived class inherits the properties and methods of a single base class.
+It forms a one-to-one parent-child relationship. For example, class B extends class A, where class B is the derived class, and class A is the base class.
+
+EXAMPLE:
+class A {
+   void display() {
+      System.out.println("Class A");
+   }
+}
+class B extends A {
+   void display2() {
+      System.out.println("Class B");
+   }
+}
+
+
+2) Multilevel Inheritance: In this type of inheritance, a derived class inherits properties and methods from a base class, 
+and that derived class itself serves as a base class for another derived class. It forms a hierarchical structure of parent-child relationships.
+For example, class C extends class B, where class C is the derived class, class B is the intermediate base class, and class A is the base class.
+
+EXAMPLE:
+class A {
+   void display() {
+      System.out.println("Class A");
+   }
+}
+class B extends A {
+   void display2() {
+      System.out.println("Class B");
+   }
+}
+class C extends B {
+   void display3() {
+      System.out.println("Class C");
+   }
+}
+
+3) Hierarchical Inheritance: In this type of inheritance, a base class serves as a parent class for multiple derived classes.
+It forms a one-to-many parent-child relationship. For example, class B and C extend class A, where both classes are derived classes, and class A is the base class.
+
+EXAMPLE:
+class A {
+   void display() {
+      System.out.println("Class A");
+   }
+}
+class B extends A {
+   void display2() {
+      System.out.println("Class B");
+   }
+}
+class C extends A {
+   void display3() {
+      System.out.println("Class C");
+   }
+}
+
+
+4) Multiple Inheritance: In this type of inheritance, a derived class inherits properties and methods from multiple base classes.
+However, Java does not support multiple inheritance of classes, but it does support multiple inheritance of interfaces.
+For example, interface A and B are implemented by class C.
+
+EXAMPLE:
+interface A {
+   void display();
+}
+interface B {
+   void display2();
+}
+class C implements A, B {
+   public void display() {
+      System.out.println("Interface A");
+   }
+   public void display2() {
+      System.out.println("Interface B");
+   }
+}
+
+
+5) Hybrid Inheritance: In this type of inheritance, it combines the features of multiple inheritance, such as multiple inheritance of classes and interfaces.
+However, Java does not support hybrid inheritance. It is a rare type of inheritance that is not recommended to use.
+
+
+
+
+
