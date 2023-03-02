@@ -1,4 +1,5 @@
-package Week05;
+package Week05.Inheritance;
+
 public class Student extends Person {
     private int studentId;
     public Student(String firstName, String lastName, String gender, int studentId) {
@@ -11,7 +12,6 @@ public class Student extends Person {
     public void setStudentId(int studentId) {
         this.studentId = studentId;
     }
-
     @Override
     public String toString() {
         return "Student{" +
