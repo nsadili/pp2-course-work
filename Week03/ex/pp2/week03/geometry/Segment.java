@@ -45,4 +45,23 @@ public class Segment {
     public boolean isOnSegment(Point p){
         return isOnLine(p) && p.getX() >= this.getP1().getX() && p.getX() <= this.getP2().getX();
     }
+
+    @Override
+    public String toString(){
+        return "[" + this.p1 + "," + this.p2 +"]";
+            
+    }
+
+    @Override
+    public boolean equals(Object obj){
+        if (obj == this){
+            return true;
+        }
+        if (obj == null || this.getClass() != obj.getClass()){
+            return false;
+        }
+
+        Segment s = (Segment) obj;
+        return this.p1.equals(s.p1) && this.p2.equals(s.p2);
+    }
 }

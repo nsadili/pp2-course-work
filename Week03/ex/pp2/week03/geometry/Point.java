@@ -33,7 +33,22 @@ public class Point{
        
        return dist;
     }
-    public boolean equals(Point p){
+    @Override
+    public boolean equals(Object obj){
+            if (obj == this){
+                return true;
+            }
+            if (!(obj instanceof Point)){
+                return false;
+            }
+            Point p = (Point) obj;
+    
         return (this.x == p.getX() && this.y == p.getY());
+    }
+
+    @Override
+    public String toString(){
+        return "(" + this.x + "," + this.y +")";
+
     }
 }
