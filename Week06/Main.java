@@ -1,6 +1,58 @@
-package Week03.geometry;
+package Week06;
 
-public class Segment {
+
+class Point {
+    private float x;
+    private float y;
+
+    Point(){
+
+    }
+
+    Point (float x, float y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    Point(Point p){
+        this.x = p.x;
+        this.y = p.y;
+    }
+
+    public float getX() {
+        return x;
+    }
+
+    public void setX(float x) {
+        this.x = x;
+    }
+
+    public float getY() {
+        return y;
+    }
+
+    public void setY(float y) {
+        this.y = y;
+    }
+
+    public void translate (float dX, float dY) {
+        this.x += dX;
+        this.y += dY;
+    }
+
+    public float distance (Point p) {
+        float dX = this.x - p.x;
+        float dY = this.y - p.y;
+
+        return (float) Math.sqrt(dX * dX + dY * dY);
+    }
+
+    boolean equals (Point p) {
+        return this.x == p.x && this.y == p.y;
+    }
+}
+
+class Segment {
     Point p1;
     Point p2;
 
@@ -68,5 +120,45 @@ public class Segment {
         float minY = Math.min(this.p1.getY(), this.p2.getY());
         float maxY = Math.max(this.p1.getY(), this.p2.getY());
         return this.isOnLine(p) && p.getX() >= minX && p.getX() <= maxX && p.getY() >= minY && p.getY() <= maxY;
+    }
+}
+
+
+
+class Rectangle {
+    private double width;
+    private double height;
+
+    public Rectangle(double width, double height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        //Rectangle rect = (Rectangle) obj;
+
+        return true;
+        
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+        Rectangle r1 = new Rectangle(5, 10);
+        Rectangle r2 = new Rectangle(15, 10);
+        Rectangle r3 = new Rectangle(5, 10);
+
+        System.out.println(r1.equals(r2));
+        System.out.println(r1.equals(r3));
     }
 }

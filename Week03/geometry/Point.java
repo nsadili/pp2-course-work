@@ -46,7 +46,7 @@ class Point {
         return (float) Math.sqrt(dX * dX + dY * dY);
     }
 
-    boolean equals (Point p) {
+    public boolean equals (Point p) {
         return this.x == p.x && this.y == p.y;
     }
 }
