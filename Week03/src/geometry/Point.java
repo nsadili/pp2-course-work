@@ -1,7 +1,25 @@
 package geometry;
-public class Point {
+
+
+
+public class Point implements Movable{
     private double x;
     private double y;
+
+    
+    public void moveUp() {
+        this.y++;
+    }
+    public void moveDown() {
+        this.y--;
+    }
+    public void moveLeft() {
+        this.x--;
+    }
+    public void moveRight() {
+        this.x++;
+    }
+
     public Point() {
         this.x = 0;
         this.y = 0;
@@ -40,6 +58,10 @@ public class Point {
         return Math.sqrt((p.x - this.x)*(p.x - this.x)+(p.y - this.y)*(p.y - this.y)); 
     }
 
+    @Override
+    protected Point clone() {
+        return new Point(this.x, this.y);
+    }
 
     @Override
     public String toString() {

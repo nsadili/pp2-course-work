@@ -49,6 +49,10 @@ public class Segment {
         return this.p1.getY() - this.getSlope()*this.p1.getX(); 
     }
 
+    @Override
+    protected Segment clone() {
+        return new Segment(this.p1, this.p2);
+    }
 
 
     @Override
