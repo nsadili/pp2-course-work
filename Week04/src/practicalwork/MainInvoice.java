@@ -7,7 +7,7 @@ public class MainInvoice{
     	
         Scanner scn = new Scanner(System.in);
         
-        System.out.println("Please enter smth: ");
+        System.out.println("Please enter smth(input of yours): ");
         
         Invoice [] invoices = new Invoice[3];
         
