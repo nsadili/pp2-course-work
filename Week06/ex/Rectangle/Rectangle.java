@@ -1,4 +1,4 @@
-package pw.Rectangle;
+package Rectangle;
 
 public class Rectangle {
         int width, height;

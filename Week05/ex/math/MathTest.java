@@ -17,6 +17,7 @@ public class MathTest {
         for (i=0; i<n; i++){
             arr[i]=sc.nextInt();
         }
+        sc.close();
         
         System.out.println("Sum function: "+ MathDemo.sum(arr));
         
