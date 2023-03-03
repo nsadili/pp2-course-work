@@ -43,7 +43,7 @@ public class Account {
 
     public Account withdraw(double amount) {
         if (this.balance >= amount)
-            return new Account(this.id, this.customer, this.balance + amount);
+            return new Account(this.id, this.customer, this.balance - amount);
         else
             System.out.println("The amount withdrawn exceeds the current balance");
         return this;
