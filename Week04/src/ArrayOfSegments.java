@@ -1,31 +1,17 @@
 import java.util.*;
 
-class Segment {
-    private int start;
-    private int end;
-
-    public Segment(int start, int end) {
-        this.start = start;
-        this.end = end;
-    }
-
-    public int getLength() {
-        return end - start;
-    }
-
-    public String toString() {
-        return "[" + start + ", " + end + "]";
-    }
-}
-
 public class ArrayOfSegments {
 
-    public static Segment[] getMinLengthSegments(Segment[] segments) {
+    public static int getLength(int[] segment) {
+        return segment[1] - segment[0];
+    }
+
+    public static int[][] getMinLengthSegments(int[][] segments) {
         int minLength = Integer.MAX_VALUE;
         int count = 0;
         int index = 0;
         for (int i = 0; i < segments.length; i++) {
-            int length = segments[i].getLength();
+            int length = getLength(segments[i]);
             if (length < minLength) {
                 minLength = length;
                 count = 1;
@@ -34,9 +20,9 @@ public class ArrayOfSegments {
             }
         }
 
-        Segment[] minSegments = new Segment[count];
+        int[][] minSegments = new int[count][2];
         for (int i = 0; i < segments.length; i++) {
-            if (segments[i].getLength() == minLength) {
+            if (getLength(segments[i]) == minLength) {
                 minSegments[index++] = segments[i];
             }
         }
@@ -48,21 +34,21 @@ public class ArrayOfSegments {
         Scanner sc = new Scanner(System.in);
 
         int numSegments = sc.nextInt();
-        sc.nextLine();
 
-        Segment[] segments = new Segment[numSegments];
+        int[][] segments = new int[numSegments][2];
         for (int i = 0; i < numSegments; i++) {
             System.out.println("Enter the start and end points of segment " + (i + 1) + ":");
             int start = sc.nextInt();
             int end = sc.nextInt();
-            sc.nextLine();
-            segments[i] = new Segment(start, end);
+
+            segments[i][0] = start;
+            segments[i][1] = end;
         }
 
-        Segment[] minSegments = getMinLengthSegments(segments);
+        int[][] minSegments = getMinLengthSegments(segments);
 
         for (int i = 0; i < minSegments.length; i++) {
-            System.out.println(minSegments[i]);
+            System.out.println("[" + minSegments[i][0] + ", " + minSegments[i][1] + "]");
         }
     }
 }

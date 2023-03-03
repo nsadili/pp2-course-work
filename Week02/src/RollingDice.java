@@ -1,3 +1,5 @@
+package Week02.src;
+
 import java.util.Random;
 
 public class RollingDice {

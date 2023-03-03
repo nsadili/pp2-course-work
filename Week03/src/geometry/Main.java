@@ -19,7 +19,6 @@ public class Main {
         System.out.println("Distance between Point 1 and Point 2: " + p1.distance(p2));
         System.out.println("Are Point 1 and Point 2 equal after p1 was translated? " + p1.equals(p2));
 
-        System.out.println("Enter new coordinates for the Point 1: ");
         Scanner sc = new Scanner(System.in);
         float new_x = sc.nextFloat();
         float new_y = sc.nextFloat();

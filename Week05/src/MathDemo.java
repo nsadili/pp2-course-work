@@ -1,5 +1,7 @@
 package Week05.src;
 
+import java.util.*;
+
 public class MathDemo {
 
     public int min(int a, int b) {

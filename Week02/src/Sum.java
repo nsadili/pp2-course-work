@@ -1,3 +1,5 @@
+package Week02.src;
+
 import java.util.Scanner;
 
 public class Sum {
@@ -6,6 +8,6 @@ public class Sum {
         int num1 = sc.nextInt();
         int num2 = sc.nextInt();
         int sum = num1 + num2;
-        System.out.println("The sum of " + num1 + " and " + num2 + " is " + sum);
+        System.out.println(sum);
     }
 }

@@ -1,3 +1,5 @@
+package Week02.src;
+
 import java.util.Scanner;
 
 public class Average {

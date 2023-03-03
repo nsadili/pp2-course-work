@@ -18,7 +18,7 @@ public class Substring {
                     break;
                 }
             }
-            if (found) {
+            if (found == true) {
                 return i;
             }
         }
