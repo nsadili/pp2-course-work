@@ -1,0 +1,29 @@
+package Week05;
+
+public class MathDemo{
+    public int min(int a, int b){
+        return Math.min(a , b);
+    }
+    public int max(int a, int b){
+        return Math.max(a, b);
+    }
+    public int sum(int[] args) {
+        int result = 0;
+        for (int i = 0; i < args.length; i++){
+            result =+ i;
+        }
+        return result;
+    }
+    public float mean(int[] args) {
+        int sum = sum(args);
+        return (float) sum / args.length;
+    }
+    public int factorial(int i){
+        if (i <= 0){
+            return 1;
+        }
+        else{
+            return i * factorial(i-1);
+        }
+    } 
+}
