@@ -25,5 +25,11 @@ public class MathDemo{
         else{
             return i * factorial(i-1);
         }
-    } 
+    }
+     
+     // The advantage of defining these methods as static is that they can be
+     // called without needing to create an instance of the MathDemo class.
+     // This can be useful if the methods are independent of any specific
+     // instance data, or if you want to use the methods in a more functional
+     // programming style. 
 }
