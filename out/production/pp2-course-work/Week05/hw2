@@ -1,0 +1,9 @@
+In static init block of A
+In static init block of B
+In instance init block of A
+In constructor A.
+In instance init block of B
+In constructor B.
+
+The output shows the various initialization blocks and constructors being executed in a specific order. Note that the
+static initialization blocks for both classes are executed before any instance initialization blocks or constructors.

@@ -1,0 +1,14 @@
+Super
+10
+Subclass
+30
+
+When the program is executed, it creates an object of class Child and calls the calcValue method twice with different
+sets of arguments. Here's what happens for each call:
+1. child.calcValue(5) calls the calcValue(int a) method in the superclass Parent. This method prints "Super" to the
+console and returns the value a * 2 which is 10.
+1. child.calcValue(5, 10) calls the calcValue(int a, int b) method in the subclass Child. This method prints "Subclass"
+to the console and returns the value (a + b) * 2 which is 30.
+The reason for this behavior is that the Child class overrides the calcValue(int a) method of its parent class Parent
+with a method of the same name but with different parameters calcValue(int a, int b). This means that when the calcValue
+method is called with two arguments, the overridden method in the subclass is called
