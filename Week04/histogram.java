@@ -1,5 +1,4 @@
-public class histogram {
-    
+public class Histogram {
     public static void findHistogram(int[] num3) {
 
         int[] grades = new int[num3.length];
