@@ -1,6 +1,6 @@
 package Week06;
 
-public class Segment {
+public class Segment implements Movable{
     private Point p1;
     private Point p2;
 
@@ -68,5 +68,29 @@ public class Segment {
         clone.p1 = (Point) p1.clone();
         clone.p2 = (Point) p2.clone();
         return clone;
+    }
+
+    @Override
+    public void moveUp() {
+        p1.moveUp();
+        p2.moveUp();
+    }
+
+    @Override
+    public void moveDown() {
+        p1.moveDown();
+        p2.moveDown();
+    }
+
+    @Override
+    public void moveLeft() {
+        p1.moveLeft();
+        p2.moveLeft();
+    }
+
+    @Override
+    public void moveRight() {
+        p1.moveRight();
+        p2.moveRight();
     }
 }

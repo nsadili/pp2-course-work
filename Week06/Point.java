@@ -1,6 +1,6 @@
 package Week06;
 
-public class Point {
+public class Point implements Movable {
     private float x;
     private float y;
     public Point() {
@@ -55,5 +55,25 @@ public class Point {
     @Override
     protected Object clone() throws CloneNotSupportedException {
         return super.clone();
+    }
+
+    @Override
+    public void moveUp() {
+        setY(y + 1);
+    }
+
+    @Override
+    public void moveDown() {
+        setY(y - 1);
+    }
+
+    @Override
+    public void moveLeft() {
+        setX(x - 1);
+    }
+
+    @Override
+    public void moveRight() {
+        setX(x + 1);
     }
 }
