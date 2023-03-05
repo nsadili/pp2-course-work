@@ -1,5 +1,5 @@
 
-public class Segment {
+public class Segment implements Movable {
     private Point p1;
     private Point p2;
 
@@ -20,8 +20,7 @@ public class Segment {
     public Point getP2() {
         return p2;
     }
-    
-    
+
     public void setP1(Point p1) {
         this.p1 = p1;
     }
@@ -37,14 +36,43 @@ public class Segment {
 
     @Override
     public boolean equals(Object obj) {
-        if(obj == null) return false;
+        if (obj == null)
+            return false;
 
-        if(!(obj instanceof Segment)) 
-        return false;
+        if (!(obj instanceof Segment))
+            return false;
 
         Segment that = (Segment) obj;
 
         return this.p1.equals(that.p2) && this.p2.equals(that.p2);
     }
-    
+
+    @Override
+    public Movable moveUp(int steps) {
+        this.p1.moveUp(steps);
+        this.p1.moveUp(steps);
+        return this;
+    }
+
+    @Override
+    public Movable moveDown(int steps) {
+        this.p1.moveDown(steps);
+        this.p1.moveDown(steps);
+        return this;
+    }
+
+    @Override
+    public Movable moveLeft(int steps) {
+        this.p1.moveLeft(steps);
+        this.p1.moveLeft(steps);
+        return this;
+    }
+
+    @Override
+    public Movable moveRight(int steps) {
+        this.p1.moveRight(steps);
+        this.p1.moveRight(steps);
+        return this;
+    }
+
 }

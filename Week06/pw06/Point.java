@@ -1,8 +1,11 @@
 
-public class Point {
+public class Point implements Cloneable, Movable {
 
     private float x; //field
     private float y;
+
+
+
 
     public Point() {
         //EMPTY (DEFAULT) CONSTRUCTOR
@@ -16,47 +19,21 @@ public class Point {
         this.y = y;
     }
 
-    // public void setX(float newX) {
-    //     x = newX;
-    // }
     public float getX() {
         return x;
     }
 
-    // public void setY(float newY) {
-    //     y = newY;
-    // }
     public float getY() {
         return y;
+    } 
+    
+    public void setX(float x) {
+        this.x = x;
     }
 
-    // public void translate(float dX, float dY) {
-    //     this.x += dX;
-    //     this.y += dY;
-    // }
-
-    // public float distance(Point p) {
-    //     // this --> current obkect
-    //     //p --> new point object which sent to this method
-
-    //     float dist = (float) Math.sqrt(
-    //         Math.pow(this.x - p.x, 2)
-    //         +
-    //         Math.pow(this.y - p.y, 2));
-
-    //         // dist = (float) Math.hypot(Math.pow(this.x - p.x, 2)
-    //         // +
-    //         // Math.pow(this.y - p.y, 2), dist);
-
-    //     return dist;
-    // }
-    // public boolean equals(Point p) {
-    //     if(this.x == this.y){
-    //         return true;
-    //     }else {
-    //         return false;
-    //     }
-    // }
+    public void setY(float y) {
+        this.y = y;
+    }
 
     @Override
     public String toString() {
@@ -75,4 +52,28 @@ public class Point {
         return this.x == that.x && this.y == that.y;
     }
 
+
+    @Override
+    public Movable moveUp(int steps) {
+        this.y += steps; 
+        return this;
+    }
+
+    @Override
+    public Movable moveDown(int steps) {
+        this.y -= steps;
+        return this;
+    }
+
+    @Override
+    public Movable moveRight(int steps) {
+        this.x += steps;
+        return this;
+    }
+
+    @Override
+    public Movable moveLeft(int steps) {
+        this.x -= steps;
+        return this;
+    }
 }

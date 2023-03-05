@@ -1,5 +1,5 @@
 
-public class Rectangle {
+public class Rectangle implements Cloneable {
     private int width;
     private int height;
 
@@ -28,11 +28,12 @@ public class Rectangle {
 
         return this.width == that.width && this.height == that.height;
     }
-}
-class Square extends Rectangle{
 
-    public Square(int a) {
-        super(a, a);
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+
+        return super.clone();
     }
 }
+
 
