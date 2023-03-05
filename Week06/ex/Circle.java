@@ -5,6 +5,10 @@ public class Circle extends Shape {
 
     }
 
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
     public Circle(double radius, String color, boolean filled) {
         this.radius = radius;
         this.color = color;
@@ -31,4 +35,8 @@ public class Circle extends Shape {
         return "Circle[Shape[color=" + color + ", filled=" + filled + "], radius=" + radius + "]";
     }
 
+    public Resizable resize(double num) {
+        this.radius *= num;
+        return this;
+    }
 }

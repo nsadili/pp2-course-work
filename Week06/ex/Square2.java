@@ -4,7 +4,7 @@ public class Square2 extends Rectangle2 {
     }
 
     public Square2(double side) {
-        super(side,side);
+        super(side, side);
     }
 
     public Square2(double side, String color, boolean filled) {
@@ -28,11 +28,16 @@ public class Square2 extends Rectangle2 {
     }
 
     public void setLength(double side) {
-       setSide(length);
+        setSide(length);
     }
 
     public String toString() {
-       
-        return "Square[Rectangle[Shape[color="+ color +", filled="+filled+"width="+", length="+length+"]]";
-}
+
+        return "Square[Rectangle[Shape[color=" + color + ", filled=" + filled + "width=" + ", length=" + length + "]]";
+    }
+
+    public Resizable resize(double num) {
+        this.length *= num;
+        return this;
+    }
 }

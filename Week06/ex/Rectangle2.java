@@ -39,6 +39,10 @@ public class Rectangle2 extends Shape {
         return "[Rectangle[Shape[color=" + color + ", filled =" + filled + "], width= " + width + ", lenght=" + length;
     }
 
-   
-    
+    public Resizable resize(double num) {
+        this.length *= num;
+        this.width *= num;
+        return this;
+    }
+
 }

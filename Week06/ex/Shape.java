@@ -38,4 +38,5 @@ public abstract class Shape implements Resizable {
         return "Shape[color=" + color + ", filled =" + filled + "]";
     }
 
+    public abstract Resizable resize(double num);
 }
