@@ -24,4 +24,11 @@ public class Rectangle {
 
         return this.a == that.a && this.b == that.b;
     }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+
+        return super.clone();
+    }
+    
 }
