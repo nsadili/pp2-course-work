@@ -1,31 +1,31 @@
 package Week06;
 
 public class Segment {
-    private Week03.geometry.Point p1;
-    private Week03.geometry.Point p2;
+    private Point p1;
+    private Point p2;
 
-    public Segment(Week03.geometry.Point p1, Week03.geometry.Point p2) {
+    public Segment(Point p1, Point p2) {
         this.p1 = p1;
         this.p2 = p2;
     }
 
     public Segment(float x1, float y1, float x2, float y2) {
-        this(new Week03.geometry.Point(x1, y1), new Week03.geometry.Point(x2, y2));
+        this(new Point(x1, y1), new Point(x2, y2));
     }
 
-    public Week03.geometry.Point getP1() {
+    public Point getP1() {
         return this.p1;
     }
 
-    public void setP1(Week03.geometry.Point p) {
+    public void setP1(Point p) {
         this.p1 = p;
     }
 
-    public Week03.geometry.Point getP2() {
+    public Point getP2() {
         return this.p2;
     }
 
-    public void setP2(Week03.geometry.Point p) {
+    public void setP2(Point p) {
         this.p2 = p;
     }
 
@@ -52,5 +52,21 @@ public class Segment {
 
     public boolean isOnLine(Point p) {
         return p.getY() == (getSlope() * p.getX() + getIntercept());
+    }
+
+    @Override
+    public String toString() {
+        return "Segment{" +
+                "p1=" + p1 +
+                ", p2=" + p2 +
+                '}';
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        Segment clone = (Segment) super.clone();
+        clone.p1 = (Point) p1.clone();
+        clone.p2 = (Point) p2.clone();
+        return clone;
     }
 }
