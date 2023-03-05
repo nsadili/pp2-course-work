@@ -1,6 +1,8 @@
 package EX;
 
-enum Directions { right, left, down, up };
+enum Directions {
+    right, left, down, up
+};
 
 public class TestPointAndSegment {
     public static void main(String[] args) throws CloneNotSupportedException {
@@ -44,9 +46,9 @@ public class TestPointAndSegment {
     }
 
     public static Object moveArray(Movable x[], int steps, Directions direction) {
-        Directions directions = direction;
+
         for (Movable var : x) {
-            switch (directions) {
+            switch (direction) {
                 case right:
                     var.moveRight(steps);
                     break;

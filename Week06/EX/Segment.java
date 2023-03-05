@@ -44,38 +44,39 @@ public class Segment implements Movable {
 
         return that.p1.equals(p1) && that.p2.equals(p2);
     }
+
     public Object clone() throws CloneNotSupportedException {
         return (Segment) super.clone();
     }
-    //It is shallow copy method because only referance is copied
+    // It is shallow copy method because only referance is copied
 
     @Override
     public Movable moveUp(int steps) {
-     p1.moveUp(steps) ;
-     p2.moveUp(steps)  ;
-     return this;
+        p1.moveUp(steps);
+        p2.moveUp(steps);
+        return this;
 
     }
 
     @Override
     public Movable moveDown(int steps) {
-        p1.moveDown(steps) ;
-     p2.moveDown(steps)  ;
-     return this;
+        p1.moveDown(steps);
+        p2.moveDown(steps);
+        return this;
 
     }
 
     @Override
     public Movable moveLeft(int steps) {
-        p1.moveLeft(steps) ;
-        p2.moveLeft(steps)  ;
+        p1.moveLeft(steps);
+        p2.moveLeft(steps);
         return this;
     }
 
     @Override
     public Movable moveRight(int steps) {
-        p1.moveRight(steps) ;
-        p2.moveRight(steps)  ;
+        p1.moveRight(steps);
+        p2.moveRight(steps);
         return this;
     }
 }

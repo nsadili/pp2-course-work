@@ -52,31 +52,31 @@ public class Point implements Cloneable, Movable {
     public Object clone() throws CloneNotSupportedException {
         return (Point) super.clone();
     }
-    //It is shallow copy method because only referance is copied
+    // It is shallow copy method because only referance is copied
 
     @Override
     public Movable moveUp(int steps) {
-        this.y+=steps;
+        this.y += steps;
         return this;
 
     }
 
     @Override
     public Movable moveDown(int steps) {
-        this.y-=steps;
+        this.y -= steps;
         return this;
 
     }
 
     @Override
     public Movable moveLeft(int steps) {
-        this.x-=steps;
+        this.x -= steps;
         return this;
     }
 
     @Override
     public Movable moveRight(int steps) {
-        this.x+=steps;
+        this.x += steps;
         return this;
     }
 

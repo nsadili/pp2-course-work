@@ -1,15 +1,26 @@
 package EX;
 
-public class Rectangle implements Cloneable {
-    private int a, b;
+public class Rectangle extends Shape implements Cloneable {
+    private double a, b;
 
-    public Rectangle(int a, int b) {
+    public Rectangle() {
+        this.a = 1;
+        this.b = 1;
+    }
+
+    public Rectangle(double a, double b) {
+        this.a = a;
+        this.b = b;
+    }
+
+    public Rectangle(double a, double b, String color, Boolean filled) {
+        super(color, filled);
         this.a = a;
         this.b = b;
     }
 
     public String toString() {
-        return a + " " + b;
+        return "Rectangle[" + super.toString() + ", width= " + a + ", lendth= " + b + "]";
     }
 
     public void set(int a, int b) {
@@ -26,10 +37,20 @@ public class Rectangle implements Cloneable {
         return that.a == this.a && that.b == this.b;
     }
 
-    
     public Object clone() throws CloneNotSupportedException {
-        
+
         return super.clone();
+    }
+
+    @Override
+    public double getArea() {
+
+        return a * b;
+    }
+
+    @Override
+    public double getPerimeter() {
+        return 2 * (a + b);
     }
 
 }
