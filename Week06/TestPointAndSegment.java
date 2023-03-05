@@ -2,27 +2,23 @@ import java.util.Scanner;
 
 public class TestPointAndSegment {
     public static void main(String[] args) throws CloneNotSupportedException {
-        Point p1 = new Point(2, 5);
-        Point p2 = new Point(3, 4);
-        Segment s = new Segment(p1, p2);
+        // Point p1 = new Point(2, 5);
+        // Point p2 = new Point(3, 4);
+        // Segment s = new Segment(p1, p2);
 
+        // Circle c = new Circle(p2, 5);
+        // System.out.println(c);
 
-        Circle c = new Circle(p2, 5);
-        c.moveDown(3).moveRight(1);
-        System.out.println(c);
+        // c.moveDown(3).moveRight(1);
+        // System.out.println(c);
 
-        Movable[]  arr={p1,p2,s,c};
+        // Movable[] arr={p1,p2,s,c};
 
-        moveAllPoints(arr, 2);
+        // moveAllPoints(arr, 2);
 
-        for(Movable m : arr){
-            System.out.println(m);
-        }
-
-
-
-
-
+        // for(Movable m : arr){
+        // System.out.println(m);
+        // }
 
         // p1.moveRight(3).moveDown(2).moveLeft(1);
         // System.out.println(p1);
@@ -69,34 +65,35 @@ public class TestPointAndSegment {
 
     }
 
-    public static void moveAllPoints(Movable[] arr,int steps){
+    public static void moveAllPoints(Movable[] arr, int steps) {
 
-      //  Scanner sc=new Scanner(System.in);
-        //int steps;
-        //System.out.println("Enter the steps: ");
-        //steps=sc.nextInt();
+        // Scanner sc=new Scanner(System.in);
+        // int steps;
+        // System.out.println("Enter the steps: ");
+        // steps=sc.nextInt();
 
-        int choice=1;  // 1 up , 2 down , 3 right, 4 left
-        
-        for(Movable m : arr){
-            switch(choice){
-                case 1: m.moveUp(steps);
-                break;
+        int choice = 1; // 1 up , 2 down , 3 right, 4 left
 
-                case 2: m.moveDown(steps);
-                break;
+        for (Movable m : arr) {
+            switch (choice) {
+                case 1:
+                    m.moveUp(steps);
+                    break;
 
-                case 3: m.moveRight(steps);
-                break;
+                case 2:
+                    m.moveDown(steps);
+                    break;
 
-                case 4: m.moveLeft(steps);
-                break;
+                case 3:
+                    m.moveRight(steps);
+                    break;
 
-
+                case 4:
+                    m.moveLeft(steps);
+                    break;
 
             }
         }
-
 
     }
 }
