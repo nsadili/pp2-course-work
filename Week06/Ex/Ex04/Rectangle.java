@@ -1,14 +1,6 @@
-public class Ex02{
-    public static void main(String[] args) {
-        Rectangle r1= new Rectangle(5,10);
-        Rectangle r2= new Rectangle(15,10);
-        Rectangle r3= new Rectangle(5, 10);
-        System.out.println(r1.equals(r2));// it is false
-        System.out.println(r1.equals(r3));// it is true
-        
-    }
-}
-class Rectangle{
+package Ex04;
+
+public class Rectangle implements Cloneable {
     int width, height;
     public Rectangle(int w, int h){
         width= w;
@@ -25,4 +17,8 @@ class Rectangle{
         return this.width==rect.width && this.height==rect.height;
     
 }
-    }
+@Override
+public Object clone() throws CloneNotSupportedException {
+    return super.clone();
+}
+}
