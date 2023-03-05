@@ -1,8 +1,17 @@
-public class Circle implements Movable {
+public class Circle extends Shape implements Movable, Resizable{
     private Point center;
-    private int radius;
+    protected double radius = 1.0;
 
-    public Circle(Point center, int radius) {
+    public Circle(){
+    }
+
+    public Circle(double radius){
+    }
+
+    public Circle(double radius, String color, boolean filled){
+    }
+
+    public Circle(Point center, double radius){
         this.center = center;
         this.radius = radius;
     }
@@ -11,25 +20,17 @@ public class Circle implements Movable {
         return center;
     }
 
-
-
     public void setCenter(Point center) {
         this.center = center;
     }
 
-
-
-    public int getRadius() {
+    public double getRadius() {
         return radius;
     }
 
-
-
-    public void setRadius(int radius) {
+    public void setRadius(double radius) {
         this.radius = radius;
     }
-
-
 
     @Override
     public Movable moveUp(int steps) {
@@ -56,9 +57,26 @@ public class Circle implements Movable {
     }
 
     @Override
-    public String toString() {
-        return "(Center: " + center + ", radius: " + radius + ")";
+    public double getArea() {
+        return Math.PI * radius * radius; }
+
+    @Override
+    public double getPerimeter() {
+        return Math.PI * 2 * radius;
     }
 
+    @Override
+    public String toString(){
+        return "Circle[Shape[coloe=" + color 
+        + ", filled=" + filled+ "]" 
+        + ", radius=" + radius + "]";
+    }
 
+    @Override
+    public Resizable resize() {
+        this.radius *= 1.5;
+        return this;   
+    }
+
+    
 }
