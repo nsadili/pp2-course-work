@@ -33,7 +33,7 @@ public class Square2 extends Rectangle2 {
 
     public String toString() {
 
-        return "Square[Rectangle[Shape[color=" + color + ", filled=" + filled + "width=" + ", length=" + length + "]]";
+        return "Square[Rectangle[Shape[color=" + color + ", filled=" + filled + "]=, width=" + ", length=" + length + "]]";
     }
 
     public Resizable resize(double num) {
