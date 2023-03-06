@@ -1,6 +1,6 @@
-package Week03.geometry;
+package Week06;
 
-public class Segment {
+public class Segment implements Movable {
 
     private Point p1;
     private Point p2;
@@ -40,8 +40,9 @@ public class Segment {
         return this.p1.distance(p2);
     }
 
-    public boolean equals(Segment s){
-        return this.p1.equals(s.p1) && this.p2.equals(s.p2);
+    public boolean equals(Object obj){
+        Segment s = (Segment) obj;
+        return (this.p1.equals(s.p1)) && this.p2.equals(s.p2);
     }
 
     public float getSlope(){
@@ -67,6 +68,38 @@ public class Segment {
         float minY = Math.min(this.p1.getY(), this.p2.getY());
         float maxY = Math.max(this.p1.getY(), this.p2.getY());
         return this.isOnLine(p) && p.getX() >= minX && p.getX() <= maxX && p.getY() >= minY && p.getY() <= maxY;
+    }
+
+    @Override
+    public String toString() {
+        return "Segment [p1=" + p1 + ", p2=" + p2 + "]";
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException 
+    {
+        return super.clone();
+    }
+    
+
+    public void moveUp() {
+        p1.moveUp();
+        p2.moveUp();
+    }
+
+    public void moveDown() {
+        p1.moveDown();
+        p2.moveDown();
+    }
+
+    public void moveLeft() {
+        p1.moveLeft();
+        p2.moveLeft();
+    }
+
+    public void moveRight() {
+        p1.moveRight();
+        p2.moveRight();
     }
 
 }

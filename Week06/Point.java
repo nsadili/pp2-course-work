@@ -1,6 +1,5 @@
-package Week03.geometry;
-
-public class Point{
+package Week06;
+public class Point implements Movable{
 
 	private float x;
 	private float y;
@@ -44,8 +43,36 @@ public class Point{
 		return (float) Math.sqrt(dx * dx + dy * dy);
 	}
 
-	public boolean equals(Point p){
-		return this.x == p.x && this.y == p.y;
+	public boolean equals(Object obj){
+        Point p = (Point) obj;
+		return (this.x == p.x) && (this.y == p.y);
 	}
+
+	@Override
+	public String toString() {
+		return "Point [x=" + x + ", y=" + y + "]";
+	}
+
+	@Override
+	protected Object clone() throws CloneNotSupportedException 
+    {
+        return super.clone();
+    }
+
+	public void moveUp() {
+        y--;
+    }
+
+    public void moveDown() {
+        y++;
+    }
+
+    public void moveLeft() {
+        x--;
+    }
+
+    public void moveRight() {
+        x++;
+    }
 
 }
