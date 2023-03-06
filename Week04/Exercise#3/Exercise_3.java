@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class W4Ex3 {
+public class Exercise_3 {
 
     public static void Histogram(double[] arr, int num) {
         double mean, median, mode = 0;
@@ -17,7 +17,6 @@ public class W4Ex3 {
             median = arr[num/2];
         }
 
-        // Finding mean
         for(int i = 0; i < num; i++) {
             sum += arr[i];
         }
