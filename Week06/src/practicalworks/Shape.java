@@ -1,4 +1,4 @@
-package practicalwork;
+package practicalworks;
 
 abstract public class Shape {
 	
