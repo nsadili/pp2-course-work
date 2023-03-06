@@ -17,10 +17,15 @@ public class StringReverse
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
-        String inputString = sc.nextLine();
+        String inputString = sc.nextLine();  //nextLine - to read the entire line of input.
         String reversedString = reverseString(inputString);
 
         System.out.println(reversedString);
+
+       
+        //StringReversed sr = new StringReversed();
+
+        // System.out.println(sr.reverse("Hello"));
     }
 
  }
