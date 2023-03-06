@@ -27,6 +27,7 @@ public class TestRectAndSquare {
         System.out.println(r1.getArea());
         s1.resize(2);
         System.out.println(s1.getArea());
+       
 
         // System.out.println(r1.equals(r2));
         // System.out.println(r1.equals(r3));

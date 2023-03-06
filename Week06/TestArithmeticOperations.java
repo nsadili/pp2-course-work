@@ -1,5 +1,7 @@
 
+import arithmeticoperations.Div;
 import arithmeticoperations.Operand;
+import arithmeticoperations.Subtr;
 import arithmeticoperations.Sum;
 
 public class TestArithmeticOperations {
@@ -18,5 +20,15 @@ public class TestArithmeticOperations {
 
         System.out.println(s2.toString());
         System.out.println(s2.toValue());
+
+        Operand a= new Operand("s", 19);
+        
+        Subtr s1=new Subtr(a,x);
+        System.out.println(s1.toString());
+        System.out.println(s1.toValue());
+
+
+
+
     }
 }
