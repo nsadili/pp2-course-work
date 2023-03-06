@@ -33,7 +33,7 @@ public class Account {
 
     public void withdraw(double amount) {
         if (balance >= amount) {
-            this.balance -= amount;
+            this.balance = this.balance - amount;
         } else {
             System.out.println("amount withdrawn exceeds the current balance");
         }

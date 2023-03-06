@@ -2,10 +2,10 @@ import java.util.*;
 
 public class HangmanGame {
     public static void main(String[] args) {
-        String[] words = { "language", "programming", "java", "javascript", "algorithm", "coding", "syntax" };
+        String[] words = { "language", "programming", "java", "algorithm", "coding", "syntax" };
         Random random = new Random();
         String word = words[random.nextInt(words.length)];
-        int numIncorrectGuesses = 0;
+        int IncorrectGuesses = 0;
         char[] guessedLetters = new char[word.length()];
         
         for (int i = 0; i < guessedLetters.length; i++) {
@@ -14,10 +14,10 @@ public class HangmanGame {
 
         Scanner sc = new Scanner(System.in);
 
-        while (numIncorrectGuesses < 10) {
+        while (IncorrectGuesses < 10) {
 
             System.out.println("Word: " + String.valueOf(guessedLetters));
-            System.out.println("Number of incorrect guesses: " + numIncorrectGuesses);
+            System.out.println("Number of incorrect guesses: " + IncorrectGuesses);
 
             System.out.print("Guess a letter: ");
             char guess = sc.nextLine().charAt(0);
@@ -31,7 +31,7 @@ public class HangmanGame {
             }
 
             if (!letterFound) {
-                numIncorrectGuesses++;
+                IncorrectGuesses++;
             }
 
             if (String.valueOf(guessedLetters).equals(word)) {
@@ -41,7 +41,7 @@ public class HangmanGame {
             }
         }
 
-        if (numIncorrectGuesses == 10) {
+        if (IncorrectGuesses == 10) {
             System.out.println("Sorry, you lost!");
             System.out.println("The word was: " + word);
         }
