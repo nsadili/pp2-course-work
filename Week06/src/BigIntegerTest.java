@@ -8,17 +8,17 @@ public class BigIntegerTest {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
-        BigInteger fact = BigInteger.ONE;
+        BigInteger factorial = BigInteger.ONE;
         for (int i = 1; i <= n; i++) {
-            fact = fact.multiply(BigInteger.valueOf(i));
+            factorial = factorial.multiply(BigInteger.valueOf(i));
         }
-        System.out.println(fact);
+        System.out.println(factorial);
 
-        BigInteger base = sc.nextBigInteger();
+        BigInteger a = sc.nextBigInteger(); // base
 
-        BigInteger exponent = sc.nextBigInteger();
+        BigInteger b = sc.nextBigInteger(); // exponent
 
-        BigInteger result = base.pow(exponent.intValue());
+        BigInteger result = a.pow(b.intValue());
         System.out.println(result);
 
     }
