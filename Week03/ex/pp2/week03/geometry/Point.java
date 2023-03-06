@@ -5,13 +5,6 @@ public class Point {
     private float x;
     private float y;
 
-    public Point() {
-        // EMPTY (DEFAULT) CONSTRUCTOR
-        // this.x = 3;
-        // this.y = 3;
-        this(3,3);
-    }
-
     public Point(float x, float y) {
         this.x = x;
         this.y = y;
