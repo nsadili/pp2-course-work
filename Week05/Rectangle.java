@@ -1,6 +1,6 @@
 package Week05;
 
-public class string {
+public class Rectangle {
     public class Point {
         private int x;
         private int y;
