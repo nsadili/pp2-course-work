@@ -1,4 +1,4 @@
-package Week04;
+
 
 public class slices {
     public static void main(String[] args) {

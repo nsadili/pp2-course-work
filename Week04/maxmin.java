@@ -1,4 +1,4 @@
-package Week04;
+
 public class maxmin{
 
 public static int findMaximum(int [] arr)

@@ -1,4 +1,4 @@
-package Week04;
+
 
     public class Point{
     private int x;

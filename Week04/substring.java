@@ -1,4 +1,3 @@
-package Week04;
 
 public class substring {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Week04;
+
 
 public class mostrepeateddigit {
     public static int findMostRepeatedDigit(int n)

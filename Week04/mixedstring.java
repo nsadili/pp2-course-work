@@ -1,4 +1,3 @@
-package Week04;
 
 public class mixedstring {
 

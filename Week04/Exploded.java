@@ -1,5 +1,3 @@
-package Week04;
-
 public class Exploded {
     public static void main(String[] args) {
         System.out.println(generateExplodedString("Baku"));
