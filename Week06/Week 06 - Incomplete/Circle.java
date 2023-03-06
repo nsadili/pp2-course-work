@@ -1,4 +1,5 @@
 public class Circle extends Shape implements Movable{
+    private Point center;
     protected double radius= 1.0;
 
     public Circle(){
@@ -34,28 +35,24 @@ public class Circle extends Shape implements Movable{
 
     //MOVABLE
     @Override
-    public Movable moveUp(int step) {
-        center.moveUp(step);
+    public Movable moveUp(int a) {
+        center.moveUp(a);
         return this;
-
     }
-
     @Override
-    public Movable moveDown(int step) {
-        center.moveDown(step);
+    public Movable moveDown(int a) {
+        center.moveDown(a);
         return this;
-
     }
-
     @Override
-    public Movable moveLeft(int step) {
-        center.moveLeft(step);
+    public Movable moveLeft(int a) {
+        center.moveLeft(a);
         return this;
     }
 
     @Override
-    public Movable moveRight(int step) {
-        center.moveRight(step);
+    public Movable moveRight(int a) {
+        center.moveRight(a);
         return this;
     }
 }
