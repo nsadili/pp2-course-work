@@ -1,10 +1,14 @@
 package Rectangle;
 
 public class RectangleTest {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws CloneNotSupportedException{
         Rectangle r1 = new Rectangle(5,10);
         Rectangle r2 = new Rectangle(15,10);
         Rectangle r3 = new Rectangle(5,10);
+
+        Rectangle r4 = (Rectangle)r1.clone();
+
+        System.out.println(r4.toString());
 
         System.out.println(r1.equals(r2));
         System.out.println(r1.equals(r3));

@@ -41,7 +41,7 @@ public class Segment {
 
     @Override
     public String toString() {
-        return "point 1: "+ p1.toString() + ", point 2: "+ p2.toString();
+        return "point 1: "+ this.p1 + ", point 2: "+ this.p2;
     }
 
     public boolean equals(Segment s){

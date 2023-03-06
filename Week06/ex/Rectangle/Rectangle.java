@@ -1,6 +1,6 @@
 package Rectangle;
 
-public class Rectangle {
+public class Rectangle implements Cloneable{
         int width, height;
         
         public Rectangle(int w, int h) {
@@ -19,7 +19,14 @@ public class Rectangle {
         public boolean equals(Object obj) {
                 if (obj==null) return false;
                 if (!(obj instanceof Rectangle)) return false;
-        Rectangle rect = (Rectangle) obj;
-        return (this.width==rect.width) && (this.height==rect.height);
+                Rectangle rect = (Rectangle) obj;
+                return (this.width==rect.width) && (this.height==rect.height);
         }
+
+        @Override
+        protected Object clone() throws CloneNotSupportedException {
+                return super.clone();
+        }
+
+        
 }
