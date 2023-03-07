@@ -50,6 +50,7 @@ public class Arrays {
 
 
 
+        explode.findExploded(str);
 
     }
 
