@@ -32,7 +32,7 @@ public class Point implements Cloneable {
     }
 
     public boolean equals(Object obj) {
-        // TODO
+       if(obj == null) return false;
 
         return false;
     }
