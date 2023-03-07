@@ -1,5 +1,8 @@
-public class TestPointandSegment {
-    public static void main(String[] args) {
-        Point p1 = 
-    }
+package classes;
+
+public interface Movable {
+    void moveUp();
+    void moveDown();
+    void moveLeft();
+    void moveRight();
 }
