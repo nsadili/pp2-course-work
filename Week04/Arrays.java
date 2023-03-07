@@ -25,6 +25,13 @@ public class Arrays {
 
         Point[] points = {new Point(1, 2),new Point(9, 3),new Point(-3, 7),new Point(4, 3)};
 
+        Segment[] segments = {
+            new Segment(3, 4),
+            new Segment(2, 8),
+            new Segment(33, 10)
+        };
+    
+        Segment shortestSegment = ArrayOfSegments.getShortestSegment(segments);
         Print.printArrays(num); //Arrays 1 
         MinMax.findMinAndMax(num); //Arrays 2
         Histogram.findHistogram(num);//Arrays 3
@@ -48,9 +55,10 @@ public class Arrays {
 
         ArrayOfPoints.extremePoints(points);//Arrays of Objects 16
 
+        System.out.println(shortestSegment.getS1() + " " + shortestSegment.getS2());//Arrays of Objects 17
 
 
-        explode.findExploded(str);
+       
 
     }
 
