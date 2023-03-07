@@ -1,6 +1,6 @@
 
 
-public class Segment implements Cloneable{
+public class Segment implements Cloneable, Moveable{
     private Point p1;
     private Point p2;
 
@@ -43,5 +43,29 @@ public class Segment implements Cloneable{
         sCopy.p1 = (Point) this.p1.clone();
         sCopy.p2 = (Point) this.p2.clone(); // It is deep cloning since we also cloned the objects inside the object.
         return sCopy;
+    }
+
+    @Override
+    public void moveUp(int n) {
+        p1.moveUp(n);
+        p2.moveUp(n);
+    }
+
+    @Override
+    public void moveDown(int n) {
+        p1.moveDown(n);
+        p2.moveDown(n);
+    }
+
+    @Override
+    public void moveLeft(int n) {
+        p1.moveLeft(n);
+        p2.moveLeft(n);
+    }
+
+    @Override
+    public void moveRight(int n) {
+        p1.moveRight(n);
+        p2.moveRight(n);
     }
 }

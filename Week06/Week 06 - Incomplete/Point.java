@@ -1,6 +1,6 @@
 
 
-public class Point implements Cloneable {
+public class Point implements Cloneable, Moveable {
     private float x;
     private float y;
 
@@ -38,11 +38,31 @@ public class Point implements Cloneable {
     }
 
     public String toString() {
-        return "(x: "+ this.x +",y: " + this.y+")";
+        return "("+ this.x +", " + this.y+")";
     }
 
     @Override
     protected Object clone() throws CloneNotSupportedException {
         return super.clone(); // It is shallow cloning.
+    }
+
+    @Override
+    public void moveUp(int n) {
+        this.y+=n;
+    }
+
+    @Override
+    public void moveDown(int n) {
+        this.y-=n;
+    }
+
+    @Override
+    public void moveLeft(int n) {
+        this.x-=n;
+    }
+
+    @Override
+    public void moveRight(int n) {
+        this.x+=n;
     }
 }

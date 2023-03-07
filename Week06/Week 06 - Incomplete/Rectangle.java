@@ -1,4 +1,4 @@
-package Rectangle;
+
 
 public class Rectangle implements Cloneable {
     private int a, b;

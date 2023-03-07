@@ -1,4 +1,4 @@
-package Rectangle;
+
 
 public class TestRectAndSquare {
     public static void main(String[] args) throws CloneNotSupportedException{
@@ -17,7 +17,7 @@ public class TestRectAndSquare {
         System.out.println(o1.equals(o3));
         System.out.println(o2.equals(o3));
 
-        Object o4=r1.clone();
+        Object o4=(Rectangle) r1.clone();
         System.out.println(r1==o4);
         System.out.println(r1.equals(o4));
 
