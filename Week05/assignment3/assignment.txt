@@ -1,0 +1,10 @@
+The output will be:
+
+Super
+10
+Subclass
+30
+
+The program defines a parent class Parent with a method calcValue(int a) that returns the value of a * 2. The Child class extends Parent and overrides the calcValue(int a) method with its own implementation that takes two integer arguments and returns the value of (a + b) * 2.
+
+A Child instance is created in the main function of the OverrideDemo class, and two calls to calcValue are made, one with a single integer argument and the other with two integer arguments. When the method calcValue(5) is invoked, the Parent implementation prints "Super" and yields the number 10. When the method calcValue(5, 10) is used, the Child implementation prints "Subclass" and yields the value 30. The printed messages and the numbers returned by the method calls are displayed in the program's output.

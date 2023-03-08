@@ -1,0 +1,20 @@
+The code specifies the classes A and B as well as Main2 as the primary class. Class B gets all of the attributes and functions of class A because class B extends class A.
+
+The main function of the Main2 class is called when the program is run. The new operator, which calls the class B constructor, is used in the main method to make an object b of class B.
+
+The static initialization block of class A is performed before the constructor of class B is called, and it prints the message "In static init block of A" in output. The message "In static init block of B" is then printed after the static initialization block of class B has been performed.
+
+The class A constructor is then called, which displays the message "In constructor A," after which the instance initialization block of class A is executed, printing the message "In instance init block of A" in the process.
+
+The class B constructor then displays the message "In constructor B," after which the instance initialization block of class B is executed, printing the message "In instance init block of B" in the process.
+
+Therefore, the output of the program will be:
+
+In static init block of A
+In static init block of B
+In instance init block of A
+In constructor A.
+In instance init block of B
+In constructor B.
+
+This is due to the fact that instance initialization blocks are performed each time a new object belonging to the class is created, whereas static initialization blocks are only executed once when the class is loaded. The initialization sections are followed by the call to the constructors.

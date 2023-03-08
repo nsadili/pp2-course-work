@@ -1,0 +1,8 @@
+Three classes—X, Y, and Main—are specified in the code. The default constructor for Class X prints the phrase "In constructor X." whenever it is invoked. The constructor for class Y, which extends class X, prints the phrase "In constructor Y." when it is invoked. Last but not least, class Main has a main function that uses the constructor specified in class Y to create an object of class Y.
+
+When the Java application runs, an object of class Y, which extends class X, is created. The constructor of class X is therefore invoked first, and it prints the phrase "In constructor X." Then the class Y's constructor is invoked, and it outputs the phrase "In constructor Y." As a result, the following will be the program's output:
+
+In constructor X.
+In constructor Y.
+
+This is so that the constructor of the superclass is invoked before the constructor of the subclass when an object of a subclass is created. This is so that the subclass, which may depend on functionality defined in the superclass, can use it. However, the superclass must first be initialized. Because class Y in this instance extends class X, the constructor of class X is called prior to the constructor of class Y when an object of class Y is formed.

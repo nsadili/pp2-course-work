@@ -1,0 +1,9 @@
+Two groups, ClassA and ClassB, are defined by the code. ClassB is a subclass of ClassA and gets all of ClassA's methods and properties because ClassB extends ClassA. Additionally, ClassB specifies its own methods, some of which replace or obfuscate those defined by ClassA.
+
+By creating a methodTwo() method with the exact same name and signature as ClassA's methodTwo() method, ClassB specifically overrides that method. This implies that the methodTwo() method of ClassB will be called when an instance of that class is created rather than ClassA's methodTwo() method.
+
+By specifying its own method, ClassB also conceals the methodOne() method of ClassA. identical in both name and signature, but marked as static, one() function. As a result, when the methodOne() method is invoked on the ClassB class itself (and not on a ClassB instance), its own static method is called. Instead of calling the methodOne() method of its superclass, ClassA, One() will be called.
+
+By specifying a methodThree() method with the same name and signature as ClassA's methodThree() method, ClassB replaces it. The methodThree() method of ClassB cannot override the static nature of ClassA's methodThree() function, but it can be hidden.
+
+Finally, ClassB inherits the methodFour() method from ClassA rather than replacing it or hiding it.
