@@ -9,6 +9,10 @@ public class SegmentMin {
                 new Segment(1, 1, 2, 2),
         };
         toString(checkAndBuildNewSegment(segm));
+
+
+
+        System.out.println("Overriding version of toString() method: (from Week 6): " + segm[1].toString());
     }
 
     public static Segment[] checkAndBuildNewSegment(Segment[] segm) {

@@ -1,8 +1,9 @@
 package ArrayOfSegemnts;
 
 import ArrayOfPoint.Point;
+import Week06.MovableInterface.Movable;
 
-public class Segment {
+public class Segment implements Movable {
     private double x1;
     private double x2;
     private double y1;
@@ -21,8 +22,6 @@ public class Segment {
 
     public Segment(Segment[] x) {
     }
-
-   
 
     public double getX1() {
         return x1;
@@ -57,9 +56,42 @@ public class Segment {
     }
 
     public double getDistances() {
-        double i = Math.sqrt(Math.pow((this.x1-this.x2), 2) + Math.pow((this.y1 - this.y2), 2));   
+        double i = Math.sqrt(Math.pow((this.x1 - this.x2), 2) + Math.pow((this.y1 - this.y2), 2));
         return i;
     }
-    
-        
+
+    @Override
+    public String toString() {
+        // TODO Auto-generated method stub
+        return "[(" + x1 + "," + y1 + "):(" + x2 + ":" + y2 + ")]";
+    }
+
+    @Override
+    public void moveUp() {
+        // TODO Auto-generated method stub
+        y1 += 1;
+        y2 += 1;
+    }
+
+    @Override
+    public void moveDown() {
+        // TODO Auto-generated method stub
+        y1 -= 1;
+        y2 -= 1;
+    }
+
+    @Override
+    public void moveLeft() {
+        // TODO Auto-generated method stub
+        x1 -= 1;
+        x2 -= 1;
+    }
+
+    @Override
+    public void moveRight() {
+        // TODO Auto-generated method stub
+        x1 += 1;
+        x2 += 1;
+    }
+
 }

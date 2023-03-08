@@ -1,4 +1,4 @@
-package Week05.PW11And12;
+package Week06.Ex2Ex3Ex4Ex5;
 
 
 public class Main {
@@ -18,6 +18,9 @@ public class Main {
         System.out.println("Objects are identical: " + o1.equals(o2));
         System.out.println("Objects are identical: " + o1.equals(o3));
         System.out.println("Objects are identical: " + o2.equals(o3));
+
+        Rectangle r4 = r1.clone();
+        System.out.println(r4.toString());
 
     }
 }
