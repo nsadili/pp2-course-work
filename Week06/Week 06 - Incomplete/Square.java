@@ -1,4 +1,4 @@
-public class Square extends Rectangle implements Resizable{
+public class Square extends Rectangle{
 
     public Square() {
         super(1, 1);
