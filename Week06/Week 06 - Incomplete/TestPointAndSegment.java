@@ -67,12 +67,8 @@ public class TestPointAndSegment {
         System.out.println("Shape array default: "+ Arrays.toString(shapes));
         moveShapes(shapes, "up", 3);
         System.out.println("Shape array moved to: "+ Arrays.toString(shapes));
-
-
-
-
-
     }
+    
     public static void moveShapes (Object[] shapes, String dir, int n){
         for (int i=0; i<shapes.length; i++){
             if (shapes[i] instanceof Point){
