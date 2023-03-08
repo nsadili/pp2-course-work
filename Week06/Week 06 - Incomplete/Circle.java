@@ -1,4 +1,4 @@
-public class Circle extends Shape implements Moveable{
+public class Circle extends Shape implements Moveable, Resizable{
     protected Point center;
     protected double radius;
     protected String color;
@@ -75,6 +75,9 @@ public class Circle extends Shape implements Moveable{
         return "Circle["+super.toString()+", radius="+radius;
     }
 
+    public void resize(double factor) {
+        radius *= factor;
+    }
     
 }
 

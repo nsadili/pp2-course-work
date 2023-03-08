@@ -1,6 +1,4 @@
-
-
-public class Rectangle extends Shape implements Cloneable {
+public class Rectangle extends Shape implements Cloneable, Resizable {
     protected double a, b;
     protected String color;
     protected boolean filled;
@@ -66,6 +64,11 @@ public class Rectangle extends Shape implements Cloneable {
     
     public String toString() {
         return "Rectangle["+super.toString()+", width="+a+", length="+b;
+    }
+
+    public void resize(double factor) {
+        a *= factor;
+        b *= factor;
     }
 
 }

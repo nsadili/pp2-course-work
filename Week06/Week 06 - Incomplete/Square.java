@@ -1,6 +1,4 @@
-
-
-public class Square extends Rectangle {
+public class Square extends Rectangle implements Resizable{
 
     public Square() {
         super(1, 1);
@@ -21,6 +19,10 @@ public class Square extends Rectangle {
     @Override
     public String toString() {
         return "Square["+super.toString()+", side="+super.getWidth();
+    }
+
+    public void resize(double factor) {
+        super.a *= factor;
     }
 
 }
