@@ -1,9 +1,10 @@
+import java.util.Arrays;
+
 public class TestPointAndSegment {
     public static void main(String[] args) throws CloneNotSupportedException {
         Point p1 = new Point(2, 5);
-        Point p3 = new Point(10, 13);
-
         Point p2 = (Point) p1.clone();
+        Point p3 = new Point(10, 13);
 
         System.out.println(p1.getX() + ", " + p1.getY());
         System.out.println(p2.getX() + ", " + p2.getY());
@@ -59,10 +60,69 @@ public class TestPointAndSegment {
         c1.moveLeft(1);
         System.out.println("Circle moved to: "+c1.toString());
 
+        Object[] shapes=new Object[3];
+        shapes[0]=p1;
+        shapes[1]=s1;
+        shapes[2]=c1;
+        System.out.println("Shape array default: "+ Arrays.toString(shapes));
+        moveShapes(shapes, "up", 3);
+        System.out.println("Shape array moved to: "+ Arrays.toString(shapes));
 
 
 
 
 
+    }
+    public static void moveShapes (Object[] shapes, String dir, int n){
+        for (int i=0; i<shapes.length; i++){
+            if (shapes[i] instanceof Point){
+                Point p = (Point) shapes[i];
+                switch (dir) {
+                    case "up": p.moveUp(n);
+                    break;
+                    case "down": p.moveDown(n);
+                    break;
+                    case "left": p.moveLeft(n);
+                    break;
+                    case "right": p.moveRight(n);
+                    break;
+                    default: System.out.println("Please provide a valid direction!");
+                }
+                shapes[i]=p;
+            }
+            else if (shapes[i] instanceof Segment){
+                Segment s = (Segment) shapes[i];
+                switch (dir) {
+                    case "up": s.moveUp(n);
+                    break;
+                    case "down": s.moveDown(n);
+                    break;
+                    case "left": s.moveLeft(n);
+                    break;
+                    case "right": s.moveRight(n);
+                    break;
+                    default: System.out.println("Please provide a valid direction!");
+                }
+                shapes[i]=s;
+            }
+            else if (shapes[i] instanceof Circle){
+                Circle c = (Circle) shapes[i];
+                switch (dir) {
+                    case "up": c.moveUp(n);
+                    break;
+                    case "down": c.moveDown(n);
+                    break;
+                    case "left": c.moveLeft(n);
+                    break;
+                    case "right": c.moveRight(n);
+                    break;
+                    default: System.out.println("Please provide a valid direction!");
+                }
+                shapes[i]=c;
+            }
+            else {
+                System.out.println("Please provide a valid input!");
+            }
+        }
     }
 }
