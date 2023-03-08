@@ -1,0 +1,17 @@
+The output:
+
+Super
+10
+Subclass
+30
+
+Explanation:
+
+The code defines two classes, Parent and Child, where Child is a subclass of Parent. 
+The Parent class has a method calcValue that takes one parameter and returns its double, and the Child class overrides this method with another implementation that takes two parameters and returns their sum doubled.
+
+In the main method, an instance of Child is created, and two calls are made to its calcValue method with different arguments. 
+The first call matches the parameter of the method in the Parent class, so that method is called, and it returns the value of the argument multiplied by 2, along with printing the message "Super".
+
+The second call matches the overridden method in the Child class, so that method is called, and it returns the sum of the two arguments multiplied by 2, along with printing the message "Subclass".
+Therefore, the output of the program shows the messages printed by the two methods and their return values in the order they are called in the main method.

@@ -1,0 +1,6 @@
+The code defines two classes, ClassA and ClassB. ClassB is a subclass of ClassA and inherits all of its methods. ClassB also defines its own methods.
+
+In ClassB, some methods with the same names as those in ClassA are overridden, meaning that when those methods are called on an object of ClassB, the versions defined in ClassB are executed. 
+One method with the same name as that in ClassA is hidden in ClassB because it is defined as static. 
+This means that when the method is called on an object of ClassB, only the version defined in ClassB will be executed, regardless of the object's class. 
+Another method in ClassB does not override or hide any methods from the superclass because it has a different signature.

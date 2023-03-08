@@ -1,0 +1,25 @@
+1. Single:In single inheritance, a subclass receives traits and behaviors from just one superclass. 
+	  The subclass inherits all the qualities of the superclass.
+
+Ex: A class "Student" can inherit from a parent class "Person", which contains common properties and methods for all types of people.
+
+2. Multilevel:In multilevel inheritance, a subclass acquires properties and methods from its parent class, which in turn receives traits and behaviors from another parent class. 
+              The subclass has access to all the qualities of both parent classes.
+
+Ex: A class "GoldenRetriever" can inherit from "Dog" which inherits from "Animal". 
+
+3. Hierarchical: In hierarchical inheritance, multiple subclasses inherit from a single parent class. 
+                 Each subclass has its own distinct qualities in addition to the traits inherited from the parent class.
+
+Ex: A class "Cat" and a class "Bird" can both inherit from "Animal". 
+
+4. Multiple: In multiple inheritance, a subclass inherits traits and behaviors from two or more parent classes. 
+             The subclass has access to all the qualities of each parent class.
+
+Ex: A class "RobotDog" can inherit from both "Dog" and "Robot" classes. 
+
+5. Hybrid: Hybrid inheritance is a mixture of two or more inheritance types, which can include single, multilevel, hierarchical, and/or multiple inheritance within a single program.
+
+Ex: A class "Smartwatch" can inherit from "Watch" (single inheritance) and "ElectronicDevice" (multiple inheritance) at the same time.
+
+

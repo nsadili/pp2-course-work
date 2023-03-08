@@ -1,0 +1,13 @@
+The output of this code: 
+
+In constructor X.
+In constructor Y.
+
+Explanation: 
+
+Because the code specifies two classes, X and Y, where Y extends X, this output is the result. When an instance of the X class is made, the constructor for that class prints the phrase "In constructor X.". 
+The constructor of the Y class prints the phrase "In constructor Y." whenever an instance of the Y class is generated.
+
+The new keyword is used in the main method to generate a fresh instance of Y. The constructors of both X and Y are then summoned sequentially as a result of this. 
+When Y is instantiated, its constructor is immediately called before the constructor of its parent class X. 
+Consequently, "In constructor X." and "In constructor Y." are written in that order.

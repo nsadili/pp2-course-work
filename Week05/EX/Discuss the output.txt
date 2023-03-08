@@ -1,0 +1,14 @@
+The output this code:
+
+In static init block of A
+In static init block of B
+In instance init block of A
+In constructor A.
+In instance init block of B
+In constructor B.
+
+Explanation:
+
+The code consists of two classes, X and Y, where Y is a subclass of X. Both classes have constructors that print a message when an instance of the class is created. 
+When the main method is executed, a new instance of Y is created, which triggers the constructors of both X and Y to be called in sequence. 
+As a result, the output of the program shows the messages printed by the constructors of both classes in the order they are executed.
