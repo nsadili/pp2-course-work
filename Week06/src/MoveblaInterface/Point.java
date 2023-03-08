@@ -25,18 +25,22 @@ public class Point implements Movable {
         this.y = y;
     }
 
+    @Override
     public void moveUp() {
         y++;
     }
 
+    @Override
     public void moveDown() {
         y--;
     }
 
+    @Override
     public void moveLeft() {
         x--;
     }
 
+    @Override
     public void moveRight() {
         x++;
     }

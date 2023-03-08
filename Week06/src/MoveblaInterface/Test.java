@@ -1,20 +1,43 @@
 package MoveblaInterface;
 
+import java.util.Scanner;
+
 public class Test {
     public static void main(String[] args) {
-        Point p = new Point(3, 4);
-        System.out.println(p); 
-        p.moveUp();
-        System.out.println(p); 
+        Scanner sc = new Scanner(System.in);
 
-        Segment s = new Segment(new Point(1, 2), new Point(4, 5));
-        System.out.println(s);
-        s.moveRight();
-        System.out.println(s); 
+        Movable[] shapes = new Movable[3];
+        shapes[0] = new Point(0, 0);
+        shapes[1] = new Segment(new Point(1, 1), new Point(2, 2));
+        shapes[2] = new Circle(new Point(3, 3), 1.0);
 
-        Circle c = new Circle(new Point(0, 0), 5);
-        System.out.println(c); 
-        c.moveDown();
-        System.out.println(c); 
+        String direction = sc.nextLine();
+
+        moveShapes(shapes, direction);
+
     }
-}
+
+    public static void moveShapes(Movable[] shapes, String direction) {
+        for (Movable shape : shapes) {
+            switch (direction) {
+                case "up":
+                    shape.moveUp();
+                    break;
+                case "down":
+                    shape.moveDown();
+                    break;
+                case "left":
+                    shape.moveLeft();
+                    break;
+                case "right":
+                    shape.moveRight();
+                    break;
+                default:
+                    System.out.println("Invalid direction ");
+                    return;
+            }
+            System.out.println("After move: " + shape);
+        }
+        System.out.println();
+    }
+}    
