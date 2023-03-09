@@ -1,11 +1,9 @@
 package Week05;
 
 import java.util.Arrays;
+
 public class Teacher extends Person {
     String department;
-    /**
-     *
-     */
     String[] courses;
 
     public Teacher(String firstName, String lastName, String gender, String department, String[] courses) {
