@@ -1,21 +1,24 @@
-package Week05.PW.Ex11;
-
 public class Rectangle {
-    private int width, height;
-    
-    public Rectangle(int w, int h) {
-        width = w;
-        height = h;
+    private int width;
+    private int height;
+
+    public Rectangle(int width, int height) {
+        this.width = width;
+        this.height = height;
     }
-    
-    @Override
+
     public boolean equals(Object obj) {
-        if (obj instanceof Rectangle) {
-            Rectangle rect = (Rectangle) obj;
-            return (rect.width == this.width) && (rect.height == this.height);
+        if (obj == this) {
+            return true;
         }
-        return false;
+
+        if (!(obj instanceof Rectangle)) {
+            return false;
+        }
+
+        Rectangle other = (Rectangle) obj;
+
+        return width == other.width && height == other.height;
     }
-
-
 }
+
