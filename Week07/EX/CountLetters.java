@@ -1,3 +1,4 @@
+package EX;
 import java.util.Scanner;
 
 public class CountLetters {
@@ -20,22 +21,18 @@ public class CountLetters {
             try{
                 for (int i = 0; i < word.length(); i++)
                     counts[word.charAt(i) - 'a']++;
-
-                String s = null;
-                s.toLowerCase();
-
+                    
                 System.out.println("\tHere are the letters:");
                 for (int i = 0; i < counts.length; i++)
                     if (counts[i] != 0)
                         System.out.println((char) (i + 'a') + ": " + counts[i]);
             } catch (ArrayIndexOutOfBoundsException ex1){
-                System.out.printf("<%s> is an invalid word!\n", word);
+                System.out.printf("<%s> is an invalid input!\n", word);
             } catch (NullPointerException ex2){
                 
             }
 
         } while (true);
-
         scan.close();
     }
 }
