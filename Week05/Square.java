@@ -1,8 +1,6 @@
 public class Square extends Rectangle {
-    int n;
-
-    public Square(int n){
-        this.n = n;
+    public Square(int a){
+        super(a, a);
     }
 
     public static void main(String[] args){

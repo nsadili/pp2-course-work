@@ -1,15 +1,19 @@
 public class Rectangle {
-    int width, height;
+    int n, m;
 
     public Rectangle(){};
 
+    public Rectangle(int n){
+        this.n = n;
+    }
+
     public Rectangle(int w, int h){
-        width = w;
-        height = h;
+        n = w;
+        m = h;
     }
 
     public boolean equals(Rectangle rectangle){
-        if(rectangle.width == rectangle.height) return true;
+        if(rectangle.n == rectangle.m) return true;
         else return false;
     }
 
