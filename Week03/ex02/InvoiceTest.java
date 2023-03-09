@@ -11,5 +11,11 @@ public class InvoiceTest {
         System.out.println(inv2.getItemPrice());
         inv2.setItemQuantity(3);
         System.out.println(inv2.getInvoiceAmount());
+        try {
+            // inv1.setItemPrice(-9);
+            inv1.setItemQuantity(-2);
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        }
     }
 }

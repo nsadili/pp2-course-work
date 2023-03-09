@@ -45,11 +45,9 @@ public class Account {
     }
 
     public Account withdraw(double amount) {
-        if (this.balance >= amount) {
-            this.balance -= amount;
-        } else {
-            System.out.println("Amount withdrawn exceeds the current balance!");
-        }
+        if (this.balance < amount)
+            throw new IllegalArgumentException("Amount withdrawn (" + amount + ") exceeds the current balance (" + this.balance + ")");
+        this.balance -= amount;
         return this;
     }
 }

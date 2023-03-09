@@ -33,6 +33,7 @@ public class Invoice {
     }
 
     public void setItemQuantity(int itemQuantity) {
+        if (itemQuantity < 0) throw new IllegalArgumentException("itemQuantity cannot be negative: " + itemQuantity);
         this.itemQuantity = itemQuantity;
     }
 
@@ -41,6 +42,7 @@ public class Invoice {
     }
 
     public void setItemPrice(double itemPrice) {
+        if (itemPrice < 0) throw new IllegalArgumentException("itemPrice cannot be negative: " + itemPrice);
         this.itemPrice = itemPrice;
     }
 
