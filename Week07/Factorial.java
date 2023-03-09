@@ -11,7 +11,7 @@ public class Factorial {
         while (scan.hasNextInt()) {
             num = scan.nextInt();
             try{System.out.printf("%d! is %d\n", num, factorial(num));
-        }catch (Exception e){
+        }catch (IllegalArgumentException e){
                 System.out.println(e.getMessage());
             }
             
