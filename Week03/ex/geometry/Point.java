@@ -1,6 +1,8 @@
 package Week03.ex.geometry;
 
-public class Point {
+import Week06.Movable;
+
+public class Point implements Movable {
     private float x;
     private float y;
 
@@ -45,4 +47,46 @@ public class Point {
     public boolean equals(Point p) {
         return this.x == p.x && this.y == p.y;
     }
+
+    @Override
+    public String toString() {
+        return "(" +this.x+ ", " +this.y+ ")";
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+
+        if(obj == null) return false;
+
+        if (!(obj instanceof Point)) return false;
+
+        Point that = (Point) obj;
+
+        return this.x == that.x && this.y == that.y;
+    }
+
+    @Override
+    public Movable moveUp(int steps) {
+        this.y += steps;
+        return this;
+    }
+
+    @Override
+    public Movable moveDown(int steps) {
+        this.y -= steps;
+        return this;
+    }
+
+    @Override
+    public Movable moveLeft(int steps) {
+        this.x -= steps;
+        return this;
+    }
+
+    @Override
+    public Movable moveRight(int steps) {
+        this.x += steps;
+        return this;
+    }
+    
 }

@@ -1,6 +1,8 @@
 package Week03.ex.geometry;
 
-public class Segment {
+import Week06.Movable;
+
+public class Segment implements Movable{
     private Point p1;
     private Point p2;
 
@@ -55,6 +57,50 @@ public class Segment {
 
     public boolean isOnLine(Point p) {
         return p.getY() == (getSlope() * p.getX() + getIntercept());
+    }
+
+    @Override
+    public String toString() {
+        return "["+p1.toString()+","+ p2.toString() + "]";
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj == null) return false;
+
+        if (!(obj instanceof Segment)) return false;
+
+        Segment that = (Segment) obj;
+
+        return this.p1.equals(that.p1) && this.p2.equals(p2);
+    }
+
+    @Override
+    public Movable moveUp(int steps) {
+        this.p1.moveUp(steps);
+        this.p2.moveUp(steps);
+        return this;
+    }
+
+    @Override
+    public Movable moveDown(int steps) {
+        this.p1.moveDown(steps);
+        this.p2.moveDown(steps);
+        return this;
+    }
+
+    @Override
+    public Movable moveLeft(int steps) {
+        this.p1.moveLeft(steps);
+        this.p2.moveLeft(steps);
+        return this;
+    }
+
+    @Override
+    public Movable moveRight(int steps) {
+        this.p1.moveRight(steps);
+        this.p2.moveRight(steps);
+        return this;
     }
 }
 
