@@ -1,0 +1,7 @@
+Clone() is overridden and merely invokes the Object class's clone() function, which creates a shallow copy of the object.
+
+The clone() function in the Object class has protected visibility because it is only meant to be used by classes that extend it. The clone() method by default makes a shallow duplicate of the object, which copies the references to other objects. If the object being copied includes mutable objects, this may cause issues. The clone() method can be overridden and a deep copy can be implemented if necessary because making it protected stops it from being called from outside the class hierarchy.
+
+b. Better object cloning control is made possible by keeping the clone() function protected in the extending class. It gives the subclass the option to decide whether to make a shallow or deep copy and whether to support cloning. The clone() method can be made public by the extending class if it wishes to permit other classes to copy its objects.
+
+Only when it is absolutely essential to make the clone() method available outside of the class hierarchy should you use the public modifier. Using public for the clone() function is generally not advised because it can be abused, leading to problems like security vulnerabilities, performance issues, or unexpected behavior.
