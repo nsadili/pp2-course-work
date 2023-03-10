@@ -1,10 +1,10 @@
-package Week05.PW;
+package Week07.PW;
 
 public class pw9 {
     public static void main(String[] args) {
 
-        Customer customer = new Customer("John", 50, 'm');
-        Account account = new Account(20.0 , 1234 , customer);
+        Customer1 customer = new Customer1("John", 50, 'm');
+        Account1 account = new Account1(20.0 , 1234 , customer);
 
         System.out.println(customer.toString());
         System.out.println(account.toString());
