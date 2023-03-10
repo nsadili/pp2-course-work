@@ -4,8 +4,8 @@ public class Fact {
         System.out.println("Please, provide some input");
         System.exit(1);
     }
-    var n=Integer.parseInt(args[0]);
-    var f=1L;
+    int n=Integer.parseInt(args[0]);
+    long f=1L;
     if(n<0){
         System.out.println("Please, enter a nonnegative number");
         System.exit(1);

@@ -13,9 +13,6 @@ public class Slices {
         slice(a);
     }
     public static void slice(String a){
-    // String b= a.toString();
-    // char[] a= b.toCharArray();
-    System.out.println(a);
     for(int i=1; i<a.length();i++){
     System.out.print(a.substring(0, i) +" "); 
     System.out.print(a.substring(i,a.length()));
