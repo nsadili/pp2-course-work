@@ -12,11 +12,15 @@ public class Invoice {
     this.pd = pd;
     this.q = q;
     this.pr = pr;
+
     if (q < 0) this.q = 0;
-  else this.q = q;
-  if (pr < 0) this.pr = 0.0;
-else this.pr = pr;
-  }
+    else this.q = q;
+    
+    if (pr < 0) this.pr = 0;
+    else this.pr = pr;
+    }
+   
+  
   public void setPn(String pn) {
     this.pn = pn;
 }
@@ -56,14 +60,4 @@ else this.pr = pr;
    return amount;
 
   }
-  
-  
-
-  
-
-  
-  
-  
-
-
 }
