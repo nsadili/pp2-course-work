@@ -56,3 +56,5 @@ public class AccountClass {
         return this;
     }
 }
+
+// we add InvalidAmountException by creating a class for it 

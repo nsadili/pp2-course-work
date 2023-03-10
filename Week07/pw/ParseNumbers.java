@@ -4,7 +4,7 @@ package Week07.pw;
 
 public class ParseNumbers {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);// reading from standard input
+        Scanner scan = new Scanner(System.in);
 
         String line = scan.nextLine(), word = null;
         scan.close();
