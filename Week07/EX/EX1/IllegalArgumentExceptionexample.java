@@ -1,4 +1,4 @@
-package EX;
+package EX1;
 
 public class IllegalArgumentExceptionexample {
 

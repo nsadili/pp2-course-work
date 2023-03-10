@@ -1,4 +1,4 @@
-package EX;
+package EX1;
 
 import java.util.Scanner;
 
@@ -18,7 +18,7 @@ public class Factorial {
 
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
-            System.out.print("Enter a non-negative integer: ");
+            System.out.print("non-negative integer: ");
             int n = scanner.nextInt();
             int result = factorial(n);
             System.out.println(result);
