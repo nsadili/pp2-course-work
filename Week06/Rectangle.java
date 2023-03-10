@@ -1,5 +1,3 @@
-package Week06;
-
 public class Rectangle {
     private int width;
     private int height;
