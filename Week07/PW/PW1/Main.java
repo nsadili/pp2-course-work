@@ -1,4 +1,4 @@
-package PW;
+package PW1;
 
 public class Main {
     public static void main(String[] args) {
