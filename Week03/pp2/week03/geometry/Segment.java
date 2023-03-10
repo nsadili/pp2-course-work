@@ -56,7 +56,7 @@ public class Segment {
     }
 
     public boolean isOnLine(Point p) {
-        return p.getY() == (p.getX() * this.getSlope() + this.getIntercept()); // y = k * x + b
+        return p.getY() == (p.getX() * this.getSlope() + this.getIntercept());
     }
 
     public boolean isOnSegment(Point p) {

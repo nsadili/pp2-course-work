@@ -16,6 +16,7 @@ public class Sorting {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String word = sc.next();
+        word=word.toLowerCase();
         char[] a= word.toCharArray();
         sc.close();
         sort(a);

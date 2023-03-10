@@ -23,6 +23,8 @@ public static void main(String[] args) {
       sc.close();
     char[] a= word1.toCharArray();
     char[] b= word2.toCharArray();
+    sort(a);
+    sort(b);
     System.out.println(isAnagram(a,b));
     
 }
