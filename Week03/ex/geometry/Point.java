@@ -1,5 +1,7 @@
 package Week03.ex.geometry;
 
+import Week06.Movable;
+
 public class Point {
     private float x;
     private float y;
@@ -44,5 +46,9 @@ public class Point {
 
     public boolean equals(Point p) {
         return this.x == p.x && this.y == p.y;
+    }
+
+    public Movable moveUp(int i) {
+        return null;
     }
 }

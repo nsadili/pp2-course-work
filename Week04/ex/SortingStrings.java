@@ -5,10 +5,11 @@ import java.util.Scanner;
 
 public class SortingStrings {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.println("Give a string to sort: ");
-        String str = input.nextLine();
-        System.out.println(sort(str));
+        try (Scanner input = new Scanner(System.in)) {
+            System.out.println("Give a string to sort: ");
+            String str = input.nextLine();
+            System.out.println(sort(str));
+        }
     }
 
     public static String sort(String str) {

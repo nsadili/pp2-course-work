@@ -4,10 +4,11 @@ import java.util.Scanner;
 
 public class Slices {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter an input: ");
-        String word = input.nextLine();
-        slices(word);
+        try (Scanner input = new Scanner(System.in)) {
+            System.out.println("Enter an input: ");
+            String word = input.nextLine();
+            slices(word);
+        }
     }
 
     public static void slices(String word) {

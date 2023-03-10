@@ -4,10 +4,11 @@ import java.util.Scanner;
 
 public class MixedStrings {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter an input: ");
-        String sentence = input.nextLine();
-        print(mixedStrings(sentence));
+        try (Scanner input = new Scanner(System.in)) {
+            System.out.println("Enter an input: ");
+            String sentence = input.nextLine();
+            print(mixedStrings(sentence));
+        }
     }
 
     public static String[] mixedStrings(String sentence) {
