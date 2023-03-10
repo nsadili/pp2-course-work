@@ -60,9 +60,10 @@ public class Account2 {
         return this;
     }
 
-    public Account2 withdraw(double amount){
+    public Account2 withdraw(double amount) throws InvalidAmountException
+      {
         if(this.balance < amount){
-            throw new IllegalArgumentException("Insufficient funds");
+            throw new InvalidAmountException("Insufficient funds");
         }
         balance -= amount;
         return this;

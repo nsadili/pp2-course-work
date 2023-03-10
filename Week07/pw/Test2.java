@@ -9,8 +9,8 @@ public class Test2 {
             System.out.println(acc2.toString());
             Account2 acc3 = acc2.withdraw(20000);
             System.out.println(acc3.toString());
-        } catch (IllegalArgumentException e) {
-            System.out.println(e.getMessage());
+        } catch (InvalidAmountException e) {
+            e.printStackTrace();
         }
     }
 }
