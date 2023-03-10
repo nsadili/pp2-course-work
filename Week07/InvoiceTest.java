@@ -6,8 +6,15 @@ public class InvoiceTest {
         System.out.println(invoice.getQuantity());
         System.out.println(invoice.getPrice());
         System.out.println(invoice.getInvoiceAmount());
-        Invoice inv = new Invoice("-5", "marker", -100, 20.0);
-        System.out.println(inv.getQuantity());
+        
+        try {
+            Invoice inv = new Invoice("-5", "marker", -100, 20.0);
+            System.out.println(inv.getQuantity());
+        }
+        catch(IllegalArgumentException e) {
+            System.out.println("can not be negative number");
+        }
+        
 
     
 }

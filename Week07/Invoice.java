@@ -4,20 +4,13 @@ public class Invoice {
     private int quantity;
     private double price;
 
-    public Invoice() {
-        number = "5";
-        description = "cool";
-        quantity = 500;
-        price = 5.5;
-    }
-
     public Invoice(String number, String description, int quantity, double price) throws IllegalArgumentException { 
-        this.number = number;
-        this.description = description;
-        if(this.quantity<0) throw new IllegalArgumentException();
-        else this.quantity=quantity;
-        if(this.price<0) throw new IllegalArgumentException("can not be negative number");
-        else this.price=price;
+        if(quantity<0) throw new IllegalArgumentException("can not be negative number");
+        if(price<0) throw new IllegalArgumentException("can not be negative number");
+        this.number=number;
+        this.description=description;
+        this.quantity=quantity;
+        this.price=price;
     } 
 
     public void setNumber(String number) {
@@ -29,13 +22,13 @@ public class Invoice {
     }
 
     public void setQuantity(int quantity) {
-        if(this.quantity<0) throw new IllegalArgumentException("can not be negative number");
-        else this.quantity=quantity;
+        if(quantity<0) throw new IllegalArgumentException("can not be negative number");
+        this.quantity=quantity;
     }
 
     public void setPrice(double price){
-        if(this.price<0) throw new IllegalArgumentException("can not be negative number");
-        else this.price=price;
+        if(price<0) throw new IllegalArgumentException("can not be negative number");
+        this.price=price;
     }
 
     public String getNumber() {
