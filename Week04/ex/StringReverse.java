@@ -4,8 +4,7 @@ public class StringReverse {
 
         for (int i = str.length() - 1; i >= 0; i--)
         sb.append(str.charAt(i));
-
-        return sb.toString();
+       return sb.toString();
     }
     public static void main(String[] args) {
         StringReverse sr = new StringReverse();
