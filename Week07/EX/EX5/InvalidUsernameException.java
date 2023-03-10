@@ -1,3 +1,4 @@
+package EX.EX5;
 public class InvalidUsernameException extends Exception {
 
     public InvalidUsernameException() {

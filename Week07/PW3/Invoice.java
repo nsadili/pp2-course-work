@@ -1,4 +1,4 @@
-import java.util.Scanner;
+package PW3;
 
 public class Invoice {
     String partNumber;
@@ -49,34 +49,5 @@ public class Invoice {
     }
     public double getInvoiceAmount(){
         return quantityOfItem * priceOfItem;
-    }
-
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        Invoice product = new Invoice();
-
-        do {
-            try {
-                System.out.print("Print the part number name: ");
-                product.setNumber(scan.nextLine());
-                System.out.print("Print the part description: ");
-                product.setDescription(scan.nextLine());
-                System.out.print("Print the quantity of the item: ");
-                product.setQuantity(scan.nextInt());
-                System.out.print("Print the price of the item: ");
-                product.setPrice(scan.nextDouble());
-                System.out.printf("Part number: %s\tPart Description: %s\nQuantity: %d\tPrice: %.2f\n\n", 
-                product.getNumber(), product.getDescription(), product.getQuantity(), product.getPrice());
-                
-                scan.close();
-            } catch (IllegalStringException e){
-                System.out.println("The input must be a word!");
-                e.printStackTrace();
-            } catch (IllegalArgumentException e){
-                System.out.println("The input cannot be negative!");
-                e.printStackTrace();
-            }
-        }
-        while (true);
     }
 }

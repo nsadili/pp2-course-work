@@ -15,7 +15,7 @@ public class Main {
                 account.withdraw(scan.nextDouble());
                 System.out.printf("The amount of money you have: %.2f\n", account.getBalance());
             } catch (InvalidAmountException e) {
-                System.out.print("The amount you want to withdraw exceeds the balance.");
+                System.out.print("The amount you want to withdraw exceeds the balance!");
                 e.printStackTrace();
             }
         } while (true);
