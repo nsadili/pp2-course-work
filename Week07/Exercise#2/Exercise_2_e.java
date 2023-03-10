@@ -1,0 +1,1 @@
+//The exception is already declared in "main" method
