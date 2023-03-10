@@ -28,17 +28,13 @@ public class Invoice {
     }
 
     public int getQuantity() {
-        if (quantity < 0)
-            throw new IllegalArgumentException(String.format("%d quantity is invalid", quantity));
-        else
-            return quantity;
+
+        return quantity;
     }
 
     public double getPrice() {
-        if (price < 0)
-            throw new IllegalArgumentException(String.format("%f is invalid price", price));
-        else
-            return price;
+
+        return price;
     }
 
     public void setPartNum(String partNum) {
@@ -56,13 +52,17 @@ public class Invoice {
     }
 
     public void setQuantity(int quantity) {
-
-        this.quantity = quantity;
+        if (quantity < 0)
+            throw new IllegalArgumentException(String.format("%d quantity is invalid", quantity));
+        else
+            this.quantity = quantity;
     }
 
     public void setPrice(double price) {
-
-        this.price = price;
+        if (price < 0)
+            throw new IllegalArgumentException(String.format("%f is invalid price", price));
+        else
+            this.price = price;
     }
 
 }

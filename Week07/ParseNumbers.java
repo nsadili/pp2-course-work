@@ -11,15 +11,18 @@ public class ParseNumbers {
         int sum = 0, count = 0;
         while (scan.hasNext()) { // while there is a token to be read from the string
             word = scan.next();
-            sum += Integer.parseInt(word); // read it and parse into Integer
-            count++;
+            try {
+                sum += Integer.parseInt(word); // read it and parse into Integer
+                count++;
+            } catch (Exception e) {
+                e.printStackTrace();
+                // TODO: handle exception
+            }
+
         }
 
         scan.close();
+        System.out.printf("Sum = %d\nCount = %d\nAverage = %.3f\n", sum, count, count == 0 ? 0 : (float) sum / count);
 
-        if (count == 0)
-            System.out.println("There are no VALID input provided!");
-        else
-            System.out.printf("Sum = %d\nCount = %d\nAverage = %.3f\n", sum, count, (float) sum / count);
     }
 }

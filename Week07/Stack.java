@@ -4,9 +4,12 @@ public class Stack {
     private int capacity;
     private int index;
 
-    public Stack(int capacity) {
+    public Stack(int capacity) throws Exception {
         // TODO what is capacity is not a positive integer ?
-        this.capacity = capacity;
+        if (capacity < 0)
+            throw new Exception();
+        else
+            this.capacity = capacity;
         this.index = -1;
         this.elements = new int[capacity];
     }
@@ -19,21 +22,26 @@ public class Stack {
         return this.index == capacity - 1;
     }
 
-    public int peek() {
+    public int peek() throws Exception {
         // TODO: what if the stack is empty? index == 1?
+        if (elements[1] == 0)
+            throw new Exception();
 
         return elements[index];
     }
 
-    public int pop() {
+    public int pop() throws Exception {
         // TODO: what if the stack is empty? index == -1?
-
-        return elements[index--];
+        if (elements[-1] == 0)
+            throw new Exception();
+        else
+            return elements[index--];
     }
 
-    public void push(int el) {
+    public void push(int el) throws Exception {
         // TODO: what if the stack is full? index == capacity-1?
-
+        if (elements[index] == capacity - 1)
+            throw new Exception();
         elements[++index] = el;
     }
 
@@ -49,24 +57,28 @@ public class Stack {
         System.out.println(" || Top");
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Stack stack = new Stack(5);
+        try {
+            stack.pop();
 
-        // stack.pop();
+        } catch (Exception e) {
+            e.printStackTrace();
+            // TODO: handle exception
+        }
 
         stack.push(3);
         stack.push(5);
         stack.push(7);
         stack.push(10);
         stack.push(100);
-        // stack.push(200000);
+        stack.push(200000);
 
         stack.__print();
 
-        // while (!stack.isEmpty()) {
-        // System.out.println(stack.pop());
-        // }
-
+        while (!stack.isEmpty()) {
+            System.out.println(stack.pop());
+        }
 
     }
 }
