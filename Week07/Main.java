@@ -20,5 +20,16 @@ public class Main {
         } catch (IllegalArgumentException exception) {
             System.out.println(exception);
         }
+        
+        String[] roleList = new String[]{};
+        try {
+            CustomUserGeneration.createUser("demo_user", "12345", roleList);
+        } catch (InvalidUsernameException e) {
+            e.printStackTrace();
+        } catch (InvalidPasswordException e) {
+            e.printStackTrace();
+        } catch (InvalidRoleListException e) {
+            e.printStackTrace();
+        }
     }
 }
