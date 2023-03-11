@@ -44,7 +44,7 @@ public class CustomerTest {
             ac1.withdraw(1000);
             System.out.println("Account 1 balance after withdraw(1000) function: "+ ac1.getBalance());            
         } catch (InvalidAmountException e) {
-            System.out.println("Please, provide a valid amount imput.");
+            System.out.println("Please, provide a valid amount input.");
         }
     }
 }
