@@ -1,4 +1,6 @@
-package Customer;
+import Customer.Account;
+import Customer.Customer;
+import Customer.InvalidAmountException;
 
 public class CustomerTest {
     public static void main(String[] args) {
