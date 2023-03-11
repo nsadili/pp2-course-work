@@ -1,5 +1,6 @@
 package Week04.Hangman;
 
+import java.util.Arrays;
 import java.util.Scanner;
 import java.lang.Math;
 
@@ -20,7 +21,6 @@ public class Hangman {
 
             int sec = scan.nextInt();
             section = sec;
-
             if (sec == 0) {
                 break;
             } else {
@@ -68,10 +68,10 @@ public class Hangman {
         }
         int heart = 8;
         while (heart > 0) {
-            if (section == 0) {
+            
+            if(section == 0 || heart == 0){
                 break;
             }
-            
 
             System.out.println("Type a letter: ");
             char letter = scan.next().charAt(0);
@@ -88,7 +88,7 @@ public class Hangman {
                     count2++;
                 }
             }
-            if (encryptedword.equals(mainword)) {
+            if (Arrays.equals(mainword, encryptedword)) {
                 System.out.println("halaldi brat duz tapdin");
                 break;
             }
@@ -97,10 +97,12 @@ public class Hangman {
                 heart--;
             System.out.println(heart);
 
-            HangmanImage.HangmanImageCnt(heart, mainword);
+            String WordString = Arrays.toString(mainword);
+            HangmanImage.HangmanImageCnt(heart, WordString);
             System.out.println(encryptedword);
 
         }
         scan.close();
+        
     }
 }

@@ -1,7 +1,7 @@
 package Week04.Hangman;
 
 public class HangmanImage {
-    public static void HangmanImageCnt(int count, char[] mainword) {
+    public static void HangmanImageCnt(int count, String WordString) {
         if (count == 8) {
             System.out.println("      +---+\n      |\n      |\n      |\n      |\n      |\n      =========");
         }
@@ -28,7 +28,7 @@ public class HangmanImage {
         }
         if (count == 0) {
             System.out.println("      +---+\n      |   |\n      |   O\n      |  /|\\\n      |   |\n      |  / \\\n      =========");
-            System.out.println("GAME OVER! The word was " + mainword);
+            System.out.println("GAME OVER! The word was " + WordString);
         }
     }
 
