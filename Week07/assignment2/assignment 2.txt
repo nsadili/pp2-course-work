@@ -1,0 +1,9 @@
+b. If a negative value is entered, the program still calculates the factorial and returns a positive value. However, this is not the correct behavior as factorial is not defined for negative integers.
+
+c. To throw an exception of type IllegalArgumentException when a negative value is provided to the factorial function, I added the following code in the function:
+
+if (n < 0) {
+    throw new IllegalArgumentException("Factorial is not defined for negative integers.");
+}
+
+d. The compiler does not impose us to handle the exception back in main because IllegalArgumentException is an unchecked exception, which means that it is not mandatory to handle it in the calling code. However, it is good practice to handle it to prevent unexpected behavior in the program.
