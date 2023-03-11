@@ -10,8 +10,8 @@ public class Invoice {
     }
 
     public Invoice(String partNum, String partDesc, int n, double prc){
-        if (n<0) throw new IllegalArgumentException ("Quantity cannot be negative!");;
-        if (prc<0) throw new IllegalArgumentException ("Price cannot be negative!");;
+        if (n<0) throw new IllegalArgumentException ("Quantity cannot be negative!");
+        if (prc<0) throw new IllegalArgumentException ("Price cannot be negative!");
         this.partNum=partNum;
         this.partDesc=partDesc;
         this.n=n;
