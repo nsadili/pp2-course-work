@@ -2,7 +2,7 @@ import Customer.Account;
 import Customer.Customer;
 import Customer.InvalidAmountException;
 
-public class CustomerTest {
+public class InvoiceCustomerTest {
     public static void main(String[] args) {
         Customer c1 = new Customer(16231, "Rufat", 'm', 40);
         Customer c2 = new Customer(15978, "Arzum", 'f', 30);

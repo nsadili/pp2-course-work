@@ -1,3 +1,4 @@
+package Invoice;
 public class Invoice {
     private String partNum;
     private String partDesc;

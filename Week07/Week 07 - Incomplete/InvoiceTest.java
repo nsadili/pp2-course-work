@@ -1,3 +1,5 @@
+import Invoice.Invoice;
+
 public class InvoiceTest {
 
     public static void main (String[] args){
