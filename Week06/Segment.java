@@ -1,8 +1,6 @@
 package Week06;
 
-/**
- * @author Nuraddin Sh. Sadili
- */
+
 public class Segment {
     private Point p1;
     private Point p2;

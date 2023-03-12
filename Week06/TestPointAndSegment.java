@@ -15,8 +15,6 @@ public class TestPointAndSegment {
         System.out.println(s2);
         System.out.println(s1.equals(s2));
 
-        // System.out.println(p1==p2);
-        // System.out.println(p1.equals("A string"));
-        // System.out.println(p1.equals(new Point(5,7)));
+        
     }
 }

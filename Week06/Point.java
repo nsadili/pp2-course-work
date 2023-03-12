@@ -1,7 +1,5 @@
 package Week06;
-/**
- * @author Nuraddin Sh. Sadili
- */
+
 public class Point implements Cloneable {
     private float x;
     private float y;
@@ -55,7 +53,4 @@ public class Point implements Cloneable {
     }
 }
 
-// What if the another class extends Point
-// Will it have the same behavior of equals() and toString() as Point?
-// TODO: define a class, extending Point. Test of it implicitly has those
-// methods?
+

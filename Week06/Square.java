@@ -1,8 +1,8 @@
 package Week06;
 
-public class Square extends Rectangle {
-    public Square(int a) {
-        super(a, a);
+public class Square {
+
+    public Square(int i) {
     }
 
 }

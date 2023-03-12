@@ -1,8 +1,8 @@
-package Week06;
+// package Week06;
 
-public interface Movable {
-    void moveUp();
-    void moveDown();
-    void moveLeft();
-    void moveRight();
-}
+// public interface Movable {
+//     Movable moveUp(long l);
+//     Movable moveDown(long l);
+//     Movable moveLeft(long l);
+//     Movable moveRight(long l);
+// }
