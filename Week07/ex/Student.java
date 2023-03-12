@@ -1,55 +1,46 @@
 public class Student {
-    int id;
-    String name;
-    String surname;
+    private int id;
+    private String name;
+    private String surname;
 
-    public Student(int i, String string, String string2) {
+    public Student(int id, String name, String surname) {
 
-        public int getId() {
-            return id;
-        }
-    
-        public String getName() {
-            return name;
-        }
-    
-        public String getSurname() {
-            return surname;
-        }
-    
-        public void setId(int id) {
-            this.id = id;
-        }
-    
-        public void setName(String name) throws StudentNameException{
-            if (name == null || name.length() < 2)
-            throw new StudentNameException("The student name cannot be accessed as it has less than 2 symbols!");
-            this.name = name;
-        }
-    
-        public void setSurname(String surname) throws StudentNameException{
-            if (surname == null || surname.length() < 2)
-            throw new StudentNameException("The student surname cannot be accessed as it has less than 2 symbols!");
-            this.surname = surname;
+        this.id = id;
+        this.name = name;
+        this.surname = surname;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setName(String name) throws StudentNameException {
+        this.name = name;
+
+        if (name.length() == 0 || name.length() < 2) {
+            throw new StudentNameException("This name is not valid!");
         }
     }
 
+    public void setSurname(String surname) throws StudentNameException {
+        this.surname = surname;
 
-    public static void main(String[] args) {
-
-        Student st = new Student(16882, "Laman", "Panakhova");
-        
-        try { 
-            
-           System.out.println(st.id, st.name, st.surname);
-
-        } catch(StudentNameException s) {
-            System.out.println(s.getMessage());
-            System.out.println("Resolve the Strings!");
-
+        if (surname.length() == 0 || surname.length() < 2) {
+            throw new StudentNameException("This surname is not valid!");
         }
-
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
 
 }
-
