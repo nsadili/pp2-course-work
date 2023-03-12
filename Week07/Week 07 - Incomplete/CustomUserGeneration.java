@@ -3,11 +3,19 @@ public class CustomUserGeneration {
     public static void main(String[] args) {
 
         try {
-            createUser("demo_user", "12345", new String[] {});
+            createUser("er", "12345abc", new String[] {});
+            createUser("demo_user", "12345abc", new String[] {});
+            //createUser("demo_user", null, new String[] {});
+
         } catch (InvalidUsernameException e) {
             e.printStackTrace();
+            System.out.println("Please, provide a valid username.");
         } catch (InvalidPasswordException e) {
             e.printStackTrace();
+            System.out.println("Please, provide a valid password.");
+        } catch (InvalidRolesException e) {
+            e.printStackTrace();
+            System.out.println("Please, do not leave the roles empty.");
         }
 
     }
@@ -20,11 +28,14 @@ public class CustomUserGeneration {
         if (!Character.isAlphabetic(username.charAt(0)))
             throw new InvalidUsernameException("Username cannot start with non-alphabetical character");
 
-        if (password.length() < 8)
+        if (password==null || password.length() < 8)
             throw new InvalidPasswordException("The length of the password cannot be less than 8.");
 
-        // TODO: roles CANNOT BE null or an empty array
+        System.out.println("User created successfully.");
 
-        // PROCESS OF USER CREATION - WE DO NOT CARE ABOUT IT HERE!!!
+        if (roles==null || roles.length==0){
+            throw new InvalidRolesException("The roles cannot be empty.");
+        }
+
     }
 }
