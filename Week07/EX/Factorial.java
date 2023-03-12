@@ -9,13 +9,22 @@ public class Factorial {
         while (scan.hasNextInt()) {
             num = scan.nextInt();
 
-            System.out.printf("%d! is %d\n", num, factorial(num));
+            try {
+                System.out.printf("%d! is %d\n", num, factorial(num));
+                
+            } catch (IllegalArgumentException e) {
+                System.out.println(e.getMessage());
+            }
         }
 
         scan.close();
     }
 
     static int factorial(int n) {
+
+        if(n<0){
+            throw new IllegalArgumentException(String.format("%d! is undefined",n));
+        }
 
         if (n == 0 || n == 1)
             return 1;
@@ -27,3 +36,4 @@ public class Factorial {
         return f;
     }
 }
+

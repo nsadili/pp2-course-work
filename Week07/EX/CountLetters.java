@@ -16,19 +16,21 @@ public class CountLetters {
 
             if (word.trim().equals("0"))
                 break;
-     try {
-            for (int i = 0; i < word.length(); i++)
-                counts[word.charAt(i) - 'a']++;
-         }    catch (ArrayIndexOutOfBoundsException exception) {
-            System.out.printf("|%s| is an invalid word\n", word);
-            continue;
-        }
-        
-        System.out.println("\tHere are the letters:");
 
-            for (int i = 0; i < counts.length; i++)
-                if (counts[i] != 0)
-                    System.out.println((char) (i + 'a') + ": " + counts[i]);
+            try {
+                for (int i = 0; i < word.length(); i++)
+                    counts[word.charAt(i) - 'a']++;
+
+                System.out.println("\tHere are the letters:");
+
+                for (int i = 0; i < counts.length; i++)
+                    if (counts[i] != 0)
+                        System.out.println((char) (i + 'a') + ": " + counts[i]);
+
+            } catch (Exception e) {
+                System.out.printf("<%s> is a Invalid World\n", word);
+                // continue;
+            }
 
         } while (true);
 
