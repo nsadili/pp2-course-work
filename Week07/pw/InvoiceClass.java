@@ -1,7 +1,7 @@
 package Week07.pw;
 
 public class InvoiceClass{
-    private int quan;
+ private int quan;
 private double price;
 
 public InvoiceClass(String description, String number , int quan , double price){
