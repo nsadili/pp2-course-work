@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="956f8147-713a-4720-a37f-f2214e4c6e0b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pp2-course-work/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pp2-course-work/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pp2-course-work.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pp2-course-work.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abc.java" beforeDir="false" afterPath="$PROJECT_DIR$/Abc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week05/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week05/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week06/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week06/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week06/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week06/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week06/Movable.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week06/Movable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week06/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week06/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week06/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week06/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week06/Resizeable.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week06/Resizeable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week06/Segment.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week06/Segment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week06/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week06/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week06/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week06/Square.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +108,9 @@
       <workItem from="1677173281821" duration="1174000" />
       <workItem from="1677224005466" duration="3722000" />
       <workItem from="1677746730119" duration="244000" />
+      <workItem from="1677746987542" duration="217000" />
+      <workItem from="1678102694195" duration="31000" />
+      <workItem from="1678357157862" duration="136000" />
     </task>
     <servers />
   </component>
