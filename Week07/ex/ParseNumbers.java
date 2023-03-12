@@ -9,12 +9,21 @@ public class ParseNumbers {
 
         scan = new Scanner(line); // reading from a String
         int sum = 0, count = 0;
+
+        try {
         while (scan.hasNext()) { // while there is a token to be read from the string
             word = scan.next();
             sum += Integer.parseInt(word); // read it and parse into Integer
             count++;
         }
 
+    } catch(NumberFormatException e) {
+
+        System.out.println("The input contains letters not numbers!");
+        for(int i = 0; i < word.length(); i++) {
+            count++;
+        }
+    }
         scan.close();
 
         if (count == 0)
