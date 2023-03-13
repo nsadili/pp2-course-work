@@ -1,5 +1,5 @@
-package pw3;
-import pw3.objects.CustomDate;
+package Week03.pw3;
+import Week03.pw3.objects.CustomDate;
 
 public class CustomDateTest {
     public static void main(String[] args) {

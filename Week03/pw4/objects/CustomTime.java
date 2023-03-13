@@ -1,4 +1,4 @@
-package pw4.objects;
+package Week03.pw4.objects;
 
 public class CustomTime {
     private int hour;

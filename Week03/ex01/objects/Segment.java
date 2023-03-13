@@ -1,4 +1,4 @@
-package ex01.objects;
+package Week03.ex01.objects;
 
 public class Segment {
     private Point p1;

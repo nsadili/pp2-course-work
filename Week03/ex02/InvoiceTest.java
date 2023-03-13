@@ -1,3 +1,4 @@
+package Week03.ex02;
 public class InvoiceTest {
     public static void main(String[] args) {
         Invoice in1 = new Invoice("Product1", "The Marker", 5, 1.25);

@@ -1,6 +1,6 @@
-package ex01;
-import ex01.objects.Point;
-import ex01.objects.Segment;
+package Week03.ex01;
+import Week03.ex01.objects.Point;
+import Week03.ex01.objects.Segment;
 public class Test {
     public static void main(String[] args) {
         Point p1 = new Point(2,2);

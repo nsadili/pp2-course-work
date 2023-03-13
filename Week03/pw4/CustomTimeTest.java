@@ -1,6 +1,6 @@
-package pw4;
+package Week03.pw4;
 
-import pw4.objects.CustomTime;
+import Week03.pw4.objects.CustomTime;
 
 public class CustomTimeTest {
     public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package Week03.ex02;
+
 public class Invoice {
     private String PartNumber;
     private String PartDescription;
@@ -9,6 +11,13 @@ public class Invoice {
         this.setPartNumber(PartNumber);
         this.setQuantity(Quantity);
         this.setPrice(Price);      
+    }
+
+    public Invoice() {
+        this.setPartDescription("");
+        this.setPartNumber("");
+        this.setQuantity(0);
+        this.setPrice(0.0);      
     }
 
     public String getPartNumber() {
@@ -38,6 +47,7 @@ public class Invoice {
     public void setQuantity(int Quantity) {
         if (Quantity < 0) {
             Quantity = 0;
+            throw new IllegalArgumentException();
         }
         this.Quantity = Quantity;
     }
@@ -45,6 +55,7 @@ public class Invoice {
     public void setPrice(double Price) {
         if (Price < 0) {
             Price = 0.0;
+            throw new IllegalArgumentException();
         }
         this.Price = Price;
     }
