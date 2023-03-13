@@ -3,10 +3,10 @@ package Week06;
 public class Main {
 
     public static void moveAll(Movable[] objects, int dx, int dy) {
-        for (Movable obj : objects) {
-            obj.moveRight(dx);
-            obj.moveDown(dy);
-        }
+        // for (Movable obj : objects) {
+        //     //obj.moveRight(dx);
+        //     //obj.moveDown(dy);
+        // }
     } // This part gives and error, I do not know why
 
     public static void main(String[] args) {
