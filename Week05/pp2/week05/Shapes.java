@@ -1,13 +1,38 @@
-package pp2.week03;
+package pp2.week05;
 
 public class Shapes {
-    public static class Rectangle {
+    public static class Object{
+        int side1;
+        int side2;
+
+        public int getSide1() {
+            return side1;
+        }
+
+        public void setSide1(int side1) {
+            this.side1 = side1;
+        }
+
+        public int getSide2() {
+            return side2;
+        }
+
+        public void setSide2(int side2) {
+            this.side2 = side2;
+        }
+
+        public Object(int side1, int side2){
+            this.side1=side1;
+            this.side2=side2;
+        }
+        public boolean equals(pp2.week03.Shapes.Object obj){return (side1 == obj.getSide1() && side2 == obj.getSide2()) || (side1 == obj.getSide2() && side2 == obj.getSide1());}
+    }
+    public static class Rectangle extends pp2.week03.Shapes.Object {
         private int side1;
         private int side2;
 
         public Rectangle(int side1, int side2) {
-            this.side1 = side1;
-            this.side2 = side2;
+            super(side1,side2);
         }
 
         public int calculateArea() {
@@ -39,9 +64,14 @@ public class Shapes {
         public String toString() {
             return "Rectangle [side1=" + side1 + ", side2=" + side2 + "]";
         }
+        @Override
+        public boolean equals(pp2.week03.Shapes.Object obj){
+            pp2.week03.Shapes.Rectangle rect=(pp2.week03.Shapes.Rectangle) obj;
+            return (side1 == rect.getSide1() && side2 == rect.getSide2()) || (side1 == rect.getSide2() && side2 == rect.getSide1());
+        }
 
     }
-    public static class Square extends Rectangle{
+    public static class Square extends pp2.week03.Shapes.Rectangle {
         int a;
         public int getA() {
             return a;
@@ -57,7 +87,7 @@ public class Shapes {
             this.a=a;
         }
     }
-    public static class Circle extends Square{
+    public static class Circle extends pp2.week03.Shapes.Square {
         int r;
         public Circle(int r) {
             super(r);

@@ -1,4 +1,6 @@
 package pp2.week05;
+import pp2.week03.Shapes;
+
 import java.lang.Math;
 import java.util.Scanner;
 
@@ -16,9 +18,12 @@ public class geometry {
         public void translate(double dX, double dY){x+=dX;y+=dY;}
         public double distance(Point p){return Math.sqrt((Math.pow(p.x-x, 2)+Math.pow(p.y-y, 2)));}
         boolean equals(Point p){return x == p.x && y == p.y;}
+        @Override
         public String toString(){
-            return "("+x+","+y+")";
+            return"("+x+","+y+")";
         }
+        public boolean equals(Shapes.Object obj){return (x == obj.getSide1() && y == obj.getSide2()) || (x == obj.getSide2() && y == obj.getSide1());}
+
     }
     public static class Segment{
         private Point p1;
@@ -67,8 +72,10 @@ public class geometry {
             }
             return res;
         }
+        @Override
         public String toString(){
-            return "["+p1.toString()+", "+p2.toString()+"]";
+            return "["+p1.toString()+","+p2.toString()+"]";
         }
+        public boolean equals(Shapes.Object obj){return p1.equals(obj) && p1.equals(obj);}
     }
 }
