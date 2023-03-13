@@ -32,7 +32,7 @@ class Factorial {
             n--; 
         }
 
-        return result; // return the final value of result
+        return result; // return the final value of result 
     }
 }
 
