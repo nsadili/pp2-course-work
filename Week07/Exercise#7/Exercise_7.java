@@ -45,3 +45,4 @@ public class Stack {
 //I've thrown an IllegalStateException with the uasage of specigical comments for two cases: 
 //First case: empty stack
 //Second case: push new element, while the stack is already full
+//Empty committment
