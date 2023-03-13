@@ -4,7 +4,7 @@ public class CustomDate {
 
     private int month;
     private int day;
-    private int year; //we created variables
+    private int year; //we created variables!
     
     private static final int[] DAYS_PER_MONTH = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     private static final String[] MONTH_NAMES = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
