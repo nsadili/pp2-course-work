@@ -15,3 +15,26 @@ System.out.println(a+b);
 
     }
 }
+
+
+public class Flowers {
+
+
+    public void makeSound() {
+       System.out.println("The animal makes a sound");
+    }
+ }
+ 
+ public class Cat extends Flowers {
+    public void makeSound() {
+       System.out.println("Meow");
+    }
+ }
+ 
+ public class Main {
+    public static void main(String[] args) {
+        Flowers animal = new Cat();
+       animal.makeSound(); // prints "Meow"
+    }
+ }
+ 
