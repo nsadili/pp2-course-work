@@ -1,7 +1,7 @@
 /**
  * To compile: javac -d ./classes .\DieRolling.java <br />
  * To execute: java -cp .\classes\ DieRolling {value for # coin tossing} <br />
- * 
+
  * @author Nuraddin Sh. Sadili
  */
 
