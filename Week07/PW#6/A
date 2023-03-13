@@ -1,0 +1,14 @@
+When the program is run and valid input containing only numbers is provided, it produces the correct sum, count, and average of the numbers in the input.
+
+Example input and output:
+
+Input:
+1 2 3 4 5
+
+Output:
+Sum = 15
+Count = 5
+Average = 3.000
+
+
+
