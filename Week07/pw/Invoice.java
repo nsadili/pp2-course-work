@@ -5,8 +5,6 @@ public class Invoice {
     private double price;
 
     public Invoice(String number, String dest, int quantity, double price) throws IllegalArgumentException{
-        this.number=number;
-        this.dest=dest;
         if (quantity<0){
             throw new IllegalArgumentException("Negative quantity!!!");
         }
@@ -15,6 +13,8 @@ public class Invoice {
             throw new IllegalArgumentException("Negative price!!!");
         }
         this.price=price;
+        this.number=number;
+        this.dest=dest;
     }
     public double getInvoiceAmount(){
         return this.quantity*this.price;
