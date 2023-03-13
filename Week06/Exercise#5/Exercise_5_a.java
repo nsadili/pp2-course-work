@@ -1,0 +1,1 @@
+//The implementation of clone() method is a deep clone, as it creates new objects from the Segment one

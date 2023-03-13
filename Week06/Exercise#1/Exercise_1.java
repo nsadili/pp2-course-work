@@ -1,27 +1,23 @@
-package w6Ex1;
+package weel06;
 
 public class Point {
     private float x, y;
 
-    // Empty / Default constructor
     public Point() {
         this.x = 0;
         this.y = 0;
     }
 
-    // Second constructor
     public Point(float x, float y) {
         this.x = x;
         this.y = y;
     }
 
-    // Third constructor
     public Point(Point p) {
         this.x = p.getX();
         this.y = p.getY();
     }
 
-    // Next we get/set before initialized variables
     public float getX() {
         return x;
     }
@@ -38,7 +34,6 @@ public class Point {
         this.y = y;
     }
 
-    // Other methods
     public void translate(float dX, float dY) {
         this.x += dX;
         this.y += dY;
@@ -62,13 +57,13 @@ public class Point {
         return false;
     }
 }
-package w6Ex1;
+
+package week06;
 
 public class Segment {
     private Point p1;
     private Point p2;
 
-    // Constructors
     public Segment(Point p1, Point p2) {
         this.p1 = p1;
         this.p2 = p2;
@@ -79,7 +74,6 @@ public class Segment {
         p2 = new Point(x2, y2);
     }
 
-    // Getters and Setters
     public Point getP1() {
         return p1;
     }
@@ -96,7 +90,6 @@ public class Segment {
         this.p2 = p;
     }
 
-    // Other Methods
     public void translate(float dX, float dY) {
         this.p1.translate(dX, dY);
         this.p2.translate(dX, dY);

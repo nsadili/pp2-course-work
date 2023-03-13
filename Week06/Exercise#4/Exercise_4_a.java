@@ -1,0 +1,2 @@
+ //It happens, because the Object class try to ensure only subclasses, which are accesible only in the same packages and can override
+//the clone method. Briefly, such act is being conducted to maintain the object's integrity and avoid cloning processes occuring in the code.
