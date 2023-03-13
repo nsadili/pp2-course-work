@@ -1,3 +1,5 @@
+package ClassDiagramPw9;
+
 public class Account {
     
     private int id;
@@ -55,16 +57,17 @@ public class Account {
         return "Name " + customer;   // How to solve that ?????
     }
 
-    public Account deposit(double amount) {
-        return "Amount: " + amount.deposit;
+    public String deposit(double amount) {  // how to make Account instead of String???
+        return "Amount: " + amount + balance;
     }
 
-    public String withdraw(double amount) {
+    public void withdraw(double amount) { // how to make Account instead of void???
 
         if (balance >= amount) 
-        return (int)balance - amount;
+        System.out.println(balance - amount);
         else
-        return "amount withdrawn exceeds the current balance! ";
+        throw new InvalidAmountException("The amount cannot be more than the balance!");
+        System.out.println("Amount withdrawn exceeds the current balance!");
     }
 
 
