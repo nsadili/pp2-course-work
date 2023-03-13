@@ -39,10 +39,10 @@ public class Account {
     public Account deposit(double amount) {
         return new Account(this.id, this.customer, this.balance + amount);
     }
-    public Account withdraw(double amount) throws InvalidAmountException {
+    public Account withdraw(double amount) throws ExceptionInvalidAmount {
         if (this.balance >= amount)
             return new Account(this.id, this.customer, this.balance - amount);
         else
-            throw new InvalidAmountException("Amount cannot be more than the balance.");
+            throw new ExceptionInvalidAmount("Amount cannot be more than the balance. ");
     }
 }
