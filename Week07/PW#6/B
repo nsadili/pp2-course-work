@@ -1,0 +1,15 @@
+When the input string contains not only numbers but also letters, the program throws a NumberFormatException at the line sum += Integer.parseInt(word);. This is because Integer.parseInt() method cannot parse a non-numeric string into an integer.
+
+Example input and output:
+Input:
+1 2 3 a b c
+
+Output:
+
+Exception in thread "main" java.lang.NumberFormatException: For input string: "a"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:68)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at ParseNumbers.main(ParseNumbers.java:16)
+
+
