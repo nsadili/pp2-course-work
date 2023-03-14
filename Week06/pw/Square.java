@@ -6,3 +6,4 @@ public class Square {
     Object o3 = new Square(15);
     
 }
+
