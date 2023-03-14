@@ -4,19 +4,19 @@ import java.util.*;
 
 
 public class Circle2 {
-    private Point center;
+    private Point2 center;
     private float radius;
 
-    public Circle(Point center, float radius) {
+    public Circle2(Point2 center, float radius) {
         this.center = center;
         this.radius = radius;
     }
 
-    public Point getCenter() {
+    public Point2 getCenter() {
         return center;
     }
 
-    public void setCenter(Point center) {
+    public void setCenter(Point2 center) {
         this.center = center;
     }
 
@@ -40,20 +40,17 @@ public class Circle2 {
         center.translate(dx, dy);
     }
 
-    public boolean contains(Point p) {
+    public boolean contains(Point2 p) {
         return center.distance(p) <= radius;
     }
 
-    public boolean equals(Circle c) {
+    public boolean equals(Circle2 c) {
         return center.equals(c.center) && radius == c.radius;
     }
 
     @Override
     public String toString() {
-        return "Circle{" +
-                "center=" + center +
-                ", radius=" + radius +
-                '}';
+        return "Circle {" + "center=" + center + ", radius=" + radius + '}';
     }
 
     @Override
@@ -62,11 +59,11 @@ public class Circle2 {
             return true;
         }
 
-        if (!(obj instanceof Circle)) {
+        if (!(obj instanceof Circle2)) {
             return false;
         }
 
-        Circle other = (Circle) obj;
+        Circle2 other = (Circle2) obj;
 
         return center.equals(other.center) && radius == other.radius;
     }

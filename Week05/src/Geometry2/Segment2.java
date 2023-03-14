@@ -1,32 +1,32 @@
 package Week05.src.Geometry2;
 
 public class Segment2 {
-    Point p1;
-    Point p2;
+    Point2 p1;
+    Point2 p2;
 
-    public Segment2(Point p1, Point p2) {
+    public Segment2(Point2 p1, Point2 p2) {
         this.p1 = p1;
         this.p2 = p2;
     }
 
     public Segment2(float x1, float y1, float x2, float y2) {
-        this.p1 = new Point(x1, y1);
-        this.p2 = new Point(x2, y2);
+        this.p1 = new Point2(x1, y1);
+        this.p2 = new Point2(x2, y2);
     }
 
-    public Point getP1() {
+    public Point2 getP1() {
         return p1;
     }
 
-    public void setP1(Point p1) {
+    public void setP1(Point2 p1) {
         this.p1 = p1;
     }
 
-    public Point getP2() {
+    public Point2 getP2() {
         return p2;
     }
 
-    public void setP2(Point p2) {
+    public void setP2(Point2 p2) {
         this.p2 = p2;
     }
 
@@ -55,14 +55,14 @@ public class Segment2 {
         return this.p1.getY() - m * this.p1.getX();
     }
 
-    public boolean isOnline(Point p) {
+    public boolean isOnline(Point2 p) {
         float m = this.getSlope();
         float b = this.getIntercept();
 
         return p.getY() == m * p.getX() + b;
     }
 
-    boolean isOnSegment(Point p) {
+    boolean isOnSegment(Point2 p) {
         float minX = Math.min(this.p1.getX(), this.p2.getX());
         float maxX = Math.max(this.p1.getX(), this.p2.getX());
         float minY = Math.min(this.p1.getY(), this.p2.getY());
