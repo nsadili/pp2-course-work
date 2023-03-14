@@ -11,19 +11,19 @@ public class Factorial {
         while (scan.hasNextInt()) {
             num = scan.nextInt();
             try{System.out.printf("%d! is %d\n", num, factorial(num));
-        }catch (IllegalArgumentException e){
-                System.out.println(e.getMessage());
-            }
+        }catch (Exception e){
+            e.printStackTrace();
+        } 
             
         }
 
         scan.close();
     }
 
-    static int factorial(int n) {
+    static int factorial(int n) throws Exception{
 
         if(n < 0)
-            throw new IllegalArgumentException(String.format("%d! is undefined.", n));
+            throw new Exception(String.format("%d! is undefined.", n));
 
         if (n == 0 || n == 1)
             return 1;
