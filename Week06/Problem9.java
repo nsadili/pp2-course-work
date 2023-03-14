@@ -1,3 +1,4 @@
+package Week06;
 import java.math.BigDecimal;
 
 public class Problem9 {
