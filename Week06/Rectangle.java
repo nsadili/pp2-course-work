@@ -1,4 +1,6 @@
-public class Rectangle {
+package Week06;
+
+public class Rectangle extends Shape implements Resizable {
     private int width;
     private int height;
     
@@ -47,4 +49,33 @@ public class Rectangle {
             System.out.println(r1.equals(r3));
 
     }
+
+    @Override
+    public void resize() {
+        // TODO Auto-generated method stub
+        height = 1;
+        width = 1;
+        // throw new UnsupportedOperationException("Unimplemented method 'resize'");
+    }
+
+    @Override
+    double getArea() {
+        // TODO Auto-generated method stub
+        return height*width;
+        // throw new UnsupportedOperationException("Unimplemented method 'getArea'");
+    }
+
+    @Override
+    double getPerimeter() {
+        // TODO Auto-generated method stub
+        return 2 * (height + width);
+        // throw new UnsupportedOperationException("Unimplemented method 'getPerimeter'");
+    }
+    
+
+    @Override
+    public String toString(){
+        return "Rectangle[" +super.toString() + "width = " +width+ ", length = " +height+ "]";
+    }
+    
 }

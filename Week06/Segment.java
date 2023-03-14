@@ -1,6 +1,6 @@
 package Week06;
 
-public class Segment {
+public class Segment implements Movable {
     private Point p1;
     private Point p2;
 
@@ -64,5 +64,38 @@ public class Segment {
 
         Segment s = (Segment) obj;
         return this.p1.equals(s.p1) && this.p2.equals(s.p2);
+    }
+
+    @Override
+    public void moveUp() {
+        // TODO Auto-generated method stub
+        p1.moveUp();
+        p2.moveUp();
+        // throw new UnsupportedOperationException("Unimplemented method 'moveUp'");
+    }
+
+    @Override
+    public void moveDown() {
+        // TODO Auto-generated method stub
+        p1.moveDown();
+        p2.moveDown();
+   
+        // throw new UnsupportedOperationException("Unimplemented method 'moveDown'");
+    }
+
+    @Override
+    public void moveLeft() {
+        // TODO Auto-generated method stub
+        p1.moveLeft();
+        p2.moveLeft();
+        // throw new UnsupportedOperationException("Unimplemented method 'moveLeft'");
+    }
+
+    @Override
+    public void moveRight() {
+        // TODO Auto-generated method stub
+        p1.moveRight();
+        p2.moveRight();
+        // throw new UnsupportedOperationException("Unimplemented method 'moveRight'");
     }
 }

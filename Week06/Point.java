@@ -1,6 +1,6 @@
 package Week06;
 
-public class Point{
+public class Point implements Movable{
     
     private float x;
     private float y;
@@ -51,5 +51,28 @@ public class Point{
     public String toString(){
         return "(" + this.x + "," + this.y +")";
 
+    }
+    @Override
+    public void moveUp() {
+        // TODO Auto-generated method stub
+        y++;
+    }
+    @Override
+    public void moveDown() {
+        // TODO Auto-generated method stub
+        y--;
+        // throw new UnsupportedOperationException("Unimplemented method 'moveDown'");
+    }
+    @Override
+    public void moveLeft() {
+        // TODO Auto-generated method stub
+        x--;
+        // throw new UnsupportedOperationException("Unimplemented method 'moveLeft'");
+    }
+    @Override
+    public void moveRight() {
+        // TODO Auto-generated method stub
+        x++;
+        // throw new UnsupportedOperationException("Unimplemented method 'moveRight'");
     }
 }
