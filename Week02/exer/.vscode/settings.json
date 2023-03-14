@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/Users/said/Downloads/jdk-17.0.6.jdk/**/*.jar"
+    ]
+}
