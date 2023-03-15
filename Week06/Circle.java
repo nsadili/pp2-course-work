@@ -73,5 +73,3 @@ class Circle extends Shape implements Movable, Resizable {
         radius = 1.0;
     }
 }
-
-public z
