@@ -1,24 +1,29 @@
 public class Customer {
-        class Customer;{
-        private String name;
-        private int ID;
-        private char gender;
-    }
-    public Customer(String name, int ID, char gender) {
-        this.name = name;
+    private int ID;
+    private String name;
+    private char gender;
+
+    public Customer(int ID, String name, char gender) {
         this.ID = ID;
+        this.name = name;
         this.gender = gender;
     }
-    public String getName() {
-        return name;
-    }
+
     public int getID() {
-        return ID;
-    }   
-    public char getGender(){
-        return gender;
+        return this.ID;
     }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public char getGender() {
+        return this.gender;
+    }
+
+    @Override
     public String toString() {
-        return this.name +"(" + this.ID +")";
+        return getName() + "(" + getID() + ")";
     }
 }
+vvv
