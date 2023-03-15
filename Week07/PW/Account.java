@@ -1,4 +1,4 @@
-
+import Week05.Customer;
 
 public class Account {
     private int id, int customer;
