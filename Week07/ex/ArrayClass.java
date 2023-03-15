@@ -1,8 +1,10 @@
 public class ArrayClass {
     public static void main(String[] args) {
+        
         int[] arr = {0, 2, 3, 4, 5};
-        int a = args[0];
-        int b = args[1];
+
+        int a = Integer.valueOf(args[0]);
+        int b = Integer.valueOf(args[1]);
 
         try{
             System.out.println("Result: " + a / b);

@@ -11,7 +11,7 @@ ll.addFirst("X");
 System.out.println("The last element is: " + 
 ll.getLast());
 for (Object s : ll) {
-System.out.println(s);
+System.out.print(s + " ");
 }
 
     }

@@ -1,36 +1,34 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 public class Ex2 {
     public static void main(String[] args) {
         
-        List<String> shoppingList = new ArrayList<>();
+        List<Integer> nums = new ArrayList<>();
+        Collections.addAll(nums, 1, 5, 8, 2, 9, 4);
+
+        System.out.println(nums);
+   
+        Collections.sort(nums);
+
+        System.out.println(nums);
+
+        System.out.println();
+        System.out.println();
         
-        Collections.addAll(shoppingList, "coffee", "tea", "bread", "butter", "eggs");
-        System.out.println(shoppingList);
+        nums.sort(new DescendingComparator());
 
-        shoppingList.remove("bread");
-        System.out.println(shoppingList);
-        shoppingList.remove(2);
+        System.out.println(nums);
 
-        System.out.println(shoppingList);
+    }
+}
 
-        List<String> newShoppingList = new ArrayList<>(shoppingList);
-
-        System.out.println(newShoppingList);
-
-        newShoppingList.add("kiwi");
-        newShoppingList.add("apple");
-
-        System.out.println(newShoppingList.contains("teapot")
-        ? "The new shopping list contains <teapot>"
-        : "!!!");
-
-
-        List<String> linkedList = new LinkedList<>();
-        Collections.addAll(linkedList, "tomato", "potato");
-        linkedList.addAll(newShoppingList);
-
-        System.out.println(linkedList);
-
+class DescendingComparator implements Comparator<Integer> {
+    
+    @Override
+    public int compare(Integer o1, Integer o2) {
+        return o2 - o1;
     }
 }

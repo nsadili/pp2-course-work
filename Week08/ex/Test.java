@@ -10,7 +10,7 @@ al.add("Three");
 Iterator it = al.iterator();
 while (it.hasNext()) {
 String s = (String) it.next();
-System.out.println("Next element: "+s);
+System.out.println("Next element: " + s);
 }
 
 }

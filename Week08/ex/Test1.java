@@ -11,7 +11,7 @@ ListIterator it =
 al.listIterator(al.size());
 while (it.hasPrevious()) {
 String s = (String) it.previous();
-System.out.println("Next element: "+s);
+System.out.println("Next element: " + s);
 }
 
     }
