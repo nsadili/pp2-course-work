@@ -12,6 +12,9 @@ public class B {
         ts.add(2); ts.add(3);
 
         Iterator it = ts.iterator();
+
+    //    Iterator it1Iterator = ts.descendingIterator;
+
         while(it.hasNext()) {
             System.out.print(it.next() + " ");
         }
