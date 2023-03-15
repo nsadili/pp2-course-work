@@ -3,8 +3,14 @@ public class QuizTest {
     { this.nbItems = 1; }
 
     public QuizTest(int nbItems) { this.nbItems = nbItems; }
+   
+}
+
+class Main{
     public static void main(String[] args) {
-        QuizTest c1 = new QuizTest(5), c2 = new QuizTest(10), c3 = new QuizTest(15);
+        QuizTest c1 = new QuizTest(5), 
+        c2 = new QuizTest(10), 
+        c3 = new QuizTest(15);
 
         c1.nbItems = c2.nbItems;
         c2 = c1;

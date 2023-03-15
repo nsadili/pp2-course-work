@@ -63,11 +63,10 @@ public class Account {
 
     public void withdraw(double amount) { // how to make Account instead of void???
 
-        if (balance >= amount) 
-        System.out.println(balance - amount);
-        else
-        throw new InvalidAmountException("The amount cannot be more than the balance!");
-        System.out.println("Amount withdrawn exceeds the current balance!");
+        if (balance < amount) 
+            throw new InvalidAmountException("The amount cannot be more than the balance!");
+
+        balance -= amount;
     }
 
 
