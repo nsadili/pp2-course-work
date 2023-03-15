@@ -1,5 +1,4 @@
-package classes;
-public class Point implements Point {
+public class Point implements Movable {
     private float x;
     private float y;
     public Point() {
@@ -42,7 +41,8 @@ public class Point implements Point {
     public boolean equals(Point p) {
         return this.x == p.x && this.y == p.y;
     }
-@Override
+
+    @Override
     public String toString() {
         return "Point{" +
                 "x=" + x +
@@ -50,24 +50,28 @@ public class Point implements Point {
                 '}';
     }
 
- @Override
+    @Override
     protected Object clone() throws CloneNotSupportedException {
         return super.clone();
-@Override
-public void moveUp(int steps) {
-    this.y ++;
-}
-@Override
-public void moveDown(int steps) {
-    this.y +=steps;
-}
-@Override
-public void moveLeft(int steps) {
-    this.x -= steps;
-}
-@Override
-public void moveRight(int steps) {
-    this.x += steps;
-}
-}
+    }
+
+    @Override
+    public void moveUp(steps) {
+        setY(y += 1);
+    }
+
+    @Override
+    public void moveDown(steps) {
+        setY(y -= 1);
+    }
+
+    @Override
+    public void moveLeft(steps) {
+        setX(x -= 1);
+    }
+
+    @Override
+    public void moveRight(steps) {
+        setX(x += 1);
+    }
 }
