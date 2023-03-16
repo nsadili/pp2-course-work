@@ -33,9 +33,8 @@ class Stack<T> {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        int lastInd = _stack.size() - 1;
         sb.append("[");
-        for (int i = lastInd; i >= 0; i--) {
+        for (int i = _stack.size() - 1; i >= 0; i--) {
             sb.append(_stack.get(i));
             if (i > 0) sb.append(", ");
         }
