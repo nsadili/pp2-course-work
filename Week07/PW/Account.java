@@ -1,17 +1,17 @@
-import Week05.Customer;
+import java.util.customer;
 
 public class Account {
-    private int id, int customer;
-    private Customer customer;
+    private int id;
+    private customer customer;
     private double balance = 0.0;
 
-    public Account(int id, Customer customer, double balance) {
+    public Account(int id, customer customer, double balance) {
         this.id = id;
         this.customer = customer;
         this.balance = balance;
     }
 
-    public Account(int id, Customer customer) {
+    public Account(int id, customer customer) {
         this.id = id;
         this.customer = customer;
     }
@@ -25,7 +25,7 @@ public class Account {
         return this.id;
     }
 
-    public Customer getCustomer() {
+    public customer getCustomer() {
         return this.customer;
     }
 
@@ -51,6 +51,6 @@ public class Account {
         if (this.balance >= amount)
             return new Account(this.id, this.customer, this.balance - amount);
         else
-            throw new InvalidAmountException("Amount cannot be more than the balance.");
+            throw new InvalidAmountException("The quantity cannot exceed the available funds.");
     }
 }
