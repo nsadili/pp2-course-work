@@ -25,7 +25,9 @@ public class ListDemo {
         // }
         // System.out.println();
 
-        Iterator it = nums.iterator();
+        Iterator<Integer> it = nums.iterator();
+
+       
 
         while (it.hasNext()) {
 
