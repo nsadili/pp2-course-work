@@ -10,7 +10,7 @@ public class Segment {
     }
 
     public int getLength() {
-        return (int) Math.sqrt((s2.y - s1.y)*(s2.y - s1.y) + (s2.x - s1.x)*(s2.x - s1.x)); 
+        return (int) Math.sqrt((this.getS2().getY() - this.getS1().getY())*(this.getS2().getY() - this.getS1().getY()) + (this.getS2().getX() - this.getS1().getX())*(this.getS2().getX() - this.getS1().getX())); 
     }
 
     public Point getS1() {

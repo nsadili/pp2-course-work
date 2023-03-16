@@ -1,4 +1,4 @@
-public class MinMax {
+public class minmax {
     public static void findMinAndMax(int[] num) {
         int min = 1000000, max = -100000;
         for (int x : num) {

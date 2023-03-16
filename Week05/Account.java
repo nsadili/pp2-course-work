@@ -43,7 +43,10 @@ public class Account {
         return this;
     }
 
-    public Account withdraw(double amount){
+    public Account withdraw(double amount) throws IllegalAccountException{
+        if(amount<0){
+            throw new IllegalAccountException("Amount can not be negative");
+        }
         if(balance>=amount){
             balance-=amount;
         }else{

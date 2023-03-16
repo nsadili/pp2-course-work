@@ -4,18 +4,19 @@ public class ArrayOfPoints {
         Point s = points[0];
         Point w = points[0];
         Point e = points[0];
+
         for (int i = 1; i < points.length; i++) {
             Point p = points[i];
-            if (p.y > n.y) {
+            if (p.getY() > n.getY()) {
                 n = p;
             }
-            if (p.y < s.y) {
+            if (p.getY() < s.getY()) {
                 s = p;
             }
-            if (p.x < w.x) {
+            if (p.getX() < w.getX()) {
                 w = p;
             }
-            if (p.x > e.x) {
+            if (p.getX() > e.getX()) {
                 e = p;
             }
         }

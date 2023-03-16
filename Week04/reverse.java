@@ -1,4 +1,4 @@
-public class Reverse {
+public class reverse {
     public static String reverse1(String str) {
         String res = "";
         for (int i = str.length() - 1; i >= 0; i--) {

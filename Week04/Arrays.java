@@ -26,22 +26,22 @@ public class Arrays {
         Point[] points = {new Point(1, 2),new Point(9, 3),new Point(-3, 7),new Point(4, 3)};
 
         Segment[] segments = {
-            new Segment(3, 4),
-            new Segment(2, 8),
-            new Segment(33, 10)
+            new Segment(new Point(1, 2), new Point(1, 2)),
+            new Segment(new Point(1, 2), new Point(8, 4)),
+            new Segment(new Point(1, 2), new Point(9, 6))
         };
     
         Segment shortestSegment = ArrayOfSegments.getShortestSegment(segments);
-        Print.printArrays(num); //Arrays 1 
-        MinMax.findMinAndMax(num); //Arrays 2
-        Histogram.findHistogram(num);//Arrays 3
+        print.printArrays(num); //Arrays 1 
+        minmax.findMinAndMax(num); //Arrays 2
+        histogram.findHistogram(num);//Arrays 3
 
-        System.out.println(Reverse.reverse1(str));// Strings 7
-        System.out.println(Reverse.reverse2(str));//
-        System.out.println(Reverse.reverse3(str));//
-        System.out.println(Reverse.reverse4(str));//
+        System.out.println(reverse.reverse1(str));// Strings 7
+        System.out.println(reverse.reverse2(str));//
+        System.out.println(reverse.reverse3(str));//
+        System.out.println(reverse.reverse4(str));//
 
-        Explode.findExploded(str1);//Strings 8
+        explode.findExploded(str1);//Strings 8
         System.out.println();
 
         System.out.println(Anagram.isAnagram(str1, str2));//Strings 10

@@ -1,4 +1,4 @@
-public class Sum {
+public class sum {
     public static void sumArrays(int[] arr){
         int sum = 0;
         for(int x: arr){
