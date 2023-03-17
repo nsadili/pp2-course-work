@@ -41,10 +41,13 @@ class Account implements Comparable<Account> {
 
 public class ListOfAccounts {
     public static void main(String[] args) {
-        List<Account> accs1 = new ArrayList<Account>();
-        accs1.add(new Account("Zaur", "Rajabov", 300e9));
-        accs1.add(new Account("Vasya", "Pupkin", 2.01));
-        accs1.add(new Account("Jack", "Smith", 866675.3));
+        List<Account> accs1 = new ArrayList<Account>(
+            List.of(
+                new Account("Zaur", "Rajabov", 300e9),
+                new Account("Vasya", "Pupkin", 2.01),
+                new Account("Jack", "Smith", 866675.3)
+            )
+        );
 
         System.out.println(accs1);
 
