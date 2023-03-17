@@ -4,10 +4,10 @@ public class Stack {
     private int index;
 
     public Stack(int capacity) {
-        // TODO what is capacity is not a positive integer ?
         if (capacity<0){
             throw new NegativeArraySizeException("You cannot write a negative number as a capacity!");
         }
+        
         this.capacity = capacity;
         this.index = -1;
         this.elements = new int[capacity];
