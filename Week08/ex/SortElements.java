@@ -5,8 +5,7 @@ import java.util.*;
 class IntegerDescendingComparator implements Comparator<Integer> {
     @Override
     public int compare(Integer i1, Integer i2) {
-        if (i1 < i2) return 1;
-        return -1;
+        return i2 - i1;
     }
 }
 
@@ -23,8 +22,7 @@ public class SortElements {
 
         intList2.sort(new Comparator<Integer>() {
             public int compare(Integer i1, Integer i2) {
-                if (i1 < i2) return 1;
-                return -1;
+                return i2 - i1;
             }
         });
 
