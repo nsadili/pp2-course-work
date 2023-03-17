@@ -1,4 +1,4 @@
-package Week05.geometry;
+package Week05.geometryy;
 
 public class Costumer {
      static int ID;
