@@ -33,9 +33,7 @@ class Account implements Comparable<Account> {
     public int compareTo(Account acc) {
         if (this.lastName.compareTo(acc.getLastName()) != 0)
             return this.lastName.compareTo(acc.getLastName());
-        if (this.firstName.compareTo(acc.getFirstName()) != 0)
-            return this.firstName.compareTo(acc.getFirstName());
-        return this.balance < acc.getBalance() ? 1 : -1;
+        return this.firstName.compareTo(acc.getFirstName());
     }
 }
 
