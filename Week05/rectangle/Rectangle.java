@@ -1,4 +1,4 @@
-package week05.rectangle;
+package Week05.rectangle;
 import java.util.Objects;
 public class Rectangle {
     int width, height;

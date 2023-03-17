@@ -1,4 +1,4 @@
-package week04;
+package Week04;
 import java.util.Scanner;
 public class Slices {
     public static void main(String [] args){

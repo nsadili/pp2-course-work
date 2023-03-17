@@ -1,4 +1,4 @@
-package week05.rectangle;
+package Week05.rectangle;
 import week05.rectangle;
 public class main {
     public static void main(String [] args){

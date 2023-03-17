@@ -1,4 +1,4 @@
-package week05.geometryy;
+package Week05.geometryy;
 
 public class SomeClass {
     

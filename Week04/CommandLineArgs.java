@@ -1,4 +1,4 @@
-package week04;
+package Week04;
 public class CommandLineArgs {
     public static void main(String [] args)
     {
