@@ -7,7 +7,7 @@ public class Test2 {
             System.out.println(acc1.toString());
             Account2 acc2 = acc1.deposit(10000);
             System.out.println(acc2.toString());
-            Account2 acc3 = acc2.withdraw(20000);
+            Account2 acc3 = acc2.withdraw(5000);
             System.out.println(acc3.toString());
         } catch (InvalidAmountException e) {
             e.printStackTrace();
