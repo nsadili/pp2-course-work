@@ -2,11 +2,11 @@ package Week08.ex;
 
 import java.util.*;
 
-class IntegerComparator implements Comparator<Integer> {
+class IntegerDescendingComparator implements Comparator<Integer> {
     @Override
     public int compare(Integer i1, Integer i2) {
-        if (i1 < i2) return -1;
-        return 1;
+        if (i1 < i2) return 1;
+        return -1;
     }
 }
 
@@ -23,14 +23,14 @@ public class SortElements {
 
         intList2.sort(new Comparator<Integer>() {
             public int compare(Integer i1, Integer i2) {
-                if (i1 < i2) return -1;
-                return 1;
+                if (i1 < i2) return 1;
+                return -1;
             }
         });
 
         System.out.println(intList2);
 
-        intList3.sort(new IntegerComparator());
+        intList3.sort(new IntegerDescendingComparator());
 
         System.out.println(intList3);
     }
