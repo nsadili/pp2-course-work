@@ -37,13 +37,13 @@ public class Ex1 {
         if(newShoppingList.contains(checkedword)) System.out.printf("List contains <%s>\n", checkedword);
         else System.out.printf("List does not contain <%s>\n", checkedword);
 
-        List<String> newLinkedList = new LinkedList<>();
+        LinkedList<String> newLinkedList = new LinkedList<>();
         Collections.addAll(newLinkedList, "tomato","potato");
         newLinkedList.addAll(newShoppingList);
         System.out.println(newLinkedList);
-        ((LinkedList)newLinkedList).removeFirst();
+        (newLinkedList).removeFirst();
         System.out.println(newLinkedList);
-        ((LinkedList)newLinkedList).removeLast();
+        (newLinkedList).removeLast();
         System.out.println(newLinkedList);
 
 

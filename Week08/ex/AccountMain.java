@@ -1,8 +1,10 @@
+import Account.Account;
 import java.util.ArrayList;
 import java.util.Collections;
-// import java.util.Comparator;
+import java.util.Comparator;
+import java.util.List;
 
-public class AccountMain {
+public class AccountMain{
 
     public static void main(String[] args) {
         Account a1 = new Account("Rufat", "Hajizada", 3000);
@@ -12,45 +14,28 @@ public class AccountMain {
         
         ArrayList<Account> accs = new ArrayList<>();
         Collections.addAll(accs, a1, a2, a3, a4);
-        System.out.println(accs);
-        // Collections.sort;
+        printAcc(accs);
+        Collections.sort(accs);
+        printAcc(accs);
+
+        Collections.sort(accs, new Comparator<Account>() {
+            @Override
+            public int compare(Account o1, Account o2) {
+                return o2.getBalance().compareTo(o1.getBalance());
+            } 
+        });
+        printAcc(accs);
+
+
+
+    }
+
+    static void printAcc(List<Account> accs){
+        for (Account acc : accs)
+        System.out.print(acc);
+        System.out.println();
     }
 }
 
-// class AccountsbalanceComparator implements Comparator <Account>{
-//     public int compare (Account a1, Account a2){
-//         if (a1.)
-//     }
-// }
 
-class Account {
-    private String fName;
-    private String lName;
-    private double balance;
-
-
-    public Account(String fName, String lName, double balance) {
-        this.fName = fName;
-        this.lName = lName;
-        this.balance = balance;
-    }
-
-    public String getfName() {
-        return fName;
-    }
-
-    public String getlName() {
-        return lName;
-    }
-
-    public double getBalance() {
-        return balance;
-    }
-
-    @Override
-    public String toString() {
-        return "Account["+fName+","+lName+","+balance+"]\n";
-    }
-    
-}
 
