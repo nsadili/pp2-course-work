@@ -2,8 +2,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import javax.swing.plaf.multi.MultiListUI;
-
 public class ListsInAction {
     public static void main(String[] args) {
 
