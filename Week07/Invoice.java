@@ -67,7 +67,7 @@ public class Invoice {
         
             public static void main(String[] args) throws Exception {
                 try {
-                    Invoice i = new Invoice("two", "new", -4, -5.6);
+                    Invoice i = new Invoice("two", "new", -4, 5.6);
                     System.out.println(i.getQuantity());
         
                 } catch (Exception e) {
