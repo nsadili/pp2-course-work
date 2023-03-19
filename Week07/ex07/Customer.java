@@ -1,4 +1,3 @@
-package Pw09;
 
 class Customer {
     private int ID;
@@ -6,10 +5,10 @@ class Customer {
     private char gender;
     private int discount;
 
-    public Customer(int ID, String name, char gender, int discount) {
+    public Customer(int ID, String name, int i, int discount) {
         this.ID = ID;
         this.name = name;
-        this.gender = (gender == ' ') ? 'F' : this.gender;
+        this.gender = (i == ' ') ? 'F' : this.gender;
         this.discount = discount;
     }
 

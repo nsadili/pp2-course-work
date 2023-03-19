@@ -1,4 +1,3 @@
-package Pw09;
 
 class Account {
     private  int id;
