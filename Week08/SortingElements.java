@@ -2,7 +2,7 @@ package Week08;
 
 import java.util.*;
 
-public class ExTwo {
+public class SortingElements {
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
         list.add(5);

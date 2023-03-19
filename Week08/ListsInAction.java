@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
-public class ExOne {
+public class ListsInAction {
     public static void main(String[] args) {
         ArrayList<Integer> list1 = new ArrayList<>();
 
