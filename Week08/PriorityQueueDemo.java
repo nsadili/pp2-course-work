@@ -1,10 +1,11 @@
 package Week08;
 
 import java.util.LinkedList;
+import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class QueueDemo {
+public class PriorityQueueDemo {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
@@ -14,13 +15,11 @@ public class QueueDemo {
         System.out.print("The amount of bread in the store: ");
         int amountInTheStore = scan.nextInt();
 
-        Queue<Integer> breadQueue = new LinkedList<>();
+        Queue<Integer> breadQueue = new PriorityQueue<>();
 
         for (int i = 0; i < amountInTheStore / breadPerEachPerson; i++) {
             breadQueue.offer(breadPerEachPerson);
         }
-
-        breadQueue.offer(amountInTheStore % breadPerEachPerson);
 
         System.out.println("The number of people who will be able to buy bread is: " + breadQueue.size());
     }
