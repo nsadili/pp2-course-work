@@ -24,7 +24,6 @@ System.out.println("NewshoppingList: " + newShoppingList);
 
 //String wordToFind = "teapot";
 
-
 //System.out.println(
   //  newShoppingList.contains(wordToFind)
   //? String.format("The word <%s> exists in the list\n",wordToFind)
