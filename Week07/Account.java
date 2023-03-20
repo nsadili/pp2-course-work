@@ -59,7 +59,6 @@ class Account {
         else
         { throw new InvalidAmountException("amount can not be more than balance");
     }
-        //System.out.println("amount withdrawn exceeds the current balance! ");
         
     }
     
