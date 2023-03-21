@@ -1,20 +1,21 @@
-package Week07;
+
+package Week08;
 
 import Week05.Customer;
-public class Account {
+public class ListofAccount {
 
     private int id;
     private Customer customer;
     private double balance = 0.0;
 
  
-    public Account(int id, Customer customer, double balance) {
+    public ListofAccount(int id, Customer customer, double balance) {
         this.id = id;
         this.balance = balance;
         this.customer = customer;
     }
 
-    public Account(int id, Customer customer) {
+    public ListofAccount(int id, Customer customer) {
         this.id = id;
         this.customer = customer;
     }
@@ -51,7 +52,7 @@ public class Account {
         return customer.getName();
     }
 
-    public Account deposit(double amount) {
+    public ListofAccount deposit(double amount) {
 
         this.balance += amount;
         return this;
@@ -61,7 +62,7 @@ public class Account {
             super(message);
         }
     }
-    public Account withdraw(double amount) throws InvalidAmountException {
+    public ListofAccount withdraw(double amount) throws InvalidAmountException {
         if (balance >= amount)
             this.balance -= amount;
         else

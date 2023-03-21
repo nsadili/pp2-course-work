@@ -38,7 +38,7 @@ public class Point implements Cloneable {
     }
 
     public String toString() {
-        // TODO
+      
         return "";
     }
 
