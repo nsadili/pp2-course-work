@@ -3,7 +3,7 @@ import java.util.Queue;
 
 public class BreadPriorityQueueDemo {
     public static void main(String[] args) {
-        int[] piecesPerPerson = { 5, 7, 1, 4, 1 }; // number of bread pieces each person buys
+        int[] piecesPerPerson = { 5, 7, 1, 4, 1 }; // number of bread pieces
         int requiredBread = 8; // total number of bread pieces required to sell
         int numPeopleInQueue = piecesPerPerson.length;
 
