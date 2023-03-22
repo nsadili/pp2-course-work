@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "e",
+            "request": "launch",
+            "mainClass": "Week08.EX1.e",
+            "projectName": "pp2-course-work_930060e8"
+        },
+        {
+            "type": "java",
             "name": "Launch Main",
             "request": "launch",
             "mainClass": "Week04.Hangman.Main",

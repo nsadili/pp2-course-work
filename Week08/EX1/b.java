@@ -1,10 +1,10 @@
-package examples.Main1;
+package Week08.EX1;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class Main {
+public class b {
 
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
