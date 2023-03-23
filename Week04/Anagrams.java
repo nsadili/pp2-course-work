@@ -40,4 +40,9 @@ public class Anagrams {
         ch[j] = ch[i];
         ch[i] = temp;
     }
+
+    @Override
+    public String toString() {
+        return "Anagrams []";
+    }
 }
