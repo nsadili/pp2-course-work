@@ -8,12 +8,13 @@ public class ParseNumbers {
     private static double floatingPointNumber;
     private static int stringNumber;
     private static double stringFloatingPointNumber;
+    static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
 
         while (true) {
             try {
-                Scanner scanner = new Scanner(System.in);
+                scanner = new Scanner(System.in);
                 System.out.print("Enter a number: ");
                 number = scanner.nextInt();
                 break;
@@ -26,7 +27,7 @@ public class ParseNumbers {
 
         while (true) {
             try {
-                Scanner scanner = new Scanner(System.in);
+                scanner = new Scanner(System.in);
                 System.out.print("Enter a floating point number: ");
                 floatingPointNumber = scanner.nextDouble();
                 break;
@@ -39,7 +40,7 @@ public class ParseNumbers {
 
         while (true) {
             try {
-                Scanner scanner = new Scanner(System.in);
+                scanner = new Scanner(System.in);
                 System.out.print("Enter a string representation of an integer: ");
                 stringNumber = Integer.parseInt(scanner.next());
                 break;
@@ -52,7 +53,7 @@ public class ParseNumbers {
 
         while (true) {
             try {
-                Scanner scanner = new Scanner(System.in);
+                scanner = new Scanner(System.in);
                 System.out.print("Enter a string representation of a floating point number: ");
                 stringFloatingPointNumber = Double.parseDouble(scanner.next());
                 break;
