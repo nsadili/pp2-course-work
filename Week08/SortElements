@@ -9,7 +9,7 @@ public class SortElements {
     list.add("plane");
     list.add("helicopter");
     list.add("uav");
-    list.add("allycar");
+    list.add("rallycar");
     list.add("hornet");
     System.out.println("Original list: " + list);
 
