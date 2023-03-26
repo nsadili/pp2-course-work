@@ -3,9 +3,6 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Customer customer1 = new Customer(1, "John", 'M');
-        Account account1 = new Account(107, 300, customer1);
-
         Scanner sc = new Scanner(System.in);
 
         double amount = sc.nextDouble();
