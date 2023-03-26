@@ -1,10 +1,12 @@
 package Week05.pw;
 
+import javax.sound.sampled.SourceDataLine;
+
 public class MathDemo {
     
     static int res;
     static int sum = 0;
-    static int cnt = 0;
+    static int counter = 0;
     
     public static int Min(int a, int b) {
 
@@ -21,13 +23,13 @@ public class MathDemo {
     public static int Sum(int[] args) {
 
         String str1 = new String();
-        var sum1 = 0;
+        var summ = 0;
         int numbers1 = Integer.parseInt(str1);
         if (str1.isEmpty())
         return 0;
         else
         {
-            sum1 += numbers1;
+            summ += numbers1;
         }
         return numbers1;
     }
@@ -40,9 +42,9 @@ public class MathDemo {
         {
           int numbers = Integer.parseInt(str);
           sum += numbers;
-            cnt++;
+            counter++;
         }
-        return sum / cnt;
+        return sum / counter;
     }
 
     public static int factorial(int n) {
@@ -54,4 +56,5 @@ public class MathDemo {
 
         return res;
     }
+    
 }
