@@ -20,7 +20,7 @@ public class SortTheElements {
         System.out.println("Sorted list using List.sort(): " + list);
 
         Comparator<String> comparator1 = new Comparator<String>() {
-            @Override
+            
             public int compare(String s1, String s2) {
                 return s1.compareTo(s2);
             }
@@ -34,7 +34,7 @@ public class SortTheElements {
     }
 
     static class MyStringComparator implements Comparator<String> {
-        @Override
+        
         public int compare(String s1, String s2) {
             return s1.compareTo(s2);
         }
