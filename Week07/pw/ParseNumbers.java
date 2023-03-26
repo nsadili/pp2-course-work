@@ -14,7 +14,7 @@ public class ParseNumbers {
                 sum += scanner.nextInt();
                 count++;
             } else {
-                scanner.next(); // discard non-integer input
+                scanner.next(); 
             }
         }
         
