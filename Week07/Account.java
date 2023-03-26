@@ -1,4 +1,4 @@
-package week07;
+package Week07;
 public class Account {
 
     private int id;
