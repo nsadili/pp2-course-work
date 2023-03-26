@@ -60,7 +60,6 @@ public class Invoice {
         return quantity * price;
     }
 
-    @Override
     public String toString() {
         return String.format("Part number: %s, Description: %s, Quantity: %d, Price: $%.2f, Invoice amount: $%.2f",
                 partNumber, partDescription, quantity, price, getInvoiceAmount());
@@ -71,7 +70,6 @@ public class Main {
         Invoice invoice = new Invoice("001", "Part 1", 5, 10.0);
 
         try {
-            // Try to set negative quantity and price
             invoice.setQuantity(-2);
             invoice.setPrice(-5.0);
         } catch (IllegalArgumentException e) {
