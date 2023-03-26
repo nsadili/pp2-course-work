@@ -27,7 +27,6 @@ public class Invoice {
     }
 
     public void setPartDescription(String partNumber) {
-        this.partDescription = partDescription;
     }
 
     public int getQuantity() {

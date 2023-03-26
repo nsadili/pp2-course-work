@@ -1,7 +1,6 @@
 package Week07;
 
 import javax.management.relation.RoleList;
-import java.util.ArrayList;
 
 public class CustomUserGeneration {
     public static void main(String[] args) {

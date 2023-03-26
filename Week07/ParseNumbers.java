@@ -14,7 +14,6 @@ public class ParseNumbers {
     public static List<Integer> parseNumbers(String str) {
         List<Integer> numbers = new ArrayList<>();
         String[] strNumbers = str.split(",");
-        int i = 0;
         for (String s: strNumbers) {
             try {
                 int num = Integer.parseInt(s.trim());

@@ -11,6 +11,7 @@ public class Factorial {
         }
         catch (IllegalArgumentException e) {
             System.out.println("Negative numbers do not have factorials.");
+            sc.close();
         }
     }
 

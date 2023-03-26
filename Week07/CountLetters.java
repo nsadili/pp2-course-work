@@ -7,6 +7,7 @@ public class CountLetters {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
         System.out.println(countLetters(str));
+        sc.close();
     }
 
     public static int countLetters(String str) {
