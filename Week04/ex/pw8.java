@@ -1,4 +1,4 @@
-public class pw3 {
+public class pw8 {
     String exploded(String str) {
         StringBuilder sb = new StringBuilder();
 
