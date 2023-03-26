@@ -1,5 +1,7 @@
 package Week07;
 
+import Week05.Customer;
+
 public class Account {
     private int id;
     private Customer customer;
@@ -14,6 +16,11 @@ public class Account {
     public Account(int id, Customer customer) {
         this.id = id;
         this.customer = customer;
+    }
+
+    public Account(int id, double balance) {
+        this.id = id;
+        this.balance = balance;
     }
 
     public int getId() {
@@ -41,11 +48,11 @@ public class Account {
         return new Account(this.id, this.customer, this.balance + amount);
     }
 
-    public Account withdraw(double amount)throws InvalidAmountException {
+
+    public Account withdraw(double amount) throws InvalidAmountException {
         if (this.balance >= amount)
-            return new Account(this.id, this.customer, this.balance + amount);
+            return new Account(this.id, this.customer, this.balance - amount);
         else
-            System.out.println("The amount withdrawn exceeds the current balance");
-        return this;
+            throw new InvalidAmountException("Amount cannot be more than the balance.");
     }
 }
