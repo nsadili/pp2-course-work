@@ -1,0 +1,28 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class QueueDemo {
+    public static int numbeOfPeople(int[] breadPerPerson, int breadInStore){
+        int countPeople = 0;
+        Queue<Integer> queue = new LinkedList<>();
+        for (int bread : breadPerPerson){
+            queue.offer(bread);
+        }
+        while (!queue.isEmpty() && breadInStore > 0){
+            int breadPerCurrentPerson = queue.poll();
+            if (breadPerCurrentPerson <= breadInStore){
+                breadInStore -= breadPerCurrentPerson;
+                countPeople++;
+            } else {
+                break;
+            }
+        }
+        return countPeople;
+    }
+
+    public static void main(String[] args) {
+        int[] breadPerPerson = {3, 1, 9, 8, 6};
+        int breadInStore = 15;
+        System.out.println(numbeOfPeople(breadPerPerson, breadInStore) + " people will be able to buy bread.");
+    }
+}
