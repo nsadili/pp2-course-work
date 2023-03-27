@@ -38,7 +38,6 @@ public class Account {
         return firstName + " " + lastName;
     }
 
-    @Override
     public String toString() {
         return String.format("Account[full name=%s, balance=%.2f]", getFullName(), balance);
     }

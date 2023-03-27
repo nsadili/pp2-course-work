@@ -22,19 +22,19 @@ class Account implements Comparable<Account> {
         return balance;
     }
 
-    @Override
+    //Override
     public String toString() {
         return "Name: " + getFullName() + ", Balance: $" + balance;
     }
 
-    @Override
+    //Override
     public int compareTo(Account o) {
         return this.getFullName().compareTo(o.getFullName());
     }
 }
 
 class BalanceComparator implements Comparator<Account> {
-    @Override
+    //Override
     public int compare(Account a1, Account a2) {
         if (a1.getBalance() < a2.getBalance()) {
             return -1;
