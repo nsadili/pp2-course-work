@@ -40,6 +40,7 @@ public class Account {
         this.balance = balance;
     }
 
+    @Override
     public String toString() {
         return getCostumerName() + "(" + ID + ")"
                 + " balance = $" + getBalance();
