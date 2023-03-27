@@ -2,7 +2,7 @@ package ex;
 
 import java.util.*;
 
-public class ListsOfAction implements Comparable<ListsOfAction> {
+public class ListsOfAccounts implements Comparable<ListsOfAction> {
     private String firstname;
     private String lastname;
     private double balance;
