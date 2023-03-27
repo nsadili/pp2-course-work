@@ -28,7 +28,7 @@ public class CommandLineArguments {
         }
         System.out.println();
     }
-    
+
     private static int sumArray(int[] arr) {
         int sum = 0;
         for (int num : arr) {
