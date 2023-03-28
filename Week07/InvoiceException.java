@@ -5,5 +5,7 @@ public class InvoiceException {
         } catch (IllegalArgumentException a) {
             System.out.println(a.getMessage());
         }
+
+        System.out.println("a");
     }
 }
