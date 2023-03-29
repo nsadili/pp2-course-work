@@ -1,13 +1,17 @@
+import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
 public class CharacterOccurence {
     public static void main(String[] args) {
         String test = args[0].toLowerCase();
-
-      //  Map<Character, Integer> occurence = new TreeMap<>();  // non-descending order
-        Map<Character, Integer> occurence = new TreeMap<>(new Comparator<Character>() {
+        
+        
+            
+      //  Map<Character, List<Integer>> occurence = new TreeMap<>();  // non-descending order
+        Map<Character, List<Integer>> occurence = new TreeMap<>(new Comparator<Character>() {
 
             @Override
             public int compare(Character o1, Character o2) {
@@ -20,10 +24,14 @@ public class CharacterOccurence {
         for(var i=0;i<test.length();i++){
 
             Character ch = test.charAt(i);
-            if(!(occurence.containsKey(ch))) occurence.put(ch, 1);
+            if(!(occurence.containsKey(ch))) {
+                List<Integer> list=new ArrayList<>();
+                list.add(i);
+                occurence.put(ch, list);
+            }
             else{
-             var num = occurence.get(ch);
-             occurence.put(ch, ++num);
+             occurence.get(ch).add(i);
+             
             }
 
         }
@@ -31,5 +39,6 @@ public class CharacterOccurence {
         for(var key: occurence.keySet()){
             System.out.println(key + ": " + occurence.get(key));
         }
+        System.out.println("End");
     }
 }
