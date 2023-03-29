@@ -13,7 +13,6 @@ public class Account implements Comparable<Account> {
 
     @Override
     public int compareTo(Account o) {
-        // TODO Auto-generated method stub
         int cmp = (this.getFirstName() + this.getLastName()).compareTo(o.getFirstName() + o.getLastName());
 
         if(cmp == 0){
@@ -43,3 +42,4 @@ public class Account implements Comparable<Account> {
                 '}';
     } 
 }
+

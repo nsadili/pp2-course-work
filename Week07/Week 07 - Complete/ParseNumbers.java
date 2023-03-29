@@ -2,16 +2,16 @@ import java.util.Scanner;
 
 public class ParseNumbers {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);// reading from standard input
+        Scanner scan = new Scanner(System.in);
 
         String line = scan.nextLine(), word = null;
         scan.close();
 
         scan = new Scanner(line); // reading from a String
         int sum = 0, count = 0;
-        while (scan.hasNext()) { // while there is a token to be read from the string
+        while (scan.hasNext()) { 
             word = scan.next();
-            sum += Integer.parseInt(word); // read it and parse into Integer
+            sum += Integer.parseInt(word); 
             count++;
         }
 

@@ -24,7 +24,7 @@ public class CustomUserGeneration {
             throw new IllegalArgumentException("Roles assigned to the user can not be empty");
         }
         User user = new User(username, password, roles);
-        // TODO: roles CANNOT BE null or an empty array
+        // TODO: roles CANNOT BE null or an empty array = done
 
         // PROCESS OF USER CREATION - WE DO NOT CARE ABOUT IT HERE!!!
     }
