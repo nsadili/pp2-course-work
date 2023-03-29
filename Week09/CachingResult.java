@@ -3,12 +3,15 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Scanner;
 import java.util.TreeMap;
 
 public class CachingResult {
     public static void main(String[] args) {
-
-        String test=args[0];
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Input Parametr");
+        String test= sc.nextLine();
        
         var list = mostLeastCharacter(test);
         System.out.println("The Least Frequented Characters");
@@ -41,6 +44,7 @@ public class CachingResult {
         var numOfChar = findNumberOfCharacter(test);
 
         for(var key : numOfChar.keySet()){
+            if(key.equals(' ')) continue;
             if(numOfChar.get(key) >= max ) max= numOfChar.get(key);
             if(numOfChar.get(key) <= min) min =numOfChar.get(key);
         }
