@@ -47,8 +47,7 @@ public class Account {
     public void withdraw(double amount){
         if (this.balance>=amount) this.balance-=amount;
         else{
-            System.out.println("Amount withdrawn exceeds the current balance!");
-            System.exit(1);
+            throw new IllegalArgumentException ("Quantity cannot be negative!");
         }
     }    
 }
