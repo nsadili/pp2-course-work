@@ -15,5 +15,7 @@ public class SortListOfElements {
                 return o2 - o1;
             }
         };
+
+        System.out.println(comp);
     }
 }
