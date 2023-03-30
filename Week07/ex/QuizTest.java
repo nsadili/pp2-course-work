@@ -1,5 +1,5 @@
 public class QuizTest {
-    private Integer nbItems;
+    Integer nbItems;
     { this.nbItems = 1; }
 
     public QuizTest(int nbItems) { this.nbItems = nbItems; }
