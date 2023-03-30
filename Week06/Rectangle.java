@@ -6,6 +6,14 @@ public class Rectangle implements Cloneable {
         this.b = b;
     }
 
+    public int getA() {
+        return this.a;
+    }
+
+    public int getB() {
+        return this.b;
+    }
+
     public String toString() {
         return a + " " + b;
     }
@@ -16,10 +24,12 @@ public class Rectangle implements Cloneable {
     }
 
     public boolean equals(Object obj) {
-        
         return false;
     }
 
-    // TODO: override clone() method
+    @Override
+    public Rectangle clone() throws CloneNotSupportedException{
+        return (Rectangle) super.clone();
+    }
 
 }
