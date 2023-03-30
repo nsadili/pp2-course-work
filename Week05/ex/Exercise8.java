@@ -138,6 +138,7 @@ class PhdStudent extends Student {
 
     public void setDepartment(String department) {
         this.department = department;
+        
     }
 
     public String[] getCourses() {
