@@ -1,19 +1,27 @@
 package Week09;
 
+import java.util.HashMap;
 import java.util.Iterator;
-import java.util.LinkedHashMap;
 
 public class MapsInAction {
     public static void main(String[] args) {
-        LinkedHashMap<String, Integer> map = new LinkedHashMap<>();
+        HashMap<String, Integer> ages = new HashMap<>();
 
-        map.put("Naik Pashayev", 18);
-        map.put("Vidadi Nabiyev", 17);
-        map.put("Elchin Pashayev", 45);
+        ages.put("Naik Pashayev", 18);
+        ages.put("Vidadi Nabiyev", 17);
+        ages.put("Elchin Pashayev", 45);
 
-        Iterator<String> itr = map.keySet().iterator();
-        while(itr.hasNext()) System.out.println(map.get(itr.next()));
-        
-        System.out.println(map.toString());
+        System.out.println(ages);
+        System.out.println("");
+
+        // for(var key: ages.keySet()){
+        //     System.out.println(key + " -> " + ages.get(key));
+        // }
+
+        Iterator<String> itr = ages.keySet().iterator();
+        while(itr.hasNext()){
+            var key = itr.next();
+            System.out.println(key + " -> " + ages.get(key));
+        }
     }
 }
