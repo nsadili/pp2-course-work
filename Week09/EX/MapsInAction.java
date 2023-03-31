@@ -10,7 +10,6 @@ import java.util.Iterator;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.Iterator;
 
 class MapsInAction {
     public static void main(String[] args) {
@@ -40,13 +39,24 @@ class MapsInAction {
         System.out.println(map.toString());
 
         // hashmap, linkedhashmap, treemap
-        LinkedHashMap<String, Integer> lmap = new LinkedHashMap(map);
+        LinkedHashMap<String, Integer> lmap = new LinkedHashMap<String, Integer>(map);
         TreeMap<String, Integer> tmap = new TreeMap<>(map);
         System.out.println("HashMap: " + map.toString());
         System.out.println("LinkedHashMap: " + lmap.toString());
         System.out.println("TreeHashMap: " + tmap.toString());
 
-        // treemap descending order
+        //ordering treemap in non-alphabetically order
+        tmap = new TreeMap<>(new Comparator<String>() {
+            public int compare(String key1, String key2){
+                return key2.compareTo(key1);
+            }
+        });
+        tmap.putAll(map);
+        System.out.println("TreeMap sorted non alphabetical: " + tmap);
+    
+
+
+        // Hashmap(converted to linkedlistmap bec hashmap changes order) descending order
         var entrySet = map.entrySet();
         // ArrayList<Integer> ages = new ArrayList<>();
         // for (Map.Entry<String, Integer> entry : entrySet) {
@@ -64,7 +74,7 @@ class MapsInAction {
         for (Entry<String, Integer> entry : listSet) {
             sMap.put(entry.getKey(), entry.getValue());
         }
-        System.out.println(sMap);
+        System.out.println("Age sorted: "+ sMap);
         
     }
 }
