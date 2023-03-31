@@ -1,11 +1,12 @@
 package Week09;
 
-import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class MapsInAction {
     public static void main(String[] args) {
-        HashMap<String, Integer> ages = new HashMap<>();
+        Map<String, Integer> ages = new LinkedHashMap<>();
 
         ages.put("Naik Pashayev", 18);
         ages.put("Vidadi Nabiyev", 17);
