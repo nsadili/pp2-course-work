@@ -39,7 +39,6 @@ public class Grades {
     static double maxGpa(Map<String, Double> map){
         double max=0;
         for (String key: map.keySet()){
-            Double value = map.get(key);
             if (map.get(key)>max) max=map.get(key);
         }
         return max;
