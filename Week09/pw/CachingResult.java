@@ -41,10 +41,10 @@ public class CachingResult {
             for (Map.Entry<Character, Integer> entry1 : freqMap.entrySet()) {
                 if (entry1.getValue() == maxFreq) {
                     System.out.println(entry1.getKey() + "(" + maxFreq + " times)");
-                    
+
                 }
             }
-           
+
             char leastFreqChar = ' ';
             int leastFreq = Integer.MAX_VALUE;
             for (Map.Entry<Character, Integer> entry1 : freqMap.entrySet()) {
@@ -56,10 +56,9 @@ public class CachingResult {
             for (Map.Entry<Character, Integer> entry1 : freqMap.entrySet()) {
                 if (entry1.getValue() == leastFreq) {
                     System.out.println(entry1.getKey() + "(" + leastFreq + " times)");
-                    
+
                 }
             }
-           
 
         }
 
