@@ -8,12 +8,10 @@ public class Bonus2 {
         long time1=System.currentTimeMillis();
         LinkedList<Integer> ll = new LinkedList<>();
     
-        int n=0;
         int temp=0;
         File filee = new File("Integers.txt");
         Scanner sc = new Scanner(filee);
         while(sc.hasNext()){
-            int index=0;
             ll.add(sc.nextInt());
         }
 

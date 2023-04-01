@@ -14,11 +14,11 @@ public class uniqueCharactersWord {
         String str4 = "rufat";
         String str5 = "hellllo";
 
-        System.out.println(uniqueChars(str1));
-        System.out.println(uniqueChars(str2));
-        System.out.println(uniqueChars(str3));
-        System.out.println(uniqueChars(str4));
-        System.out.println(uniqueChars(str5));
+        testAWord(str1);
+        testAWord(str2);
+        testAWord(str3);
+        testAWord(str4);
+        testAWord(str5);
     }
 
     public static void testAWord (String str){
@@ -26,6 +26,7 @@ public class uniqueCharactersWord {
         System.out.println(uniqueChars(str));
         long time2=System.currentTimeMillis();
         System.out.println("Time ellapsed: "+(time2-time1));
+        System.out.println();
     }
 
     public static Set<Character> uniqueChars(String str){
