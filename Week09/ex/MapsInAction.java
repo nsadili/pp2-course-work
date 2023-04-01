@@ -35,6 +35,7 @@ public class MapsInAction {
         }
 
         System.out.println();
+        
 
         Iterator<String> it = ages.keySet().iterator();
 
