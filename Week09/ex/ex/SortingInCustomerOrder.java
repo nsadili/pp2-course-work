@@ -12,8 +12,8 @@ import java.util.Map.Entry;
 public class SortingInCustomerOrder {
     public static void main(String[] args) {
         HashMap<String, Integer> ages = new HashMap<>();
-        ages.put("Leyla", 28);
-        ages.put("Elvin", 17);
+        ages.put("Leyla", 30);
+        ages.put("Elvin", 18);
         ages.put("Nuraddin", 30);
         ages.put("Laman", 18);
         ages.put("Laman", 20);
