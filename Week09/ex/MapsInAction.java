@@ -10,17 +10,15 @@ import java.util.Map.Entry;
 public class MapsInAction {
     public static void main(String[] args) {
         
-        Map<String, Integer> ages = new LinkedHashMap<>();
+        Map<String, Integer> ages = new HashMap<>();
 
-        Map<String, Integer> ages1 = new TreeMap<>(new Comparator<String>() {
+        // new TreeMap<> (new Comparator<String>() {
 
-            @Override
-            public int compare(String o1, String o2) {
-                return o2.compareTo(o1);
-            }
-               
-            
-        });
+        //     @Override
+        //     public int compare(String o1, String o2) { // descending order
+        //         return o2.compareTo(o1);
+        //     }
+        // });
 
         ages.put("Shamil", 19);
         ages.put("LamanK", 17);
@@ -47,8 +45,11 @@ public class MapsInAction {
         System.out.println();
 
         for(Entry<String, Integer> entry : ages.entrySet()) {
-
             System.out.println(entry.getKey() + ": " + entry.getValue());
         }
+
+
+        // how to descending order list hashmap based on the values???
+
     }
 }
