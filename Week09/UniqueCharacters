@@ -1,0 +1,43 @@
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
+
+public class UniqueCharacters {
+    private static Map<String, Set<Character>> cache = new TreeMap<>();
+
+    public static void main(String[] args) {
+        // System.out.println(UniqueCharacter("Hello World"));
+        // System.out.println(UniqueCharacter("My name is"));
+        // System.out.println(UniqueCharacter("Hello World"));
+        // System.out.println(UniqueCharacter("I will be back!"));
+        testAWord("Hello world");
+        testAWord("My name is");
+        testAWord("Hello world");
+        testAWord("I will be back");
+    }
+
+    public static void testAWord(String word) {
+        long s = System.nanoTime();
+        Set<Character> set = uniqueCharacters(word);
+        System.out.println(set);
+        long e = System.nanoTime();
+        System.out.println("Timeiselapsed:" + (e - s));
+    }
+
+    public static Set<Character> uniqueCharacters(String str) {
+        if (cache.containsKey(str)) {
+            System.out.printf("[%s] returning from cache...", str);
+            return cache.get(str);
+        }
+
+        Set<Character> set = new HashSet<>();
+
+        for (char character : str.toCharArray()) {
+            set.add(character);
+        }
+        cache.put(str, set);
+        System.out.printf("[%s] Calculated and returned\n", str);
+        return set;
+    }
+}
