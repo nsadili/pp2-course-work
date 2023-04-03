@@ -46,16 +46,6 @@ public class Grades {
 
         System.out.println();
 
-        // // find the highest gpa
-        // while (it.hasNext()) {
-        // double max = 0.0;
-
-        // if (students.get(it.next()) > students.get(it.next())) // why not working???
-        // max = students.get(it.next());
-
-        // System.out.println(max);
-        // }
-
     }
 
     static void TheHighestGPA(Map<String, Double> students) {
