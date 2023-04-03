@@ -1,0 +1,53 @@
+Ex_1
+Output:
+
+In constructor X.
+In constructor Y.
+
+We have two classes here, X and Y, with Y being a subclass of X. 
+The new keyword is used in the Main class to create an instance of Y. 
+This calls the constructor of Y, which calls the constructor of its superclass X.
+
+Ex_2
+Output:
+
+In static init block of A
+In static init block of B
+In instance init block of A
+In constructor A.
+In instance init block of B
+In constructor B.
+
+We have two classes here, A and B, with B being a subclass of A. 
+Static and instance initialization blocks are used in both classes to initialize static and instance variables, respectively.
+
+Ex_3
+Output:
+
+Super
+10
+Subclass
+30
+
+We have two classes here: Parent and Child, with Child being a subclass of Parent. 
+The function calcValue in the Parent class takes a single integer parameter a and returns an integer. 
+The Child class replaces the Parent class's calcValue function with one that accepts two integer inputs, a and b, and returns an integer.
+
+Ex_4
+Output:
+
+AS
+GTS
+A
+GT
+5 AC
+GTC
+
+We have two classes here: 
+A and GeneralType, with GeneralType being a subclass of A. 
+Static and instance initialization blocks are used in both classes to initialize static and instance variables, respectively.
+
+Ex_6
+
+Method overriding happens when a subclass offers a customized implementation of a method that its parent class already supports.
+In this situation, ClassB is overriding ClassA's non-static method methodTwo(int I The method signature (method name and argument list) must match the overridden method in the parent class.
