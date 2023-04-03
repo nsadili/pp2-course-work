@@ -26,3 +26,5 @@ public class Exercise_6 {
     }
 
 }
+
+//Empty commit. Purpose - change the name of the commitment from Codes(week 08) to Codes(week08).
