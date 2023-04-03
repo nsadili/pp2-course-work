@@ -2,6 +2,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+
 public class MapTest {
     public static void main(String[] args) {
         Map<String,Integer> ages=new HashMap<String,Integer>();
@@ -10,16 +11,17 @@ public class MapTest {
         ages.put("Tima", 17);
         ages.put("Rafa", 19);
 
-        for(String a: ages.keySet()) {
-            System.out.println(a);
+        for(String key: ages.keySet()) {
+            System.out.println(key+"="+ages.get(key)+" ");
         }
-
-        Iterator it=ages.keySet().iterator();
+        
+        Iterator<String> it=ages.keySet().iterator();
 
         while(it.hasNext()) {
-            System.out.println(it.next());
+            String key=it.next();
+            System.out.println(key+"="+ages.get(key));
         }
 
-        System.out.println(ages.keySet().toString());
+        System.out.println(ages.toString());
     }
 }
