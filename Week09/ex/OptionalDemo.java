@@ -1,19 +1,20 @@
+import java.util.Optional;
 import java.util.StringTokenizer;
 
 public class OptionalDemo {
 
-    public static String findWordWithPrefix(String prefix, String text) {
-        StringTokenizer a = new StringTokenizer(text);
-        while (a.hasMoreTokens()) {
-            String word = a.nextToken();
+    public static Optional<String> findWordWithPrefix(String prefix, String text) {
+        StringTokenizer tokenizer = new StringTokenizer(text);
+        while (tokenizer.hasMoreTokens()) {
+            String word = tokenizer.nextToken();
             if (word.toLowerCase().startsWith(prefix.toLowerCase())) {
-                return word;
+                return Optional.of(word);
             }
         }
-        return null;
+        return Optional.empty();
     }
     public static void main(String[] args) {
         
-        System.out.println(findWordWithPrefix("sa", "salam menim adim Nerimandir"));
+        System.out.println(findWordWithPrefix("d", "salam menim adim Nerimandir"));
     }
 }
