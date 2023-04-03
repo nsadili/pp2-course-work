@@ -3,8 +3,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class UniqueCharsOwn {
-    public static void main(String[] args) {
-
+    public static void main(String[] args) { // albali ---> {a, l, b, i}
+                                            // albali ---> {i}
         uniqueCharsMethod(args[0]);
     }
 
