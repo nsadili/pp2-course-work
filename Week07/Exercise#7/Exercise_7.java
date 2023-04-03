@@ -85,3 +85,4 @@ public class Exercise_7 {
 }
 
 //You will not get an output without writing "exit". Dear, instuctor, please, write "exit", after getting message that the stack is full!
+//Empty commit. Purpose - change the name of the commitment from Codes(week 07) to Codes(week07).
