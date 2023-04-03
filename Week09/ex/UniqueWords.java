@@ -29,7 +29,7 @@ public class UniqueWords {
     public static Set<Character> uniqueWords(String str){
 
         if(cache.containsKey(str)){
-            System.out.printf("Returing...\n");
+            System.out.printf("Returning...\n");
             return cache.get(str);
         }
         Set<Character> set = new HashSet<>();
