@@ -58,10 +58,11 @@ public class Grades {
         }
     }
 
-    static void TheAverageGPA(Map<String, Double> students) {
+    static double TheAverageGPA(Map<String, Double> students) {
         double sum = 0.0;
 
-        Iterator it = students.keySet().iterator();
+        // students.entrySet();
+        Iterator<String> it = students.keySet().iterator();
         while (it.hasNext()) {
             var key = it.next();
             sum += students.get(key);
@@ -69,20 +70,15 @@ public class Grades {
 
         var ave = sum / (double) students.size();
         System.out.println("The average GPA ---> " + ave);
+        return ave;
     }
 
     static void TheLessThanAverage(Map<String, Double> students) {
-        double sum = 0.0;
-
-        Iterator it = students.keySet().iterator();
-        while (it.hasNext()) {
-            var key = it.next();
-            sum += students.get(key);
-        }
-
-        var ave = sum / (double) students.size();
 
         int cnt = 0;
+
+        var ave = TheAverageGPA(students);
+
         for (Map.Entry<String, Double> studentName : students.entrySet()) {
 
             if (studentName.getValue() < ave)
