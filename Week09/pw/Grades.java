@@ -1,3 +1,4 @@
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -16,8 +17,16 @@ public class Grades {
         students.put("Elnara", 2.25);
         students.put("Miray", 1.97);
 
-        System.out.println(students);
+        TheHighestGPA(students);
+        System.out.println();
 
+        TheAverageGPA(students);
+        System.out.println();
+
+        TheLessThanAverage(students);
+        System.out.println();
+
+        System.out.println(students);
         System.out.println();
 
         for (String names : students.keySet()) {
@@ -37,41 +46,49 @@ public class Grades {
 
         System.out.println();
 
-        // find the highest gpa
-        while (it.hasNext()) {
-            double max = 0;
-            // for (var name : students.keySet()) {
-            // it.next();
-            // if (students.get(it.next()) > students.get(name)) {
+    }
 
-            // max = students.get(it.next());
-            // }
+    static void TheHighestGPA(Map<String, Double> students) {
+        double highestGPA = Collections.max(students.values());
 
-            if (students.get(it.next()) > students.get(it.next()))
-                max = students.get(it.next());
-
-            System.out.println(max);
-            // }
-
+        for (Map.Entry<String, Double> studentName : students.entrySet()) {
+            if (studentName.getValue() == highestGPA) {
+                System.out.println("The highest GPA --->" + studentName.getKey() + ": " + studentName.getValue());
+            }
         }
+    }
 
-        // the average gpa of all the students // 2.99
+    static void TheAverageGPA(Map<String, Double> students) {
         double sum = 0.0;
+
+        Iterator it = students.keySet().iterator();
         while (it.hasNext()) {
             var key = it.next();
             sum += students.get(key);
         }
 
         var ave = sum / (double) students.size();
-        System.out.println(ave);
+        System.out.println("The average GPA ---> " + ave);
+    }
 
-        // Find the number of students who have less gpa than the average
-        int cnt = 0;
+    static void TheLessThanAverage(Map<String, Double> students) {
+        double sum = 0.0;
+
+        Iterator it = students.keySet().iterator();
         while (it.hasNext()) {
-            if (students.get(it.next()) < ave)
+            var key = it.next();
+            sum += students.get(key);
+        }
+
+        var ave = sum / (double) students.size();
+
+        int cnt = 0;
+        for (Map.Entry<String, Double> studentName : students.entrySet()) {
+
+            if (studentName.getValue() < ave)
                 cnt++;
         }
 
-        System.out.println(cnt);
+        System.out.println("The number of students less than the average ---> " + cnt);
     }
 }
