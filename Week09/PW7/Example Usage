@@ -1,0 +1,10 @@
+
+StringAnalyzer analyzer = new StringAnalyzer();
+Pair<Character, Character> result1 = analyzer.analyzeString("hello world");
+System.out.println("Most frequent character: " + result1.getKey());
+System.out.println("Least frequent character: " + result1.getValue());
+
+Pair<Character, Character> result2 = analyzer.analyzeString("hello world");
+System.out.println("Most frequent character: " + result2.getKey());
+System.out.println("Least frequent character: " + result2.getValue());
+
