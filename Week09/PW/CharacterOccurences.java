@@ -1,3 +1,4 @@
+package PW;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -19,7 +20,8 @@ public class CharacterOccurences {
         Map<Character, List<Integer>> dict = new TreeMap<>(new Comparator<Character>() {
             @Override
             public int compare(Character o1, Character o2) {
-                return o2.compareTo(o1);
+                return o1.compareTo(o2);
+                // if we write return o2.compareTo(o1) it will give us reversed alphabetical order
             }
         });
         for(int i = 0; i < str.length(); i++){

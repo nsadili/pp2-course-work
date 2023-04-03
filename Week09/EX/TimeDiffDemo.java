@@ -1,3 +1,4 @@
+package EX;
 public class TimeDiffDemo {
     public static void main(String[] args) {
 
