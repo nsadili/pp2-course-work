@@ -2,21 +2,20 @@ package practicalworks;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collection;
-
+import java.util.Collections;
 
 public class DistinctWords {
 
-	public static void main(String[] args){
+	public static void main(String[] args) {
 		ArrayList<String> nmaes = new ArrayList<String>();
 		var collection = initCollection();
-		
-		for(String name : collection) {
-			if(nmaes.indexOf(name) == -1) {
+
+		for (String name : collection) {
+			if (names.indexOf(name) == -1) {
 				names.add(name);
 			}
 		}
-		
+
 		System.out.println(names.toString());
 		static Collection<String> initCollection() {
 	        var collection = new ArrayList<String>();
