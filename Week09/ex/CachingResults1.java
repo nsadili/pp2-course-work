@@ -25,14 +25,14 @@ public class CachingResults1 {
                 lst1.add(ch);
                 hmMost.put(ch, lst1);
 
-                for(var el : lst1) {
+                // for(var el : lst1) {
                     
-                    for (var el1 : lst1) {
-                        if (el == el1)
-                        cnt1++;
-                    }
+                //     // for (var el1 : lst1) {
+                //     //     if (el == el1)
+                //     //     cnt1++;
+                //     // }
                    
-                }
+                // }
 
             }
 
@@ -43,19 +43,19 @@ public class CachingResults1 {
                 lst2.add(ch);
                 hmMost.put(ch, lst2);
 
-                for(var el : lst2) {
+                // for(var el : lst2) {
                     
-                    for (var el1 : lst2) {
-                        if (el == el1)
-                        cnt2++;
-                    }
-                }
+                //     // for (var el1 : lst2) {
+                //     //     if (el == el1)
+                //     //     cnt2++;
+                //     // }
+                // }
                 
             }
+            
+        }
             System.out.println(hmLeast);
             System.out.println(hmMost);
-        }
-            
 
        
     }
