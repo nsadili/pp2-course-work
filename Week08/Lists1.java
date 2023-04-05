@@ -4,16 +4,16 @@ public class Lists1 {
     public static void main(String[] args) {
         List<String> shoppingList= new ArrayList<>();
         Collections.addAll(shoppingList,
-                 ...elements: "coffee", "tea", "bread", "butter", "eggs");
+                  "coffee", "tea", "bread", "butter", "eggs");
     System.out.println(shoppingList);
-    shoppingList.remove(o: "bread");
+    shoppingList.remove("bread");
     System.out.println(shoppingList);
-    shoppingList.remove(index: 2);
+    shoppingList.remove(2);
     System.out.println(shoppingList);
     List<String> newShoppingList= new ArrayList<>(shoppingList);
     
 
-    Collections.addAll(newShoppingList, ...elements: "apple", "kiwi");
+    Collections.addAll(newShoppingList, "apple", "kiwi");
     System.out.println("newShoppingList:" +newShoppingList);
 
     String wordToFind= "teapot";
@@ -21,7 +21,7 @@ public class Lists1 {
     ?"The new shopping list contains <tea>"
     :"The new shopping list does not contain <tea>");
     List<String> linkedList= new LinkedList<>();
-    Collections.addAll(linkedList, ...elements: "tomato", "potato");
+    Collections.addAll(linkedList, "tomato", "potato");
     linkedList.addAll(newShoppingList);
 
     System.out.println("linkedList: " + linkedList);

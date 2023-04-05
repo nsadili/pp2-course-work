@@ -1,6 +1,7 @@
 package Week08;
 import java.io.*;
 import java.util.*;
+// names.txt;
 public class DistinctWords {
     public static void main(String[] args) throws IOException {
        
