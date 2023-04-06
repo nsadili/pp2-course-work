@@ -1,0 +1,5 @@
+Task 1,2,10
+Task 2,1,5
+Task 3,3,15
+Task 4,2,20
+Task 5,1,8
