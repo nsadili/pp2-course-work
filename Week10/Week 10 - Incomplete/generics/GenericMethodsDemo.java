@@ -8,11 +8,11 @@ public class GenericMethodsDemo {
         String arr4[] = new String[] { "Maryam", "Abdulla", "Nihad", "Asim", "Shamsi", "Nazrin" };
         Point arr5[] = new Point[] { new Point(3, 5), new Point(), new Point(100, 200) };
 
-        // printAll(arr1);
-        // printAll(arr2);
-        // printAll(arr3);
-        // printAll(arr4);
-        // printAll(arr5);
+        printAll(arr1);
+        printAll(arr2);
+        printAll(arr3);
+        printAll(arr4);
+        printAll(arr5);
 
         // printAll(arr4, 2, 4);
 
@@ -77,18 +77,18 @@ public class GenericMethodsDemo {
 
     static <T extends Comparable<? super T>> void sortArray(T[] arr) {
 
-        for (int i=0; i<arr.length; i++){
-            for (int j=0; j<arr.length-1; j++){
-                if (arr[j].compareTo(arr[j+1])>0) swap(arr, j, j+1);
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length - 1; j++) {
+                if (arr[j].compareTo(arr[j + 1]) > 0)
+                    swap(arr, j, j + 1);
             }
         }
     }
 
-    static <T> void swap(T[] arr, int i, int j){
+    static <T> void swap(T[] arr, int i, int j) {
         T temp = arr[i];
-        arr[i]= arr[j];
-        arr[j]=temp;
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
-
 
 }
