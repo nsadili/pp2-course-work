@@ -22,13 +22,13 @@ public class SpecificElementCount {
         List<String> lstStr = new ArrayList<>();
 
         lstStr.add("civic");
-        lstStr.add("civil");
-        lstStr.add("madam");
-        lstStr.add("madan");
-        lstStr.add("radar");
-        lstStr.add("radak");
+        // lstStr.add("civil");
+        // lstStr.add("madam");
+        // lstStr.add("madan");
+        // lstStr.add("radar");
+        // lstStr.add("radak");
 
-        System.out.println(palindromeStrings(lstStr));
+        palindromeStrings(lstStr.toString());
 
         List<Account> lstAcc = new ArrayList<>();
         lstAcc.add(null);
@@ -53,25 +53,29 @@ public class SpecificElementCount {
         return cnt;
     }
 
-    static List palindromeStrings(List lst) {
+    static void palindromeStrings(String string) {
 
-        Object obj[] = lst.toArray();
+        //String obj = string.toString();
+        String original = string;
+        String reverse = "";
 
-        // for (int i = 0; i < j; i++) {
-        // if (obj[i] == obj[j])
-        // j--;
-        // }
-
-        for (int i = 0, k = obj.length; i <= obj.length/2; i++, k--) {
-            // for(int k = lst.size(); k >= lst.size()/2; k--) {
-            if (obj[i] == obj[k]) {
-                // System.out.println(lst);
-                continue;
-            }
-            // }
+        for(int i = string.length(); i >= 0; i--) {
+            reverse += original.charAt(i);
         }
-        System.out.println("Yes!");
-        return lst;
+
+        boolean palindrome = true;
+        for(int i = 0; i < string.length(); i++) {
+            if(original.charAt(i) != reverse.charAt(i)) {
+                palindrome = false;
+            }
+        }
+        if(palindrome) {
+            System.out.println("Palindrome");
+
+        } else {
+            System.out.println("Not Palindrome");
+        }
+
     }
 
     static List emptyAccounts(List lst) {

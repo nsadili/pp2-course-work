@@ -1,16 +1,15 @@
 package generics;
 
-public class GenericNumericFunction {
+public class GenericNumericFunction<T> {
     public static void main(String[] args) {
 
-    }
+        Numeric<Double> num = new Numeric<>(2.5);
 
-    class GenericNumericFunction1<T extends GenericNumericFunction> {
+        System.out.println(num.reciprocal());
+        System.out.println(num.fractional());
 
-    }
-
-    static <T extends Comparable<? super T>> void genericNumeric(T value) {
-
+        System.out.println(num.checkAbsoluteValue(2.5f, 2.5));
+        System.out.println(num.checkAbsoluteValue(2.5f, 2.6));
     }
 
 }

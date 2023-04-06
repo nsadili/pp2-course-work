@@ -2,22 +2,22 @@ package generics;
 
 public class StackEnhanced<T> {
 
-    private int[] elements;
-    private int capacity;
-    private int index;
+    private T[] elements;
+    private T capacity;
+    private T index;
 
-    public StackEnhanced(int capacity) {
+    public StackEnhanced(int capacity, T[] elements, T index) {
         // TODO what is capacity is not a positive integer ?
         this.capacity = capacity;
         this.index = -1;
-        this.elements = new int[capacity];
+        this.elements = new T[capacity];
     }
 
-    public boolean isEmpty() {
+    public <T> boolean isEmpty() {
         return this.index == -1;
     }
 
-    public boolean isFull() {
+    public <T> boolean isFull() {
         return this.index == capacity - 1;
     }
 
