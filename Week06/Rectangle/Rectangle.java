@@ -1,3 +1,4 @@
+package Rectangle;
 class Rectangle implements Cloneable {
     int width, height;
     
