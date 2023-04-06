@@ -9,6 +9,9 @@ public class GenericMethodsDemo {
         Point arr5[] = new Point[] { new Point(3, 5), new Point(), new Point(100, 200) };
 
         printAll(arr1);
+        sort(arr1);
+        printAll(arr1);
+        
         printAll(arr2);
         printAll(arr4);
         printAll(arr5);
@@ -65,7 +68,7 @@ public class GenericMethodsDemo {
         return arr[arr.length/2];
     }
 
-    public static <T extends Comparable<T>> T max(T[] arr){
+    public static <T extends Comparable<? super T>> T max(T[] arr){
         T mx = arr[0];
         for(T x: arr){
             if(x.compareTo(mx)>0){
@@ -74,5 +77,21 @@ public class GenericMethodsDemo {
         }
 
         return mx;
+    }
+
+    public static <T extends Comparable<? super T>> void sort(T[] arr){
+        for(int j=0;j<arr.length;j++){
+            for(int i=0;i<arr.length;i++){
+                if(arr[i].compareTo(arr[i+1])>1){
+                    swap(arr, i, i+1);
+                }
+            }
+        }
+    }
+
+    static<T> void swap(T[] arr, int x, int y){
+        T temp = arr[x];
+        arr[x] = arr[y];
+        arr[y]=temp;    
     }
 }
