@@ -6,15 +6,16 @@ public class GenericMethodsDemo {
         String arr4[] = new String[] { "Maryam", "Abdulla", "Nihad", "Asim", "Shamsi", "Nazrin" };
         Point arr5[] = new Point[] { new Point(3, 5), new Point(), new Point(100, 200) };
 
-        // printAll(arr1);
+        printAll(arr1);
+
         printAll(arr3);
         sort(arr3);
         printAll(arr3);
 
-        // System.out.println(mid(arr2));
-        // System.out.println(mid(arr5));
+        System.out.println(mid(arr2));
+        System.out.println(mid(arr5));
 
-        // System.out.println(max(arr4));
+        System.out.println(max(arr4));
     }
 
     // static void printAll(Object[] arr){
@@ -74,7 +75,7 @@ public class GenericMethodsDemo {
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length - 1; j++) {
                 if (arr[j].compareTo(arr[j + 1]) > 0) {// 1>2
-swap(arr, i, j+1);
+                    swap(arr, j, j + 1);
                 }
             }
         }
