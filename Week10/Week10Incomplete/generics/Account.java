@@ -11,6 +11,10 @@ public class Account implements Comparable<Account> {
         this.balance = balance;
     }
 
+    public Double getBalance() {
+        return balance;
+    }
+
     @Override
     public String toString() {
         return "Account [firstname=" + firstname + ", lastname=" + lastname + ", balance=" + balance + "]";
