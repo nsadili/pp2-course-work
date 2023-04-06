@@ -3,9 +3,9 @@ package Week10;
 public class GenericNumeric {
     public static void main(String[] args) {
         int a=10;
-        long b=23;
+        // long b=23;
         double c=-3.5;
-        float d=2;
+        // float d=2;
         float e=3.5f;
         System.out.println(String.format("Reciprocal of number %d: ", a)+reciprocal(a));
         System.out.println(String.format("Fractional part of number %f: ", c)+fractional(c));

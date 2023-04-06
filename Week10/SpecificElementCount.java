@@ -19,7 +19,7 @@ public class SpecificElementCount {
         arr3.add(new Account("Muhammad", "Mammadzada", 0.0));
         System.out.println(countSpecific(arr3));
 
-        ArrayList<Double> arr4 = new ArrayList<>(Arrays.asList(1.9, 2.2, 3.1, 4.6, 5.3, 6.7, 7.9));
+        // ArrayList<Double> arr4 = new ArrayList<>(Arrays.asList(1.9, 2.2, 3.1, 4.6, 5.3, 6.7, 7.9));
         // System.out.println(countSpecific(arr4));
     }
 
