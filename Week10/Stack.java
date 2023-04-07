@@ -1,6 +1,4 @@
 import java.util.ArrayList;
-import java.util.Deque;
-import java.util.LinkedList;
 import java.util.List;
 
 public class Stack <T> {
@@ -90,12 +88,12 @@ public class Stack <T> {
         System.out.println(stack.pop());
         stack.pop();
         stack.__print();
-        stack.__print();
+        // stack.__print();
 
 
          System.out.println(stack.pop());
 
-         System.out.println(stack.pop());
+        //  System.out.println(stack.pop());
 
 
         stack.__print();
