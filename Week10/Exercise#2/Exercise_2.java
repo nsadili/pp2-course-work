@@ -1,6 +1,3 @@
-package Exercise_2;
-
-
 public class Exercise_2<T extends Number> {
     private T value;
 
