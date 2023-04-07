@@ -2,7 +2,6 @@ package Week10.SpecificProperty;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 import Week10.generics.Account;
 
