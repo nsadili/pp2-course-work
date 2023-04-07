@@ -66,17 +66,18 @@ public class Stack<T> {
         stack.push(11);
 
         stack.pop();
-        
-        
-        
-        
-        // stack.push(200000);
-        //System.out.println(stack);
-         stack.__print();
-        // while (!stack.isEmpty()) {
-        // System.out.println(stack.pop());
-        // }
-        System.out.println(stack.peek());
+        stack.__print();
+        System.out.println("The peek element: " + stack.peek());
+
+        Stack<String> stack1 = new Stack<>(3);
+
+        stack1.push("Nariman");
+        stack1.push("Shamil");
+        stack1.push("Rufat");
+        stack1.pop();
+
+        stack1.__print();
+        System.out.println("The peek element: " + stack1.peek());
 
 
     }
