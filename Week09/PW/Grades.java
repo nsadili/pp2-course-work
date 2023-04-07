@@ -1,5 +1,5 @@
-import java.util.*;
 
+import java.util.*;
 public class Grades {
     public static void main(String[] args) {
         HashMap<String, Float> grades = new HashMap<>();
