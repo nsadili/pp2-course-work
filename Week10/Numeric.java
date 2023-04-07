@@ -4,6 +4,10 @@ class Numeric<T extends Number> {
     public Numeric(T value) {
         this.value = value;
     }
+
+    public T getValue(){
+        return value;
+    }
     
     public double reciprocal() {
         return 1 / value.doubleValue();
@@ -13,7 +17,7 @@ class Numeric<T extends Number> {
         return value.doubleValue() - value.intValue();
     }
     
-    public boolean absoluteValueEquals(Numeric<?> other) {
+    public boolean absoluteValueEquals(Numeric<? extends Number> other) {
         return Math.abs(value.doubleValue()) == Math.abs(other.value.doubleValue());
     }
 }

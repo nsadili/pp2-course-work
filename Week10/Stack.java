@@ -1,6 +1,6 @@
 
 
-class Stack<T> {
+class Stack<T>{
     private int size;
     private int top;
     private T[] stackArray;
@@ -13,7 +13,7 @@ class Stack<T> {
     
     public void push(T value) throws StackOverflowException {
         if (top == size - 1) {
-            throw new StackOverflowException();
+            throw new StackOverflowException("Stack is full");
         }
         
         stackArray[++top] = value;
@@ -21,7 +21,7 @@ class Stack<T> {
     
     public T pop() throws StackUnderflowException {
         if (top == -1) {
-            throw new StackUnderflowException();
+            throw new StackUnderflowException("Stack is full");
         }
         
         return stackArray[top--];
@@ -29,7 +29,7 @@ class Stack<T> {
     
     public T peek() throws StackUnderflowException {
         if (top == -1) {
-            throw new StackUnderflowException();
+            throw new StackUnderflowException("Stack is full");
         }
         
         return stackArray[top];

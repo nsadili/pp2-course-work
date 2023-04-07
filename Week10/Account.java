@@ -4,10 +4,18 @@ public class Account implements Comparable<Account> {
     String lastname;
     Double balance;
 
+    public Account(Double balance){
+        this.balance = balance;
+    }
+
     public Account(String firstname, String lastname, Double balance) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.balance = balance;
+    }
+
+    public Double getBalance(){
+        return balance;
     }
 
     @Override

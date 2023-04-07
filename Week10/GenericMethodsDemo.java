@@ -9,6 +9,13 @@ public class GenericMethodsDemo {
 
         printElements(arr1);
         printElements(arr2, 2, 4);
+
+        try{
+            printElements(arr5, 0, 4);
+        }catch(IndexOutOfBoundsException e){
+            System.out.println(e.getMessage());
+        }
+
         System.out.println(getMiddleElement(arr3));
         sortElements(arr4);
         printElements(arr4);
@@ -22,21 +29,38 @@ public class GenericMethodsDemo {
         System.out.println();
     }
 
-    static <T> void printElements(T[] arr, int lowerIndex, int upperIndex){
-        for(int i = lowerIndex; i <= upperIndex; i++){
+    public<T> void print(T[] arr, int startIndex, int endIndex) throws IndexOutOfBoundsException {
+        if (startIndex < 0 || endIndex >= arr.length || startIndex > endIndex) {
+            throw new IndexOutOfBoundsException("Invalid range specified");
+        }
+
+        for (int i = startIndex; i <= endIndex; i++) {
             System.out.println(arr[i]);
         }
     }
 
-    static <T> void printElements(T[] arr, int lowerIndex, int upperIndex){
-        for(int i = lowerIndex; i <= upperIndex; i++){
+    static <T> void printElements(T[] arr, int lowerIndex, int upperIndex) {
+        for (int i = lowerIndex; i <= upperIndex; i++) {
             System.out.println(arr[i]);
         }
     }
+
+    public <T> void print(boolean printTwoTasksPerLine, T[] arr) {
+        if (printTwoTasksPerLine) {
+          for (int i = 0; i < arr.length; i += 2) {
+            System.out.println(arr[i] + ", " + arr[i+1]);
+          }
+        } else {
+          for (T task : arr) {
+            System.out.println(task);
+          }
+        }
+      }
+      
 
     static <T> T getMiddleElement(T[] arr) {
         if (arr.length % 2 == 1) {
-            int middleIndex = arr.length/2;
+            int middleIndex = arr.length / 2;
             return arr[middleIndex];
         } else {
             return null;
