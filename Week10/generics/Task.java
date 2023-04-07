@@ -1,4 +1,4 @@
-package generics;
+package Week10.generics;
 
 public class Task implements Comparable<Task> {
     private String name;
