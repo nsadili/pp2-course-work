@@ -1,3 +1,4 @@
+
 public class GenericMethodsDemo {
     public static void main(String[] args) {
         Integer arr1[] = new Integer[] { 1, 5, 2, 6, 3, 6 };
@@ -7,25 +8,53 @@ public class GenericMethodsDemo {
         Point arr5[] = new Point[] { new Point(3, 5), new Point(), new Point(100, 200) };
 
         printElements(arr1);
-        printElements(arr2);
-        
-       
+        printElements(arr2, 2, 4);
+        System.out.println(getMiddleElement(arr3));
+        sortElements(arr4);
+        printElements(arr4);
+
     }
-    
-    static <T> void printElements( T[] arr1){
-        for(T x: arr1){
+
+    static <T> void printElements(T[] arr) {
+        for (T x : arr) {
             System.out.print(x + " ");
         }
         System.out.println();
     }
 
-    static <T> T getMiddleElement(T[] arr){
-        if(arr.length % 2 == 1){
-        int middleIndex = arr.length;
-        return arr[middleIndex];
-        }else{
+    static <T> void printElements(T[] arr, int lowerIndex, int upperIndex){
+        for(int i = lowerIndex; i <= upperIndex; i++){
+            System.out.println(arr[i]);
+        }
+    }
+
+    static <T> void printElements(T[] arr, int lowerIndex, int upperIndex){
+        for(int i = lowerIndex; i <= upperIndex; i++){
+            System.out.println(arr[i]);
+        }
+    }
+
+    static <T> T getMiddleElement(T[] arr) {
+        if (arr.length % 2 == 1) {
+            int middleIndex = arr.length/2;
+            return arr[middleIndex];
+        } else {
             return null;
         }
+    }
+
+    static <T extends Comparable<T>> void sortElements(T[] arr) {
+        T temp;
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = 0; j < arr.length - 1 - i; j++) {
+                if (arr[j].compareTo(arr[j + 1]) > 0) {
+                    temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+
     }
 
 }
