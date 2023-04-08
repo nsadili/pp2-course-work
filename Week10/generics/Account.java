@@ -1,3 +1,5 @@
+package generics;
+
 public class Account implements Comparable<Account> {
     String firstname;
     String lastname;
@@ -7,7 +9,7 @@ public class Account implements Comparable<Account> {
         this.firstname = firstname;
         this.lastname = lastname;
         this.balance = balance;
-    } 
+    }
 
     @Override
     public String toString() {
@@ -19,4 +21,9 @@ public class Account implements Comparable<Account> {
 
         return difference != 0 ? difference : lastname.compareTo(o.lastname);
     }
+
+    public Double getBalance() {
+        return balance;
+    }
+
 }

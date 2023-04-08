@@ -1,3 +1,5 @@
+package generics;
+
 public class GenericMethodsDemo {
     public static void main(String[] args) {
         Integer arr1[] = new Integer[] { 1, 5, 2, 6, 3, 6 };
@@ -35,6 +37,8 @@ public class GenericMethodsDemo {
     }
 
     static <T> void printAll(T[] arr, int lower, int upper) {
+        if (arr.length == 0)
+            throw new IllegalArgumentException("Array shoul be added!");
         if (lower < 0 || upper < 0 || lower >= arr.length || upper >= arr.length) {
             throw new ArrayIndexOutOfBoundsException(String.format("Either lower or upper is out of bounds"));
         }
