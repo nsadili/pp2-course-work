@@ -1,15 +1,15 @@
-import generics.Numeric;
+import java.util.Arrays;
+import java.util.List;
+
+import specificproperties.EvenIntegerProperty;
+import specificproperties.Util;
 
 public class Main {
     public static void main(String[] args) {
-        Numeric<Float> num = new Numeric<>(2.500f);
-        Numeric<Integer> num2 = new Numeric<>(2);
+        
+        List<Integer> list = Arrays.asList(1, 4, 2, 5, 6, 3, 7);
 
-        // System.out.println(num.getValue());
-        // System.out.println(num.reciprocal());
-        // System.out.println(num.fractional());
-
-        System.out.println(num2.compareAbs(2.0));
-        System.out.println(num.compareAbs(num2));
+        int count = Util.count(list, new EvenIntegerProperty());
+        System.out.println(count);
     }
 }
