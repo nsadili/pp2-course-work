@@ -1,5 +1,6 @@
 import java.util.List;
-import EX01.*;
+
+import generics.*;
 
 public class GenericsMethodsDemo {
     public static void main(String[] args) {
