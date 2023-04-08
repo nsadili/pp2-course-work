@@ -21,4 +21,9 @@ public class Account implements Comparable<Account> {
 
         return difference != 0 ? difference : lastname.compareTo(o.lastname);
     }
+
+    public Double getBalance() {
+        return balance;
+    }
+    
 }
