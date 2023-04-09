@@ -4,7 +4,7 @@ public class Account implements Comparable<Account> {
     private String firstname;
     private String lastname;
     private Double balance;
-
+    
     public String getFirstname() {
         return firstname;
     }

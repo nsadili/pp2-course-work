@@ -7,6 +7,7 @@ import java.util.List;
 
 public class SortingList {
     public static void main(String[] args) {
+
         List<Integer> nums = new ArrayList<>();
         Collections.addAll(nums, 1, 5, 5, 7, 12, 3, 9);
         // Collections.sort(nums,new DescendingComperator());

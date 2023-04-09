@@ -15,16 +15,16 @@ public class ListOfAccounts {
                         new Account("Radmila", "Hajiyeva", 120)));
 
         Collections.sort(accs);
-        Collections.sort(accs,new Comparator<Account>() {
+        Collections.sort(accs, new Comparator<Account>() {
 
             @Override
             public int compare(Account o1, Account o2) {
-                
+
                 return o2.getBalance().compareTo(o1.getBalance());
             }
-            
+
         });
-        ;
+        
         printList(accs);
 
     }
