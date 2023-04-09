@@ -2,8 +2,7 @@ package Account;
 
 public class InvalidAmountException extends Exception 
 {
-    public InvalidAmountException() 
-    {
+    public InvalidAmountException() {
         super("Invalid amount");
     }
 }
