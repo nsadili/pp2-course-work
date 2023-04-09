@@ -26,7 +26,6 @@ public class Pair<K, V> {
     }
 
     public <T extends Number> boolean comparePairs(T key, T value) {
-
         return key.equals(value);
     }
 
