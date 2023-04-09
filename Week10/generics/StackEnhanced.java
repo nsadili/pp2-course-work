@@ -1,24 +1,38 @@
 package generics;
 
 import java.util.LinkedList;
-// Make this a generic stack
-public class StackEnhanced {
+// Reminder:Make this a generic stack
+public class StackEnhanced<T> {
 
-    private LinkedList<Integer> stack;
+    private LinkedList<T> stack;
+    private int maxSize;
 
-    public StackEnhanced() {
-        stack = new LinkedList<Integer>();
+    public StackEnhanced(int maxSize) {
+        stack = new LinkedList<>();
+        this.maxSize = maxSize;
     }
 
-    public void push(int value) {
+    public void push(T value) throws Exception{
+
+        if(stack.size() == maxSize){
+            throw new Exception("Stackoverflow");
+        }
         stack.push(value);
     }
 
-    public int pop() {
+    public T pop() throws Exception {
+        if(stack.isEmpty()){
+            throw new Exception("Empty stack");
+        }
         return stack.pop();
     }
 
-    public int peek() {
+    public T peek() throws Exception{
+    
+
+        if(stack.isEmpty()){
+            throw new Exception("Empty stack");
+        } 
         return stack.peek();
     }
 
@@ -31,18 +45,33 @@ public class StackEnhanced {
     }
 
     public static void main(String[] args) {
-        StackEnhanced myStack = new StackEnhanced();
+        StackEnhanced<Integer> myStack = new StackEnhanced<>(3);
 
-        myStack.push(10);
-        myStack.push(20);
-        myStack.push(30);
-
+        try{
+            myStack.push(10);
+            myStack.push(20);
+            myStack.push(30);
+        }
+       
+        catch(Exception e){
+            System.out.println(e.getMessage());
+        }
         System.out.println(myStack.size());
 
-        System.out.println(myStack.peek());
+        try{
+            System.out.println(myStack.peek());
+        }
 
+        catch(Exception e){
+            System.out.println(e.getMessage());
+        }
         while (!myStack.isEmpty()) {
-            System.out.println(myStack.pop());
+            try{
+                System.out.println(myStack.pop());
+            }
+            catch(Exception e){
+                System.out.println(e.getMessage());
+            }
         }
     }
 }
