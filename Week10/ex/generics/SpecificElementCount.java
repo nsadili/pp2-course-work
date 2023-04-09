@@ -1,6 +1,7 @@
 package generics;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
@@ -18,17 +19,18 @@ public class SpecificElementCount {
         lstInt.add(13);
 
         System.out.println(countEvenNumbers(lstInt));
-
         List<String> lstStr = new ArrayList<>();
 
         lstStr.add("civic");
-        // lstStr.add("civil");
-        // lstStr.add("madam");
-        // lstStr.add("madan");
-        // lstStr.add("radar");
-        // lstStr.add("radak");
+        lstStr.add("civil");
+        lstStr.add("madam");
+        lstStr.add("madan");
+        lstStr.add("radar");
+        lstStr.add("radak");
 
-        palindromeStrings(lstStr.toString());
+        String str = Arrays.toString(lstStr.toArray());
+
+        palindromeStrings(str);
 
         List<Account> lstAcc = new ArrayList<>();
         lstAcc.add(null);
@@ -75,7 +77,6 @@ public class SpecificElementCount {
         } else {
             System.out.println("Not Palindrome");
         }
-
     }
 
     static List emptyAccounts(List lst) {

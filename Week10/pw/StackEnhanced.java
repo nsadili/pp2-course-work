@@ -64,8 +64,8 @@ public class StackEnhanced<T> {
         System.out.println(" || Top");
     }
 
-    public static <T> void main(String[] args) {
-        StackEnhanced<T> stack = new StackEnhanced<T>(5, null, null);
+    public static void main(String[] args) {
+        StackEnhanced stack = new StackEnhanced<>(5);
 
         if (stack.isFull())
             throw new IllegalArgumentException("The stack is full");
