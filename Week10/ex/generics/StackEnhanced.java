@@ -1,23 +1,15 @@
 package generics;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.lang.model.element.Element;
-
 public class StackEnhanced<T> {
-
 
     private List<T> elements1 = new ArrayList<>();
     //elements1 = new ArrayList<>();
 
-
-
-    private int[] elements;
+    private T[] elements;
     private int capacity;
     private int index;
 
-    public StackEnhanced(int capacity, T[] elements, T index) {
+    public StackEnhanced(int capacity, T[] elements, int index) {
         // TODO what is capacity is not a positive integer ?
         this.capacity = capacity;
         this.index = -1;
@@ -32,21 +24,21 @@ public class StackEnhanced<T> {
         return this.index == capacity - 1;
     }
 
-    public int peek() {
+    public T peek() {
 
         // TODO: what if the stack is empty? index == 1?
         return elements[index];
 
     }
 
-    public int pop() {
+    public T pop() {
 
         // TODO: what if the stack is empty? index == -1?
 
         return elements[index--];
     }
 
-    public void push(int el) {
+    public void push(T el) {
         // TODO: what if the stack is full? index == capacity-1?
 
         elements[++index] = el;
@@ -64,8 +56,8 @@ public class StackEnhanced<T> {
         System.out.println(" || Top");
     }
 
-    public static <T> void main(String[] args) {
-        StackEnhanced<T> stack = new StackEnhanced<T>(5, null, null);
+    public static void main(String[] args) {
+        StackEnhanced stack = new StackEnhanced<>(5);
 
         if (stack.isFull())
             throw new IllegalArgumentException("The stack is full");

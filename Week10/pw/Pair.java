@@ -25,11 +25,9 @@ public class Pair<K, V> {
         this.value = value;
     }
 
-    static boolean comparePairs(Double key, Float value) {
+    public <T extends Number> boolean comparePairs(T key, T value) {
 
-        // TODO: compare the pairs
-
-        return true;
+        return key.equals(value);
     }
 
 }
