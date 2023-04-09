@@ -1,4 +1,4 @@
-
+package generics;
 public class Account implements Comparable<Account> {
     String firstname;
     String lastname;
@@ -19,5 +19,8 @@ public class Account implements Comparable<Account> {
         int difference = firstname.compareTo(o.firstname);
 
         return difference != 0 ? difference : lastname.compareTo(o.lastname);
+    }
+    public Double getBalance() {
+        return balance;
     }
 }
