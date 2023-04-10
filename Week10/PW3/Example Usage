@@ -1,0 +1,6 @@
+
+
+
+Pair<String, Integer> pair = new Pair<>("foo", 42);
+System.out.println(pair.getKey());    // output: "foo"
+System.out.println(pair.getValue());  // output: 42
