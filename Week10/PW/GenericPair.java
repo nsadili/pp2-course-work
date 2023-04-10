@@ -1,3 +1,4 @@
+package PW;
 public class GenericPair<K, V> {
     private K key;
     private V value;
