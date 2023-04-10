@@ -1,0 +1,28 @@
+       
+       
+            
+              
+            Stack<Integer> stack = new Stack<>(5);
+            stack.push(1);
+            stack.push(2);
+            stack.push(3);
+            stack.push(4);
+            stack.push(5);
+
+            // Attempting to push beyond the capacity will throw a StackOverflowError
+            try {
+                stack.push(6);
+            } catch (StackOverflowError e) {
+                System.out.println("Stack is full!");
+            }
+
+            while (!stack.isEmpty()) {
+                System.out.println(stack.pop());
+            }
+
+            // Attempting to pop or peek an empty stack will throw an EmptyStackException
+            try {
+                stack.peek();
+            } catch (EmptyStackException e) {
+                System.out.println("Stack is empty!");
+            }
