@@ -11,7 +11,7 @@ public class Exercise_5<T> {
         //to the example with plates in the Wikipedia. Capacity - the amount of integers, user will be able to add
         this.data = (T[]) new Object[capacity];
         this.top = -1;
-        this.capacity = capacity;
+        this.capacity = capacity; 
     }
 
     public void push(T value) {
