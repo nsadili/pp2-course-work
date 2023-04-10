@@ -3,7 +3,7 @@ package generics;
 public class GenericNumericFunction<T> {
     public static void main(String[] args) {
 
-        Numeric<Double> num = new Numeric<>(2.5);
+        Numeric<Double> num = new Numeric<Double>(2.5);
         Numeric<Integer> num2 = new Numeric<Integer>(0);
 
         try {
