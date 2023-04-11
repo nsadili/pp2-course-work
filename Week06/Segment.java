@@ -17,6 +17,8 @@ public class Segment {
     public Segment(float x1, float y1, float x2, float y2) {
         this(new Point(x1, y1), new Point(x2, y2));
     }
+    
+    
 
     public Point getP1() {
         return p1;

@@ -1,5 +1,4 @@
 package Week05.rectangle;
-import week05.rectangle;
 public class main {
     public static void main(String [] args){
         Rectangle r1 = new Rectangle(5, 10);

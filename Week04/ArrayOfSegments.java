@@ -1,4 +1,4 @@
-package week04;
+package Week04;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,15 +22,7 @@ public class ArrayOfSegments {
         segmentsList.add(new segments(6, 4,  8,  5));
         segmentsList.add(new segments(11, 8, 33, 9));
         segmentsList.add(new segments(9, 43, 5, 23));
-        /*List<segments> segmentsList = new ArrayList<>();
-        int numSegments = scanner.nextInt();
-        for (int i = 0; i < numSegments; i++) {
-            float x1 = scanner.nextFloat();
-            float y1 = scanner.nextFloat();
-            float x2 = scanner.nextFloat();
-            float y2 = scanner.nextFloat();
-            segmentsList.add(new segments(x1, y1, x2, y2));
-        } */ // u can use it for adding all the input from the teminal with the help of the scanner._.
+
         segments blank = segmentsList.get(0);
         for (int i = 1; i < segmentsList.size() ; i++ ){
         if (blank == null || distance(segmentsList.get(i)) < distance(blank) ){

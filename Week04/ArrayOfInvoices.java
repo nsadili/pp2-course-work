@@ -1,10 +1,8 @@
+package Week04;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.Scanner;
 
-package pp2.week03.invoice;
-package Week04;
-import pp2.week03.InvoiceTest;
 
 public class ArrayOfInvoices {
     public static void main  (String[] args ){

@@ -2,9 +2,7 @@ package Week06;
 
 import java.util.Objects;
 
-/**
- * @author Nuraddin Sh. Sadili
- */
+
 public abstract class Point implements Cloneable, Movable {
     private float x;
     private float y;
@@ -49,10 +47,9 @@ public abstract class Point implements Cloneable, Movable {
     }
 
     public String toString() {
-        // TODO
-        Point p = new Point();
-        return "x: "+ p.x + " y: " + p.y;
+        return "x: " + this.x + " y: " + this.y;
     }
+    
 
     public Object clone() throws CloneNotSupportedException {
         return super.clone();
@@ -78,7 +75,3 @@ public abstract class Point implements Cloneable, Movable {
     
 }
 
-// What if the another class extends Point
-// Will it have the same behavior of equals() and toString() as Point?
-// TODO: define a class, extending Point. Test of it implicitly has those
-// methods?

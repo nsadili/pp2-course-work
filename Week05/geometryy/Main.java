@@ -1,6 +1,6 @@
 package Week05.geometryy;
-import  week05.geometryy.Account;
-import  week05.geometryy.Costumer;
+import  Week05.geometryy.Account;
+import  Week05.geometryy.Costumer;
 public class Main {
     public static void main(String[] args) {
         Customer customer = new Customer(18008,  "Ismayil Ismayilov", 10);

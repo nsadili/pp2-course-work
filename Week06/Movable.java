@@ -1,4 +1,4 @@
-package Week6;
+package Week06;
 
 public interface Movable {
     Movable moveUp();

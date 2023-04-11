@@ -1,4 +1,4 @@
-package pp2.Week03.geometry;
+package Week03.geometry;
 
 public class Point {
     public float x;

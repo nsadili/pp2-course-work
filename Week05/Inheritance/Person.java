@@ -10,8 +10,6 @@ class Person {
     public Person(String firstName, String lastName, String gender2){
     }
     
-    //public Person(String firstName2, String lastName2, char[] gender2, String department, List<String> courses) {
-    //}
 
     public String getFirstName() {
         return firstName;

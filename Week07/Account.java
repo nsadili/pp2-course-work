@@ -1,7 +1,5 @@
 package Week07;
 
-public package Week0CustomUserGeneration7;
-
 public class Account {
     
     int id;
@@ -42,6 +40,4 @@ public class Account {
          // automatically turns to string 
     }
 
-}class Account {
-    
 }

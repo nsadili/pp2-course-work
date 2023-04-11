@@ -3,9 +3,9 @@ package Week05.Inheritance;
 import java.util.ArrayList;
 import java.util.List;
 
-import week5.Inheritance.Person.PhdStudent;
-import week5.Inheritance.Person.Student;
-import week5.Inheritance.Person.Teacher;
+import Week05.Inheritance.Person.PhdStudent;
+import Week05.Inheritance.Person.Student;
+import Week05.Inheritance.Person.Teacher;
 
 public class Main {
     public static void main(String[] args) {
