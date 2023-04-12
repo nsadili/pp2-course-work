@@ -21,5 +21,10 @@ public class StringFunc {
         Collections.sort(lst, Comparator.comparingInt(String::length).reversed());
         System.out.println(lst);
 
+        int x; // delete it
+        // lst.sort((str1,str2) -> str1.length().compareTo(str2.length()));
+        // how TODO IT ???
+
+
     }
 }

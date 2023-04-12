@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class AccountFunc {
@@ -15,5 +16,19 @@ public class AccountFunc {
         // Comparator.comparingDouble(Double::Account.getBalance()));
         // how TODO sorting based on balance ???
 
+        // lst.sort(new Comparator<Account>() {
+
+        // @Override
+        // public int compare(Account o1, Account o2) {
+        // return o1.balance.compareTo(o2.balance);
+        // };
+
+        // });
+
+        lst.sort((a1, a2) -> a1.balance.compareTo(a2.balance));
+        System.out.println(lst);
+        // if (a1.balance == a2.balance) {
+        // how TODO IT ???
+        // }
     }
 }

@@ -6,7 +6,6 @@ public class Ex {
 
     public interface Comparator<T> {
        public int compare(T o1, T o2);
-
        public boolean equals(Object obj);
     }
 
