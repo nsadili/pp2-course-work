@@ -12,8 +12,8 @@ public class Main {
         AFuncInt lam = str -> System.out.println("Lambda: "+str);
         lam.apply("Hello World");
 
-        // AFuncInt.print("Hello world.");
-        // af.print("Good", "Morning");
-        // af.apply("Rufat Hajizada");
+        AFuncInt.print("Hello world.");
+        af.print("Good", "Morning");
+        af.apply("Rufat Hajizada");
     }
 }
