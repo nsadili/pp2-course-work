@@ -1,55 +1,74 @@
 package Week08.ex;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
 
-public class ListOfAccounts {
-    private String name;
-    private String surname;
+class Main {
+    public static void main(String[] args) {
+        List<Account> accounts = new ArrayList<>();
+        accounts.add(new Account("Ali", "Aliyev", 300.5));
+        accounts.add(new Account("Ali", "Eyvazov", 345.2));
+        accounts.add(new Account("Zakir", "Gurbanov", 0));
+        accounts.add(new Account("Nabi", "Safiyev", 20.2));
+
+        System.out.println("Accounts before sorting:");
+        for (Account account : accounts) {
+            System.out.println(account.toString());
+        }
+
+        Collections.sort(accounts);
+        System.out.println("\nSorting based on fullname:");
+        for (Account account: accounts) {
+            System.out.println(account.toString());
+        }
+
+        Collections.sort(accounts, new BalanceComparator());
+        System.out.println("\nSorting based on both fullname and balance:");
+        for (Account account: accounts) {
+            System.out.println(account.toString());
+        }
+    }
+}
+
+class Account implements Comparable<Account> {
+    private String firstname;
+    private String lastname;
     private double balance;
 
-    public ListOfAccounts(String name, String surname, double balance) {
-        this.name = name;
-        this.surname = surname;
+    public Account(String firstname, String lastname, double balance) {
+        this.firstname = firstname;
+        this.lastname = lastname;
         this.balance = balance;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getSurname() {
-        return surname;
+    @Override
+    public String toString() {
+        return "Account{" +
+                "firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", balance=" + balance +
+                '}';
     }
 
     public double getBalance() {
-        return balance;
+        return this.balance;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getFullName() {
+        return firstname + " " + lastname;
     }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-    public void setBalance(double balance) {
-        this.balance = balance;
-    }
-
-    public String toString(){
-        return "Customer: "+name+" "+surname+"\nBalance: "+balance+"\n";
-    }
-
-class AccountComparator implements Comparator <ListOfAccounts> {
 
     @Override
-    public int compare(ListOfAccounts account1, ListOfAccounts account2) {
-        if(account1.getName() + " " + account1.getSurname().compareTo(account2.getName()+account2.getSurname() > 0)) return 1;
+    public int compareTo(Account o) {
+        return this.getFullName().compareTo(o.getFullName());
     }
-    return -1;
-
-
-    
 }
+
+class BalanceComparator implements Comparator<Account> {
+    @Override
+    public int compare(Account o1, Account o2) {
+        return Double.compare(o1.getBalance(), o2.getBalance());
+    }
 }
