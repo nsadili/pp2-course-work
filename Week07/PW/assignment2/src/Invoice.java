@@ -55,14 +55,13 @@ public class Invoice {
 
     public static void main(String[] args) {
         try {
-            Invoice invoice = new Invoice("1234", "Widget", 5, 9.99);
+            Invoice invoice = new Invoice("3268", "Knife", 8, 40);
             System.out.println("Part number: " + invoice.getPartNumber());
             System.out.println("Part description: " + invoice.getPartDescription());
             System.out.println("Quantity: " + invoice.getQuantity());
             System.out.println("Price per item: " + invoice.getPricePerItem());
             System.out.println("Total amount: " + invoice.getInvoiceAmount());
-            
-            // Handle negative quantity and price per item in the main method
+
             invoice.setQuantity(-5);
             invoice.setPricePerItem(-9.99);
         } catch (IllegalArgumentException e) {

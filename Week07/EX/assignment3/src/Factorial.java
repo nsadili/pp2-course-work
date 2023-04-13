@@ -12,7 +12,7 @@ public class Factorial {
     }
 
     public static void main(String[] args) {
-        int n = -5; // enter any value here to test
+        int n = 5;
 
         int result;
         try {

@@ -6,17 +6,17 @@ public class ParseNumbers {
         System.out.print("Enter a sequence of numbers (separated by spaces): ");
         String input = scanner.nextLine();
 
-        String[] numbers = input.split("\\s+"); // split input string into an array of strings
+        String[] numbers = input.split("\\s+");
         int sum = 0;
         boolean hasValidInput = false;
 
         for (String number : numbers) {
             try {
-                int n = Integer.parseInt(number); // parse string to int
+                int n = Integer.parseInt(number);
                 sum += n;
                 hasValidInput = true;
             } catch (NumberFormatException e) {
-                // ignore non-number input
+
             }
         }
 

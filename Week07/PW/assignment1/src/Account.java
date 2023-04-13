@@ -31,10 +31,10 @@ public class Account {
 
     public static void main(String[] args) {
         try {
-            Account account = new Account(1000);
+            Account account = new Account(3500);
             System.out.println("Initial balance: " + account.getBalance());
 
-            account.withdraw(500);
+            account.withdraw(1500);
             System.out.println("Balance after withdrawal: " + account.getBalance());
 
             account.withdraw(1500);
