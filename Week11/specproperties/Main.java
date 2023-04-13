@@ -1,8 +1,10 @@
 package specproperties;
 import java.io.FileReader;
-import java.security.Policy;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Predicate;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 
 public class Main {
@@ -61,6 +63,7 @@ public class Main {
 
        System.out.println(Utility.count(words,panagram));
        System.out.println(Utility.filter(words,panagram));
+       System.out.println(words.stream().filter(panagram)).collect(Collectors.toList());
 
 
 
