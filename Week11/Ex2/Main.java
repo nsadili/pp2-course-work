@@ -18,7 +18,7 @@ public class Main {
 
         SpecificProperty<String> stringSpec = str -> {
             List<Character> chars = new ArrayList<>(
-                    Arrays.asList('a', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
+                    Arrays.asList('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
                             'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'));
             char[] strChar = str.toLowerCase().toCharArray();
             for (char ch : strChar) {
@@ -58,7 +58,7 @@ public class Main {
 
         ArrayList<String> arr2 = new ArrayList<>(
                 Arrays.asList("rufat", "The quick brown fox jumps over a lazy dog.",
-                        "calculus", "Madam pack my box with five dozen liquor jugs.", "repaper", "madam"));
+                        "calculus", "Pack my box with five dozen liquor jugs.", "repaper", "madam"));
         System.out.println(filter(arr2, stringSpec));
 
         ArrayList<Person> arr3 = new ArrayList<>();
