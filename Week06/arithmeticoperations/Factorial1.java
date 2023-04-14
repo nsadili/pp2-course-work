@@ -18,5 +18,12 @@ public class Factorial1 extends UnaryOperation{
         return fact;
     }
 
+    @Override
+    public String toString() {
+        
+        return String.format("%.2f!", op1.toValue());
+
+    }
+
    
 }

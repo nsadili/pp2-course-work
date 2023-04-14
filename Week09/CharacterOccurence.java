@@ -6,8 +6,8 @@ import java.util.TreeMap;
 
 public class CharacterOccurence {
     public static void main(String[] args) {
-        String test = args[0].toLowerCase();
-        
+        String test = String.join(" ", args);
+        test= test.toLowerCase();        
         
             
       //  Map<Character, List<Integer>> occurence = new TreeMap<>();  // non-descending order
@@ -34,7 +34,7 @@ public class CharacterOccurence {
              
             }
 
-        }
+        }   
 
         for(var key: occurence.keySet()){
             System.out.println(key + ": " + occurence.get(key));

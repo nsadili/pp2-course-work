@@ -2,7 +2,7 @@ package arithmeticoperations;
 
 public abstract class UnaryOperation implements EvalInterface {
 
-    private EvalInterface op1;
+    protected EvalInterface op1;
     private String label;  // factorial or square root
 
     public UnaryOperation(EvalInterface op1, String label){
@@ -17,12 +17,7 @@ public abstract class UnaryOperation implements EvalInterface {
         return calculate(op1);
     }
 
-    @Override
-    public String toString() {
-        
-        return "(" + op1.toString() + " " + label + ")";
-     
-    }
+    
 
     
     

@@ -1,8 +1,6 @@
 package specproperties;
-
 import java.util.Arrays;
 import java.util.List;
-
 import generics.Account;
 
 public class Main {

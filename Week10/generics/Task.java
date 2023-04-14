@@ -1,4 +1,5 @@
 
+package generics;
 
 public class Task implements Comparable<Task> {
     private String name;
