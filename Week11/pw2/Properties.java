@@ -1,4 +1,4 @@
-package pw11;
+package pw2;
 
 public class Properties {
     SpecificProperty<Integer> isOdd = (num) -> num % 2 != 0;
