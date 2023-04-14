@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class HW2_IntegerDescender {
+public class IntegerDescender {
     public static void main(String[] args) {
         List<Integer> numbers = new ArrayList<>();
 

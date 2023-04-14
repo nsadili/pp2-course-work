@@ -1,22 +1,17 @@
 package Week11;
 
-
+import java.util.Scanner;
 public class HW1_Reverse {
+
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
         ReverseStr rv = (String s) -> new StringBuilder(s).reverse().toString();
 
-        String reversedStr = rv.reverse("first");
+        String reversedStr = rv.reverse(str);
         System.out.println(reversedStr);
 
-        DigitCounter dc = (int n) -> {
-            int cnt = 0;
-            while(n>0){
-                n /= 10;
-                cnt++;
-            }
-            return cnt;
-        };
-        System.out.println(dc.count(555));
+        
     }
 }
 
@@ -26,7 +21,3 @@ interface ReverseStr {
 }
 
 
-@FunctionalInterface
-interface DigitCounter{
-    int count(int num);
-}
