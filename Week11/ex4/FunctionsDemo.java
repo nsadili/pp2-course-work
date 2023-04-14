@@ -1,6 +1,8 @@
+import java.util.Random;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.function.Supplier;
 
 public class FunctionsDemo{
     public static void main(String[] args) {
@@ -17,6 +19,18 @@ public class FunctionsDemo{
         System.out.println("LENGTH: "+ length.apply(null));
 
         System.out.println("PREDICATE");
-        Predicate<Intege> isOdd = n-> n%2 !=0;
+        Predicate<Integer> isOdd = n-> n%2 !=0;
+        // System.out.println(isOdd.(10));
+
+
+        Supplier<Integer> rand = () -> new Random().nextInt(10)+1;
+        double avg=0;
+        for(int i=0;i<1000;i++){
+            avg+=rand.get();
+            System.out.println(avg);
+        }
+
+        avg/=1000;
+        System.out.println(avg);
     }
 }

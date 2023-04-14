@@ -32,7 +32,7 @@ class Employee{
 
 public class MethodReference {
     public static int compareBySalary(Employee a, Employee b) {
-        return a.getSalary() - b.getSalary();
+        return  a.getSalary() - b.getSalary();
     }
     public static int compareByAge(Employee a, Employee b) {
         return a.getAge() - b.getAge();
@@ -53,10 +53,6 @@ public class MethodReference {
 
         list.sort(MethodReference::compareByAge);
         System.out.println("SORTED 3: " + Arrays.asList(list));
-
-
-
-
     }
 }
 class compareEmployeeAge implements Comparator<Employee> {
