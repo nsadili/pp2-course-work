@@ -87,7 +87,7 @@ public class Main {
         Optional<String> firstApple = findApple.stream().filter(w -> w.equals("apple")).findFirst();
         System.out.println(firstApple.orElse("no such element"));
 
-        // System.out.println();
+        System.out.println();
 
 
     }
