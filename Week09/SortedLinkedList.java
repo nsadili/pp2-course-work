@@ -12,12 +12,13 @@ public class SortedLinkedList {
 
          sortLater();
          insertSort();
+         System.out.println(System.currentTimeMillis());
 
     }
 
     static void insertSort() {
 
-        var startTime = System.nanoTime();
+        var startTime = System.currentTimeMillis();
 
         LinkedList<Integer> list = new LinkedList<>();
 
@@ -37,16 +38,16 @@ public class SortedLinkedList {
            
         }
 
-        var end= System.nanoTime();
+        var end= System.currentTimeMillis();
         System.out.println("Time for insertsort: " + (end- startTime));
         System.out.println(list);
 
-
+        
 
     }
 
     static void sortLater() {
-        var startTime = System.nanoTime();
+        var startTime = System.currentTimeMillis();
 
         LinkedList<Integer> list = new LinkedList<>();
 
@@ -59,7 +60,7 @@ public class SortedLinkedList {
        // System.out.println(list);
         Collections.sort(list);
 
-        var endTime = System.nanoTime();
+        var endTime = System.currentTimeMillis();
 
         System.out.println("Time for sortLater: " + (endTime- startTime));
         System.out.println(list);

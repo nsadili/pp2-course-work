@@ -1,4 +1,5 @@
 
+package generics;
 
 public class Point {
     private float x;

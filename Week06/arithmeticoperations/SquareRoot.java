@@ -13,5 +13,10 @@ public class SquareRoot extends UnaryOperation {
 
        return Math.sqrt(op1.toValue());
     }
+
+    @Override
+    public String toString() {
+        return String.format("sqrt(%.2f)", op1.toValue());
+    }
     
 }

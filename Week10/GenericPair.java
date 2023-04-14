@@ -43,6 +43,10 @@ public class GenericPair<K, V> {
 
         GenericPair<Double, Character> gp2= new GenericPair<>(3.4,'a');
         System.out.println(gp2);
+        gp2.setPair2('@');
+        System.out.println(gp2.toString());
 
+       
+   
     }
 }

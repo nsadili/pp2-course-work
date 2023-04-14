@@ -28,7 +28,7 @@ public class TestArithmeticOperations {
         Subtr s1=new Subtr(a,x);
         System.out.println(s1.toString());
         System.out.println(s1.toValue());
-
+// 
         SquareRoot ss= new SquareRoot(x, "sqrt");
         System.out.println(ss.toValue());
         System.out.println(ss);
@@ -36,6 +36,7 @@ public class TestArithmeticOperations {
         Factorial1 f = new Factorial1(x, "fact");
         System.out.println(f.toValue());
         System.out.println(f);
+        
 
 
 
