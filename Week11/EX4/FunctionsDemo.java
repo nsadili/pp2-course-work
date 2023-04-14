@@ -34,7 +34,10 @@ public class FunctionsDemo {
 
         // supplier
         Supplier<Integer> randomNumber = () -> (int) (Math.random() * 100) + 1;
-
-        System.out.println("Random number: " + randomNumber.get());
+        double avg = 0;
+        
+        for (int i = 0; i < 1000; i++) avg += randomNumber.get();
+        avg = avg / 1000;
+        System.out.println(avg);
     }
 }

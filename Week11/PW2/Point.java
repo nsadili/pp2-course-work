@@ -1,4 +1,4 @@
-package PW4;
+package PW2;
 
 public class Point {
     private float x;

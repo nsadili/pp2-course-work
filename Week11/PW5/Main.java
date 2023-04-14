@@ -1,17 +1,30 @@
 package PW5;
+import java.util.Arrays;
+import java.util.Comparator;
 
 public class Main {
     public static void main(String[] args) {
-        Calculator add = (a, b) -> a + b;
-        Calculator sub = (a, b) -> a - b;
-        Calculator mult = (a, b) -> a * b;
-        Calculator div = (a, b) -> a / b;
-        Calculator pow = (a, b) -> Math.pow(a, b);
+        Employee[] employees = {new Employee("Leyla", 18, 2000),
+                                new Employee("Elvin", 17, 2000),
+                                new Employee("Aysel", 30, 2500)};
 
-        System.out.println(add.calculate(4, 4));
-        System.out.println(sub.calculate(3, 1));
-        System.out.println(mult.calculate(2, 3));
-        System.out.println(div.calculate(4, 4));
-        System.out.println(pow.calculate(4, 2));
+        
+        // print(employees);
+        // System.out.println();
+        // Arrays.sort(employees, (e1, e2) -> e1.getFirstName().compareTo(e2.getFirstName()));
+        // Arrays.sort(employees, (e1, e2) -> e1.getAge().compareTo(e2.getAge()));
+        // Arrays.sort(employees, (e1, e2) -> e1.getSalary().compareTo(e2.getSalary()));
+        // print(employees);
+
+        print(employees);
+        System.out.println();
+        Arrays.sort(employees, Comparator.comparing(Employee::getFirstName));
+        // Arrays.sort(employees, Comparator.comparing(Employee::getAge));
+        // Arrays.sort(employees, Comparator.comparing(Employee::getSalary));
+        print(employees);
+    }
+
+    public static void print(Employee[] employees){
+        for (Employee e: employees) System.out.println(e);
     }
 }
