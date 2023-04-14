@@ -70,11 +70,14 @@ public class Main {
         System.out.println("Printing  Hr department salary < 1000");
         employeDEpartment.forEach(System.out::print);
 
-        employee.removeIf( e -> e.getDepartment().equals("HR") && e.getSalary() <
-        1000);
-        System.out.println(employee);
+        // employee.removeIf( e -> e.getDepartment().equals("HR") && e.getSalary() <
+        // 1000);
+        System.out.println();
+        // System.out.println(employee);
 
         employee.removeAll(employeDEpartment);
+        System.out.println(employee);
+
 
         List<Integer> findMax = Arrays.asList(1, 2, 3, 4, 5, 65, 34, 56, 98);
 
@@ -86,8 +89,15 @@ public class Main {
 
         Optional<String> firstApple = findApple.stream().filter(w -> w.equals("apple")).findFirst();
         System.out.println(firstApple.orElse("no such element"));
+        
 
-       
+      var mapOfPerson= person.stream().collect(Collectors.toMap(name -> name.getName(), name -> name));
+
+      System.out.println("Printing map of person");
+        for(var x: mapOfPerson.entrySet()){
+                System.out.println(x.getKey() + ": "+ x.getValue());
+                
+        }        
 
 
     }
