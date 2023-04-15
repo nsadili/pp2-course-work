@@ -1,33 +1,26 @@
-package Week11.Ex1;
+package Ex3;
 
 public class Main {
-    
     public static void main(String[] args) {
-
-        AFuncInt f = new AFuncInt() {
-            
-            public void apply(String str){
-                System.out.println("Anonymous -> " + str);
-
+        Calculator addition = (a, b) -> a + b;
+        Calculator subtraction = (a, b) -> a - b;
+        Calculator multiplication = (a, b) -> a * b;
+        Calculator division = (a, b) -> {
+            if (b == 0) {
+                throw new ArithmeticException("Division by zero is not allowed.");
             }
-
-            public void print(String str1, String str2){
-                System.out.println("OVERRIDDEN -> " + str1 + " <==> " + str2);
-
-            }
+            return a / b;
         };
+        Calculator exponentiation = (a, b) -> Math.pow(a, b);
 
-        AFuncInt lambda = (str) -> System.out.println("Lambda -> " + str);
-
-        AFuncInt.print("Hello");
-        f.print("Hello", "World");
-        f.apply("Nuraddin");
-
-        System.out.println("========================");
-
-        lambda.print("Hello", "World");
-        lambda.apply("Nuraddin");
-        
-
+        double a = 5;
+        double b = 2;
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+        System.out.println("a + b = " + addition.calculate(a, b));
+        System.out.println("a - b = " + subtraction.calculate(a, b));
+        System.out.println("a * b = " + multiplication.calculate(a, b));
+        System.out.println("a / b = " + division.calculate(a, b));
+        System.out.println("a ^ b = " + exponentiation.calculate(a, b));
     }
 }
