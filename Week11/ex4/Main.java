@@ -7,6 +7,7 @@ import java.util.function.Predicate;
 import java.util.function.Supplier;
 
 public class Main {
+    static Random randomlyGenerated=new Random();
     public static void main(String[] args) {
         Consumer<String> c1 = str -> System.out.println("Consumed: " + str);
         Consumer<String> c2 = str -> {
@@ -33,7 +34,7 @@ public class Main {
         // System.out.println(evenLambda.test(13));
         // System.out.println(validWordLambda.test("Programming"));
         // System.out.println(validWordLambda.test(null));
-        Supplier <Integer> randomIntSupplier = ()->new Random().nextInt(10)+1;
+        Supplier <Integer> randomIntSupplier = ()->randomlyGenerated.nextInt(10)+1;
         for(int i=0;i<10;i++){
             System.out.println(randomIntSupplier.get());
         }
