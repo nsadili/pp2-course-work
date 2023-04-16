@@ -16,11 +16,11 @@ public class Main {
 
         AFuncInt.print("hello");
         f.print("Hello" , "World");
-        f.apply("Shamil");
+        f.apply("Nijat");
         System.out.println("---------");
 
         lambda.print("Hello" , "World");
-        lambda.apply("Shamil");
+        lambda.apply("Nijat");
 
     }
 }
