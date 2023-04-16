@@ -24,7 +24,7 @@ public class CacheFrequency {
 		char mostFreqChar = '\0';
 		int mostFreqCount = 0;
 		char leastFreqChar = '\0';
-		int leastFreqCount = Integer.MAX_VALUE;
+		int leastFreqCount = Integer.MAX_VALUE;	
 
 		for (Map.Entry<Character, Integer> entry : freqMap.entrySet()) {
 			char c = entry.getKey();
