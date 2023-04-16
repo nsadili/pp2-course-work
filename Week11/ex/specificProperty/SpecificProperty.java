@@ -1,5 +1,4 @@
 package specificProperty;
-
 import java.util.Arrays;
 import java.util.List;
 
@@ -7,9 +6,7 @@ public interface SpecificProperty<T> {
     boolean check(T obj);
 
     SpecificProperty<Integer> spInt = (obj) -> (obj % 2) != 0;
-
     SpecificProperty<Point> spPoint = (p) -> (p.getX() > 0 && p.getY() > 0);
-
     SpecificProperty<String> spPan = (str) -> {
 
         boolean[] mark = new boolean[26];
@@ -61,23 +58,32 @@ public interface SpecificProperty<T> {
         System.out.println(spPan.check("The quick brown fox jumps over the lazy dog"));
         System.out.println(spPan.check("The quick brown fox jumps over the lazy cat"));
 
-
-        System.out.println(spPer.check(new Person("Laman", "Panakhova", 18)));
-        System.out.println(spPer.check(new Person("Narmin", "Karimli", 23)));
+        System.out.println(spPer.check(new Person("Laman", 
+        "Panakhova", 18)));
+        System.out.println(spPer.check(new Person("Narmin", 
+        "Karimli", 23)));
 
         List<Integer> numbers = Arrays.asList(4, 2, 5, 6, 8, 3, 7, 9);
         System.out.println(Utility.count(numbers, spInt));
         System.out.println(Utility.filter(numbers, spInt));
 
-        List<Point> points = Arrays.asList(new Point(2, 3), new Point(-2, 5), new Point(5, 8), new Point(-8, 9), new Point(9, 7));
+        List<Point> points = Arrays.asList(new Point(2, 3),
+                new Point(-2, 5), new Point(5, 8),
+                new Point(-8, 9), new Point(9, 7));
         System.out.println(Utility.count(points, spPoint));
         System.out.println(Utility.filter(points, spPoint));
-        
-        List <String> strings = Arrays.asList("The quick brown fox jumps over the lazy dog", "The quick brown fox jumps over the lazy dog", "The quick brown fox jumps over the lazy cat", "The quick brown fox jumps over the lazy dog");
+
+        List<String> strings = Arrays.asList("The quick brown fox jumps over the lazy dog",
+                "The quick brown fox jumps over the lazy dog",
+                "The quick brown fox jumps over the lazy cat", "The quick brown fox jumps over the lazy dog");
         System.out.println(Utility.count(strings, spPan));
         System.out.println(Utility.filter(strings, spPan));
 
-        List<Person> people = Arrays.asList(new Person("Laman", "Panakhova", 18), new Person("Nazrin", "Panakhova", 25), new Person("Rasul", "Panakhov", 30));
+        List<Person> people = Arrays.asList(new Person("Laman",
+                "Panakhova", 18),
+                new Person("Nazrin",
+                        "Panakhova", 25),
+                new Person("Rasul", "Panakhov", 30));
         System.out.println(Utility.count(people, spPer));
         System.out.println(Utility.filter(people, spPer));
 
