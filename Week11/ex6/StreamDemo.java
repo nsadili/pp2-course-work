@@ -11,7 +11,8 @@ import java.util.Set;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-import pw1.SpecificProperty;
+
+import pw2.SpecificProperty;
 
 public class StreamDemo {
     public static void main(String[] args) {
@@ -44,6 +45,7 @@ public class StreamDemo {
         // ageStream.filter(age -> age % 2 == 0).filter(age -> age > 3).forEach(System.out::println);
         Set<Integer> result=ageStream.filter(num->num%2==0).map(num->num+1).collect(Collectors.toSet());
         System.out.println(result);
+     
     }
 
 }

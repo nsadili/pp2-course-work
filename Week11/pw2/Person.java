@@ -1,4 +1,4 @@
-package pw1;
+package pw2;
 public class Person {
     String firstname;
     String lastname;
