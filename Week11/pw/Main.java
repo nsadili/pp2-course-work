@@ -10,7 +10,7 @@ public class Main {
     }
 
     static class Utility {
-        public static <T> int count(List<Integer> numbers, Main.SpecificProperty<Integer> isOdd) {
+        public static <T> int count(List<Integer> numbers, SpecificProperty.SpecificProperty<Integer> isOdd) {
             int count = 0;
             for (Integer t : numbers) {
                 if (isOdd.test(t)) {
