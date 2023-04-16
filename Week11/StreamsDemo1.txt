@@ -16,7 +16,7 @@ public class StreamsDemo1 {
 
     public static void main(String[] args) {
 
-        String[] names = { "Shamil", "Vusal", "Leyla", "Elvin", "Vuqar" };
+        String[] names = { "Nijat", "Bahadur", "Sebi", "Telman", "Salman" };
 
         Stream<String> namesStream = Arrays.stream(names);
 
