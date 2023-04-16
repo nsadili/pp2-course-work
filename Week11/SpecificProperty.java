@@ -1,6 +1,9 @@
 package Week11;
 
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
 public class SpecificProperty {
     public static void main(String[] args) {
@@ -34,6 +37,19 @@ public class SpecificProperty {
         Person John = new Person("John Smith", 21);
         System.out.println(John.toString());
         System.out.println("John is older than 20: " + isOlderThan20.apply(John));
+
+        System.out.println();
+        // filter Method
+        System.out.println(filter(new ArrayList<>(List.of(1, 2, 3, 4)), parameter -> parameter % 2 == 0));
+    }
+
+    public static <T> Collection<T> filter(Collection<T> c, SpecificPropertyInterface<T> p) {
+        Collection<T> filtered = new ArrayList<>();
+        for (T element: c) {
+            if (p.apply(element))
+                filtered.add(element);
+        }
+        return filtered;
     }
 }
 
