@@ -23,11 +23,13 @@ public class Main {
         System.out.println("Is first quadrant: " + isFirstQuadrant.check(new Point(3, 4)));
         System.out.println("Is first quadrant: " + isFirstQuadrant.check(new Point(8, -9)));
         
-        SpecificProperty<String> isPanagram = str -> str.chars()
-                                                        .filter(Character::isLetter)
-                                                        .map(Character::toLowerCase)
-                                                        .distinct()
-                                                        .count() == 26;
+        SpecificProperty<String> isPanagram = str -> {
+            str = str.toLowerCase();
+            for(char c = 'a'; c <= 'z'; c++){
+                if(str.indexOf(c) == -1) return false;
+            }
+            return true;
+        };
         System.out.println("Is panagram: " + isPanagram.check("Sixty zippers were quickly picked from the woven jute bag."));
         System.out.println("Is panagram: " + isPanagram.check("Programming Principles.")); 
         
@@ -51,7 +53,7 @@ public class Main {
         Collection<Point> firstQuadrantPoints = filter(points, isFirstQuadrant);
         System.out.println(firstQuadrantPoints);
         
-        List<String> strings = List.of("The quick brown fox jumps over the lazy dog", "Hello world", "Pack my box with five dozen liquor jugs");
+        List<String> strings = List.of("The quick brown fox jumps over the lazy dog", "Programming Princples", "Sixty zippers were quickly picked from the woven jute bag.");
         Collection<String> panagrams = filter(strings, isPanagram);
         System.out.println(panagrams); 
         
