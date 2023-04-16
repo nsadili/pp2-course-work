@@ -18,10 +18,10 @@ public class Main {
                 System.out.println("------------");
                 filteredList.forEach(System.out::println);
                 System.out.println("-------------");
-                List<Person> person = Arrays.asList(new Person(31, "Shamil", "Baku"),
-                                new Person(21, "Ali", "Baku"),
-                                new Person(32, "Rufet", "La"),
-                                new Person(33, "Nariman", "Baku"));
+                List<Person> person = Arrays.asList(new Person(31, "Nijat", "Baku"),
+                                new Person(21, "Bahadur", "Baku"),
+                                new Person(32, "Telman", "La"),
+                                new Person(33, "Eli", "Baku"));
 
                 person.stream().filter(p -> p.getAge() > 30 && p.getCity().equalsIgnoreCase("baku"))
                                 .forEach(f -> System.out.println(f));
@@ -53,7 +53,7 @@ public class Main {
                 DoubleSupplier s = () -> 0.0;
                 System.out.println("Average of Double:" + average.orElseGet(s));
 
-                List<String> wordsStartwithA = Arrays.asList("Alibaba", "shamil", "joejong", "Abrakadabra", "april",
+                List<String> wordsStartwithA = Arrays.asList("Alibaba", "Nijat", "joejong", "Abrakadabra", "april",
                                 "August");
 
                 var wordstoUpper = wordsStartwithA.stream().filter(ss -> ss.startsWith("A")).map(ss -> ss.toUpperCase())
@@ -61,13 +61,13 @@ public class Main {
                 System.out.println("words start with A: " + wordstoUpper);
 
                 List<Employee> employee = new ArrayList<>(Arrays.asList(
-                                new Employee("Shamil", "IT", 5000.0),
-                                new Employee("Ali", "HR", 350.25),
-                                new Employee("Farid", "PR", 2500),
-                                new Employee("Rufet", "HR", 4500),
-                                new Employee("NAriman", "CS", 3600),
-                                new Employee("Gulshen", "HR", 1200),
-                                new Employee("Polad", "HR", 250.3)));
+                                new Employee("Nijat", "IT", 5000.0),
+                                new Employee("Bahadur", "HR", 350.25),
+                                new Employee("Telman", "PR", 2500),
+                                new Employee("Salman", "HR", 4500),
+                                new Employee("Eli", "CS", 3600),
+                                new Employee("Vusale", "HR", 1200),
+                                new Employee("Pervane", "HR", 250.3)));
 
                 var employeDEpartment = employee.stream()
                                 .filter(e -> e.getDepartment().equals("HR") && e.getSalary() < 1000)
