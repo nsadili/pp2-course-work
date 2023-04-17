@@ -1,8 +1,4 @@
-public interface Calculator {
-    double calculate(double a, double b);
-}
-
-public class Main {
+public class MainClassCalculator {
     public static void main(String[] args) {
         Calculator addition = (a,b) -> (a+b);
         Calculator subtraction =(a,b) ->  (a-b);
