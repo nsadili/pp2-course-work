@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main{
+public class Pw3{
     interface Calculator{
 
         int operation(int a, int b);
@@ -9,26 +9,11 @@ public class Main{
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         
-        int max;
-        int min;
 
         Calculator maximum = (int a, int b) -> (a>b) ? a : b;
 
         Calculator minimum = (int a, int b) -> (a<b) ? a : b;
         
-        
-
-        Calculator maxi = (int x, int y) ->{
-            if(x>y) max = x;
-            else max =y;
-            return max;
-        };
-        
-        Calculator mini = (int x, int y) ->{
-            if(x<y) min = x;
-            else min = y;
-            return min;
-        };
         
         Calculator add = (int x, int y) -> (x+y);
         Calculator mult = (int x, int y) -> (x*y);
