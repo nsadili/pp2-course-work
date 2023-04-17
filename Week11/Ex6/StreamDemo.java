@@ -24,19 +24,19 @@ public class StreamDemo {
             new Color(0, 0, 255));
         Stream<Color> colorsStream = colors.stream();
 
-        // System.out.println(namesStream.allMatch(s -> s.startsWith("V")));
-        // System.out.println(namesStream.anyMatch(s -> s.startsWith("V")));
-        // System.out.println(namesStream.noneMatch(s -> s.startsWith("V")));
+        System.out.println(namesStream.allMatch(s -> s.startsWith("V")));
+        System.out.println(namesStream.anyMatch(s -> s.startsWith("V")));
+        System.out.println(namesStream.noneMatch(s -> s.startsWith("V")));
 
-        // System.out.println(setStream.count());
+        System.out.println(setStream.count());
 
         Random randGenerator = new Random();
         Supplier<Integer> rand = ()->randGenerator.nextInt(10)+1;
         Stream<Integer> randomStream = Stream.generate(rand).limit(5);
-        // randomStream.forEach(System.out::println);
+        randomStream.forEach(System.out::println);
 
         Optional<Color> op = colorsStream.findAny();
-        // System.out.println(op.get()); 
+        System.out.println(op.get()); 
 
         // System.out.println(namesStream.findFirst());
 
