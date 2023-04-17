@@ -1,3 +1,4 @@
+
 public class GenericPairTest {
     public static void main(String[] args) {
         GenericPair<String, Integer> p1 = new GenericPair<String, Integer>("Nilufar", 18);
@@ -14,7 +15,7 @@ public class GenericPairTest {
         p1.setValue(25);
 
         p2.setKey("Ruslan");
-        
+
         p3.setKey(false);
 
             System.out.println(p1);
