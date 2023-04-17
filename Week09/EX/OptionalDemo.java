@@ -1,4 +1,4 @@
-package PW;
+package EX;
 
 import java.util.Optional;
 import java.util.StringTokenizer;
