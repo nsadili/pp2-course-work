@@ -42,8 +42,10 @@ public class Main {
         System.out.println(validWordLambda.test(null));
         System.out.println(validWordLambda.test("Programming"));
 
-        Supplier<Integer> randomINtSupplier = () -> new Random().nextInt(10) + 1;
+        final Random randGen = new Random();
+
+        Supplier<Integer> randomINtSupplier = () -> randGen.nextInt(10) + 1;
         for (int i = 0; i < 10; i++)
-            System.out.println(randomINtSupplier.get()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              );
+            System.out.println(randomINtSupplier.get());
     }
 }
