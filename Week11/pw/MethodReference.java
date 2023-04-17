@@ -33,7 +33,7 @@ class Employee{
 public class MethodReference {
     public static int compareBySalary(Employee a, Employee b) {
         return  a.getSalary() - b.getSalary();
-    }
+}
     public static int compareByAge(Employee a, Employee b) {
         return a.getAge() - b.getAge();
     }
