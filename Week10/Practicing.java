@@ -35,11 +35,7 @@ public class Practicing{
         arr.add(obj4);
         arr.add(obj5);
 
-        HashMap< String, Integer> hsmap = new HashMap<String, Integer>();
-        for (Test test : arr){
-            System.out.println(test.key+ ":"+ test.value);
-
-        }
+       
         
     }
 }
