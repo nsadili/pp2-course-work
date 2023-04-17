@@ -1,5 +1,6 @@
 package Week11.ex4;
 
+import java.util.Random;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -26,8 +27,20 @@ public class Main{
        Predicate<Integer> evenLambda=n->n%2==0;
        Predicate<String> validWordLambda=s-> s!=null && s.length()>3;
 
-       System.out.println(validWordLambda.test("hb"));
-       System.out.println(validWordLambda.test("sxdfcgvhbj"));
-       System.out.println(validWordLambda.test(null));
+       //System.out.println(validWordLambda.test("hb"));
+      // System.out.println(validWordLambda.test("sxdfcgvhbj"));
+       //System.out.println(validWordLambda.test(null));
+
+      static Random randomGenerator= new Random();
+       Supplier<Integer> randomIntSupplier=()-> Random().nextInt(10) + 1;
+
+        double avg;
+
+        for(int i=0; i<10;i++) 
+          avg+= randomIntSupplier.get();
+
+        avg=avg/100;
+      
     }
-}
+
+} 

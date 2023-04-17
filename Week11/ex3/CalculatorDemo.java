@@ -1,4 +1,4 @@
-package Week11.ex2;
+package Week11.ex3;
 
 public class CalculatorDemo {
     Calculator sum=(a,b)->a+b;

@@ -1,4 +1,4 @@
-package Week11.ex2;
+package Week11.ex3;
 
 public interface Calculator {
     double calculate(double a, double b);
