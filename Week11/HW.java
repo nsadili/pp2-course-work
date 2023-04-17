@@ -28,7 +28,7 @@ public class HW {
           return String.valueOf(n);
         };
         AnyFunc<Integer> digits = t -> {
-           int cnt;
+           int cnt=0;
             while (t > 0){
                 t/=10;
                 cnt++;
