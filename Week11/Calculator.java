@@ -13,7 +13,6 @@ public class Calculator {
         CalculatorFunction exponentiation = (a, b) -> Math.pow(a, b);
 
 
-
         System.out.println("Addition: " + addition.calculate(5, 10));
         System.out.println("Subtraction: " + subtraction.calculate(5, 10));
         System.out.println("Multiplication: " + multiplication.calculate(5, 10));
