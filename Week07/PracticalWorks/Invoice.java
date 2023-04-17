@@ -45,7 +45,7 @@ public class Invoice {
     }
 
     public void setPricePerItem(double pricePerItem) {
-        if (quantity < 0)
+        if (pricePerItem < 0)
             throw new IllegalArgumentException();
         this.pricePerItem = pricePerItem;
     }
