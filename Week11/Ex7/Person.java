@@ -37,7 +37,6 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person ["+name+", "+
-        city+", "+age+"]";
+        return "Person ["+name+", "+city+", "+age+"]";
     }
 }
