@@ -21,8 +21,6 @@ public class MainProp {
 
         System.out.println(b2.hasProp(p));
 
-        
-
 
         SpecificProperty<String> b3 = (s) -> {
             Set<Character> set = new HashSet();
