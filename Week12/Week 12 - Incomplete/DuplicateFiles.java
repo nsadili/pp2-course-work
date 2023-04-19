@@ -8,8 +8,8 @@ public class DuplicateFiles {
 
         long start, end;
 
-        File source = new File("Resources\\forCopy\\dump.txt");
-        File dest = new File("Resources\\forCopy\\copy-dump.txt");
+        File source = new File("Resources\\forCopy\\Martin Iden - Jack London.txt");
+        File dest = new File("Resources\\forCopy\\copy-Martin Iden - Jack London.txt");
 
         start = System.currentTimeMillis();
 
