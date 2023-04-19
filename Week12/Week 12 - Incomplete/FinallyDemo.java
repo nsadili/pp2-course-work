@@ -3,17 +3,21 @@ public class FinallyDemo {
         try {
             testFinally();
         } catch (Exception e) {
-            e.printStackTrace();
+            // e.printStackTrace();
+            System.out.println(e.getClass().getName());
         }
     }
 
     static void testFinally() throws Exception {
         try {
             throw new ExceptionDemo4();
-        } catch (ExceptionDemo1 e) {
+        } catch (ExceptionDemo4 e) {
             throw new ExceptionDemo2();
+            // System.out.println("In catch");
         } finally {
+            // System.out.println("finally");
             throw new ExceptionDemo3();
+           
         }
     }
 }
