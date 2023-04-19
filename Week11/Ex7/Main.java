@@ -86,7 +86,7 @@ public class Main {
         // TASK i
         List<String> fruits = Arrays.asList("banana", "orange", "apple pie", "kiwi", "apple juice");
         Stream<String> fruitsStream = fruits.stream();
-        fruitsStream.filter(str->str.contains("apple")).forEach(System.out::println);;
+        // fruitsStream.filter(str->str.contains("apple")).forEach(System.out::println);;
 
         // TASK j
         Map<String, Person> personMap =  persons.stream()
