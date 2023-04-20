@@ -23,5 +23,6 @@ public class SortList {
             }
         });
         System.out.println(names);
+        
     }
 }

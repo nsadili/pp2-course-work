@@ -69,7 +69,6 @@ public class Account implements Comparable<Account> {
             }
         };
         Collections.sort(accounts, balanceComparator);
-        System.out.println("\nSorted by balance using Comparator:");
         for (Account account : accounts) {
             System.out.println(account);
         }

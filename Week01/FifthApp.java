@@ -1,4 +1,3 @@
-package Week01;
 
 public class FifthApp {
     public static void main(String[] args){

@@ -1,5 +1,3 @@
-package Week06.Ex01;
-
 public class Point {
     private float x,y;
 

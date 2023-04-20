@@ -1,5 +1,5 @@
 import java.util.LinkedList;
-
+// Make this a generic stack
 public class Stack {
 
     private LinkedList<Integer> stack;

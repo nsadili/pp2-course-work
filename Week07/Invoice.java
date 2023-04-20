@@ -61,3 +61,13 @@ public class Invoice {
         return quantity * price;
     }
 }
+class InvoiceTest {
+    public static void main(String[] args) {
+        try {
+            Invoice a = new Invoice(null, null, 0, 0);
+            System.out.println(a.getInvoiceAmount());
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
