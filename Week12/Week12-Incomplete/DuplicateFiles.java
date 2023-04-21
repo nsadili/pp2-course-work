@@ -7,8 +7,8 @@ public class DuplicateFiles {
 
         long start, end;
 
-        File source = new File("Resources\\forCopy\\Martin Iden - Jack London.txt");
-        File dest = new File("Resources\\forCopy\\copy-Martin Iden - Jack London.txt");
+        File source = new File("Resources\\forCopy\\ADA Campus.jfif");
+        File dest = new File("Resources\\forCopy\\copy-ADA Campus.jfif");
 
         start = System.currentTimeMillis();
 
