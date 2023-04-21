@@ -1,0 +1,2 @@
+This is file 1 text.
+it is copied from the file1.txt

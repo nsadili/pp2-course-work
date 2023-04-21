@@ -29,7 +29,7 @@ public class DuplicateFiles {
             while ((len=fis.read(buffer))>0){
                 fos.write(buffer, 0, len);
             }
-            
+            fos.close();
         } catch (Exception e) {
             e.printStackTrace();
         }

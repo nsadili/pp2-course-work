@@ -1,0 +1,3 @@
+This is file 1 text.
+it is copied from the file1.txt
+it is copied from the file5.txt
