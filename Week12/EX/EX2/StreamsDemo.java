@@ -1,14 +1,13 @@
-package Incomplete;
+package EX.EX2;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class StreamsDemo {
     public static void main(String[] args) {
-        String path = "Incomplete/Resources/ex1/data1.dat";
-        @SuppressWarnings("unused")
+        String path = "/Users/macbook/pp2-course-work/Week12/EX/EX2/data1.dat";
         String data = "Programming Principles II with Java";
-        // writeData(path, data);
+        writeData(path, data);
         readData(path);
     }
 
