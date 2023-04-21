@@ -1,3 +1,0 @@
-This is a test input!
-
-Let us see if it works?
