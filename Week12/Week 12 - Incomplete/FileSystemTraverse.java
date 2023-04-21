@@ -10,32 +10,16 @@ public class FileSystemTraverse {
             return;
         }
 
-        String filePath = args[0]; // first argument from command line
-        // String filePath = "C:\\Users\\TUF DASH\\Documents\\PP2\\contest";
+         String filePath = args[0]; // first argument from command line
+        //   String filePath = "C:\\Users\\TUF DASH\\Documents\\PP2\\contest";
         // String filePath = "C:\\Users\\TUF DASH\\Documents\\PP2\\contest\\text.txt";
-        // String filePath = "C:\\Users\\TUF DASH\\Documents\\PP2\\contest\\qovluq1";
+        //   String filePath = "C:\\Users\\TUF DASH\\Documents\\PP2\\contest\\qovluq1";
         // String filePath = "C:\\Users\\TUF
         // DASH\\Documents\\PP2\\contest\\qovluq1\\file1inqovluq1.txt";
-        // String filePath = "Resources";
+        //  String filePath = "Resources";
 
         File rootFile = new File(filePath);
 
-        // if (!rootFile.exists()) {
-        //     System.out.println("Specified file/directory does not exist!");
-        //     System.out.println("To create specified File enter 1:");
-        //     Scanner sc = new Scanner(System.in);
-        //     var x = sc.nextInt();
-        //     if (x == 1) {
-        //         try {
-        //             rootFile.createNewFile();
-        //             System.out.println("Path is created");
-        //         } catch (IOException e) {
-        //             e.printStackTrace();
-        //         }
-        //     } else
-        //         return;
-
-        // }
 
         recPrint(rootFile);
 
@@ -50,19 +34,13 @@ public class FileSystemTraverse {
             System.out.println("Path is Directory -> " + rootPath.getName());
 
             String[] arr = rootPath.list();
+           File[] arr2 =  rootPath.listFiles();
             if (arr == null)
                 return;
             System.out.println("Information for sub-files of <" + rootPath.getName() + ">");
 
-            for (String path : arr) {
-                // System.out.println("printin path: " + path);
-                File newDir = new File(rootPath, path);
-
-                // System.out.print("Printing: "+newDir +" " + arr.length);
-                // System.out.println();
-                // System.out.println("Absolute path:" + newDir.getAbsolutePath());
-
-                recPrint(newDir);
+            for (File path : arr2) {
+                recPrint(path);
             }
             System.out.println("END of Directory <" + rootPath.getName() + ">");
 
@@ -77,14 +55,9 @@ public class FileSystemTraverse {
         // System.out.println("Name:" + path.getName());
         System.out.println("Absolute Path:" + path.getAbsolutePath());
         System.out.println("Parent folder:" + path.getParent());
+        System.out.println("Length:" + path.length());
 
-        // path.delete();
-
-        // var x= path.getParent();
-        // File parent = new File(x);
-        // System.out.println(path.list());
-        // var arr = parent.listFiles();
-        // Arrays.stream(arr).forEach((a) -> System.out.print(a.getName() + ", "));
+        
 
     }
 }
