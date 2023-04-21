@@ -1,4 +1,3 @@
-
 import java.io.*;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
@@ -12,11 +11,11 @@ class PoemPrinter {
         try (FileReader fr = new FileReader(new File(path), Charset.forName("UTF-8"));
                 BufferedReader br = new BufferedReader(fr);
                 
-                BufferedWriter bw = new BufferedWriter(new FileWriter("output.txt", StandardCharsets.UTF_8))) {
+                BufferedWriter bw = new BufferedWriter(new FileWriter("Resources/ex1/copyOfPoem-output.txt", StandardCharsets.UTF_8))) {
             String str = "";
             while ((str = br.readLine()) != null)
                 // System.out.println(str);
-                bw.write(str);
+                bw.write(str+"\n");
         } catch (IOException ex) {
             System.out.println("Reading a text file: " + ex);
         }
