@@ -9,12 +9,16 @@ public class FinallyDemo {
 
     static void testFinally() throws Exception {
         try {
-            throw new ExceptionDemo4();
-        } catch (ExceptionDemo1 e) {
+            // System.out.println("Checking-->try");
+            throw new ExceptionDemo4();// if try block throw ExceptionDemo4 that
+            // catch block should catch that type of exception
+        } catch (ExceptionDemo4 e) {
+            // System.out.println("Checking-->catch");
             throw new ExceptionDemo2();
         } finally {
+            // System.out.println("Checking-->finally");
             throw new ExceptionDemo3();
-        }
+        } // exception in finally overwrited exception catching process in catch block
     }
 }
 
