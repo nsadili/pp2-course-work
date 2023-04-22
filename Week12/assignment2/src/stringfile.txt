@@ -1,0 +1,1 @@
+This is a demo string for a Principles of Programming 2 class's exercise

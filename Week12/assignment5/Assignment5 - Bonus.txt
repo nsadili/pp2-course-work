@@ -1,0 +1,3 @@
+b. The performance of reading data from a file is improved by surrounding the FileReader object with a BufferedReader. The FileReader can read data in larger chunks by utilizing a BufferedReader, which lowers the quantity of system calls necessary to read the data.
+
+c. Wrapping one stream object inside another has the benefit of enhancing the speed at which data from the stream is read. The number of system calls necessary to read the data is decreased by utilizing a buffering approach, which allows the data to be read in larger chunks. When reading huge volumes of data from a stream, like when reading a file, this can significantly enhance performance.
