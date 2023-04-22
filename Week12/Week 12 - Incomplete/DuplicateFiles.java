@@ -1,3 +1,4 @@
+import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -31,12 +32,13 @@ public class DuplicateFiles {
         try (FileInputStream fis = new FileInputStream(source);
             FileOutputStream fos = new FileOutputStream(dest)
         ) {
-            byte[] buffer = new byte[8];
+            byte[] buffer = new byte[1024];
             int len;
             while((len = fis.read(buffer)) > 0){
                 fos.write(buffer, 0, len);
 
             }
+
 
 
         } catch (IOException e) {

@@ -3,7 +3,7 @@ public class FinallyDemo {
         try {
             testFinally();
         } catch (Exception e) {
-            // e.printStackTrace();
+            e.printStackTrace();
             System.out.println(e.getClass().getName());
         }
     }

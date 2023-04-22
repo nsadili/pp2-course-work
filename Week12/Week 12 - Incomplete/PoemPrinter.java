@@ -14,9 +14,14 @@ class PoemPrinter {
                 
                 BufferedWriter bw = new BufferedWriter(new FileWriter("output.txt", StandardCharsets.UTF_8))) {
             String str = "";
-            while ((str = br.readLine()) != null)
+            while ((str = br.readLine()) != null){
                 // System.out.println(str);
                 bw.write(str);
+                bw.write('\n');
+                // break;
+
+            }
+               
         } catch (IOException ex) {
             System.out.println("Reading a text file: " + ex);
         }
