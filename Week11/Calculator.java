@@ -6,7 +6,9 @@ public class Calculator {
         double calculate(double a, double b);
     }
     public static void main(String[] args) {
+
         Map<String, Calc> op = new HashMap<>();
+        
         op.put("addition", (a, b) -> a + b);
         op.put("subtraction", (a, b) -> a - b);
         op.put("multiplication", (a, b) -> a * b);
