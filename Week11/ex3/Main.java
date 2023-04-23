@@ -16,7 +16,6 @@ public class Main implements Calculator {
 
     @Override
     public double calculate(double a, double b) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'calculate'");
     }
     }
