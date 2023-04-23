@@ -9,17 +9,19 @@ class PoemPrinter {
     }
 
     static void readLines(String path) {
-        try (FileReader fr = new FileReader(new File(path), Charset.forName("UTF-8"));
+        File file = new File(path);
+        try (FileReader fr = new FileReader(file, Charset.forName("UTF-8"));
                 BufferedReader br = new BufferedReader(fr);
-                
-                BufferedWriter bw = new BufferedWriter(new FileWriter("output.txt", StandardCharsets.UTF_8))) {
+
+                BufferedWriter bw = new BufferedWriter(
+                        new FileWriter(new File(file.getParent(), "poem_copied.txt"), StandardCharsets.UTF_8))) {
             String str = "";
             while ((str = br.readLine()) != null)
-                // System.out.println(str);
-                bw.write(str);
+                bw.write(str + "\n");
         } catch (IOException ex) {
-            System.out.println("Reading a text file: " + ex);
+            ex.printStackTrace();
         }
+
     }
 
 }
