@@ -21,7 +21,20 @@ public class FileSystemTraverse {
     }
 
     static void recPrint(File rootPath) {
-        // TODO
+
+        if (rootPath == null)
+            return;
+
+        if (rootPath.isFile()) {
+            System.out.printf("file: %s %s\n", rootPath.getName(), rootPath.getAbsolutePath());
+            return;
+        }
+
+        System.out.printf("dir(%d) %s %s\n", rootPath.list().length, rootPath.getName(), rootPath.getAbsolutePath());
+
+        for (File subFile : rootPath.listFiles()) {
+            recPrint(subFile);
+        }
     }
 
     static void printInfo(File path) {
