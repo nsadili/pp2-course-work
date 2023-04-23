@@ -88,13 +88,20 @@ public class StreamDemo {
 
                 Stream<Employee> employeeStream = employees.stream();
                 Stream<Employee> newStream2 = employeeStream.filter(salary -> salary.getSalary() < 1000.00)
-                                                                        //^^^ is it LE as arguments ???
+                                // ^^^ is it LE as arguments ???
                                 .filter(department -> department.getDepartment().equals("HR"));
 
                 newStream2.forEach(res -> System.out.println(res));
 
-               // employeeStream.reduce(newStream2).map();
+                // employeeStream.reduce(newStream2).map();
 
-               // TODO final salary ???
+                // TODO final salary ???
+
+                List<String> lst5 = Arrays.asList("Ali", "Karim", "Laman", "Vasila");
+
+                lst5.stream()
+                                .mapToInt(str -> str.length())
+                                .sum()
+                                ;
         }
 }
