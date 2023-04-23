@@ -9,7 +9,8 @@ class PoemPrinter {
     }
 
     static void readLines(String path) {
-        try (FileReader fr = new FileReader(new File(path), Charset.forName("UTF-8"));
+        File file = new File(path);
+        try (FileReader fr = new FileReader(path, Charset.forName("UTF-8"));
                 BufferedReader br = new BufferedReader(fr);
                 
                 BufferedWriter bw = new BufferedWriter(new FileWriter("output.txt", StandardCharsets.UTF_8))) {
