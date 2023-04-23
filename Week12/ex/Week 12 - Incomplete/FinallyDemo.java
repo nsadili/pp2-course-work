@@ -9,7 +9,7 @@ public class FinallyDemo {
 
     static void testFinally() throws Exception {
         try {
-            throw new ExceptionDemo4();
+            throw new ExceptionDemo1();
         } catch (ExceptionDemo1 e) {
             throw new ExceptionDemo2();
         } finally {
@@ -18,7 +18,7 @@ public class FinallyDemo {
     }
 }
 
-class ExceptionDemo1 extends Exception {
+class ExceptionDemo1 extends ExceptionDemo4 {
 }
 
 class ExceptionDemo2 extends Exception {
