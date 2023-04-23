@@ -13,11 +13,12 @@ class PoemPrinter {
         try (FileReader fr = new FileReader(path, Charset.forName("UTF-8"));
                 BufferedReader br = new BufferedReader(fr);
                 
-                BufferedWriter bw = new BufferedWriter(new FileWriter("output.txt", StandardCharsets.UTF_8))) {
-            String str = "";
+                BufferedWriter bw = new BufferedWriter(
+                    new FileWriter(new File(file.getParent(),"poem-copied.txt"),StandardCharsets.UTF_8))){
+                String str="";
             while ((str = br.readLine()) != null)
                 // System.out.println(str);
-                bw.write(str);
+                bw.write(str+"\n");
         } catch (IOException ex) {
             System.out.println("Reading a text file: " + ex);
         }
