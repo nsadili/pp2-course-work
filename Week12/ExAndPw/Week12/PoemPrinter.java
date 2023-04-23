@@ -5,7 +5,7 @@ import java.nio.charset.StandardCharsets;
 
 class PoemPrinter {
     public static void main(String args[]) {
-        readLines("Resources/ex1/poem.txt");
+        readLines("Week12/Resources/ex1/poem.txt");
     }
 
     static void readLines(String path) {
@@ -23,3 +23,4 @@ class PoemPrinter {
     }
 
 }
+//The advantage of wrapping one stream object in another is that it allows for more efficient and flexible handling of data. The BufferedReader class adds buffering capabilities to the FileReader class, which improves performance when reading large files. Similarly, the BufferedWriter class can be used to add buffering capabilities to a FileWriter object, which can improve the performance of writing large files. Additionally, wrapping streams can add new functionality, such as transforming data or handling errors, depending on the types of streams used.
