@@ -13,19 +13,19 @@ public class FunctionalDemo {
 
         Consumer<String> consumer = (str) -> System.out.println(str.toUpperCase());
        
-        //consumer.accept("Hello");
+        consumer.accept("Hello");
 
         Function<String, Integer> lengthLambda = str -> str.length();
 
-       //System.out.println(lengthLambda.apply("Hello"));
+       System.out.println(lengthLambda.apply("Hello"));
 
        Predicate<Integer> isEven = n -> n % 2 ==0;
      
-       // System.out.println(isEven.test(5));
+       System.out.println(isEven.test(5));
        // System.out.println(isEven.test(6));
        Predicate<Character> isUpper = ch -> Character.isUpperCase(ch);
 
-       //System.out.println(isUpper.test('A'));
+       System.out.println(isUpper.test('A'));
        //System.out.println(isUpper.test('a'));
 
         final Random randGen = new Random();

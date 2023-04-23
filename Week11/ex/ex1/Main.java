@@ -9,7 +9,7 @@ public class Main {
                 System.out.println("Anonymous ->" + str );
             }
         };
-        // func.apply("Programming");
+        func.apply("Programming");
         //AFuncInt.print("Programming");
         //func.print("Programming", "Principles");
       
