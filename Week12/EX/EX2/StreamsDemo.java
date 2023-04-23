@@ -8,11 +8,11 @@ public class StreamsDemo {
         String path = "/Users/macbook/pp2-course-work/Week12/EX/EX2/data1.dat";
         String data = "Programming Principles II with Java";
         writeData(path, data);
-        readData(path);
+        System.out.println(readData(path));
     }
 
     static void writeData(String path, String data) {
-        try (FileOutputStream fos = new FileOutputStream(path)) {
+        try (FileOutputStream fos = new FileOutputStream(path, false)) {
             fos.write(data.getBytes());
         } catch (IOException e) {
             e.printStackTrace();

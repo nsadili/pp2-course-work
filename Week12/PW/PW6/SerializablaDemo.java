@@ -5,10 +5,11 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.util.Arrays;
 
 public class SerializablaDemo {
     public static void main(String[] args) {
-        File file = new File("/Users/macbook/pp2-course-work/Week12/PW6/File.dat");
+        File file = new File("/Users/macbook/pp2-course-work/Week12/PW/PW6/File.dat");
         Person[] people = new Person[] {new Person(1, "Ali", "Aliyev"),
                                         new Person(2, "Muhammed", "Faud"),
                                         new Person(3, "Samir", "Musayev")};
@@ -26,16 +27,11 @@ public class SerializablaDemo {
     }
 
     static void readData(File file) {
-        StringBuilder sb = new StringBuilder();
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file))) {
-            int length;
-            byte buffer[] = new byte[16];
-            while ((length = ois.read(buffer)) != -1){
-                sb.append(new String(buffer, 0, length));
-            }
-        } catch (IOException e) {
+            Person[] person = (Person[]) ois.readObject();
+            System.out.println(Arrays.toString(person));
+        } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
-        }
-        System.out.println(sb.toString());
+        } 
     }
 }

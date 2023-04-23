@@ -1,4 +1,4 @@
-package PW;
+package PW.PW1;
 public class PW1 {
     public static void main (String[] args) {
         try {

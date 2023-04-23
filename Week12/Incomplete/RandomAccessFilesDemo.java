@@ -39,14 +39,11 @@ public class RandomAccessFilesDemo {
     }
 
     static void readFromFile(String filename) throws IOException {
-        // TODO
     }
 
     static void readFromFile(String filename, int offset, int count) throws IOException {
-        // TODO
     }
 
     static void readKIntegersReversed(String filename, long k) throws IOException {
-        // TODO
     }
 }
