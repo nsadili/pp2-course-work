@@ -17,7 +17,7 @@ public class RandomAccessFilesDemo {
             readFromFile(filename, 7, 5);
             System.out.println();
 
-            readKIntegersReversed(filename, 5);
+            readKIntegersReversed(filename, 15);
             System.out.println();
 
         } catch (IOException e) {
@@ -45,8 +45,6 @@ public class RandomAccessFilesDemo {
             while (length-->0){
                 System.out.print(fis.readInt()+" ");
             }
-        } catch (Exception e){
-            e.printStackTrace();
         }
     }
 
@@ -56,20 +54,19 @@ public class RandomAccessFilesDemo {
             while (count-->0){
                 System.out.print(fis.readInt()+" ");
             }
-        } catch (Exception e){
-            e.printStackTrace();
         }
     }
 
     static void readKIntegersReversed(String filename, long k) throws IOException {
         try (RandomAccessFile fis = new RandomAccessFile(filename, "r")) {
             long num = fis.length()/4;
+            if (k>num){
+                k=num;
+            }
             for (int i=0; i<k; i++){
                 fis.seek((num-i-1)*4);
                 System.out.print(fis.readInt()+" ");
             }
-        } catch (Exception e){
-            e.printStackTrace();
         }
     }
 }
