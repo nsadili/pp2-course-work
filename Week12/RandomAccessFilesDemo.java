@@ -1,6 +1,8 @@
 import java.io.DataOutputStream;
+import java.io.EOFException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.RandomAccessFile;
 import java.util.Random;
 
 public class RandomAccessFilesDemo {
@@ -27,7 +29,8 @@ public class RandomAccessFilesDemo {
 
     static void generateFileWithRandomIntegers(String filename, int length, int upperBound) throws IOException {
         Random rand = new Random(42);
-        try (FileOutputStream fos = new FileOutputStream(filename); DataOutputStream dos = new DataOutputStream(fos)) {
+        try (FileOutputStream fos = new FileOutputStream(filename);
+                DataOutputStream dos = new DataOutputStream(fos)) {
 
             for (int i = 0; i < length; i++) {
                 int r = rand.nextInt(upperBound + 1);
@@ -38,14 +41,45 @@ public class RandomAccessFilesDemo {
     }
 
     static void readFromFile(String filename) throws IOException {
-        // TODO
+
+        try (RandomAccessFile file = new RandomAccessFile(filename, "r")) {
+            long count = file.length() / 4;
+
+            while (count-- > 0)
+                System.out.print(file.readInt() + " ");
+
+            System.out.println("First is over");
+        }
+
     }
 
     static void readFromFile(String filename, int offset, int count) throws IOException {
-        // TODO
+        try (RandomAccessFile file = new RandomAccessFile(filename, "r")) {
+
+            file.seek(offset * 4);
+
+            for (int i = 0; i < count; i++) {
+                try {
+                    System.out.print(file.readInt() + " ");
+                } catch (EOFException ex) {
+                    // swallowing exceptions
+                    break;
+                }
+            }
+        }
     }
 
     static void readKIntegersReversed(String filename, long k) throws IOException {
-        // TODO
+        try (RandomAccessFile file = new RandomAccessFile(filename, "r")) {
+            long count = file.length() / 4;
+            if (count < k) {
+                // there are not k number of integers in the file
+                k = count; // k=Math.min(k, count);
+            }
+            for (int i = 0; i < k; i++) {
+                file.seek((count - i - 1) * 4);
+                System.out.print(file.readInt() + " ");
+            }
+        }
     }
 }
