@@ -18,7 +18,7 @@ public class RandomAccessFilesDemo {
             readFromFile(filename, 7, 5);
             System.out.println();
 
-            readKIntegersReversed(filename, 10);
+            readKIntegersReversed(filename, 3);
             System.out.println();
 
         } catch (IOException e) {
