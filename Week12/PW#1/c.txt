@@ -1,4 +1,0 @@
-  
-  There is a syntax error in the code segment. 
-  The static method testFinally should be defined as "static void testFinally()" instead of "static void test Finally()".
-
