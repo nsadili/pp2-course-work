@@ -1,0 +1,9 @@
+b. The code will throw an exception of type ExceptionDemo3.
+
+c. There were some syntax errors in the original code. The method testFinally was not properly defined, and there was a typo in the name of one of the exceptions. I fixed these errors in the corrected code above.
+
+d. When executed, the code throws an exception of type ExceptionDemo3, which is what we expected based on the code analysis in part b. Here's the stack trace:
+
+Exception in thread "main" ExceptionDemo3
+	at FinallyDemo.testFinally(FinallyDemo.java:15)
+	at FinallyDemo.main(FinallyDemo.java:4)
