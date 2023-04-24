@@ -1,0 +1,5 @@
+  The code segment defines a class FinallyDemo with a main method and a static method called testFinally. 
+  The testFinally method throws four different custom exception classes: ExceptionDemo1, ExceptionDemo2, ExceptionDemo3, and ExceptionDemo4.
+  The finally block of the testFinally method throws an ExceptionDemo3 regardless of whether an exception is caught or not. 
+  The main method calls the testFinally method within a try-catch block.
+
