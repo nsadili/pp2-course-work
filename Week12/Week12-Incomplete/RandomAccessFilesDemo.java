@@ -1,6 +1,7 @@
 import java.io.DataOutputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.RandomAccessFile;
 import java.util.Random;
 
 public class RandomAccessFilesDemo {
@@ -8,7 +9,7 @@ public class RandomAccessFilesDemo {
         String filename = "Resources/random/numbers.dat";
 
         try {
-            // generateFileWithRandomIntegers("Resources/random/numbers.dat", 10, 10);
+            generateFileWithRandomIntegers(filename, 10, 10);
 
             readFromFile(filename);
             System.out.println();
@@ -16,7 +17,7 @@ public class RandomAccessFilesDemo {
             readFromFile(filename, 7, 5);
             System.out.println();
 
-            readKIntegersReversed(filename, 10);
+            readKIntegersReversed(filename, 5);
             System.out.println();
 
         } catch (IOException e) {
@@ -31,21 +32,44 @@ public class RandomAccessFilesDemo {
 
             for (int i = 0; i < length; i++) {
                 int r = rand.nextInt(upperBound + 1);
-                System.out.println(r);
+                System.out.print(r+" ");
                 dos.writeInt(r);
             }
+            System.out.println();
         }
     }
 
     static void readFromFile(String filename) throws IOException {
-        // TODO
+        try (RandomAccessFile fis = new RandomAccessFile(filename, "r")) {
+            long length = fis.length()/4;
+            while (length-->0){
+                System.out.print(fis.readInt()+" ");
+            }
+        } catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     static void readFromFile(String filename, int offset, int count) throws IOException {
-        // TODO
+        try (RandomAccessFile fis = new RandomAccessFile(filename, "r")) {
+            fis.seek(offset*4);
+            while (count-->0){
+                System.out.print(fis.readInt()+" ");
+            }
+        } catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     static void readKIntegersReversed(String filename, long k) throws IOException {
-        // TODO
+        try (RandomAccessFile fis = new RandomAccessFile(filename, "r")) {
+            long num = fis.length()/4;
+            for (int i=0; i<k; i++){
+                fis.seek((num-i-1)*4);
+                System.out.print(fis.readInt()+" ");
+            }
+        } catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }
