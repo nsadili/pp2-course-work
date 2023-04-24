@@ -8,19 +8,16 @@ public class FileExample {
       int character;
       String content = "";
 
-      // Read file using read() method
-      while ((character = reader.read()) != -1) {
+       while ((character = reader.read()) != -1) {
         content += (char) character;
       }
       System.out.println("File content using read() method:");
       System.out.println(content);
 
-      // Reset reader
-      reader.close();
+       reader.close();
       reader = new FileReader("output.txt");
 
-      // Read file using read(char[]) method
-      char[] buffer = new char[1024];
+       char[] buffer = new char[1024];
       int length;
       content = "";
       while ((length = reader.read(buffer)) != -1) {
