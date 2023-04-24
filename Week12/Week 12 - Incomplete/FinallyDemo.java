@@ -10,10 +10,10 @@ public class FinallyDemo {
     static void testFinally() throws Exception {
         try {
             throw new ExceptionDemo4();
-        } catch (ExceptionDemo1 e) {
+        } catch (ExceptionDemo4 e) {
             throw new ExceptionDemo2();
         } finally {
-            throw new ExceptionDemo3();
+            System.out.println("complete");
         }
     }
 }
