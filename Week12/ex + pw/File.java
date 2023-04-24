@@ -3,6 +3,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class File {
+    public File(String path) {
+    }
+
     public static void main(String[] args) throws FileNotFoundException {
         FileInputStream fis = new FileInputStream("somefile.dat");
 
@@ -15,5 +18,9 @@ public class File {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public String getParent() {
+        return null;
     }
 }
