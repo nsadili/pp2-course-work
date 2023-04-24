@@ -4,6 +4,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class ReadingCSVFiles {
 
@@ -12,6 +14,21 @@ public class ReadingCSVFiles {
     public static void main(String[] args) {
 
         List<Person> all = loadPersons();
+
+        List<Person> sorted = new ArrayList<>(all);
+        sorted.sort((p1, p2) -> p1.getAge() - p2.getAge());
+
+        System.out.println(sorted);
+
+        final String SEARCH_WORD = "Ali".toLowerCase();
+
+        var filtered = all.stream().filter(
+                p -> p.getFirstName().toLowerCase().contains(SEARCH_WORD) ||
+                        p.getLastName().toLowerCase().contains(SEARCH_WORD))
+                .collect(Collectors.toList());
+
+        System.out.println(filtered);
+
         System.out.println(all);
     }
 
@@ -20,7 +37,7 @@ public class ReadingCSVFiles {
         if (!new File(PERSONS_DATA_FILE).exists())
             return new ArrayList<>();
 
-            List<Person> persons = new ArrayList<>();
+        List<Person> persons = new ArrayList<>();
 
         try (BufferedReader br = new BufferedReader(new FileReader(PERSONS_DATA_FILE))) {
             br.readLine(); // skip the headers (Column names)
@@ -30,11 +47,10 @@ public class ReadingCSVFiles {
             while ((line = br.readLine()) != null)
                 // System.out.println(line);
 
-
-                try{
+                try {
                     persons.add(parseToPerson(line));
 
-                }catch(Exception e) {
+                } catch (Exception e) {
 
                 }
 
@@ -50,13 +66,27 @@ public class ReadingCSVFiles {
         // 1,Nuraddin,Sadili,30
         String[] tokens = line.split(",");
 
-       return new Person(
+        return new Person(
                 Integer.parseInt(tokens[0]), // id
                 tokens[1], // fname
                 tokens[2], // lname
                 Integer.parseInt(tokens[3])); // age
 
     }
+
+
+    // public static int averageAge(String line) {
+        //        int age = 0;
+        //        int len;
+        //         String[] tokens = line.split(",");
+        //         try (BufferedReader br = new BufferedReader(new FileReader(PERSONS_DATA_FILE))) {
+                  
+        //         //     while(br.readLine() != null) 
+        //         //     age += Integer.parseInt(tokens[br.readLine()]);
+        //         // }
+        //         return age;
+        //     }
+        // }
 
 }
 
