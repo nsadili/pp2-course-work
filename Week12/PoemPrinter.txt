@@ -1,0 +1,5 @@
+When we read from a file in Java, we can use different classes to handle the input stream. One of the classes we can use is the FileReader, which reads the file character by character. However, reading a file character by character can be slow and inefficient, especially when we have to read a large file.
+
+To make reading from a file faster and more efficient, we can wrap the FileReader in a BufferedReader. A BufferedReader reads the file in chunks, stores the chunks in a buffer, and then provides the data to the calling program. This can greatly reduce the number of calls to the operating system to read data from the file.
+
+The advantage of wrapping one stream object in another is that we can add additional functionality to the stream. In this case, we added buffering functionality to the FileReader by wrapping it in a BufferedReader. By doing this, we can read the file more efficiently. Similarly, we can use other classes to add different types of functionality to streams, such as compression or encryption, depending on our needs.
