@@ -51,7 +51,7 @@ public class SerializablaDemo {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
+    } 
 
     static void readData(String path) {
         try (FileInputStream fis = new FileInputStream(path);
