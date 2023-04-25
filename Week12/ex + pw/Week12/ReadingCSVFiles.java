@@ -4,7 +4,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class ReadingCSVFiles {
@@ -74,19 +73,19 @@ public class ReadingCSVFiles {
 
     }
 
-
     // public static int averageAge(String line) {
-        //        int age = 0;
-        //        int len;
-        //         String[] tokens = line.split(",");
-        //         try (BufferedReader br = new BufferedReader(new FileReader(PERSONS_DATA_FILE))) {
-                  
-        //         //     while(br.readLine() != null) 
-        //         //     age += Integer.parseInt(tokens[br.readLine()]);
-        //         // }
-        //         return age;
-        //     }
-        // }
+    // int age = 0;
+    // int len;
+    // String[] tokens = line.split(",");
+    // try (BufferedReader br = new BufferedReader(new
+    // FileReader(PERSONS_DATA_FILE))) {
+
+    // // while(br.readLine() != null)
+    // // age += Integer.parseInt(tokens[br.readLine()]);
+    // // }
+    // return age;
+    // }
+    // }
 
 }
 
