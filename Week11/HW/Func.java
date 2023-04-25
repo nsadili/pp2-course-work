@@ -1,4 +1,4 @@
-package Week11;
+package Week11.HW;
 
 interface Func <T>{
 
