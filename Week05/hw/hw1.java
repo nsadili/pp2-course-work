@@ -8,7 +8,7 @@ class X {
     System.out.println("In constructor X.");
     }
    }
-   public class Main {
+   public class hw1 {
     public static void main(String[] args) {
     Y y = new Y();  // In constructor X. In constructor Y.
     }

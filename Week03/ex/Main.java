@@ -11,7 +11,7 @@ public class Main {
 
         Segment s1 = new Segment(p1, p2);
         Segment s2=new Segment(1,2,5,13);
-        System.out.printf("p1: (%f, %f) and p2: (%f, %f)\n", s.getP1().getX(), s.getP1().getY(), s.getP2().getX(), s.getP2().getY());
+        System.out.printf("p1: (%f, %f) and p2: (%f, %f)\n", s1.getP1().getX(), s1.getP1().getY(), s1.getP2().getX(), s1.getP2().getY());
 
 
 
