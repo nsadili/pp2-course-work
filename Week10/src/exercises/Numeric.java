@@ -26,6 +26,7 @@ public class Numeric<T extends Number> {
 	}
 
 	public boolean isAbsolute(Numeric<?> otherValue) {
+		
         return Math.abs(value.doubleValue()) == Math.abs(otherValue.getValue().doubleValue());
     }
 }
