@@ -1,15 +1,30 @@
-package lecture_notes.note_4;
+package problem3;
 
 public class Counter {
-    int count = 0;
 
-    public synchronized void increment() {
-        count++;
-        System.out.println("Increment: " + count);
-    }
+	private int count = 0;
+	private boolean isModified = false;
 
-    public synchronized int getCount() {
-        System.out.println("Get: " + count);
-        return count;
-    }
+	public synchronized void increment() throws InterruptedException {
+		if (isModified)
+			wait();
+
+		count++;
+		System.out.println("Incremented: " + count);
+
+		isModified = true;
+		notify();
+	}
+
+	public synchronized int getValue() throws InterruptedException {
+		if (!isModified)
+			wait();
+
+		System.out.println("Get: " + count);
+
+		isModified = false;
+		notify();
+
+		return count;
+	}
 }

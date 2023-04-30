@@ -1,14 +1,24 @@
-package lecture_notes.note_4;
+package problem3;
 
-public class Reader implements Runnable {
-    Counter cnt;
+public class Reader extends Thread {
 
-    public Reader(Counter c) {
-        cnt = c;
-    }
+	private Counter counter;
+	private int nbReads;
 
-    public void run() {
-        for (int i = 0; i < 5; i++)
-            cnt.getCount();
-    }
+	public Reader(Counter counter, int N) {
+		this.counter = counter;
+		this.nbReads = N;
+	}
+
+	public void run() {
+		for (int i = 0; i < nbReads; i++) {
+			try {
+				counter.getValue();
+				// Thread.sleep(0);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
 }

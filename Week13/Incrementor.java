@@ -1,14 +1,24 @@
-package lecture_notes.note_4;
+package problem3;
 
-public class Incrementor implements Runnable {
-    Counter cnt;
+public class Incrementor extends Thread {
 
-    public Incrementor(Counter c) {
-        cnt = c;
-    }
+	private Counter counter;
+	private int nbIncrements;
 
-    public void run() {
-        for (int i = 0; i < 5; i++)
-            cnt.increment();
-    }
+	public Incrementor(Counter counter, int N) {
+		this.counter = counter;
+		this.nbIncrements = N;
+	}
+
+	public void run() {
+		for (int i = 0; i < nbIncrements; i++) {
+			try {
+				counter.increment();
+				// Thread.sleep(0);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
 }
