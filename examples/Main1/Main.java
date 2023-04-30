@@ -6,28 +6,10 @@ import java.util.List;
 
 public class Main {
 
-    public static void main(String[] args) {
-        List<Integer> list = new ArrayList<>();
-        list.add(1);
-        list.add(2);
-        list.add(3);
-
-        System.out.println(list.toString());
-
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i));
-        }
-
-        for (int element : list) {
-            System.out.print(element + " ");
-        }
-        System.out.println();
-
-        Iterator<Integer> it = list.iterator();
-
-        while(it.hasNext()){
-          System.out.print(it.next() + " ");
-        }
-        System.out.println();
-    }
+    var list = new LinkedList<> ();
+list.add ("Archie");
+list.add ("X-Men");
+Stream s = list.stream ();
+s.forEach (System.out::println);
+s.forEach (System.out::printIn);
 }
