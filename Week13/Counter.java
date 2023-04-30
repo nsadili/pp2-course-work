@@ -1,13 +1,15 @@
-package lecture_notes.note_3;
+package lecture_notes.note_4;
 
 public class Counter {
-    private int c = 0;
+    int count = 0;
 
-    public void increment() {
-        c++;
+    public synchronized void increment() {
+        count++;
+        System.out.println("Increment: " + count);
     }
 
-    public int getCount() {
-        return c;
+    public synchronized int getCount() {
+        System.out.println("Get: " + count);
+        return count;
     }
 }
