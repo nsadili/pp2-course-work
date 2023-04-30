@@ -1,16 +1,14 @@
-package lecture_notes.note_2;
+package lecture_notes.note_3;
 
 public class Parallel extends Thread {
-    static int sum;
+    private Counter cnt;
 
-    public static void increment() {
-        int t = sum;
-        t = t + 1;
-        sum = t;
+    public Parallel(Counter c) {
+        this.cnt = c;
     }
 
     public void run() {
         for (int j = 0; j < 1000; j++)
-            increment();
+            cnt.increment();
     }
 }
