@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 public class WordCounter {
 	public static void main(String[] args) {
-		File file = new File("data\\text.txt");
+		File file = new File("data/text.txt");
 		System.out.println(file.getAbsolutePath());
 
 		String text = "";

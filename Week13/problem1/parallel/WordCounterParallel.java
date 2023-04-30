@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class WordCounterParallel {
 	public static void main(String[] args) {
 		List<ParallelProcessor> list = new ArrayList<ParallelProcessor>();
-		File file = new File("data\\text.txt");
+		File file = new File("data/text.txt");
 		System.out.println(file.getAbsolutePath());
 
 		String text = "";
