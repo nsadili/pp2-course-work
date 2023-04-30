@@ -1,23 +1,16 @@
-package lecture_notes.note_1;
+package lecture_notes.note_2;
 
 public class Parallel extends Thread {
-    private long sum;
-    private int id;
+    static int sum;
 
-    public Parallel(int id, String name) {
-        super(name);
-        this.id = id;
-    }
-
-    public long getSum() {
-        return sum;
+    public static void increment() {
+        int t = sum;
+        t = t + 1;
+        sum = t;
     }
 
     public void run() {
-        sum = 0;
-        for (int i = 0; i < 10_000_000; i++) {
-            sum += i * id + Math.pow(id, 3);
-        }
+        for (int j = 0; j < 1000; j++)
+            increment();
     }
-
 }
