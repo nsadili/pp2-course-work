@@ -13,8 +13,6 @@ public class Person implements Serializable {
         this.address = address;
     }
 
-    // getters and setters omitted for brevity
-
     public static void savePersons(Person[] persons, String filename) throws IOException {
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(filename));
         oos.writeObject(persons);
