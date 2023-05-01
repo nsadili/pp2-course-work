@@ -8,7 +8,16 @@ public class GenericMethodsDemo {
         String arr4[] = new String[] { "Maryam", "Abdulla", "Nihad", "Asim", "Shamsi", "Nazrin" };
         Point arr5[] = new Point[] { new Point(3, 5), new Point(), new Point(100, 200) };
 
-       
+        printAll(arr1);
+        printAll(arr2);
+    }
+
+    static void printAll(Object[] arr)
+    {
+        for(Object el : arr)
+            System.out.print(el + " ");
+        System.out.println();
+
     }
 
 }
