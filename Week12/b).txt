@@ -1,0 +1,7 @@
+In the given code, the testFinally() method is being called in the main method. The testFinally() method contains a try-catch-finally block. Here's what happens step by step:
+
+Inside the try block, an ExceptionDemo4 exception is thrown.
+The catch block catches the ExceptionDemo4 exception.
+Inside the catch block, a new ExceptionDemo2 exception is thrown.
+The finally block executes after the try and catch blocks, regardless of whether an exception was thrown or caught. In this case, a new ExceptionDemo3 exception is thrown in the finally block.
+The ExceptionDemo3 exception thrown in the finally block will suppress the ExceptionDemo2 exception thrown in the catch block. The main method catches the ExceptionDemo3 exception and calls e.printStackTrace().
