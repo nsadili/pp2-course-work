@@ -1,0 +1,4 @@
+In this case, the EOF (end-of-file) indicator is the EOFException.
+When the ObjectInputStream reaches the end of the file, it will throw an EOFException.
+To ensure that all persons are read from the file, the program continues reading objects from the file in a loop until an EOFException is caught.
+Once the EOFException is caught, the loop breaks, and the program finishes reading from the file.
