@@ -3,7 +3,7 @@ package problem1.single;
 import java.util.StringTokenizer;
 
 public class SingleProcessor {
-	String text;
+	private String text;
 
 	public SingleProcessor(String text) {
 		this.text = text;

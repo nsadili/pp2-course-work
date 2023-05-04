@@ -1,5 +1,4 @@
 package problem1.parallel;
-
 import java.io.File;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -24,7 +23,6 @@ public class WordCounterParallel {
 
 				if (lineIdx++ == 200) {
 					lineIdx = 1;
-
 					String input = new String(text);
 					ParallelProcessor pp = new ParallelProcessor(input);
 					pp.start();
