@@ -20,8 +20,7 @@ public class TestMain {
         // Enumun elementlərinin qiymətlərindən program daxilində necə istifadə edə
         // bilərik?
         for (Terevezler f : Terevezler.values()) {
-            System.out.println(f.name() + " : " + f.qiymet + " : " + f.reng
-        );
+            System.out.println(f.name() + " : " + f.qiymet + " : " + f.reng);
         }
 
     }
