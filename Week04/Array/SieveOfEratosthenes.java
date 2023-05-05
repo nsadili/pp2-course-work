@@ -1,29 +1,28 @@
+package Week04.Array;
+
+import java.util.Arrays;
+
 public class SieveOfEratosthenes {
     public static void main(String[] args) {
-        int n = 50;
-        boolean[] primes = new boolean[n + 1];
-
-        // Initialize all elements to true
+        int n = 100; // find primes up to 100
+        boolean[] isPrime = new boolean[n + 1];
+        Arrays.fill(isPrime, true); // initialize all elements to true
+        
+        // loop through array and set non-prime elements to false
         for (int i = 2; i <= n; i++) {
-            primes[i] = true;
-        }
-
-        // Loop through array and set multiples of each prime to false
-        for (int i = 2; i * i <= n; i++) {
-            if (primes[i]) {
-                for (int j = i * i; j <= n; j += i) {
-                    primes[j] = false;
+            if (isPrime[i]) {
+                for (int j = i * 2; j <= n; j += i) {
+                    isPrime[j] = false;
                 }
             }
         }
-
-        // Print out prime numbers
-        System.out.print("Prime numbers: ");
+        
+        // print out the prime numbers
+        System.out.println("Prime numbers up to " + n + ":");
         for (int i = 2; i <= n; i++) {
-            if (primes[i]) {
+            if (isPrime[i]) {
                 System.out.print(i + " ");
             }
         }
     }
 }
-

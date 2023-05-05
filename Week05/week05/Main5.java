@@ -29,9 +29,6 @@ class Customer {
 }
 
 class Account {
-    private int id; // account id
-    private Customer customer;
-    private double balance;
 
 }
 

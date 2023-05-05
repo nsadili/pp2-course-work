@@ -1,11 +1,10 @@
-import java.util.ArrayList;
 
-public class Stack<E> {
+public class ArrayList<E> {
     private ArrayList<E> stack;
     private int capacity;
     private int top;
 
-    public Stack(int capacity) {
+    public ArrayList(int capacity) {
         this.stack = new ArrayList<>(capacity);
         this.capacity = capacity;
         this.top = -1;
@@ -18,6 +17,9 @@ public class Stack<E> {
         stack.add(++top, element);
     }
 
+    private void add(int i, E element) {
+    }
+
     public E pop() throws StackEmptyException {
         if (isEmpty()) {
             throw new StackEmptyException("Stack is empty");
@@ -25,11 +27,19 @@ public class Stack<E> {
         return stack.remove(top--);
     }
 
+    private E remove(int i) {
+        return null;
+    }
+
     public E peek() throws StackEmptyException {
         if (isEmpty()) {
             throw new StackEmptyException("Stack is empty");
         }
         return stack.get(top);
+    }
+
+    private E get(int top2) {
+        return null;
     }
 
     public boolean isEmpty() {

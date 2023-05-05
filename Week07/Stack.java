@@ -1,3 +1,5 @@
+package Week07;
+
 public class Stack {
   private int[] data;
   private int top;
@@ -7,23 +9,23 @@ public class Stack {
     top = -1;
   }
 
-  public void push(int element) {
+  public void push(int element) throws Exception {
     if (top == data.length - 1) {
-      throw new StackFullException();
+      throw new Exception();
     }
     data[++top] = element;
   }
 
-  public int pop() {
+  public int pop() throws Exception {
     if (isEmpty()) {
-      throw new StackEmptyException();
+      throw new Exception();
     }
     return data[top--];
   }
 
-  public int peek() {
+  public int peek() throws Exception {
     if (isEmpty()) {
-      throw new StackEmptyException();
+      throw new Exception();
     }
     return data[top];
   }

@@ -1,38 +1,33 @@
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class BreadQueue {
-    
-    public static int getNumberOfBuyers(int[] piecesPerPerson, int availablePieces) {
+public class QueueDemo {
+
+    public static int buyBread(int[] breadPerPerson, int breadInStore) {
+        int totalBreadSold = 0;
         Queue<Integer> queue = new LinkedList<>();
-
-        // Add each person's requested number of bread to the queue
-        for (int pieces : piecesPerPerson) {
-            queue.add(pieces);
+        
+        // Add all the people in the queue
+        for (int bread : breadPerPerson) {
+            queue.offer(bread);
         }
-
-        int buyers = 0;
-
-        // Serve each person in the queue until there is no bread left or no more people in the queue
-        while (!queue.isEmpty() && availablePieces > 0) {
-            int pieces = queue.peek();
-            if (pieces <= availablePieces) {
-                queue.remove();
-                availablePieces -= pieces;
-                buyers++;
-            } else {
-                break;
-            }
+        
+        // Process the queue until it's empty or we run out of bread
+        while (!queue.isEmpty() && breadInStore >= queue.peek()) {
+            int breadForPerson = queue.poll();
+            totalBreadSold += breadForPerson;
+            breadInStore -= breadForPerson;
         }
-
-        return buyers;
+        
+        return totalBreadSold;
     }
-
+    
     public static void main(String[] args) {
-        int[] piecesPerPerson = {2, 3, 1, 4, 2};
-        int availablePieces = 7;
-        int buyers = getNumberOfBuyers(piecesPerPerson, availablePieces);
-        System.out.println(buyers + " people can buy bread.");
+        int[] breadPerPerson = {2, 4, 1, 3, 2};
+        int breadInStore = 10;
+        
+        int totalBreadSold = buyBread(breadPerPerson, breadInStore);
+        System.out.println("Total bread sold: " + totalBreadSold);
     }
 }
 

@@ -1,63 +1,77 @@
+package Week04.Array;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Graph {
-    private int[][] adjacencyMatrix;
-    private List<Edge> edges;
+    private List<Edge> edgeList;
+    private List<List<Integer>> adjList;
+    private int numVertices;
+    public Graph(int[][] adjMatrix) {
+        this.numVertices = adjMatrix.length;
+        this.edgeList = new ArrayList<>();
 
-    public Graph(List<Edge> edges, int numberOfVertices) {
-        this.edges = edges;
-        adjacencyMatrix = new int[numberOfVertices][numberOfVertices];
-        for (Edge edge : edges) {
-            int source = edge.getSource();
-            int destination = edge.getDestination();
-            adjacencyMatrix[source][destination] = 1;
-            // Uncomment the line below if the graph is undirected
-            // adjacencyMatrix[destination][source] = 1;
-        }
-    }
-
-    public int[][] getAdjacencyMatrix() {
-        return adjacencyMatrix;
-    }
-
-    public static void main(String[] args) {
-        // Create a list of edges
-        List<Edge> edges = new ArrayList<>();
-        edges.add(new Edge(0, 1));
-        edges.add(new Edge(0, 2));
-        edges.add(new Edge(1, 2));
-        edges.add(new Edge(2, 3));
-        edges.add(new Edge(3, 3));
-
-        // Create a graph from the list of edges
-        Graph graph = new Graph(edges, 4);
-
-        // Get the adjacency matrix
-        int[][] adjacencyMatrix = graph.getAdjacencyMatrix();
-
-        // Print the adjacency matrix
-        for (int i = 0; i < adjacencyMatrix.length; i++) {
-            for (int j = 0; j < adjacencyMatrix[i].length; j++) {
-                System.out.print(adjacencyMatrix[i][j] + " ");
+        for (int i = 0; i < numVertices; i++) {
+            for (int j = 0; j < numVertices; j++) {
+                if (adjMatrix[i][j] != 0) {
+                    edgeList.add(new Edge(i, j, adjMatrix[i][j]));
+                }
             }
-            System.out.println();
+        }
+
+        this.adjList = new ArrayList<>(numVertices);
+        for (int i = 0; i < numVertices; i++) {
+            adjList.add(new ArrayList<>());
+        }
+
+        for (int i = 0; i < numVertices; i++) {
+            for (int j = 0; j < numVertices; j++) {
+                if (adjMatrix[i][j] != 0) {
+                    adjList.get(i).add(j);
+                }
+            }
+        }
+    }
+
+    public List<Edge> getEdgeList() {
+        return edgeList;
+    }
+
+    public List<List<Integer>> getAdjList() {
+        return adjList;
+    }
+
+    public int[][] toAdjMatrix() {
+        int[][] adjMatrix = new int[numVertices][numVertices];
+
+        for (Edge edge : edgeList) {
+            adjMatrix[edge.getSource()][edge.getDest()] = edge.getWeight();
+        }
+
+        return adjMatrix;
+    }
+
+    public static class Edge {
+        private int source;
+        private int dest;
+        private int weight;
+
+        public Edge(int source, int dest, int weight) {
+            this.source = source;
+            this.dest = dest;
+            this.weight = weight;
+        }
+
+        public int getSource() {
+            return source;
+        }
+
+        public int getDest() {
+            return dest;
+        }
+
+        public int getWeight() {
+            return weight;
         }
     }
 }
-
-class Edge {
-    private int source;
-    private int destination;
-
-    public Edge(int source, int destination) {
-        this.source = source;
-        this.destination = destination;
-    }
-
-    public int getSource() {
-        return source;
-    }
-
-    public int getDestination() {
-        return destination;
-    }
-}
-
