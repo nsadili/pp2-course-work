@@ -17,9 +17,6 @@ public class FinallyDemo {
 }
 
 class ExceptionDemo1 extends Exception {
-     ExceptionDemo1(String message){
-        super();
-    }
 }
 
 class ExceptionDemo2 extends Exception {

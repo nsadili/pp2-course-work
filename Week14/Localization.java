@@ -3,6 +3,7 @@ import java.util.Locale;
 public class Localization {
     public static void main(String[] args) {
         Locale defLocale = Locale.getDefault();
+        System.out.println(defLocale);
 
         Locale fr = new Locale("fr");
         Locale ge = Locale.GERMANY;

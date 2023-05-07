@@ -16,6 +16,9 @@ class Person implements Serializable {
         this.lname = lname;
     }
 
+    public Person(int parseInt, String string, String string2, int parseInt2) {
+    }
+
     public int getId() {
         return id;
     }
