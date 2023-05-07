@@ -1,0 +1,2 @@
+ Based on the code, it is expected that an exception will be thrown and caught by the try-catch block in the main method.
+ However, it is not clear which exception will be thrown and whether it will be an instance of one of the custom exception classes defined in the code segment.
