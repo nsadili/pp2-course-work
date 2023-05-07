@@ -1,0 +1,17 @@
+public class SecondsToTime {
+    public static void main(String[] args) {
+        // check if user entered an argument
+        if (args.length == 0) {
+            System.out.println("Usage: java SecondsToTime <seconds>");
+            return;
+        }
+        
+        int totalSeconds = Integer.parseInt(args[0]);
+        
+        int hours = totalSeconds / 3600;
+        int minutes = (totalSeconds % 3600) / 60;
+        int seconds = totalSeconds % 60;
+        
+        System.out.println(totalSeconds + " seconds = " + hours + " hours, " + minutes + " minutes, and " + seconds + " seconds");
+    }
+}
