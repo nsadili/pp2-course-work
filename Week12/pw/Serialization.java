@@ -40,7 +40,7 @@ class Person implements Serializable {
 
 public class Serialization {
     public static void main(String[] args) {
-        String filename = "Week12/Resources/ex1/persons.dat";
+        String filename = "Week12/resources/persons.dat";
         Person[] persons = new Person[] { new Person(1, "Jason", "Statham"), new Person(2, "Ouven", "Shrider"),
                 new Person(3, "Samir", "Musayev") };
 

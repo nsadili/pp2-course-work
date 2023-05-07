@@ -9,8 +9,8 @@ public class DublicateFiles {
 
         long start, end;
 
-        File source = new File("/Users/taghi/Documents/pp2-taghi-mammadov/pp2-course-work/Week12/Resources/forCopy/copy-Marcus Rashford - Manchester United.txt");
-        File dest = new File("/Users/taghi/Documents/pp2-taghi-mammadov/pp2-course-work/Week12/Resources/forCopy/copy-Marcus Rashford - Manchester United.txt");
+        File source = new File("/Week12/resources/Marcus Rashford - Manchester United.txt");
+        File dest = new File("/Week12/resources/Marcus Rashford - Manchester United.txt");
 
         start = System.currentTimeMillis();
         CopyFile(source, dest);
