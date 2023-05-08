@@ -1,4 +1,3 @@
-package Week12;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -8,16 +7,16 @@ public class StreamsDemo {
     public static void main(String[] args) {
         String data = "A data of string";
 
-        try(FileOutputStream fos = new FileOutputStream("Week12/output.txt")) {
+        try(FileOutputStream fos = new FileOutputStream("output.txt")) {
             fos.write(data.getBytes());
         } catch (IOException e) {
             System.out.println(e);
         }
         String content = "";
-        try(FileInputStream fis = new FileInputStream("Week12/output.txt")) {
+        try(FileInputStream fis = new FileInputStream("output.txt")) {
             int ch;
             while((ch = fis.read()) != -1) {
-                content += (char)ch;
+                content += (char)ch;i
             }
         } catch (IOException e) {
             System.out.println(e);
@@ -27,8 +26,8 @@ public class StreamsDemo {
         }
 
 
-        try(FileInputStream fis = new FileInputStream("Week12/output.txt")) {
-            byte[] array = new byte[10];
+        try(FileInputStream fis = new FileInputStream("output.txt")) {
+            byte[] array = new byte[15];
             int ch;
             fis.read(array);
             content = new String(array, 0, array.length);
