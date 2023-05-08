@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class ListsInAction {
@@ -12,7 +11,9 @@ public class ListsInAction {
         myList.add(3);
         myList.add(6);
 
-        // System.out.println(myList.toString());
+
+        myList.remove(Integer.valueOf(1));
+        System.out.println(myList.toString());
 
         // for(int i=0; i < myList.size(); i++) 
         //     System.out.print(myList.get(i) + " ");
@@ -26,11 +27,11 @@ public class ListsInAction {
 
         // System.out.println(myList);
 
-        Iterator<Integer> it = myList.iterator();
+        // Iterator<Integer> it = myList.iterator();
         
-        while(it.hasNext()) {
-            System.out.print(it.next() + " ");
-        }
-        System.out.println();
+        // while(it.hasNext()) {
+        //     System.out.print(it.next() + " ");
+        // }
+        // System.out.println();
     }
 }
