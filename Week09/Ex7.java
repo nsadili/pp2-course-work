@@ -29,16 +29,16 @@ public class Ex7 {
             characterFrequency.put(ch, characterFrequency.getOrDefault(ch, 0) + 1);
         }
 
-        Map.Entry<Character, Integer> max = null;
-        Map.Entry<Character, Integer> min = null;
+        Map.Entry<Character, Integer> maximum = null;
+        Map.Entry<Character, Integer> minimum = null;
         for (Map.Entry<Character, Integer> entry : characterFrequency.entrySet()) {
-            if (max == null || entry.getValue() > max.getValue())
-                max = entry;
-            if (min == null || entry.getValue() < min.getValue())
-                min = entry;
+            if (maximum == null || entry.getValue() > maximum.getValue())
+                maximum = entry;
+            if (minimum == null || entry.getValue() < minimum.getValue())
+                minimum = entry;
         }
 
-        Map<Character, Character> result = new LinkedHashMap<>(min.getKey(), max.getKey());
+        Map<Character, Character> result = new LinkedHashMap<>(minimum.getKey(), maximum.getKey());
 
         cache.put(string, result);
         return result;
