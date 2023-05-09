@@ -1,7 +1,7 @@
 package Week07;
 
 
-public class Invoice {
+public class Invoice2 {
 
     private String part_number;
     private String part_description;
@@ -9,7 +9,7 @@ public class Invoice {
     private double price_per_item;
 
 
-    public Invoice(String part_number, String part_description, int item_quantity, double price_per_item){
+    public Invoice2(String part_number, String part_description, int item_quantity, double price_per_item){
         if (item_quantity < 0 || price_per_item < 0) throw new IllegalArgumentException();
         this.part_number = part_number;
         this.part_description = part_description;

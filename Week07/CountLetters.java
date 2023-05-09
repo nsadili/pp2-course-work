@@ -10,7 +10,7 @@ public class CountLetters {
 
         do {
             counts = new int[26];
-            System.out.print("Enter a word, preferrably only english letters (0 to exit): ");
+            System.out.print("Enter a word, preferably only english letters (0 to exit): ");
             word = scan.nextLine();
 
             word = word.toLowerCase();
