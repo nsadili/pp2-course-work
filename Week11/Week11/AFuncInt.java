@@ -1,6 +1,6 @@
 package Week11;
 
-public interface Ex1 {
+public interface AFuncInt {
     void apply(String input);
     static void print(String input) {
         System.out.println(input);
