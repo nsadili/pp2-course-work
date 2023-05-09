@@ -2,12 +2,7 @@ package Week06;
 
 public class Main {
 
-    public static void moveAll(Movable[] objects, int dx, int dy) {
-        // for (Movable obj : objects) {
-        //     //obj.moveRight(dx);
-        //     //obj.moveDown(dy);
-        // }
-    } // This part gives and error, I do not know why
+
 
     public static void main(String[] args) {
 
@@ -58,8 +53,6 @@ public class Main {
         for (Movable obj : objects) {
             System.out.println(obj);
         }
-
-        moveAll(objects, 1, -1);
 
         System.out.println("Moved objects:");
         for (Movable obj : objects) {
