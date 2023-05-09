@@ -1,4 +1,4 @@
-package arithmetic.bonus;
+package Week06.Arithmetics;
 
 public abstract class BinaryOperation implements EvalInterface {
     private EvalInterface op1;
