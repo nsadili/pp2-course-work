@@ -3,7 +3,7 @@ import java.util.*;
 public class MixedStrings {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Please, enter a sentence: ");
+        System.out.print("Enter a sentence: ");
         String sentence = scanner.nextLine();
         String mixedSentence = swapFirstAndLastChars(sentence);
         System.out.println("Mixed sentence: " + mixedSentence);
