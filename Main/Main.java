@@ -1,27 +1,19 @@
 package Main;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class Main {
-    public static void main(String[] args) throws ParseException {
-        Date d = new Date();
-        System.out.println(d);
-        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss.SSS");
-        String s = sdf.format(d);
-        System.out.println(s);
-
-        SimpleDateFormat sdf2 = new SimpleDateFormat("dd-MM-yyyy");
-
-        String dt = "01-01-2020";
-        Date d2 = sdf2.parse(dt);
-
-        System.out.println(Math.abs(d2.getTime() - d.getTime()));
-
-
-        Date dd = new Date(Math.abs(d2.getTime() - d.getTime()));
-        System.out.println(dd);
-
+    public static void main(String[] args) {
+        Person person1 = new Person("Alice", 25);
+        
+        System.out.println("Before method call: " + person1);
+        changePerson(person1);
+        System.out.println("After method call: " + person1);
     }
+    
+    public static void changePerson(Person person) {
+        person.setName("Bob");
+        person.setAge(30);
+    }
+
+    
 }

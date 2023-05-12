@@ -1,4 +1,5 @@
 package Week05.PW9;
+import static java.lang.System.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,9 +16,9 @@ public class Main {
         Account a3 = new Account(003, c3, 0.2);
         a3.deposit(0.5);
 
-        System.out.println(a1.toString());
-        System.out.println(a2.toString());
-        System.out.println(a3.toString());
+        out.println(a1.toString());
+        out.println(a2.toString());
+        out.println(a3.toString());
 
     }
 }
