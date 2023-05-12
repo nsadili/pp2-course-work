@@ -18,9 +18,6 @@ public class I18NDemo {
 
 
 
-
-
-
         greetTheUser();
     }
 
