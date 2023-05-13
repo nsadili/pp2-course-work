@@ -7,10 +7,10 @@ public class PriorityQueueDemo {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("enter the amount of bread per person: ");
-        var perPerson = sc.nextInt(); // bread
+        var perPerson = sc.nextInt(); 
 
         System.out.println("enter the amount of bread in store: ");
-        var inStore = sc.nextInt(); // bread
+        var inStore = sc.nextInt(); 
 
         sc.close();
 
