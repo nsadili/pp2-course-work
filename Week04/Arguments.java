@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class Arguments {
  public static void main(String[] args) {
@@ -15,7 +16,7 @@ public class Arguments {
 System.out.println(Arrays.toString(args));
  }
  //static void 
- printArray(n);
+ void printArray(n);
     
 private static void printArray(int[] a){
 
