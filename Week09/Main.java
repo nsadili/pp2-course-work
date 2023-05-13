@@ -1,7 +1,14 @@
 package Week09;
 //import java.util.Scanner;
 
+import java.util.LinkedHashMap;
+
+import javax.swing.text.html.HTMLDocument.Iterator;
+
 public class Main {
+    /**
+     * 
+     */
     public static void main() {
        LinkedHashMap<String, Integer> map= new LinkedHashMap<>();
        map.put("Ilaha Jamalli", 19);

@@ -3,6 +3,8 @@ import java.util.HashMap;
 import javax.sound.sampled.SourceDataLine;
 
 public class Grade {
+  private static Float age;
+
   public static void main() {
     HashMap<String, Float> grade = new HashMap<>();//should be wrapper class
 
@@ -23,11 +25,10 @@ public class Grade {
      
         }
       for(String a: grade.keySet()){
-     sumOfGpa+=grade.get(a);
 }
 for(String a: grade.keySet()){
   
-  if(grade.get(a)<agerage)
+  if(grade.get(a)<age)
   System.out.println(a);
 }
         
