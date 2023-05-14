@@ -19,7 +19,6 @@ public class WordCounter {
 		try (BufferedReader br = new BufferedReader(new FileReader(file))) {
 			while ((temp = br.readLine()) != null) {
 				text += temp;
-			}
 
 			SingleProcessor sp = new SingleProcessor(text);
 			int count = sp.count();

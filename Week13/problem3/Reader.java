@@ -1,7 +1,5 @@
 package Week13.problem3;
 
-
-
 public class Reader extends Thread {
 
 	private Counter counter;
