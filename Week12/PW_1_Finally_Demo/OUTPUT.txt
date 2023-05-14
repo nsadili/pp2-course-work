@@ -1,0 +1,9 @@
+//When executed, the program produces the following output:
+Exception in thread "main" ExceptionDemo3
+    at FinallyDemo.testFinally(FinallyDemo.java:15)
+    at FinallyDemo.main(FinallyDemo.java:6)
+
+/*
+As expected, the program throws an instance of ExceptionDemo3 from the finally block, and the stack 
+trace shows that this exception was thrown on line 15 of the testFinally method.
+*/

@@ -1,0 +1,16 @@
+The read() method and the read(char[]) method are both used to read the contents of a file in Java, but they differ in how they read the file:
+
+read() method:
+Reads a single character at a time from the file.
+Returns the ASCII value of the character as an integer.
+Returns -1 when it reaches the end of the file.
+Makes a system call for each character read.
+Slower when reading large files.
+
+
+read(char[]) method:
+Reads a specified number of characters from the file into a character array.
+Returns the number of characters read.
+Returns -1 when it reaches the end of the file.
+Reads a block of characters at a time, reducing the number of system calls needed.
+Faster when reading large files.

@@ -1,0 +1,1 @@
+The difference between read() and read(byte[]) is that the former reads one byte at a time, while the latter reads multiple bytes at once into a buffer. read(byte[]) is more efficient because it reduces the number of read operations needed and can improve performance.
