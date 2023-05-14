@@ -2,6 +2,7 @@ package Week13.problem1.single;
 
 
 
+
 import java.io.File;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -19,6 +20,7 @@ public class WordCounter {
 		try (BufferedReader br = new BufferedReader(new FileReader(file))) {
 			while ((temp = br.readLine()) != null) {
 				text += temp;
+			}
 
 			SingleProcessor sp = new SingleProcessor(text);
 			int count = sp.count();
