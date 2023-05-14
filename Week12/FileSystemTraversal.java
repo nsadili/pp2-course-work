@@ -3,8 +3,8 @@ import java.io.File;
 
 public class FileSystemTraversal {
     public static void main(String[] args) {
-        printFileInfo("Files/input.txt");
-        traverseFileSystem("Files/input.txt");
+        printFileInfo("Week12/Files/input.txt");
+        traverseFileSystem("Week12/Files/input.txt");
     }
 
     public static void printFileInfo(String path) {
