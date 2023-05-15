@@ -37,7 +37,7 @@ public class Account {
      }
     public String toString(){
         return String.format("%s(%d) %.2f", ((Costumer) customer).getName(), id, balance );
-         // automatically turns to string 
+         
     }
 
 }
