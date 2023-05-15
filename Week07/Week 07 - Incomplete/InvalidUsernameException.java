@@ -1,10 +1,7 @@
-public class InvalidUsernameException extends Exception {
+package Week07;
 
-    public InvalidUsernameException() {
-        super();
-    }
-
-    public InvalidUsernameException(String message) {
+public class InvalidUsernameException extends Exception{
+    public InvalidUsernameException (String message){
         super(message);
     }
 }

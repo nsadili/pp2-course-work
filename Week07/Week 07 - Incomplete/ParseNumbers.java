@@ -1,25 +1,32 @@
+package Week07;
+
+import java.text.ParsePosition;
 import java.util.Scanner;
+import javax.sound.sampled.SourceDataLine;
 
 public class ParseNumbers {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);// reading from standard input
+    public static void main(String [] args){
+        Scanner sc = new Scanner(System.in);
+        String exp1 = sc.nextLine();
+        try{
+            Parseint(exp1); 
+        } catch(InvalidNumberException ine){
+            System.out.println("Error: "+ ine.getMessage());
+            ine.printStackTrace();
+        } 
 
-        String line = scan.nextLine(), word = null;
-        scan.close();
+    }
+    public static void Parseint(String smth) throws InvalidNumberException{
+        String asdad = "";
+        char[] toarray = smth.toCharArray();
 
-        scan = new Scanner(line); // reading from a String
-        int sum = 0, count = 0;
-        while (scan.hasNext()) { // while there is a token to be read from the string
-            word = scan.next();
-            sum += Integer.parseInt(word); // read it and parse into Integer
-            count++;
+        for(int i = 0; i < smth.length(); i++){
+            if(smth.charAt(i) >= '0' && smth.charAt(i) <= '9' ){
+                asdad += smth.charAt(i);
+             }
         }
-
-        scan.close();
-
-        if (count == 0)
-            System.out.println("There are no VALID input provided!");
-        else
-            System.out.printf("Sum = %d\nCount = %d\nAverage = %.3f\n", sum, count, (float) sum / count);
+        if (asdad.equals("")){
+              throw new InvalidNumberException("there is no number");
+        }else System.out.println(asdad);
     }
 }
