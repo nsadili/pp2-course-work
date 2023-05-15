@@ -5,21 +5,23 @@ public class pw1 {
 
         Scanner scan=new Scanner(System.in);
         int n=scan.nextInt();
-        int[] a = new int[n];    
+        int[] a = new int[n];  
+        System.out.println(minimum(a)); 
+        System.out.println(maximum(a)); 
 }
-}
+
 public static int minimum(int[] a){
     int mn =a[0];
     for (int x: a){
         if(x<mn) mn=x;
-    } return mn;
+    } 
+    return mn;
 
 }
 public static int maximum(int[] a){
     int mx=a[0]; 
     for(int x: a){
-      if(x>mx)   mx=a[0];
+      if(x>mx)   mx=x;
     } return mx;
-   System.out.println(mn);
-   System.out.println(mx);
+}
 }

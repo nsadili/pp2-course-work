@@ -1,6 +1,6 @@
 public class Calc {
  public static void main(String[] args) {
-    if(args.length<2)
+    if(args.length<2) {
     System.out.println("Enter 2 number:");
     System.exit(1);
  } 
@@ -15,4 +15,5 @@ public class Calc {
  System.out.println(a*b);
  System.out.println(a/b);
  System.out.println(a%b);
+}
 }

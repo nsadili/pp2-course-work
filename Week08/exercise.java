@@ -41,4 +41,10 @@ while (it.hasNext()){
 System.out.println();
 }
 
+    private void remove(int i) {
+    }
+
+    private void add(int i) {
+    }
+
 }

@@ -1,7 +1,7 @@
 package Week04;
 import java.util.Scanner;
 
-public class MixedStrings {
+public class Mixedstrings {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         String a=sc.nextLine();
@@ -23,16 +23,16 @@ public class MixedStrings {
         swap(c, 0, c.length-1);
         return String.valueOf(c);
     }
-    public static void swap(c[] c, int i, int j){
+    public static void swap(char[] c, int i, int j){
         char temp= c[j];
         c[j]=c[i];
         c[i]= temp;
     }
    
-}
+
 public static void print(String[] arr) {
     for (String s : arr) {
         System.out.print(s + " ");
     }
     System.out.println();
-}
+} }

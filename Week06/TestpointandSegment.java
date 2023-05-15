@@ -1,4 +1,4 @@
-public class TestPointAndSegment {
+public class TestpointandSegment {
     public static void main(String[] args) throws CloneNotSupportedException {
         Point p1 = new Point(2, 5);
 

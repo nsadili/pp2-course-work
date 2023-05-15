@@ -1,8 +1,10 @@
+import java.util.Scanner;
 
-public class Exploded string {
-    Scanner scan=new Scanner(System.in)  {
+public class Explodedstring {
+   public static void main (String[] args) {
+  Scanner scan=new Scanner(System.in);  
      String str =scan.nextLine();
-     String[] split =str.split();
+     String[] split =str.split(" ");
      StringBuilder k= new StringBuilder();
      StringBuilder res= new StringBuilder();
      for( int i=0; i<split.length;i++){

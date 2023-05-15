@@ -13,7 +13,7 @@ if(number<0) number=-number;
 
 // number=Math.abs(number);
 
-int digit, sum=0, cnt=0; prod=1;
+int digit, sum=0, cnt=0, prod=1;
 while(number>0){
     digit = number%10;
 
@@ -23,15 +23,11 @@ while(number>0){
 
     number/=10;
 }
-var avg =copynumber !=0 
-? (double) sum /cnt 
-:0.0;
-    
+var avg =copynumber !=0 ? (double) sum /cnt :0.0;
 
-prod = copynumber !=0;
-? prod:0; 
+prod = copynumber !=0 ? prod:0; 
  
- System.out.println( :"Number= %d, Sum=%d, Product = %d, Avg = %.3f\n", 
+ System.out.printf("Number= %d, Sum=%d, Product = %d, Avg = %.3f\n", 
  copynumber, sum, prod, avg);
 }
 }

@@ -10,10 +10,11 @@ public class Main {
     System.out.println(coresOfMyComputer);
     int cnt=0;
 
-    for(int i=0; i< coreCount; i++){
+    for(int i=0; i< coresOfMyComputer; i++){
         for(int j=0; j<250000; j++){
             cnt++;
         }
      }
+     System.out.println(cnt);
 }
 }
