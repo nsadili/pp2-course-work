@@ -6,8 +6,13 @@ public class Main {
             public void apply(String str) {
                 System.out.println("Anonymous -> " + str);
             }
+
+            public void print(String str1, String str2) { 
+                    System.out.println("OVERRIDDEN - > " + str1 + " <==> " + str2);
+                }
         };
-        
+
+
         AFuncInt lambda = (str) -> System.out.println("Lambda -> " + str);
 
         AFuncInt.print("Hello");
