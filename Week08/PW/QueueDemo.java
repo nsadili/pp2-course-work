@@ -19,28 +19,28 @@ public class QueueDemo {
 
         int amount;
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Amount of bread: ");
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter amount of bread ");
 
-        amount = sc.nextInt();
-
-        int bread = 0;
-        int buyBread = 0;
+            amount = sc.nextInt();
+        }
+        int breadNum = 0;
+        int peopleBuyBread = 0;
 
         while (line.size() != 0) 
         {
-            bread += line.poll();
+            breadNum += line.poll();
             
-            if (bread > amount)
+            if (breadNum > amount)
              {
                 break;
             }
 
-            buyBread++;
+            peopleBuyBread++;
 
         }
 
-        System.out.println("Number of People which Buy Bread: " + buyBread);
+        System.out.println("Number of People which Buy Bread: " + peopleBuyBread);
 
     }
 

@@ -2,23 +2,27 @@ package Week08.PW;
 import java.util.*;
 import java.io.*;
 
+
+
 public class DistinctWords {
-    public static void main(String[] args) throws IOException {
-        File file= new File("names.txt");
-        Scanner scanner= new Scanner(file);
+    public static void main(String[] args) throws FileNotFoundException {
+        File file = new File ("name.txt");
 
-        List<String> wordsList= new ArrayList<>();
-        while(scanner.hasNext()){
-            wordsList.add(scanner.next());
+        Scanner sc = new Scanner(file);
+
+        Set<String> names = new LinkedHashSet<>();
+
+
+        while(sc.hasNextLine()){
+            names.add(sc.nextLine());
         }
-        System.out.println(wordsList);
+        List<String> nameList= new ArrayList<>(names);
+        Collections.sort(nameList);
+        sc.close();
 
-        Set<String> distinctWords = new LinkedHashSet<>(wordsList);
-        System.out.println(distinctWords);
-        List<String> sortedwords = new ArrayList<>(distinctWords);
-        Collections.sort(sortedwords);
+        System.out.println(names);
 
-        System.out.println(sortedwords);
+        System.out.println(nameList);
         
-    }  
+    }
 }
