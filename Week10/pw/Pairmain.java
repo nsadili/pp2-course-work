@@ -14,5 +14,6 @@ public class Pairmain {
         System.out.println(myPair.equals(myPair2));
 
         System.out.println(myPair.comparePairs(25, 25f));
+        
     }
 }
