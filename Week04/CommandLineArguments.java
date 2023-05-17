@@ -1,4 +1,4 @@
-public class Ex1{
+public class CommandLineArguments{
     private static void printArray(int[] arr) {
         for (int i : arr) {
             System.out.print(i + " ");
