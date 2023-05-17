@@ -1,60 +1,33 @@
 package Week05.pw;
 
-import javax.sound.sampled.SourceDataLine;
-
 public class MathDemo {
-    
-    static int res;
-    static int sum = 0;
-    static int counter = 0;
-    
-    public static int Min(int a, int b) {
 
-    return a < b ? a : b;
-
+    public static int min ( int a, int b){
+        if (a<b) return a;
+        else return b;
     }
-
-     public static int Max(int a, int b) {
-
-    return a > b ? a : b;
-
+    public static int max ( int a, int b){
+        if (a>b) return a;
+        else return b;
     }
-
-    public static int Sum(int[] args) {
-
-        String str1 = new String();
-        var summ = 0;
-        int numbers1 = Integer.parseInt(str1);
-        if (str1.isEmpty())
-        return 0;
-        else
-        {
-            summ += numbers1;
+    public static int sum ( int[] args) {
+        int sum = 0;
+        for (int n : args) {
+            sum += n;
         }
-        return numbers1;
+        return sum;
     }
-
-    public static float mean(int[] args) {
-        String str = new String();
-        if (str.isEmpty())
-        return 0;
-        else
-        {
-          int numbers = Integer.parseInt(str);
-          sum += numbers;
-            counter++;
+    public static float mean ( int[] args){
+        int sum=0, mean=0;
+        for (int n:args){sum+=n;}
+        mean=sum/args.length;
+        return mean;
+    }
+    public static int factorial ( int n){
+        int fac=1;
+        for(int i=1; i<=n; i++) {
+            fac+=i;
         }
-        return sum / counter;
+        return fac;
     }
-
-    public static int factorial(int n) {
-        
-        while (n == 1) {
-        res = n * (n - 1);
-        n--;
-        }
-
-        return res;
-    }
-    
 }
