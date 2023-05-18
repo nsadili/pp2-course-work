@@ -7,12 +7,10 @@ public class CachingResults {
     public static void main(String[] args) {
         String input = "Hello World";
 
-        // Test the method
         Result result = getMostAndLeastFrequentCharacters(input);
         System.out.println("Most frequent character: " + result.getMostFrequent());
         System.out.println("Least frequent character: " + result.getLeastFrequent());
-
-        // Test the caching mechanism
+        
         Result cachedResult = getMostAndLeastFrequentCharacters(input);
         System.out.println("Most frequent character (from cache): " + cachedResult.getMostFrequent());
         System.out.println("Least frequent character (from cache): " + cachedResult.getLeastFrequent());
@@ -20,17 +18,17 @@ public class CachingResults {
 
     public static Result getMostAndLeastFrequentCharacters(String input) {
         if (cache.containsKey(input)) {
-            // Return the cached result if it exists
+            
             return cache.get(input);
         }
 
-        // Calculate the character frequency
+       
         Map<Character, Integer> frequencyMap = new HashMap<>();
         for (char c : input.toCharArray()) {
             frequencyMap.put(c, frequencyMap.getOrDefault(c, 0) + 1);
         }
 
-        // Find the most and least frequent characters
+        
         char mostFrequent = '\0';
         char leastFrequent = '\0';
         int maxFrequency = Integer.MIN_VALUE;
@@ -51,10 +49,10 @@ public class CachingResults {
             }
         }
 
-        // Create the result object
+        
         Result result = new Result(mostFrequent, leastFrequent);
 
-        // Cache the result for future use
+       
         cache.put(input, result);
 
         return result;
