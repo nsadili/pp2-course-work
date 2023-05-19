@@ -1,0 +1,36 @@
+import java.util.*;
+
+public class CharacterOccurrences {
+    public static void main(String[] args) {
+        String inputString = args[0];
+
+        
+        TreeMap<Character, List<Integer>> ascendingMap = new TreeMap<>();
+
+        TreeMap<Character, List<Integer>> descendingMap = new TreeMap<>(Collections.reverseOrder());
+
+        for (int i = 0; i < inputString.length(); i++) {
+            char c = inputString.charAt(i);
+
+            ascendingMap.putIfAbsent(c, new ArrayList<>());
+            descendingMap.putIfAbsent(c, new ArrayList<>());
+
+            ascendingMap.get(c).add(i);
+            descendingMap.get(c).add(i);
+        }
+
+        System.out.println("Characters and indexes in non-descending order:");
+        for (Map.Entry<Character, List<Integer>> entry : ascendingMap.entrySet()) {
+            char c = entry.getKey();
+            List<Integer> indexes = entry.getValue();
+            System.out.println(c + ": " + indexes);
+        }
+
+        System.out.println("\nCharacters and indexes in non-ascending order:");
+        for (Map.Entry<Character, List<Integer>> entry : descendingMap.entrySet()) {
+            char c = entry.getKey();
+            List<Integer> indexes = entry.getValue();
+            System.out.println(c + ": " + indexes);
+        }
+    }
+}
