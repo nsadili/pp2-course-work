@@ -36,5 +36,4 @@ public class Flowers {
         Flowers animal = new Cat();
        animal.makeSound(); // prints "Meow"
     }
- }
- 
+   }

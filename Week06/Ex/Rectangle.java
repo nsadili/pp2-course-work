@@ -41,4 +41,3 @@ public class Rectangle {
         return width == other.width && height == other.height;
     }
 }
-

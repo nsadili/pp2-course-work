@@ -58,4 +58,3 @@ public class Point implements Cloneable  {
         return super.clone();
     }
 }
-

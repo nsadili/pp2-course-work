@@ -14,5 +14,4 @@ public class Main {
         System.out.println(num.compareAbs(num2.getValue().doubleValue())); 
 
     }
-    
 }

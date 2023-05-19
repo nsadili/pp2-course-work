@@ -11,6 +11,7 @@ public class FunctionsDemo {
      
     Supplier<Integer> rand =()-> new Random ().nextInt() +1;
     
+    
     double avg = 0;
 
     for(int i =0; i<1000; i++)

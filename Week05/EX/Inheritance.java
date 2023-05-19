@@ -94,7 +94,4 @@ public class Inheritance {
                        this.courses.equals(t.courses);
             }
         }
-        
     }
-    
-

@@ -46,6 +46,3 @@ public class Point {
         return Double.compare(x, other.x) == 0 && Double.compare(y, other.y) == 0;
     }
 }
-
-
-  
