@@ -1,28 +1,23 @@
 package Week09;
-//import java.util.Scanner;
 
+import java.util.Iterator;
 import java.util.LinkedHashMap;
 
-import javax.swing.text.html.HTMLDocument.Iterator;
-
 public class Main {
-    /**
-     * 
-     */
-    public static void main() {
-       LinkedHashMap<String, Integer> map= new LinkedHashMap<>();
-       map.put("Ilaha Jamalli", 19);
-       map.put("Nihat Ahmadli", 20);
-       map.put("Inji Sadigli", 17);
+    public static void main(String[] args) {
+        LinkedHashMap<String, Integer> map = new LinkedHashMap<>();
+        map.put("Ilaha Jamalli", 19);
+        map.put("Nihat Ahmadli", 20);
+        map.put("Inji Sadigli", 17);
 
-for(String a: map.keySet()){
-    System.out.println(map.get(a));
-}
+        for (String key : map.keySet()) {
+            System.out.println(map.get(key));
+        }
 
-Iterator<String> m =map.keySet().iterator();
-while(m.hashNext)   //
-
-System.out.println(map.toString());
-
+        Iterator<String> iterator = map.keySet().iterator();
+        while (iterator.hasNext()) {
+            String key = iterator.next();
+            System.out.println(key + ": " + map.get(key));
+        }
     }
 }

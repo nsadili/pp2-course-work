@@ -1,17 +1,18 @@
 package Week08;
-public static void main(String[] args){
-    List<Account> accs=new AccountList();
-    Collections.sort(nums, new Compare<Integer>){
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+
 public class Sortinglist { 
+public static void main(String[] args){
+    List<Account> accs=new ArrayList<>();
+    Collections.sort(accs, new DescendingComparator());
 
-}
-}
-
-  
-    class DesendingComparator implements Comparator<Integer> {
-public int compare(Integer o1, Integer o1 ){
-    return o2.compareTo(o1);
+} }
+     static class DescendingComparator implements Comparator<Integer> {
+public int compare(Account o1, Account o2 ){
+    return Double.compare(a2.getBalance(), a1.getBalance());
 }
    } 
-
-}

@@ -1,9 +1,12 @@
-package Week08;
 
+package Week08;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 public class Sort {
    public static void main(String[] args) {
     List<Integer> nums =new ArrayList<>();
-    Collections.addAll(nums, ...elements: 1, 2, 3, 4, 5, 6, 7);
+    Collections.addAll(nums, 1, 2, 3, 4, 5, 6, 7);
     
    } 
 }

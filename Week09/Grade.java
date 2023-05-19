@@ -1,55 +1,31 @@
 package Week09;
+
 import java.util.HashMap;
-import javax.sound.sampled.SourceDataLine;
 
 public class Grade {
-  private static Float age;
+    public static void main(String[] args) {
+        HashMap<String, Float> grades = new HashMap<>();
 
-  public static void main() {
-    HashMap<String, Float> grade = new HashMap<>();//should be wrapper class
+        grades.put("Ilaha Jamalli", 2.8f);
+        grades.put("Nihat Ahmadli", 4.0f);
+        grades.put("Inji Sadigli", 1.79f);
 
-       grade.put("Ilaha Jamalli", 2.8f);
-       grade.put("Nihat Ahmadli", 4.0f);
-       grade.put("Inji Sadigli", 1.79f);
-  
-  
-       for(String a: grade.keySet()){
-        System.out.println(grade.get(a));
-        float g=0;
-       }
-        
-        for(String a: grade.keySet()){
+        float maxGrade = Float.MIN_VALUE;
+        for (String student : grades.keySet()) {
+            System.out.println(grades.get(student));
 
-         if(grade.get(a)>g);
-        g= grade.get(a); 
-     
+            float currentGrade = grades.get(student);
+            if (currentGrade > maxGrade) {
+                maxGrade = currentGrade;
+            }
         }
-      for(String a: grade.keySet()){
-}
-for(String a: grade.keySet()){
-  
-  if(grade.get(a)<age)
-  System.out.println(a);
-}
-        
 
+        System.out.println("Max Grade: " + maxGrade);
 
-    //    float max=0;
-  
-    //    if(grade.get(a).compareTo(max)<0);
-    //    max= grade.get(a);
-
-    //    float s=0;
-    //   
-    // s+=grade.get(a);
-
-  } 
-//  System.out.println(s/grade) ;
-
-
-//  float avarage= s/grade.size();
-//   int numberOfStudent=0;
-
-  
-
+        for (String student : grades.keySet()) {
+            if (grades.get(student) < maxGrade) {
+                System.out.println(student);
+            }
+        }
+    }
 }

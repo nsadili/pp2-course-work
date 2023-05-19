@@ -9,7 +9,7 @@ implements SpecificProperty<Account>  {
     public boolean hasProp(Account el) {
         // TODO Auto-generated method stub
        // throw new UnsupportedOperationException("Unimplemented method 'hasProp'");
-       return el.getBalance();
+       return el.getBalance()==0;
     }
     
 }

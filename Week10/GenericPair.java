@@ -28,7 +28,7 @@ this.value=value;
 }
 class Main {
     public static void main(String[] args){
-        GenericPair<Integer, String> Students= new GenericPair<Integer,String>(null, null)
+        GenericPair<Integer, String> Students= new GenericPair<Integer,String>(null, null);
    Students.setKey(16111);
    Students.setValue("Ilaha Jamalli");
    System.out.println(Students.getKey());
