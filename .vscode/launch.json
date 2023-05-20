@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Week10.Main",
+            "projectName": "pp2-course-work_b532ca5c"
+        },
+        {
+            "type": "java",
+            "name": "EX1",
+            "request": "launch",
+            "mainClass": "Week08.ex1.EX1",
+            "projectName": "pp2-course-work_b532ca5c"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Week05.Pw9.Main",
+            "projectName": "pp2-course-work_b532ca5c"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Week06.Main",
+            "projectName": "pp2-course-work_b532ca5c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Week05.Pw11And12.Main",
+            "projectName": "pp2-course-work_b532ca5c"
+        },
+        {
+            "type": "java",
             "name": "Launch CustomTimeTest",
             "request": "launch",
             "mainClass": "Week03.CustomTimeTest",

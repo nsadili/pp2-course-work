@@ -3,13 +3,10 @@ import java.util.*;
 
 public class EX1 {
     public static void main(String[] args) {
-        // Part a: Create a list of integers and add elements to it
         List<Integer> intList = new ArrayList<>();
         intList.add(10);
         intList.add(20);
         intList.add(30);
-
-        // Part b: Print the elements using various methods
         System.out.println("Using toString() method: " + intList.toString());
 
         System.out.println("Using for statement:");
@@ -28,7 +25,6 @@ public class EX1 {
             System.out.println(intIterator.next());
         }
 
-        // Part c: Create a list of Strings, add elements, and manipulate the list
         List<String> shoppingList = new ArrayList<>();
         shoppingList.add("coffee");
         shoppingList.add("tea");
