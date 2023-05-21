@@ -16,6 +16,7 @@ public class Main {
 			inc.join();
 			rd.join();
 		} catch (InterruptedException iex) {
+			
 		}
 
 	}
