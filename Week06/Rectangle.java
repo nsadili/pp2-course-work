@@ -1,17 +1,44 @@
 package Week06;
 
-public  class Rectangle {
-    int width, height;
+public class Rectangle implements Cloneable {
+    private int width, height;
 
-    public Rectangle(int w, int h){
-        width = w;
-        height = h;
+    public Rectangle(int width, int height) 
+    {
+        this.width = width;
+        this.height = height;
     }
 
-  @Override
-    public boolean equals(Object obj){
-        Rectangle rectangle = (Rectangle) obj;
-        if (rectangle.width == this.width && rectangle.height == this.height) return true;
-        else return false;
+    public String toString() 
+    {
+        return width + " " + height;
+    }
+
+    public void set(int width, int height) {
+
+        this.width = width;
+        this.height = height;
+    }
+
+    public boolean equals(Object obj) {
+        if (obj == null)
+        {
+            return false;
+        }
+        if (obj == this) 
+        {
+            return true;
+        }
+        if (obj.getClass() != getClass())
+         {
+            return false;
+        }
+        Rectangle that = (Rectangle) obj;
+        return this.width == that.width && this.height == that.height;
+    }
+
+    @Override
+    public Rectangle clone() throws CloneNotSupportedException {
+        return (Rectangle) super.clone();
     }
 }
