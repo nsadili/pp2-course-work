@@ -1,3 +1,5 @@
+package Week05;
+
 public class MathDemo {
     public static int min(int a, int b) {
         return a < b ? a : b;
