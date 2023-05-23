@@ -1,11 +1,5 @@
 package ex;
 
-public interface Movable {
-    void moveUp();
-    void moveDown();
-    void moveLeft();
-    void moveRight();
-}
 public class MovableInterface implements Movable {
 
     private float x;
@@ -64,5 +58,6 @@ public class MovableInterface implements Movable {
 
     public void moveRight() {
         x++;
+        public static void main(){}
     }
 }

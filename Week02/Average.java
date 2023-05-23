@@ -1,5 +1,7 @@
+package Week02;
+
 import java.util.Scanner;
-public class Prime {
+public class Average {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         int count =0;
