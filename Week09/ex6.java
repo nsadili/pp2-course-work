@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class ex4 {
+public class ex6 {
     public static void main(String[] args) {
         String input=args[0].toLowerCase();
         ArrayList<String> list= new ArrayList<String>();

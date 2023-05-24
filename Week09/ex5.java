@@ -3,7 +3,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class ex3 {
+public class ex5 {
     public static void main(String[] args) {
          Map<String, Double> students = new HashMap<>();
          students.put("Ayten", 3.8);
