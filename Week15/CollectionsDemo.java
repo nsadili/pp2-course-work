@@ -12,10 +12,10 @@ public class CollectionsDemo {
         persons.stream().forEach(System.out::println);
 
 
-        Set<Person> oldersFirst = new TreeSet<>();
+        Set<Person> oldersFirst = new TreeSet<>((o1, o2)-> o1.getAge().compareTo(o2.getAge()));
         oldersFirst.addAll(persons);
 
-        (o1, o2)-> o1.getAge().compareTo(o2.getAge());
+        
 
     }
 
