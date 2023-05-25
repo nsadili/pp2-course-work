@@ -1,5 +1,9 @@
 package Main;
 
+import java.util.Collection;
+
+import javax.swing.text.html.HTMLDocument.Iterator;
+
 public class GenericClass<T> {
     public static void main(String[] args) {
         GenericClass.<Double>print(3.0, 2.0, 5.0, 3.0, 65.0);
@@ -18,4 +22,11 @@ public class GenericClass<T> {
             System.out.print(args[i] + ", ");
         System.out.println(args[args.length - 1] + "]");
     }
+
+
+    public static void throwOne(Collection<? super RuntimeException> coll) {
+        var iter = coll.iterator();
+        if (iter.hasNext())
+        throw iter.next();
+        }
 }
