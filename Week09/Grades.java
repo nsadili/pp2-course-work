@@ -28,8 +28,8 @@ public class Grades {
                 .orElse(0.0);
         System.out.printf("\nAverage GPA is: %.3f\n", average);
 
-        List<Float> lessThanAverage = studentsGPA.values().stream()
-                .filter(value -> value < average)
+        List<Float> lessThanAverage = ((Object) studentsGPA.values().stream()
+                .filter(value -> value < average))
                 .toList();
 
         System.out.println("Number of students who has less gpa than the average is: " + lessThanAverage.size());

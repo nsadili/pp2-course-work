@@ -93,4 +93,28 @@ public class Segment implements Movable{
         p1.moveRight();
         p2.moveRight();
     }
+
+    @Override
+    public Movable moveUp(int steps) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'moveUp'");
+    }
+
+    @Override
+    public Movable moveDown(int steps) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'moveDown'");
+    }
+
+    @Override
+    public Movable moveLeft(int steps) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'moveLeft'");
+    }
+
+    @Override
+    public Movable moveRight(int steps) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'moveRight'");
+    }
 }
