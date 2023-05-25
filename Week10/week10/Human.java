@@ -1,4 +1,4 @@
-package Week13;
+package Week10.week10;
 
 public class Human{
 

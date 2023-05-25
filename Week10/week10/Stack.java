@@ -1,3 +1,4 @@
+package Week10.week10;
 public class Stack<T> {
     private T[] stackArray;
     private int top;
