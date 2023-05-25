@@ -1,4 +1,4 @@
-package single;
+package problem1.single;
 
 import java.util.StringTokenizer;
 
