@@ -3,11 +3,11 @@ import java.util.Scanner;
 public class MixedString {
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
-
-        String str = sc.nextLine();
-        String mixedString = swapMixedStr(str);
-        System.out.println(mixedString);
+        try (Scanner sc = new Scanner(System.in)) {
+            String str = sc.nextLine();
+            String mixedString = swapMixedStr(str);
+            System.out.println(mixedString);
+        }
 
     }
 

@@ -40,7 +40,7 @@ public class Stack {
 
     public void push(int el) throws Exception {
         // TODO: what if the stack is full? index == capacity-1?
-        if (elements[index] == capacity - 1)
+        if (index == capacity - 1)
             throw new Exception();
         elements[++index] = el;
     }
@@ -60,25 +60,27 @@ public class Stack {
     public static void main(String[] args) throws Exception {
         Stack stack = new Stack(5);
         try {
-            stack.pop();
+            stack.push(3);
+            stack.push(5);
+            stack.push(7);
+            stack.push(10);
+            stack.push(100);
+            // stack.push(200); //Throws an exception
+
+            System.out.print("Stack after pushing: ");
+            stack.__print();
+            System.out.println("Peek: " + stack.peek());
+            System.out.println("Pop: " + stack.pop());
+            System.out.println("Stack after popping: ");
+            stack.__print();
 
         } catch (Exception e) {
             e.printStackTrace();
-            // TODO: handle exception
-        }
-
-        stack.push(3);
-        stack.push(5);
-        stack.push(7);
-        stack.push(10);
-        stack.push(100);
-        stack.push(200000);
-
-        stack.__print();
-
+        
+    }
         while (!stack.isEmpty()) {
             System.out.println(stack.pop());
         }
 
-    }
-}
+    
+}}

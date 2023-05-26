@@ -6,14 +6,14 @@ public class Substring {
         }
         String str1 = args[0];
         String str2 = args[1];
-        int index = Substring(str1, str2);
+        int index = substring(str1, str2);
         if (index == -1)
             System.out.println("2nd string is not substring of 1st");
         else
             System.out.println("index of substring is " + index);
     }
 
-    static int Substring(String str1, String str2) {
+    static int substring(String str1, String str2) {
         int str1Len = str1.length();
         int str2Len = str2.length();
 

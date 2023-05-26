@@ -1,6 +1,5 @@
 package ex08;
 
-import java.util.Arrays;
 
 public class Teacher extends Person {
     private String department;
@@ -35,6 +34,6 @@ public class Teacher extends Person {
 
     public boolean equals(Teacher t) {
         return super.equals(t) && this.department.equals(t.getDepartment())
-                && Arrays.equals(this.courses, t.getCourses());
+                && this.courses.equals(t.getCourses());
     }
 }

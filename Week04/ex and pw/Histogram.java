@@ -3,29 +3,29 @@ import java.util.Arrays;
 
 public class Histogram {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int n = scan.nextInt(); // number of students
-        int[] arr = new int[n];
-        for (int i = 0; i < n; i++) {
-            arr[i] = scan.nextInt();
-        }
-        for (int i = 0; i < n; i++) {
-            System.out.printf("Student %d : ", i + 1);
-            for (int j = 0; j < arr[i]; j++) {
-                System.out.print("*");
+        try (Scanner scan = new Scanner(System.in)) {
+            int n = scan.nextInt(); // number of students
+            int[] arr = new int[n];
+            for (int i = 0; i < n; i++) {
+                arr[i] = scan.nextInt();
             }
-            System.out.println();
+            for (int i = 0; i < n; i++) {
+                System.out.printf("Student %d : ", i + 1);
+                for (int j = 0; j < arr[i]; j++) {
+                    System.out.print("*");
+                }
+                System.out.println();
+            }
+            double mean = mean(arr, n);
+            int median = median(arr, n);
+            int moda = moda(arr, n);
+
+
+            System.out.println("mean " + mean);
+            System.out.println("median " + median);
+            System.out.println("moda " + moda);
+            System.out.println("Mean, median, moda "+ mean +", "+ median+", "+moda);
         }
-        double mean = mean(arr, n);
-        int median = median(arr, n);
-        int moda = moda(arr, n);
-        double[] meanMedModa = meanMedModa (arr , n);
-
-
-        System.out.println("mean " + mean);
-        System.out.println("median " + median);
-        System.out.println("moda " + moda);
-        System.out.println("Mean, median, moda "+ mean +", "+ median+", "+moda);
 
     }
 
@@ -40,7 +40,6 @@ public class Histogram {
 
     static int median(int[] arr, int n) {
         Arrays.sort(arr);
-        int median;
         if (n % 2 == 1)
             return arr[n / 2];
         else

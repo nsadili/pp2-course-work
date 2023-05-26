@@ -4,8 +4,8 @@ public class Point {
 
    
 
-    private float x;
-    private float y; // field
+    private double x;
+    private double y; // field
 
     public Point() {
         // empty constructor(DEFAULT) their name is the same with class
@@ -14,17 +14,17 @@ public class Point {
         this(10, 10);
     }
 
-    public Point(float x, float y) {
-        this.x = x;
-        this.y = y;
+    public Point(double x1, double y1) {
+        this.x = x1;
+        this.y = y1;
 
     }
 
-    public float getX() {
+    public double getX() {
         return this.x; // == return x;
     }
 
-    public float getY() {
+    public double getY() {
         return y;
     }
 

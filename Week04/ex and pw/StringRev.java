@@ -2,13 +2,13 @@ import java.util.Scanner;
 
 public class StringRev {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-
-        String input = scan.nextLine();
-        System.out.println(reverse1(input));
-        System.out.println(reverse2(input));
-        System.out.println(reverse3(input));
-        System.out.println(reverse4(input));
+        try (Scanner scan = new Scanner(System.in)) {
+            String input = scan.nextLine();
+            System.out.println(reverse1(input));
+            System.out.println(reverse2(input));
+            System.out.println(reverse3(input));
+            System.out.println(reverse4(input));
+        }
 
        // System.out.println(input);
 
