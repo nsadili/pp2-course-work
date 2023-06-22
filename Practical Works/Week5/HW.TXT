@@ -1,0 +1,5 @@
+We have three classes: X, Y, and Main. X is the parent class of Y, which means Y inherits from X. Each class has a special method called a constructor, which is like a set 
+of instructions that run when we create an object from a class. In the Main class, we create an object y of type Y using Y y = new Y();.
+When we create this object, it triggers the constructor of Y to run. Since Y is a subclass of X, the constructor of X also runs before the constructor of Y. 
+That's why we see "In constructor X." printed first. After that, the constructor of Y runs, and we see "In constructor Y." printed next.
+So, the output is the result of the constructors being executed in order: the parent class constructor X first, followed by the child class constructor Y.

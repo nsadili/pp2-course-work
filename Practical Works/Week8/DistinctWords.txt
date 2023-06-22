@@ -1,0 +1,3 @@
+Read the file line by line and split each line into individual words. Use a data structure that preserves the order of elements and does not allow duplicates, such as a 
+LinkedHashSetor a LinkedHashMap. Add each word to the data structure. After processing all the lines, you will have a collection of distinct words in the order they 
+appeared in the file. If you want to sort the words alphabetically in ascending order, you can convert the collection to a TreeSet or use the Collections.sort() method.
